@@ -1,4 +1,5 @@
-import re
+import os
+
 
 def load_data():
     with open("data/support_articles_raw.txt", encoding="utf-8") as f:
@@ -15,6 +16,10 @@ def split_html_pages(data):
 
     # Split the content by the delimiter "----------"
     pages = data.split('----------')
+
+    # create data/pages
+    if not os.path.exists('data/pages'):
+        os.makedirs('data/pages')
 
     # Save each page into a separate file
     try:
