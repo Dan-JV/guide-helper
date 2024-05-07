@@ -1,0 +1,129 @@
+https://help.vismaenterprise.dk/vismaloen-standard/tillaeg/89-beregning-af-gennemsnitlig-timelon
+
+# Beregning af gennemsnitlig timeløn
+
+## Timelønnede
+Ved oprettelse af beløb i følgende lønarter: 
+1096, 1097, 1098, 1099, 1100, 1101, 1104, 1105, 1106, 1107, 1110, 1115, 1116, 1117, 1118, 1119, 1121, 1210, 1211, 1213, 1214, 1215, 1250, 1251, 1270, 1271, 1272, 1273, 1274
+… og ved oprettelse af timer i følgende lønarter: 1096, 1097, 1098, 1099, 1100, 1101, 1105, 1106, 1107, 1110, 1115, 1116, 1117, 1118, 1119, 1121, 1210, 1215 
+… beregnes en gennemsnitlig timeløn, ud fra beløb og timer på ovenstående lønarter, ved brug af følgende lønarter: 
+
+Variabel lønart 1205 Kørepenge/Timeløn 75 % 
+Variabel lønart 1320 Overarbejde alm. timeløn 
+Variabel lønart 1385 Overtidstillæg individuel procent 
+Variabel lønart 1386 Overtidstillæg individuel procent 
+Variabel lønart 1410 Afspadsering udbetalt 
+Variabel lønart 1415 Afspadsering udb. Saldo 
+Variabel lønart 1420 Afspadsering udb. Saldo fratrådt
+
+… og følgende fraværslønarter: 
+
+Fraværslønart 3823 Afholdte feriefritimer 
+Fraværslønart 3870 Sygeløn timer ift. lønanc.
+Fraværslønart 3890 Sygeløn timeløn 
+Fraværslønart 3989 Barn syg 
+Fraværslønart 3990 Sygeløn timeløn
+Fraværslønart 3964 Dagpenge timeløn ANC.
+
+Gennemsnittet beregnes ved at beløbet fra ovennævnte lønarter divideres med antal timer fra ovennævnte lønarter. 
+Hvis der endnu ikke er udbetalt timeløn, vil systemet anvende timelønnen fra personlige satser, lønart 9905 personlig timeløn eller resultattabel 1100.    
+Skal der ikke anvendes en gennemsnits timeløn oprettes resultattabel TILØN med værdien ’1’ for de løngrupper der ikke benytter gennemsnitssats.
+Dog vil lønart 1385+1386 altid have en gennemsnitberegning. 
+⚠️ OBS: Resultattabel TILØN med værdien ’1’ kun virker, hvis der er oprettet sats enten på personliglig sats-lønart 9905 eller resultattabellerne 1100 og 1105.
+Timelønnede med timeløn sats fra personlig sats lønart-9905, 9906, 9976 eller resultattabel 1100, samt beløb fra følgende lønarter:1075, 1076, 1077, 1078, 1079, 1080, 1081, 1082, 1083, 1084, 1085, 1086, 1087, 1088, 1089, 1090, 1091, 1092, 1093, 1094, 1095, 1096, 1097, 1098, 1099, 1100, 1101, 1104, 1105, 1106, 1107, 1108, 1110, 1111, 1114, 1115, 1116, 1117, 1118, 1119, 1121, 1210, 1211, 1213, 1214, 1215, 1250, 1251, 1270, 1271, 1272, 1273, 1274, 1275, 1276, 1277, 1278, 1279, 1280, 1281, 3738, 3739, 11109, 11121, 12010, 12110, 41003, 41275, 41276, 41277, 41278, 41279, 41280, 41281, 41282, 41283, 41284, 41285, 41286, 41287, 41288, 41289, 41290, 41291, 41292, 41293, 41294, 41295, 41296, 41297, 41298, 42100, 42105, 42109, 42200, 42205, 42209, 43000, 43001, 43003, 43005, 43006, 43009, 43010, 43011, 43012, 43081, 43082, 43100, 43105, 43106, 43109, 43110, 43111, 43112, 43121, 43123, 43181, 43182, 43200, 43203, 43205, 43206, 43209, 43210, 43211, 43212, 43223, 43281, 43282, 43300, 43305, 43306, 43309, 43310, 43311, 43312, 43323, 43381, 43382, 43400, 43405, 43406, 43409, 43423, 43481, 43482, 43500, 43503, 43505, 43506, 43509, 43510, 43511, 43512, 43523, 43581, 43582, 43600, 43603, 43605, 43606, 43609, 43611, 43623, 43681, 43682, 43700, 43705, 43706, 43709, 43711, 43723, 43800, 43805, 43806, 43809, 43811, 43823, 44000, 44005, 44006, 44009, 44010, 44011, 44012, 44023, 44081, 44082, 44100, 44103, 44105, 44106, 44109, 44110, 44111, 44112, 44123, 44181, 44182, 44200, 44203, 44205, 44206, 44209, 44210, 44223, 44224, 44281, 44282, 44300, 44301, 44303, 44305, 44306, 44309, 44310, 44311, 44312, 44381, 44382, 44400, 44401, 44403, 44405, 44406, 44409, 44410, 44411, 44412, 44481, 44482
+… divideres med medarbejderens præsterede timer fra disse lønarter:890, 891, 895, 1075, 1076, 1077, 1078, 1079, 1080, 1081, 1082, 1083, 1084, 1085, 1086, 1087, 1088, 1089, 1090, 1091, 1092, 1093, 1094, 1095, 1096, 1097, 1098, 1099, 1100, 1101, 1105, 1106, 1107, 1108, 1110, 1111, 1114, 1115, 1116, 1117, 1118, 1119, 1121, 1210, 1215, 1282, 3738, 3739, 12010, 12110, 41003, 42100, 42109, 42200, 42209, 43000, 43001, 43003, 43005, 43006, 43009, 43010, 43100, 43105, 43106, 43109, 43110, 43200, 43203, 43205, 43206, 43209, 43210, 43300, 43305, 43306, 43309, 43310, 43400, 43405, 43406, 43409, 43500, 43503, 43505, 43506, 43509, 43510, 43600, 43603, 43605, 43606, 43609, 43700, 43705, 43706, 43709, 43800, 43805, 43806, 43809, 44000, 44005, 44006, 44009, 44010, 44100, 44103, 44105, 44106, 44109, 44110, 44200, 44203, 44205, 44206, 44209, 44210, 44300, 44301, 44303, 44305, 44306, 44309, 44310, 44400, 44401, 44403, 44405, 44406, 44409, 44410
+Resultattabel ’TILØN’ kan oprettes med værdien 2, for relevante løngrupper.
+
+## Månedslønnede
+Månedsløn fra personlig sats-lønart 9900, samt beløb fra følgende lønarter:1010, 1520, 1522, 1524, 1526, 1528, 1530, 1532, 1534, 1550, 1552, 1554, 1556, 1558, 1560, 1562, 1564, 1566, 1568
+… divideres med medarbejderens normtid = timeløn 
+Resultattabel MDLØN oprettes med værdien ’1’ for relevante løngrupper.
+Månedsløn fra personlig sats-lønart 9900, samt beløb fra følgende lønarter:1520, 1522, 1524, 1526, 1528, 1530, 1532, 1534, 1550, 1552, 1554, 1556, 1558, 1560, 1562, 1564, 1566, 1568, 1060, 1065, 1066, 1067, 1068, 1069,  1660, 1661, 1662, 1663, 1664, 1665, 1666, 1667, 1668
+… divideres med medarbejderens normtid = timeløn 
+Resultattabel MDLØN oprettes med værdien ’4’ for relevante løngrupper.
+Månedsløn fra personlig sats-lønart 9900 eller resultattabel RTLØN1, RTLØN2 samt faste løndele som brugertilpasset i samarbejde med en konsulent fra Visma, kontakt Visma, som sætter det op i Saphir under Beregningsgrundlag.
+Lønarterne divideres med medarbejderens normtid for at få timelønnen.
+Resultattabel MDLØN oprettes med værdien ’5’ for relevante løngrupper.
+Resultatet er den timesats, der anvendes ved udbetaling af variable lønarter:
+
+Lønart 1300 – Overarbejde almindelig timeløn 
+Lønart 1301 – Overarbejde 50% 
+Lønart 1302 – Overarbejde 100% 
+Lønart 1306 – Overarbejde 50% funktionær 
+Lønart 1307 – Overarbejde 100% funktionær 
+Lønart 1380 – Overtidstillæg pct.1 
+Lønart 1381 – Overtidstillæg pct. 2 
+Lønart 1443 – Tilkald 
+Lønart 1444 – Tilkald  
+Lønart 1700 – Overarbejde almindelig timeløn
+Lønart 1710 – Overtidstillæg pct. 1 
+Lønart 1711 – Overtidstillæg pct. 2 
+Lønart 1715 – Overtidstillæg pct. 3
+Lønart 1410 – Afspadsering udbetalt 
+Lønart 1415 – Afspadsering udb saldo 
+Lønart 1420 – Afspadsering udb saldo fratræd 
+Lønart 1589 – Fri egen regning 
+Lønart 4015 – Ferie fravær timer 
+Lønart 4060 – Træk for ferie i lønnen (fraværslønart 4001) ¨
+Lønart 4297 – Udb. ikke overført ferie
+
+
+## Månedslønnede – personlig sats-lønart 9900+9901
+Gennemsnits timelønnen beregnes ud fra lønart 9900 og lønart 9901, og divideres med medarbejderens normtid = timeløn.
+Resultattabel MDLØN oprettes med værdien ’3’ for relevante løngrupper.
+ Resultatet er den timesats, der anvendes ved udbetaling af variable lønarter:
+
+Lønart 1300 – Overarbejde almindelig timeløn 
+Lønart 1301 – Overarbejde 50% 
+Lønart 1302 – Overarbejde 100% 
+Lønart 1306 – Overarbejde 50% funktionær 
+Lønart 1307 – Overarbejde 100% funktionær 
+Lønart 1380 – Overtidstillæg pct.1 
+Lønart 1381 – Overtidstillæg pct. 2 
+Lønart 1443 – Tilkald 
+Lønart 1444 – Tilkald  
+Lønart 1700 – Overarbejde almindelig timeløn
+Lønart 1710 – Overtidstillæg pct. 1 
+Lønart 1711 – Overtidstillæg pct. 2 
+Lønart 1715 – Overtidstillæg pct. 3
+Lønart 1410 – Afspadsering udbetalt 
+Lønart 1415 – Afspadsering udb saldo 
+Lønart 1420 – Afspadsering udb saldo fratræd 
+Lønart 1589 – Fri egen regning 
+Lønart 4015 – Ferie fravær timer 
+Lønart 4060 – Træk for ferie i lønnen (fraværslønart 4001) 
+Lønart 4297 – Udb. ikke overført ferie
+
+
+## Månedslønnede – anden normtid
+Såfremt timeløn til udbetaling af overarbejde skal beregnes ud fra en anden arbejdstid, end den overenskomstnormtid, der er angivet på ansættelsesforholdet, oprettes normtiden på 
+
+Resultattabel NTID
+
+👩‍🏫 Eksempel: Det kan bl.a. være aktuelt for ansatte, der har betalt frokostpause.
+Der er på medarbejderen registeret 160,33 timer som overenskomstens normtid, men en timeløn ønskes beregnet ud fra 150,00 timer, da frokostpausen ikke skal indgå i timelønsberegningen. 
+For at timelønnen kan beregnes med en afvigende overenskomsttid oprettes værdien 2 på resultattabel MDLØN.
+Timelønnen beregnes herefter på følgende måde: Månedslønnen (lønart 9900) ÷ overenskomsttid fra ansættelsesforholdet + lønarterne 1010, 1520, 1522, 1524, 1526, 1528, 1530, 1532, 1534, 1550, 1552, 1554, 1556, 1558, 1560, 1562, 1564, 1566, 1568 ÷ medarbejderens normtid + lønarterne 1065, 1066, 1067, 1068, 1069 × (medarbejdernormtid/overenskomstnormtid) × overenskomstnormtid.
+De tre beløb lægges sammen, og værdien heraf ganges med overenskomstens normtid, og ganges med normtiden fra NTID. 
+Resultatet er den timesats, der anvendes ved udbetaling af variable lønarter:
+
+Lønart 1300 – Overarbejde almindelig timeløn 
+Lønart 1301 – Overarbejde 50% 
+Lønart 1302 – Overarbejde 100% 
+Lønart 1306 – Overarbejde 50% funktionær 
+Lønart 1307 – Overarbejde 100% funktionær 
+Lønart 1380 – Overtidstillæg pct.1 
+Lønart 1381 – Overtidstillæg pct. 2 
+Lønart 1443 – Tilkald 
+Lønart 1444 – Tilkald  
+Lønart 1700 – Overarbejde almindelig timeløn
+Lønart 1710 – Overtidstillæg pct. 1 
+Lønart 1711 – Overtidstillæg pct. 2 
+Lønart 1715 – Overtidstillæg pct. 3
+Lønart 1410 – Afspadsering udbetalt 
+Lønart 1415 – Afspadsering udb saldo 
+Lønart 1420 – Afspadsering udb saldo fratræd 
+Lønart 1589 – Fri egen regning 
+Lønart 4015 – Ferie fravær timer 
+Lønart 4060 – Træk for ferie i lønnen (fraværslønart 4001) 
+Lønart 4297 – Udb. ikke overført ferie

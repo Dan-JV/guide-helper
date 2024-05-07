@@ -1,0 +1,44 @@
+https://help.vismaenterprise.dk/vismaloen-standard/ferie/8-korrektion-af-ferie
+
+# Korrektion af ferie
+
+## Ferieår
+Feriesystemet arbejder med følgende år:
+* Ferie Optjeningsår: 01.09.XXXX til 31.08.YYYY (start 01.09.2020)
+* Ferieafholdelsesperiode: 01.09.XXXX til 31.12.YYYY (start 01.09.2020 - 31.12.2021)
+* Overført ferie (første gang ferie kan overføres efter ferieloven pr. 01.01.2022)
+
+
+## Korrektion af ferie
+Du vil som udgangspunkt ikke anvende korrektionslønarter, da lønsystemet automatisk håndterer beregning af feriedage, ferietimer og feriepenge.I specielle tilfælde kan det dog være nødvendigt at korrigere feriesaldi, f.eks. hvis saldi er indlæst forkert fra dit tidligere lønsystem, eller anden arbejdsgiver, kan du have behov for at skulle foretage en korrektion.
+## Medarbejdere som har ferie med løn
+- **Variabel lønart 40012** - Korrektion optjente feriedage indeværende ferieår
+- **Variabel lønart 40015** - Korrektion feriepenge indeværende ferieår
+- **Variabel lønart 40017** - Korrektion optjente ferietimer indeværende ferieår
+- **Variabel lønart 40115** - Korrektion rest feriedage, alle ferieår
+- **Variabel lønart 40118** - Korrektion rest ferietimer, alle ferieår
+- **Variabel lønart 40105** - Korrektion optjente feriedage og evt. bruttoferiepenge
+- **Variabel lønart 40108** - Korrektion optjente ferietimer og evt. bruttoferiepenge
+⚠️ OBS:&nbsp;Lønarterne må&nbsp;kun benyttes til medarbejdere, som&nbsp;har været med i en lønkørsel i Visma Løn. Hvis medarbejderne ikke har været lønbehandlet før skal du i stedet bruge vejledningen 'Feriesaldi nye medarbejdere' eller 'Flyt medarbejder'.Lønarterne behandles før afholdt ferie, fratrædelse mm. Kan anvendes til medarbejdere som har ferie med løn.Lønarterne kan korrigere i indeværende ferieår, sidste år og forrige år.Lønarterne retter i ’Afholdt’ og ’Restferie’. Angiver du en korrektion som er højere end rest, korrigeres kun restsaldoen.&nbsp;Følgende variable lønarter kan anvendes:Lønart 40115 - Korrektion feriedageLønart 40118 - Korrektion ferietimerLønart 40115 og&nbsp;40118 kan&nbsp;IKKE anvendes i en 13. lønkørsel.Indberettes til eIndkomst på fratrådte medarbejdere.Ved korrektion af feriedage el. ferietimer på&nbsp;lønart 40115 el.&nbsp;40118 reguleres både antal afholdte feriedage/timer og antal restferiedage/timer i rapporten “Ny Ferielov Ferieregnskab”.Lønarterne har følgende input:* Dage/timer +/-* Ferieår👩‍🏫 Eksempel på korrektion med lønart 40115 el. 40118En medarbejders restferie skal tillægges 2 dageLønart 40115 oprettes med 2 dage, værdi af bruttoferiepenge samt ferieår.Resultat:&nbsp;* Der lægges to dage til restferie for 2021* Der trækkes to dage fra afholdt ferie for 2021&nbsp;Korrektionslønarter der kan efterreguleres for indeværende ferieårOprettes lønarterne med en dato tidligere end nuværende lønperiode, skal der køres en efterregulering for at få rettelsen i den korrekte lønperiode. Lønarterne rettes under&nbsp;Optjent →&nbsp;Restferie.&nbsp;Følgende variable lønarter kan anvendes:Lønart 40012 -&nbsp; Korrektion Feriedage indeværende ferieår.&nbsp;Indberettes ikke til eIndkomst og kan kun anvendes med en positiv korrektion.&nbsp;Lønart 40015 – Korrektion bruttoferiepenge indeværende ferieår.&nbsp;Indberettes&nbsp;IKKE til eIndkomst på aktive medarbejdere. På fratrådte medarbejdere indberettes til eIndkomst.* Bruttoferiepenge +/-Lønart 40017 - Korrektion Ferietimer indeværende ferieår.&nbsp;Indberettes ikke til eIndkomst og kan kun anvendes med en positiv korrektion&nbsp;Korrektion af optjente feriedage/time og bruttoferiepengeVariabel lønart 40105 - Korrektion optjente feriedage og bruttoferiepengeVariabel lønart 40108 - Korrektion optjente ferietimer og bruttoferiepengeBegge lønarter behandles primo lønkørslen, dvs inden afholdelse, fratrædelse mm. De kan bruges til medarbejdere der har ferie med løn og medarbejdere med Feriekort. Lønart 40105 og 40108 må ikke bruges i en 13. lønkørsel.&nbsp;Såfremt der korrigeres med mere end der er til rest, så nedskrives kun hvad der er til rest.Ved korrektion af feriedage el. ferietimer på lønart 40105 el. 40108 reguleres både antal optjente feriedage/timer og antal restferiedage/timer i rapporten Ny Ferielov Ferieregnskab.&nbsp;Lønarterne har følgende input:* Dage/timer +/-* Bruttoferiepenge +/-* Ferieår
+
+## Medarbejdere som har løbende beregning af ferie og Feriekort
+- **Variabel lønart 40055** – Korrektion feriedage/feriepenge løbende beregning
+- **Variabel lønart 40122** – Korrektion Feriekort saldi
+Følgende variable lønarter kan anvendes:40055 – Korrektion af dage/feriepenge lb. feriepenge beregning til FerieKonto/Feriekort for indeværende årKorrektioner indberettes til eIndkomstVed korrektion til FerieKonto beskattes bruttobeløb i lønkørsel og indberettes til eIndkomst felt 203 dage og 202 nettoferiepenge&nbsp;Ved korrektion til Feriekort indberettes til eIndkomst felt 203 dage og 198 bruttoferiepenge.⚠️ OBS: Lønarten må&nbsp;kun benyttes til medarbejdere som har været med i en lønkørsel i Visma Løn.&nbsp;Korrektion af Feriekort saldi uden indberetning til eIndkomst40122 – Korrektion Feriekort saldiKorrektion af rest feriedage og rest feriepenge på medarbejdere med FeriekortIndberettes ikke til eIndkomstKan bruges til korrektion af saldi for indeværende og tidligere ferieår
+
+## Korrektion af arbejdstidsprocent
+- **Variabel lønart 40013** - Korrektion af Arbejdstidsprocent
+Lønart 40013 – Korrektion af ArbejdstidsprocentAnvendes til at korrigere Arbejdstidsprocent på medarbejdere, der opsparer feriedage.&nbsp;Lønarten skal&nbsp;IKKE anvendes på medarbejdere der opsparer ferie i timer.Lønarten har følgende input:Arbejdstidsprocent +/- (korrektion)År (Kalenderår)Måned (f.eks. 04 = april)Når lønarten oprettes korrigeres den tidligere arbejdstidsprocent for den måned der angives.Medarbejderens arbejdstidsprocent bruges til feriepengedifferenceberegning. I hver måneds lønkørsel tilknyttes en arbejdstidsprocent til månedens opsparing af feriedage, eller den måned der er lagt feriedage ind på en korrektions- eller en saldolønart. Når der skal rettes, er det derfor for alle de måneder, hvor der er feriedage med en forkert arbejdstidsprocent.Arbejdstidsprocent anvendes ikke, hvis medarbejderen optjener og afholder ferie i timer. Der sker derfor ikke noget, hvis lønarten oprettes.👩‍🏫 Eksempel:&nbsp;En medarbejder med fejlagtig feriepengedifferenceberegning i aktuel lønkørsel, kan få rettet arbejdstidsprocent i relevante måneder til den aktuelle under ferien, så sker der ikke længere differenceberegning.👩‍🏫 Eksempel:&nbsp;En selskabsskiftet medarbejder der er oprettet med 16,64 dage og 100% arbejdstid&nbsp;via en saldolønart i april, med første lønkørsel i maj. Arbejdstidsprocenten skulle have været 80%.&nbsp;Lønart 40013 udfyldes med -20 og måned 04 (april) samt årstal, og alle dage der er lagt ind i april, vil få en arbejdstidsprocent på 80% fra og med den næste lønkørsel.
+
+## Korrektion af feriedage og feriepenge ved fratrædelse til FerieKonto
+- **Lønart 40120** - Korr. fratr. feriep/dage indeværende år
+- **Lønart 40130** - Korr. fratr. feriep/dage sidste år
+Ønsker du at overstyre den beregning af feriepenge og feriedage, Visma Løn foretager i forbindelse med en fratrædelse, kan du angive de feriedage og feriepenge der skal afregnes på nedenstående variable lønarter og det vil være de feriedage og feriepenge der bliver afregnet ved fratrædelse. Kan anvendes til både FerieKonto og Feriekort:
+
+Lønart 40120 - Korr. fratr. Feriep/dage indeværende år
+Lønart 40130 - Korr. fratr. Feriep/dage Sidste år
+Skal oprettes i kontoplanen i debet på lønart 40120 og 40130.
+
+
+## Nulstilling af alle feriesaldi
+Denne lønart nulstiller alle feriesaldi på en specifik medarbejder i det ferieår, der vælges.&nbsp;Må kun bruges til nulstilling af medarbejdere, der har ferie med løn.Lønarten bruges f.eks. til at nulstille gamle saldi på fratrådte medarbejdere i rapporten Ny ferielov Ferieregnskab.40076 - Nulstil feriesaldiNulstiller feriedage/timer, feriepenge, ferietillæg, ekstra ferietillæg, forskudsferie og ferie tidl. ArbejdsgiverKorrektioner der sker på baggrund af nulstilllinger på denne lønart bogføres ikke, men skal evt. bogføres manuelt.

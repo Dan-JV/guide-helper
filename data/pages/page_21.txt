@@ -1,0 +1,31 @@
+https://help.vismaenterprise.dk/vismaloen-standard/lonkorsel/21-valgfrit-sprog-pa-lonseddel
+
+# Valgfrit sprog på lønseddel
+
+Med funktionen Valgfrit sprog på lønseddel (tillægsydelse) er det muligt at danne lønsedler med f.eks. engelske tekster til udvalgte medarbejdere og lønsedler med standardtekst på øvrige medarbejdere. Kan også bruges til at ændre tekst generelt.
+Du kan bestille Valgfrit sprog på lønseddel via [www.community.visma.com](www.community.visma.com).
+
+## Tekstkode
+Tekstkode anvendes kun ved udenlandske tekster. Visma Enterprise oplyser tekstkode, når sprog er oprettet. Tekstkoden skal tilknyttes relevante stillingskategori(er) og lønartstekst(er).
+## Stillingskategori
+På aktuelle stillingkategori(er) registreres en kode i feltet ’Tekstkode’. Dette er kun relevant hvis det er udenlandske tekster. 
+
+Gå til Opsætning → Stillingskategori
+Angiv stillingskategori
+Klik på Find
+I feltet ’Tekstkode’ angives den oplyste tekstkode f.eks. ’EN’ for engelsk
+Klik på Gem
+
+
+## Lønartstekster
+Aktuelle lønarter oprettes med den valgfrie tekst f.eks. engelsk. For at finde de lønarter der skal have ændret tekst, kan rapporten ’Bogføringsbilag med spec. (år til dato)’ anvendes.
+* Tekstkode registreres i feltet ’Tekstkode’
+* Ny tekst registreres i feltet ’Brugertekst’
+
+
+Gå til Opsætning → Lønartsopsætning
+Angiv lønart
+Klik på Find
+Klik på Ny
+Angiv dato, evt. Tekstkode, Brugertekst og Udskrifttekst (samme tekst begge steder)
+Klik på OK

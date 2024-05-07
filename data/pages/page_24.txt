@@ -1,0 +1,85 @@
+https://help.vismaenterprise.dk/vismaloen-standard/ferie/62-ferie-pa-forskud
+
+# Ferie på forskud
+
+## Ferieår
+Feriesystemet kan arbejde med følgende år:
+* Ferie Optjeningsår: 01.09.XXXX til 31.08.XXXX (start 01.09.2020)
+* Ferieafholdelsesperiode: 01.09.XXXX til 31.12.XXXX (start 01.09.2020 - 31.12.2021)
+* Overført ferie (første gang ferie kan overføres efter ferieloven pr. 01.01.2022)
+
+
+## Fraværsrækkefølge 
+Visma Løn er oprettet med en fraværsrækkefølge der sikrer, at det ældste ferie afholdes først og derefter ny ferie, samt ferie på forskud. Når alt ferie og ferie på forskud er afholdt trækkes medarbejderen i løn for antal feriedage/timer.
+
+Ferien afholdes i følgende rækkefølge:
+
+1.  Optjent ferie (det ældste ferie blive afholdt først)
+2.  Ferie på forskud, hvis det er tildelt medarbejderen
+3.  Træk i løn
+
+I nogle overenskomster samt lokalaftaler hos virksomheder, er der ”regler” for hvilken slags ferie der skal afholdes først. Det er muligt at få tilpasset standard fraværsrækkefølgen med f.eks. feriefri. 
+
+Rækkefølgen kunne være:
+
+1.  Afholdelse af feriefridage 
+2.  Afholdelse af optjent ferie 
+3.  Afholdt ferie på forskud
+4.  Træk i løn
+
+Fraværsrækkefølgen kan oprettes med hjælp fra en konsulent fra Visma, eller bestilles via vores [webshop](https://shop.visma.com/dk?filters=38). Rækkefølgen opsættes specifikt efter hvordan ”reglerne” er i jeres virksomhed. Fraværet registreres på samme fraværskode som ferie, kode 40 eller 50.
+
+## Ferie på forskud
+Ferie på forskud skal aftales mellem arbejdsgiver og lønmodtager. Der kan maks. tildeles det antal feriedage/-timer på forskud, som kan optjenes i samme ferieår. 
+F.eks. står du i august måned, så kan der kun tildeles 2,08 feriedage (2,12 feriedage hvis medarbejderen har været ansat et helt ferieår), for det er de feriedage du kan optjene med august lønnen.
+Har medarbejdere på fratrædelsestidspunktet nogle feriedage på forskud, som ikke kan nå at blive modregnet i den optjente ferie, vil der skulle ske en modregning i tilgodehavende løn/feriegodtgørelse. Hvis tilgodehavende ikke dækker ferie på forskud, kan der ikke rejses yderligere krav.
+⚠️OBS: Tildelt forskudsferie som er afholdt, vil vises på lønsedlen i hele ferieåret.
+
+## Tildeling af ferie på forskud
+### Medarbejdere, ferie med løn
+Når en medarbejder bruger af den tildelte forskudsferie, får medarbejderen sin almindelige løn. Den optjente ferie i den pågældende måned, hvor der afholdes ferie på forskud, bliver modregnet i den tildelte forskudsferie, så gælden på forskudsferien nedskrives.
+Tildeling af forskudsferie skal ske på en af følgende variable lønarter:
+
+Lønart 4765 - Tildel forskudsferie, dage 
+Lønart 4766 - Tildel forskudsferie, timer
+
+
+### Medarbejdere med feriegodtgørelse
+Tildeling af ferie på forskud skal ske med et antal dage, samt værdien af feriedagene. Værdien af feriedagene beregnes på baggrund af lønnen de sidste 4 uger før ferieafholdelse, jvf. ferieloven. Skulle der ske en regulering i medarbejderens løn, vil denne regulering IKKE påvirke de feriepenge der er blevet beregnet ved tildeling af ferie på forskud.
+
+FerieKonto/Feriekasse: Visma indberetter de feriedage og feriepenge som er tildelt ferie på forskud, som så sørger for udbetalingen til medarbejderen. Det er vigtigt at dette kommer med i en lønkørsel eller supplerende lønkørsel, før medarbejderen skal bruge af sin ferie på forskud, for ellers vil der ikke kunne ske en udbetaling fra FerieKonto/Feriekasse.
+Feriekort: Visma indberetter de feriedage og feriepenge som er tildelt ferie på forskud til eIndkomst. Det er vigtigt at dette kommer med i en lønkørsel eller supplerende lønkørsel, før medarbejderen skal bruge af sin ferie på forskud, for det er ikke muligt for arbejdsgiver at udbetale ferie på forskud i samme lønkørsel som det er tildelt.
+
+ 
+For disse medarbejdere gælder det, at lønsystemet modregner de feriedage og feriepenge der er tildelt ferie på forskud, i de optjente feriedage og feriepenge fra lønkørslen. 
+Derfor skal tildeling af ferie på forskud, tidligst ske i lønkørslen før ferie på forskud skal anvendes.
+Tildeling af ferie på forskud skal ske på følgende variable lønarter:
+
+Lønart 4767 - Løbende beregning af ferie til FerieKonto, Feriekasse og Feriekort
+
+
+Gå til Medarbejder → Variabel lønoplysninger
+Klik på Ny
+Angiv datoen (f.eks. 01-01-2023)
+Angiv lønart 4765, 4766 eller 4767
+Udfyld med antal feriedage/-timer på forskud samt på lønart 4767 feriepenge
+Klik på Gem, hvis der ikke er flere medarbejdere eller tryk på Tab og gentag punkt 3 til 5.
+
+💡 TIP: Du kan også bruge siden Fællesregistrering → Variable lønoplysninger, hvis det er en gruppe af medarbejdere, der skal tildeles ferie på forskud.
+
+### Fratrædelse af medarbejdere som skylder forskudsferie
+Har du en medarbejder der fratræder og skylder forskudsferie, sker der en modregning i lønnen på ‘lønart 44956 Modregnet forskudsferie’. Vises på lønsedlen som lønart 4956.
+Du skal oprette nedenstående lønart i din kontoplan:
+
+Bogføringslønart 44956 - Modregnet forskudsferie ved for meget afholdt forskudsferie* Debet i resultatopgørelsen (konto vedr. forskudsferie)
+* Kredit i balancen (konto vedr. forskudsferie)
+* Kredit i resultatopgørelsen (konto som fri egen regning)
+
+
+
+
+## Visning af ferie på forskud
+Ferie på forskud vil fremgå af medarbejderens lønseddel i ”bodyen”.
+
+På rapporten ’Ny ferielov ferieregnskab’ vil tildelt ferie på forskud og skyldig ferie på forskud også fremgå, så du kan danne dig et overbliv over hvilke medarbejdere der skylder ferie på forskud. Forskudsferie vil fremgå af rapporten hele ferieåret, også hvis der ikke længere er noget skyldig forskudsferie.
+👩‍🏫 Eksempel: Visning af feriedage på forskud. Her ses et uddrag af rapporten.

@@ -1,0 +1,25 @@
+https://help.vismaenterprise.dk/vismaloen-standard/ferie/69-udbetaling-af-ferie
+
+# Udbetaling af ferie
+
+## Ferieår
+Feriesystemet arbejder med følgende år:
+* Ferieoptjeningsår: 01.09.XXXX til 31.08.XXXX (start 01.09.2020)
+* Ferieafholdelsesperiode: 01.09.XXXX til 31.12.XXXX (start 01.09.2020 - 31.12.2021)
+* Overført ferie (første gang ferie kan overføres efter ferieloven pr. 01.01.2022)
+
+
+## Udbetaling af feriepenge med Feriekort
+For at udbetale feriepenge til medarbejderen, hvor det er arbejdsgiver der administrerer og udbetaler feriepengene.Opret følgende variable lønart:Lønart 4790 - ‘Anmodet Feriekort udbetaling’ med det antal feriedage og feriepenge der står i Virk.dk.Beløbet bliver nu beskattet i lønkørslen og nettoferiepengene udbetales til medarbejderen.⚠️ OBS: Når du skal udbetale feriepenge til en fratrådt medarbejder, kan det være en god ide, at foretage en ‘Genrekvirering af eSkattekort’ i form af et bikort, så det er medarbejderens skattekort der anvendes.
+
+## Udbetaling af ferie ved feriehindring 
+Er feriehindringen sygdom eller orlov efter barselsloven, og består feriehindringen fortsat frem til udgangen af den følgende ferieafholdelsesperiode, kan feriepenge udbetales til medarbejderen. 
+Udbetaling sker på baggrund af de Restferiepenge og feriedage/-timer til rådighed, der vises på rapporten ‘Ny ferielov ferieregnskab’.  Beregning er, Restferiepenge divideres med restferiedage, og resultatet er udbetaling pr. feriedag.
+Følgende variable lønarter oprettes på medarbejderen, som skal oprettes i debet i kontoplanen på hhv. 40112 og 40113:
+
+Lønart 40110 - Udbetaling af feriedage, kontant
+Lønart 40111 - Udbetaling af ferietimer, kontant
+
+
+## Udbetaling af restferie
+Udbetaling af restferie i dage, ny ferielovVariabel lønart 4760 - Udbetaling feriedage, primoVariabel lønart 4762 - Udbetaling feriedage, ultimoSatsen til udbetaling af 5. Ferieuge er medarbejderens timeløn på udbetalingstidspunktet:&nbsp;* Månedsløn (lønart 1000) + evt. faste tillæg jf. opsætning i resultattabel MDLØN - [se vejledning](https://help.vismaenterprise.dk/standard/vismaloen/tillaeg/beregning-af-gennemsnitlig-timelon).Antal arbejdstimer pr. feriedag omregnes ud fra følgende prioritet1. $12. $13. $1Bogføres i debet på lønart 44760 i kontoplan.Lønart 4760 og 4762 kan ikke anvendes med et negativt antal feriedage. Hvis der er udbetalt for mange feriedage skal det tilbageføres med korrektionslønarter.⚠️ OBS: Omregnes medarbejders feriedage på lønart 9980 ‘Omregning feriedage v. deltid’, og skal der udbetales 5. Ferieuge, opskrives feriedagene til korrekte enheder for en fuldtidsansat. Du opskriver feriedage på variabel lønart 40115, så de svarer til optjente feriedage på fuld tid.&nbsp;Lønart 4760, 4761, 4762, 4763 udbetaler timeløn med antal timer pr. dag i forhold til normtid.&nbsp;Udbetaling af restferie i timer, ny ferielovVariabel lønart 4761 - Udbetaling ferietimer, primo&nbsp;Variabel lønart 4763 - Udbetaling ferietimer, ultimoSatsen til udbetaling af 5. Ferieuge er timeløn på udbetalingstidspunktet:&nbsp;* Månedsløn (lønart 1000) + evt. faste tillæg jf. opsætning i resultattabel MDLØN - [se vejledning](https://help.vismaenterprise.dk/standard/vismaloen/tillaeg/beregning-af-gennemsnitlig-timelon).Bogføres i debet på lønart 44761 i kontoplan.Lønart 4761 og 4763 kan ikke anvendes med et negativt antal ferietimer. Hvis der er udbetalt for mange ferietimer skal det tilbageføres med korrektionslønarter.👩‍🏫 Eksempel: Anvendelse af lønart 4760 og 4761Udbetaling af feriedage/-timer primo lønkørslen (behandles før afholdelse af ferie)Scenarie: Medarbejder har en restsaldo på 3 feriedage, som skal udbetales. Der registreres en uges ferie i januar, som skal anvende feriedage optjent i 2021.&nbsp;👩‍🏫 Eksempel: Anvendelse af lønart 4762 og 4763Udbetaling af feriedage/-timer ultimo lønkørslen (behandles efter afholdelse af ferie).Scenarie: Medarbejder og arbejdsgiver aftaler i september måned at restferie skal udbetales, selvom ferieafholdelsesåret ikke er afsluttet.&nbsp;Udbetaling af restferie fra gammel ferielovVariabel lønart 4070 - Feriedage (Bruttoferiepenge/rest feriedage fra ferieregnskab)Resultattabel ‘OVERFE’ skal oprettes med 1 for respektive løngrupperVariabel lønart 4065 - Ferietimer (Bruttoferiepenge/rest feriedage fra ferieregnskab)Variabel lønart 4076 - Feriedage fra Feriekort (Nettoferiepenge jf. Gammel ferielov)Variabel lønart 880 - Udbetaling af feriedage (omregner dage til timer ud fra normtid)Variabel lønart 881 - Udbetaling af ferietimer (time sats)

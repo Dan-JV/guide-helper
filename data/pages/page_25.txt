@@ -1,0 +1,157 @@
+https://help.vismaenterprise.dk/vismaloen-standard/tillaeg/92-lonramme-og-lontrin-automatisk-satsaendring
+
+# Lønramme og løntrin: Automatisk satsændring
+
+## Lønramme/Løntrin – automatisk satsændring
+Funktionaliteten Lønramme/Løntrin er oprettet som et tilvalgsmodul til Visma Løn. Ønsker du at benytte modulet, skal du bestille det via [community.visma.com](https://community.visma.com/).
+Funktionaliteten er bl.a. udviklet for at imødekomme forespørgsler fra kunder, der udbetaler løn efter fastlagte lønrammer og løntrin med tilbagevendende og forudsigelige rykninger og reguleringer. 
+Løsningen omfatter også mulighed for regulering af timelønninger, tillæg og fradrag ud fra f.eks. anciennitet eller alderskriterier. Visma Løn kan anvendes til at finde den rigtige lønsats, samt automatisk opdatere den enkelte medarbejders Ansættelsesforhold i lønkørslen.
+Løsningen er tilpasset eksisterende funktionalitet, så det er muligt at rette satser ud fra løngruppe og/eller stillingskategori og evt. anvende de eksisterende resultattabeller, også i en kombination med de ekstra felter Lønramme og Løntrin. Der kan også anvendes forskellige kombinationer af felterne for satssøgning. 
+Decentral registrering er tilpasset den funktionaliteten, så eksisterende resultattabeller kan trækkes i en rapport.
+
+## Lønramme og Løntrin på Ansættelsesforhold
+Medarbejderens ansættelsesforhold kan opdateres med en aktuel Lønramme og et aktuelt Løntrin. Til brug for dette anvendes følgende felter
+* Lønramme
+* Løntrin
+
+Felterne findes under menuen Medarbejder → Ansættelsesforhold.
+Felterne kan opdateres med værdier, der er oprettet i tabellerne beskrevet i afsnit “Opsætning af Lønramme” og “Opsætning af Løntrin”.
+Ændringer på felterne tilbage i tid vil automatisk sætte et efterreguleringsflag på medarbejderen.
+
+### Opsætning af Lønramme
+Til brug for opdatering på medarbejderens ansættelsesforhold oprettes en tabel med de lønrammer, der er behov for.
+
+Gå til Opsætning → Lønramme
+Klik Ny
+Angiv en betegnelse og en beskrivelse
+Klik OK
+
+Den betegnelse, der skal angives i Lønramme, er valgfri og kan indeholde op til 6 karakterer. Beskrivelsen for den enkelte lønramme er valgfri og kan være på i alt 30 karakterer.
+⚠️ OBS: Sorteringen på felterne er alfanumerisk, dvs. at 10 kommer før 2. Det kan derfor være en god ide at foranstille nuller, hvis betegnelsen på den enkelte lønramme er af forskellig længde, så 02 kommer før 10.
+
+### Opsætning af Løntrin
+Til brug for opdatering på medarbejderens ansættelsesforhold oprettes en tabel med de løntrin der er behov for.
+
+Gå til Opsætning → Løntrin
+Klik Ny
+Angiv en betegnelse og en beskrivelse
+Klik OK
+
+Den betegnelse, der skal angives i Løntrin, er valgfri og kan indeholde op til 6 karakterer. Beskrivelsen på Løntrin er valgfri og kan være på i alt 30 karakterer.
+⚠️ OBS: Sorteringen på felterne er alfanumerisk, dvs. at 10 kommer før 2. Det kan derfor være en god ide at foranstille nuller, hvis betegnelsen på det enkelte løntrin er af forskellig længde, så 02 kommer før 10.
+
+### Lønsedlen
+Når felterne Lønramme/Trin er udfyldt på et ansættelsesforhold, vil felterne blive udskrevet på lønsedlen.
+
+## Rykningstabel på ansættelsesforhold
+Når en Rykningstabel (se afsnit 4) er oprettet, skal den indsættes på de ansættelsesforhold, hvor den er gældende. I felterne på ansættelsesforholdet findes tre linjer med tilhørende felter for hhv. Rykningstabel1, Rykningtabel2 og Rykningstabel3. 
+Første felt ud for Rykningstabel1 udfyldes med Rykningskoden. Rykningskoden kan vælges med opslagsknappen. Herefter udfyldes Næste ryk.dato med dato for, hvornår der første gang skal ske en rykning for den aktuelle medarbejder. 
+Når Rykningstabel1 er udfyldt med en Rykningskode, ændres Auto.ryk automatisk til Ja. Det er muligt at stoppe den automatiske rykning, ved at markere feltet Auto.ryk med Nej f.eks. hvis en medarbejder afholder orlov, og ikke optjener anciennitet.
+Der er mulighed for at tilknytte op til 3 rykningstabeller på hver medarbejder.
+⚠️ OBS: Ved decentral indlæsning af rykningstabel på ansættelsesforholdet skal altid angives Ja. Er intet angivet oprettes automatisk Nej i feltet Auto.ryk.
+
+## Rykningstabeller
+En rykningstabel anvendes til automatisk at ændre en medarbejders opsætning på ansættelsesforholdet. Det er muligt at ændre følgende på ansættelsesforholdet:
+* Lønramme
+* Løntrin
+* Stillingskategori
+* Løngruppe
+* Afdeling
+* Udbetalingssted
+
+På rykningstabellen benævnes ovennævnte som Ryktyper.
+
+### Opsætning af en rykningstabel
+På rykningstabellen skal der angives, hvilke ryktyper der skal benyttes. 
+* Ryktype LØNRAM svarer til Lønramme
+* Ryktype LØNTRN svarer til Løntrin
+* Ryktype ST.KAT svarer til Stillingskategori
+* Ryktype LØNGRP svarer til Løngruppe
+* Ryktype AFDELI svarer til Afdeling
+* Ryktype UDBSTD svarer til Udbetalingssted
+
+Når rykningstabellen er oprettet med de ønskede ryktyper, skal rykning udfyldes. 
+Rykning er delt i FRA og TIL samt antal måneder. Her vil de ryktyper, som er valgt på Rykningstabellen have åbne Fra- og Til-felter. 
+Når der vælges Rykning i højremenuen, vil der være to åbne felter der kan udfyldes med Fra- værdier og to åbne felter, der kan udfyldes med Til-værdien. Der kan anvendes opslagsknap til alle fire felter. 
+Feltet Antal mdr., påvirker datoen for den enkelte medarbejders næste rykning. Det angivne antal måneder afgør, hvor ofte der skal rykkes på medarbejderens ansættelsesforhold. Det oftest anvendte vil være 12 mdr. 
+Alle ryktyper oprettet på Rykningstabellen skal udfyldes i FRA felterne. Der skal minimum oprettes én Ryktype pr. Rykningstabel.
+
+Gå til Opsætning → Rykningstabel
+Klik Ny
+Angiv en Rykningskode samt en beskrivelse
+Angiv hvilke Ryktyper der skal benyttes (ikke udfyldte skal stå til sidst)
+Klik OK
+Vælg Rykning i højremenuen 
+Angiv hvilke værdier der skal rykkes fra og rykkes til
+Angiv antal måneder til Næste Ryk.dato.
+Klik OK
+
+Rykningskoden kan udgøre op til 6 karakterer og beskrivelsen kan være på 30 karakterer.
+⚠️ OBS: Der kan oprettes lige så mange Rykningstabeller, som der er behov for. Rykningstabellerne kan ikke periodiseres, og det anbefales at lave nye frem for at rette i tidligere anvendte rykningstabeller. 
+Der efterreguleres ikke ved opdatering i rykningstabellerne.
+
+## Opsætning af lønsatser
+Ved tilmelding til Lønramme/-trin – automatisk satsændring bliver det muligt at oprette resultattabeller til månedslønnede. 
+En månedsløn kan findes ud fra tre af følgende værdier på ansættelsesforholdet:
+* Lønramme
+* Løntrin
+* Stillingskategori
+* Løngruppe
+* Afdeling
+* Udbetalingssted
+
+For at der kan findes en månedsløn ud fra værdierne på ansættelsesforholdet, er der oprettet to resultattabeller
+* RTLØN1
+* RTLØN2
+
+Månedslønnen findes i følgende rækkefølge og første sted, hvor der findes et indhold for den aktuelle medarbejder, anvendes.: 
+
+Personlige satser-lønart 9900
+Resultattabel RTLØN1 
+Resultattabel RTLØN2
+
+
+### Løn via Resultattabel
+En resultattabel er standard opsat til at søge pr. løngruppe. Når kundeforholdet er tilmeldt Lønramme/trin – satsændring, bliver det muligt at ændre løngruppe til en kombination af følgende ryktyper. 
+* Ryktype LØNRAM svarer til Lønramme
+* Ryktype LØNTRN svarer til Løntrin
+* Ryktype ST.KAT svarer til Stillingskategori
+* Ryktype LØNGRP svarer til Løngruppe
+* Ryktype AFDELI svarer til Afdeling
+* Ryktype UDBSTD svarer til Udbetalingssted
+
+Der kan oprettes op til 3 forskellige ryktyper på en resultattabel. 
+Hvis en resultattabel allerede er anvendt med forskellige Løngrupper, og der ønskes tilføjet flere Ryktyper, eller ændret i opsætningen, kan følgende gøres:
+
+Periodiser resultattabellen, klik på Ny periode
+Slet underliggende resultattrin på den nye periodisering
+Tilret Ryktyper på resultattabellen og klik Gem
+Vælg Resultattrin i højremenu
+Opret resultattrin med aktuelle ryktyper og sats pr. aflønningsform.
+
+⚠️ OBS: Gamle resultattabeller kan udlæses:
+
+Gå til Opsætning → Opsætningsrapporter 
+Vælg Resultattabeller i højremenuen
+Angiv Gyldig pr. og tabel. 
+Rapporten udlæses i en csv-fil, der hurtigt kan tilpasses den nye opsætning og indlæses decentralt. Ved Decentral indlæsning af Resultattabeller med Lønramme og Løntrin, skal Lønramme og Løntrin være oprettet inden indlæsning af Resultattabel.
+
+
+## Lønkørsel
+Er der på medarbejderen angivet en rykningstabel hvor Næste ryk.dato indgår i aktuel lønperiode, vil lønkørslen periodisere ansættelsesforholdet på datoen for Næste Ryk og opdatere ansættelsesforholdets felter med Ryktabellens Til-værdier. 
+Næste Ryk.dato vil i den nye periodisering være tillagt det antal måneder der er angivet i Ryktabellen. 
+Er der flere Rykningstabeller på ansættelsesforholdet med Næste ryk.dato i samme lønperiode, vil ansættelsesforholdet blive periodiseret flere gange i aktuel rækkefølge. Ligger Næste Ryk.dato med samme dato på samme ansættelsesforhold, vil periodiseringerne blive foretaget i rækkefølge med Rykningstabel1 først.
+Er et ansættelsesforhold periodiseret skævt i måneden, vil satsen for månedsløn altid findes i den sidste periodisering i lønperioden.
+På anmærkningslisten vil det fremgå, når en medarbejder er rykket i lønkørslen. Hvis fra værdien ikke findes, sker der ikke nogen periodisering af ansættelsesforholdet, og Næste ryk.dato vil ikke blive ændret. På anmærkningslisten fra lønkørslen, vil der komme en besked om at der ikke er foretaget en rykning i lønkørslen. Det kan ske, hvis der ikke er oprettet alle trin i en Ryktabel.
+Har en medarbejder en fremtidig periodisering af ansættelsesforholdet, og der sker en automatisk opdatering i lønkørslen, vil den fremtidige periodisering ikke blive rettet. Det vil fremgå af anmærkningslisten, hvis det er tilfældet.
+👩‍🏫 Eksempel: Eksempel på en opsætning
+I en overenskomst skal der rykkes et løntrin den 1. januar hvert år indtil sluttrin rammes for de berørte medarbejdere. Lønrammer ændres kun ved udnævnelse.
+Rykningstabellens trin kunne se sådan ud:
+Ryk-nings-kodeBetegn-elseRyktype1Ryktype2Fraryk1&nbsp;Fraryk2&nbsp;Tilryk1&nbsp;Tilryk2&nbsp;Antal månederOK 02Tabel 2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;LØNRAMLØNTRN01216&nbsp;&nbsp;01217&nbsp;&nbsp;12OK 02Tabel 2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;LØNRAMLØNTRN01217&nbsp;&nbsp;01218&nbsp;&nbsp;12OK 02Tabel 2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;LØNRAMLØNTRN01218&nbsp;&nbsp;01219&nbsp;&nbsp;999OK 02Tabel 2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;LØNRAMLØNTRN02216&nbsp;&nbsp;02217&nbsp;&nbsp;12OK 02Tabel 2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;LØNRAMLØNTRN02217&nbsp;&nbsp;01218&nbsp;&nbsp;12OK 02Tabel 2&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;LØNRAMLØNTRN02218&nbsp;&nbsp;01219&nbsp;&nbsp;999
+
+Når en medarbejder tildeles Rykningskode OK 02, angives aftalt lønramme og løntrin, samt hvornår næste rykning skal ske – f.eks. 01-01-2020, og der skal markeres for Ja til automatisk rykning.
+I januar måneds lønkørsel vil en medarbejder der har lønramme 01 trin 217 få ansættelsesforholdet periodiseret pr. 01-01-2020. Løntrin vil ændres til 218 og Næste Ryk.dato ændres til 01-01-2021. I resultattabel RTLØN1 vil lønnen blive slået op med lønramme 01 løntrin 218.
+I januar måneds lønkørsel vil en medarbejder der har lønramme 01 trin 218 få ansættelsesforholdet periodiseret pr. 01-01-2020. Løntrin vil ændres til 219 og næste Ryk.dato ændres til 31-12-9999. I resultattabel RTLØN1 vil lønnen blive slået op med lønramme 01 løntrin 219.
+I januar måneds lønkørsel vil en medarbejder der har lønramme 27 trin 218 ikke blive periodiseret, og ansættelsesforholdet ændres ikke. Der kommer i stedet en fejlmeddelelse på Anmærkningslisten, om at medarbejder ikke er rykket. I resultattabel RTLØN1 vil lønnen blive slået op med lønramme 27 løntrin 218.
+En medarbejder med lønramme 01 trin 218 skal flyttes en lønramme op i december måned.  Ansættelsesforholdet periodiseres 01-12-2020 og lønrammen rettes til 02. I januar måneds lønkørsel vil medarbejderens ansættelsesforhold automatisk blive periodiseret pr. 01-01-2021. Løntrin vil ændres til 219 og næste Ryk.dato ændres til 31-12-9999. I resultattabel RTLØN1 vil lønnen blive slået op med lønramme 02 løntrin 219.
+Hvis lønnen tilbageføres, vil alle ansættelsesforhold opdateret i lønkørslen, blive sat tilbage til deres oprindelige udseende.

@@ -1,0 +1,91 @@
+https://help.vismaenterprise.dk/vismaloen-standard/arbejdsgiver/51-arbejdsgiver-stamoplysninger
+
+# Arbejdsgiver stamoplysninger
+
+## Ny arbejdsgiver
+Du kan oprette en ny arbejdsgiver, såfremt at du skal indberette løn på et andet cvr.nr. end det der findes i Visma Løn i forvejen. Eller hvis du har en anden bank konto, hvor betalinger af løn, skat, feriepenge mm. skal betales fra.
+
+Gå til Arbejdsgiver → Arbejdsgiver stamoplysninger
+Klik på Ny
+Udfyld felterne med oplysninger om den nye arbejdsgiver. Se yderligere beskrivelse af nogle af felterne nedenunder.
+Klik på Gem
+
+Husk at du skal oprette en OS aftale hos Mastercard (tidl. Nets), når du har oprettet en ny arbejdsgiver.  Husk at tegningsberettigede i virksomheden og jeres bank skal underskrive med digital signatur, hvis I ikke har det, så kan I henvende jer til Overførselsservice på tlf: 80 81 06 65.
+Se vejledning til oprettelse af overførselsaftale på dette link: [https://help.vismaenterprise.dk/standard/vismaloen/arbejdsgiver/ny-arbejdsgiver-aendring-af-cvr-nr-eller-bank-oplysninger-1](https://help.vismaenterprise.dk/standard/vismaloen/arbejdsgiver/ny-arbejdsgiver-aendring-af-cvr-nr-eller-bank-oplysninger-1)
+## Felter på arbejdsgiver stamoplysninger
+### Arbejdsgiver
+Feltet skal altid udfyldes med et arbejdsgivernummer. Feltet udfyldes med maksimalt 6 cifre.
+### CVR-nr.
+Feltet skal ved oprettelse udfyldes med det CVR-nummer, som arbejdsgiveren er blevet tildelt af Skat. CVR-nummeret er på 8 cifre og bliver modulus kontrolleret
+Ved ændring af eksisterende arbejdsgiveres CVR-nummer skal Visma Enterprise kontaktes. Dette er af hensyn til afmelding af abonnement hos SKAT, samt ændring af OS aftale.
+⚠️ OBS:  Har du som arbejdsgiver ikke et CVR.nr. men et SEnr, så angives SE.nr. her.
+Her kan du IKKE anvende NemKonto.
+### Gyldig
+Består af 2 datofelter, hhv. start- og slutdato. Dette kaldes også gyldighedsintervallet. Systemet indsætter automatisk slutdato til 31-12-9999.
+Oprettes der en slutdato, vil der efter denne dato ikke blive kørt flere lønkørsler for arbejdsgiveren. Skulle der være medarbejdere, der har lønoplysninger med dato efter slutdatoen, vil disse ikke blive behandlet.
+### Periode
+Feltet skal i en opdateringssituation udfyldes med den nye periodes startdato.
+### Navn
+Feltet skal altid udfyldes med navnet på arbejdsgiveren og være på max. 30 tegn.
+### Adresse (linie 1)
+Feltet skal altid udfyldes med den første del af arbejdsgiverens adresse. Er der tale om en c/o adresse, angives første del her, og resten i adresselinie 2, dog max. 30 tegn.
+### Adresse (linie 2)
+Feltet kan udfyldes med den anden del af arbejdsgiverens adresse og være på max. 30 tegn.
+### Postdistrikt
+Feltet skal altid udfyldes med postnummeret.
+### E-mail
+Feltet udfyldes med arbejdsgiverens E-mailadresse.
+### Lønseddel via
+Her kan man se hvordan lønsedler pr. medarbejder leveres. Kan kun ændres efter aftale.
+* Mit.dk
+
+### Løn udbetales via
+Her vælges hvordan lønnen skal udbetales til medarbejderen. Der kan vælges i mellem følgende:
+* Anden konto (registrerings- og kontonummer)
+* NemKonto
+
+⚠️ OBS: Hvis du vælger NemKonto, skal du tjekke med Mastercard (tidl. Nets) tlf. 80 81 06 65, at du har en gyldig OSN aftale.
+### Lønansvarlig
+Her tilknyttes nummeret for den lønansvarlige hos arbejdsgiveren. Den lønansvarlige oprettes under menupunktet Arbejdsgiver/Lønansvarlig.
+### DA-foreningskode
+Her indrapporteres den foreningskode som er tildelt af Dansk Arbejdsgiverforening til brug for indberetning af statistik.
+### Pnr
+Her indrapporteres Produktionsnummeret som er tildelt af Skat til brug for indberetning af oplysninger til Skat. Produktionsnummeret kan hentes på hjemmesiden [www.cvr.dk](http://www.cvr.dk)
+### Kontoplan
+Her vises koden for, hvilken kontoplan der anvendes i forbindelse med bogføring. Kontoplanen defineres under menupunktet Opsætning/Kontoplan/Kontoplan
+### Sorteringskode
+Her vises koden for, hvilken sortering der anvendes i forbindelse med bogføring. Sorteringskoden defineres under menupunktet Opsætning/Kontoplan/Sorteringskode
+### Reg./konto
+Udfyldes med registreringsnummer på arbejdsgiverens pengeinstitut. Feltet kan max. udfyldes med 4 cifre. Det andet felt udfyldes med kontonummeret på arbejdsgiverens bankkonto. Det vil være fra denne konto, overførslerne trækkes. Kan max. udfyldes med 10 cifre. 
+Vær opmærksom på, at ved ændring af Registreringsnummer og/eller kontonummer skal pengeinstituttet kontaktes for oprettelse af ny OS aftale hos Nets.
+### Max.træk med.
+Feltet kan udfyldes med det maksimale nettobeløb, der må udbetales pr. lønkørsel, pr. lønmodtager. Såfremt nettotrækbeløbet til en person overstiger dette beløb, vil det stå som en bemærkning på Anmærkningslisten.
+Fx. Meddelelse nr. 114: Nettoløn 11.222,33 kr. på medarbejder, overskrider maxtræk på 10.000,00 kr.
+Transaktionen vil blive gennemført. Der kan max. tastes 9 cifre inkl. 2 decimaler; dvs. 9.999.999,99.
+### Tekst lønseddel
+Feltet kan udfyldes med en tekst, der så udskrives på lønsedlen ved den førstkommende lønkørsel. Efterfølgende slettes teksten. Der kan tastes max. 60 tegn.
+### Feriekort indberetning
+Dette felt styrer indberetning til FerieKonto, Feriekort eller Feriekasse. Der kan vælges i mellem følgende:
+
+*   Arbejdsgivers CVRnr. – anvendes ved FerieKonto eller Feriekort
+*   Ingen indberetning – feriepengene bliver IKKE indberettet til eIndkomst
+*   Feriekasse/koncern – anvendes ved Feriekasse f.eks. 3F Feriekasse eller en af de 18 feriekasser der findes i Danmark. Se her hvilke feriekasser der findes: [https://skat.dk/skat.aspx?oid=2172361](https://skat.dk/skat.aspx?oid=2172361)
+### Feriekasse/koncern
+Har du i feltet Feriekort indberetning valgt Feriekasse/koncern, skal du i dette felt angive cvr.nr. på feriekassen.
+### Max.træk arb.
+Feltet kan udfyldes med det maksimale bruttotræk pr. lønkørsel for arbejdsgiveren. Såfremt bruttotrækbeløbet fra arbejdsgiveren overstiger dette beløb, kommer der en bemærkning på Anmærkningslisten.
+👩‍🏫 Eksempel: Meddelelse nr. 127: Bruttoløn 666.777,88 på samtlige medarbejdere overskrider maxtræk 100.000,00.
+Transaktionen gennemføres dog, såfremt beløbet ikke overstiger det maksimale træk, som er registreret i Overførsels-service ved blanket OS2. Der kan max. tastes 9 cifre inkl. 2 decimaler; dvs. 9.999.999,99.
+## Tilmelding
+Funktionen anvendes til at angive, hvilke serviceydelser arbejdsgiveren ønsker at tilmelde sig.
+1Overførsel lønOverførsel af lønninger til Nets2Øvrige overførslerOverførsel af skat, feriepenge, ATP, pensioner mm.3FraværsadministrationSå der kan registreres fravær på arbejdsgiver4FerieregnskabHåndtering af ferie i Visma Løn7Decentral registreringIndlæsning af filer8Ansættelsesbetegnelse på lønseddelVisning af Ansættelsesbetegnelsen over medarbejderens navn på lønsedlen10Indberetning til DSIndberetning af lønstatistik til Danmarks Statistik13Ambi og A-skatIndberetning af AM-bidrag og A-skat den 10. i efterfølgende måned14Ambi &gt; 250.000 og/el A-Skat &gt; 1.000.000Indberetning af AM-bidrag og A-skat den sidste hverdag i måned15DA FERIEKORTAnvendes ikke16DA STATISTIKIndberetning af lønstatistik til Dansk Arbejdsgiverforening17DA barselsfondIndberetning til Dansk Arbejdsgiverforenings barselsfond18ILtyper med i statistikAnvendes IKKE19Afdeling på lønseddelVisning af Afdeling over medarbejderens navn på lønsedlen20Medarbejdernr på lønseddelVisning af medarbejdernummer over medarbejderens navn på lønsedlen21Udbetalingssted på lønseddelVisning af Udbetalingssted over medarbejderens navn på lønsedlen22HorestaAnvendes IKKE23Årstotal pr. medarbejderAnvendes IKKE24DA/LO udviklingsfondenIndberetning til Dansk Arbejdsgiverforenings udviklingsfond25Dataudtræk til 3.partAnvendes IKKE26FA STATISTIKIndberetning af lønstatistik til Finans Forbundet27Indberetning til ACFAnvendes IKKE55Auto indberetning fraværsstatisk DSIndberetning af fraværsstatistik til Danmarks Statistik56Auto indberetning fraværsstatisk DAIndberetning af fraværsstatistik til Dansk Arbejdsgiverforening57Auto indberetning fraværsstatisk FAIndberetning af fraværsstatistik til Finans Forbundet&nbsp;
+
+## Rapportbestilling
+Her vises de rapporter, der automatisk tilknyttes ’udskrifter fra lønkørsel’ samt de rapporter arbejdsgiveren har mulighed for at tilvælge. Der vil automatisk i lønkørslen blive oprettet en rapportbestilling på obligatoriske rapporter i hele arbejdsgiverens gyldighedsperiode.
+De frivillige rapporter skal aktivt bestilles af arbejdsgiveren ved at angive start- og slutdato på rapportbestillingen. Rapporterne udskrives i forbindelse med lønkørslen for den bestilte periode. Der kan maks vælges 3 af de frivillige rapporter.
+## Skift af bank oplysninger på arbejdsgiver
+Du kan ændre registrerings- og kontonummer på arbejdsgiver ved at lave en ny periode på Arbejdsgiver stamoplysninger. Du skal huske at oprette en ny OS aftale hos Mastercard (tidl. Nets), for at pengene kan blive betalt fra det nye registreirngs- og kontonummer. Det er den tegningsberettigede i virksomheden og jeres bank der skal underskrive med digital signatur.Se vejledning til oprettelse af overførselsaftale på dette link:&nbsp;[https://help.vismaenterprise.dk/standard/vismaloen/arbejdsgiver/ny-arbejdsgiver-aendring-af-cvr-nr-eller-bank-oplysninger-1](https://help.vismaenterprise.dk/standard/vismaloen/arbejdsgiver/ny-arbejdsgiver-aendring-af-cvr-nr-eller-bank-oplysninger-1)Hent af leverancekvittering efter lønkørselMastercard arbejder i øjeblikket på at udskifte TSI-postkassen, hvor du tjekker dine leverancekvitteringer. Udskiftningen af postkassen sker løbende hos deres kunder, og du vil derfor opleve, at modtage information fra Mastercard herom.Mastercards vejledning til at hente leverancekvittering, som er gælde fra marts 2024, findes&nbsp;her
+## Skift af CVR nr. på arbejdsgiver
+Skal du ændre jeres CVR.nr. skal du ringe til hotline på 88 97 97 00, for at de kan hjælpe dig med at ændre det på en eksisterende arbejdsgiver.
+Når du ændrer cvr.nr. skal du samtidig oprette en ny OS aftale hos Mastercard (tidl. Nets). Det er den tegningsberettigede i virksomheden og jeres bank der skal underskrive med digital signatur.
+⚠️ OBS: Har du som arbejdsgiver kun et SEnr. kan du IKKE anvende NemKonto.

@@ -1,0 +1,220 @@
+https://help.vismaenterprise.dk/vismaloen-standard/ferie/75-opsaetning-af-ferietimer-og-feriepenge
+
+# Opsætning af ferietimer/-penge
+
+## Ferieår
+Feriesystemet kan arbejde med følgende år:
+* Ferieoptjeningsår: 01.09.XXXX til 31.08.XXXX (start 01.09.2020)
+* Ferieafholdelsesperiode: 01.09.XXXX til 31.12.XXXX (start 01.09.2020 - 31.12.2021)
+* Overført ferie (første gang ferie kan overføres efter ferieloven pr. 01.01.2022)
+
+
+## Optjening af ferietimer
+Standard optjenes 15,41 ferietimer pr. ansættelsesmåned.
+For ferie i timer skal resultattabel ’FEENH’, oprettes med værdien 1 for de respektive stillingskategorier.
+Med denne opsætning på stillingskategorien og resultattabellen vil medarbejderne ved hver lønkørsel optjene 15,41 timer pr. ansættelsesmåned. 
+Antallet af ferietimer reduceres ved ansættelse eller fratrædelse midt i lønperioden.
+Ved deltid beregnes der en forholdsmæssig tildeling af ferietimer ud fra normtiden.
+
+### Afrunding af ferietimer
+Månedslønnede bliver afrundet til 185 ferietimer i relevant lønkørsel for lønperiode august, såfremt der er optjent 184,92 ferietimer ultimo august.&nbsp;Har en medarbejder ikke været ansat hele året, og ønsker arbejdsgiver at opskrive antallet af ferietimer, anvendes korrektionslønart 40108.
+
+## Optjening af feriepenge
+Standard optjenes 12,5% i feriepengegodtgørelse af den ferieberettigede løn. 
+For beregning af feriepenge og feriedage skal en af følgende stillingskategorilønarter oprettes:
+
+Lønart 4600 – Ferie med løn (funktionær)
+Lønart 4601 – Løbende optjening af feriepenge (timelønnede)
+
+ 
+Du har mulighed for at ændre feriepengeprocenten for en løngruppe på:
+
+Resultattabel 4002 - Feriepengeprocent
+
+ 
+
+Gå til Opsætning → Resultattabel
+Vælg resultattabel 4002
+Klik Find
+Klik Ny periode
+Udfyld feltet ’Gyldig’ 
+Klik OK
+Vælg Resultattrin i højremenuen 
+Klik Ny
+Vælg løngruppen og skriv procentsats for aflønningsformen
+Klik Gem
+
+Ønsker du at ændre feriepengeprocenten for enkelte medarbejder, kan du gøre det på:
+
+Personlig sats-lønart 9907 – Personlig sats feriepenge
+
+
+Gå til Medarbejder → Ansættelsesforhold
+Vælg Personlige satser i højremenuen
+Klik Ny
+Udfyld periode og lønart
+Klik OK
+
+
+## Afregning af feriepenge
+Feriedage og Feriepenge kan afregnes og indberettes til eIndkomst, for grupper af medarbejdere til følgende ordninger:
+* FerieKonto
+* Feriekort 
+* Feriekasse – manuelt afregning
+
+
+### Opsætning af feriepengeafregning
+Resultattabel FEAFR Ferieafregning styrer afregning af feriepenge til FerieKonto, Feriekort og Feriekasse for både løbende optjening af feriepenge og afregning af feriepenge ved fratrædelse af funktionærer, som har ferie med løn.
+
+Resultattabel FEAFR opsættes for alle relevante stillingskategorier el. løngrupper.
+
+ResultattabelFeriepenge afregnes tilVærdiFEAFRFerieKonto0 eller blankFEAFRFeriekort2FEAFRFeriekasse*1
+
+**\* Feriepenge til Feriekasse**   
+Der indberettes feriepengeoplysninger til eIndkomst for følgende feriekasser:  
+Feriekasse (3F Feriekasse, Bager- og Konditormestre i Danmark, Danske Slagtermestre, eller MFD Feriekasse).  
+Feriepengene afregnes manuelt, uden om Visma Løn. 
+
+1.  Gå til **Opsætning → Resultattabel**
+2.  Vælg resultattabel ’FEAFR’
+3.  Klik **Find**
+4.  Klik **Ny periode**
+5.  Udfyld feltet ‘Gyldig’
+6.  Klik **OK**
+7.  Vælg **Resultattrin** i højremenuen
+8.  Klik **Ny**
+9.  Vælg stillingskategori 
+10.  Angiv værdi (0, 1 el. 2) i den gældende aflønningsform
+11.  Klik **Gem**
+
+### Skat af løbende optjente feriepenge
+I hver lønkørsel beregnes skat af feriepengene til FerieKonto og Feriekasse (3F Feriekasse, Bager- og Konditormestre i Danmark, Danske Slagtermestre eller MFD Feriekasse).
+Feriepenge til FerieKonto og Feriekasse bliver beskattet i lønkørslen og bliver til Nettoferiepenge.
+Feriepenge til Feriekort, det vil sige Arbejdsgiver administrerer bruttoferiepenge, feriepenge før skat, som først bliver til nettoferiepenge på udbetalingstidspunktet.
+
+## FerieKonto regler for indberetning og indbetaling
+Indberetning og indbetaling til FerieKonto sker automatisk ud fra Lønperioden, som afregnes efter nedenstående regler:
+
+Ferie med løn fratrædelse* Senest den sidste dag i fratrædelsesmåneden indberettes og indbetales
+
+
+FeriegodtgørelseHer ses på om Lønseddelsperioden er udfyldt og så er det slutdatoen på. perioden der afgør hvornår afregningen sker. Er Lønseddelsperioden ikke udfyldt på kørselsordren vil det være Lønperioden der afgør afregningstidspunktet:* Slutter lønperioden mellem den 1. og den 15. i en måned, indberettes og indbetales inden udgangen af samme måned.
+* Slutter lønperioden mellem den 16. og indtil udgangen af måneden, indberettes og indbetales senest den 15. i den efterfølgende måned.
+
+
+
+Det vil fremgå af rapporterne Ny ferielov Ferieafregningsliste og Ny Overførselsliste, hvad der er indberettet og indbetalt til FerieKonto.
+Feriepenge kan efterreguleres i en vis periode (indtil medarbejder har fået feriepengene). Er der er udbetalt for meget til FerieKonto, kan det rettes i en supplementskørsel senest den 15. i måneden efter. 
+Er feriepengene afregnet til FerieKonto, kan de potentielt være udbetalt, og kan ikke længere tilbageføres.
+
+## Indberetning til Feriepengeinfo
+På borger.dk findes en digital løsning for feriepenge, hvor medarbejderne ét sted kan se og søge om deres feriepenge. Alle arbejdsgivere har pligt til at indberette ferieoplysninger til eIndkomst.
+
+### Opsætning af indberetning til Feriepengeinfo
+På Arbejdsgiver → Arbejdsgiver stamoplysninger findes der to felter til indberetning af oplysninger til feriepengeinfo. 
+
+Feriekort indberetning - indeholder tre valgmuligheder: * ’1 Arbejdsgiver CVRnr’ skal udfyldes, hvis du har FerieKonto, Feriekasse eller Feriekort.      
+* ’2 Ingen indberetning’ skal udfyldes, hvis ingen indberetning til eIndkomst
+* ’3 Feriekasse/koncern’ skal udfyldes, hvis du indberetter til særlige feriekasser.
+
+
+Feriekasse/koncern - udfyldes med CVR-nummer, hvis du i feltet ’Feriekort indberetning’ har udfyldt med ’3 Feriekasse/koncern’.
+
+ 
+Indberetninger bliver dokumenteret på rapporterne: 
+* Afstemningsliste (eIndkomst)
+* Ny ferielov Ferieafregningsliste
+
+
+## Tidsregistreringssystem der leverer ferie fravær i timer
+Anvender du et tidsregistreringssystem der kun kan levere registreringen i timer, men du optjener og afholder ’ferie med løn’ i dage, skal resultattabel:
+* FEFRAV have værdien 1 for de pågældende løngrupper
+
+ 
+Lønsystemet vil omregne ferietimerne til feriedage, ved at tage værdien fra registreringen og dividere med 7,4 timer, svarende til 1 feriedag. Hvis resultattabel TRTIM indeholder en anden værdi, eller den personlige sats lønart 9918 har en anden værdi, så anvendes denne værdi. Resultattabel FEFRAV skal sættes op til håndtering af at registreringen er i timer, der skal omregnes til dage:
+
+Gå til Opsætning → Resultattabel
+Angiv ’FEFRAV’
+Klik Find
+Klik Ny periode
+Angiv datoen 01-0X-202X
+Klik Gem
+Vælg Resultattrin i højremenuen
+Klik Ny
+Angiv løngruppe f.eks. F1 og værdien 1 for ferie i timer
+Klik Gem
+
+
+## Ferieberettigede grundlag – kundespecifikt
+Standard er defineret hvilke lønarter som er ferieberettiget og hvilke lønarter, som ikke er ferieberettiget. Med konsulentassistance kan du få defineret hvilke lønarter du ønsker skal være ferieberettigede eller ej – faktureres efter tidsforbrug.
+Grundlaget specificeres under lønartstype 1109. Denne lønartstype er som udgangspunkt tom. Lønartstypen oprettes med de lønarter som f.eks. ikke skal tælles med i den ferieberettiget løn med et minus og med et plus for de lønarter som skal tælles med i grundlaget for ferieberettiget løn.
+
+### Bogføring af ferieberettiget grundlag – kundespecifikt
+Ferieberettiget løn beregnes standard på ’lønartstype 1103’, men kan tilpasses på ’lønartstype 1109’. For at bogføre grundlaget skal nedenstående lønart oprettes på din kontoplan i både debet og kredit. Lønarten påvirker ingen feriesaldi.
+
+Lønart 9841 - Kontering Ferieberettiget løn
+
+
+## Direktør
+Der findes tre måder at håndterer medarbejdere uden ferie, f.eks. direktører, honorar, bestyrelse mm.
+
+### Der optjenes IKKE feriepenge, feriedage og ferietillæg
+Opret fast lønart 905 - Stop feriepengeberegning.
+Der optjenes KUN ferietillæg
+Tjek at der på stillingskategorien er oprettet følgende stillingskategori lønarter:
+
+Lønart 4600 - Ferie med løn
+Lønart 4900 - Opsp. ferietillæg lovgrundlag
+
+ 
+Resultattabel 4002, skal oprettes med værdien 0, for ingen optjening af feriepenge
+
+Gå til Opsætning → Resultattabel
+Angiv ’4002’
+Klik Find
+Klik Ny periode
+Angiv en dato
+Klik Gem
+Vælg Resultattrin i højremenuen
+Klik Ny
+Angiv løngruppe (f.eks. KA og værdien 0 for Ingen optjening af feriepenge)
+Klik Gem
+
+Personlig sats lønart 9980, skal oprette med værdien 0, for at der IKKE optjenes feriedage.
+
+Gå til Medarbejder → Ansættelsesforhold
+Vælg Personlig sats i højremenuen
+Klik Ny
+Angiv startdato (f.eks. 1.X.20XX, lønart 9980 og værdien 0)
+Klik Gem
+
+
+### Der optjenes feriedage og ferietillæg, men IKKE feriepenge
+Direktøren kan ligge i samme stillingskategori som i dag, men på resultattabel 4002, oprettes løngruppen med værdien = 0 (kræver at direktøren ligger i egen løngruppe), så optjenes der ikke feriepenge:
+
+Gå til Opsætning → Resultattabel
+Angiv ’4002’
+Klik Find
+Klik Ny periode
+Angiv datoen 01-0X-20XX
+Klik Gem
+Vælg Resultattrin i højremenuen 
+Klik Ny
+Angiv løngruppe (f.eks. KA og værdien 0 for Ingen optjening af feriepenge)
+Klik Gem
+
+
+## Tilpas tekster på lønsedler
+Anvender du engelsk tekst eller ønsker du at ændre teksten på dine lønsedler, skal du have tilpasset nedenstående lønarter med den engelske tekst/nye tekst, for at ferie bliver vist som du ønsker:
+LønartUdskriftslønartNavn499344200Ferieberettiget løn4476544220Tildel forskudsferie, dage4476644220Tildel forskudsferie, timer4495344230Forskudsferie afh. dage4495444230Forskudsferie afh. timer4495544235Skyldige feriepenge på forskud4494744250Ferietimer til rådighed lønseddel4494944260Feriedage til rådighed lønseddel499144280Feriepenge lønseddel499244300Ferietillæg lønseddel Lov499744300Ferietillæg lønseddel46584430Ferietillæg udbetalt –lovgrundlag46594430Ferietillæg udbetalt –OK-grundlag499444320Ferietillæg ekstra499844320Ferietillæg ekstra.Lov lønseddel4490244902Ferietillæg L.grl Ovk Lønseddel4490444904Ferietillæg Ovk-g.lg Lønseddel4490544905Ekstra ferietillæg lov/OK Lønseddel4490644906Ekstra ferietillæg lov Lønseddel49628302Feriepenge I. år (timer/Dage)49678303AM-bidrag af feriepenge I. år49248304A-skat af feriepenge I. år49698305Overført til FerieKonto
+
+Sådan tilpasses teksten på lønsedlen:
+
+Gå til Opsætning → Lønartsopsætning
+Angiv en af ovenstående lønart
+Klik Find
+Klik Ny
+Angiv datoen 1.X.20XX og evt. tekstekode (f.eks. EN (teksten koden findes på stillingskategorien under Opsætning)) og angiv den danske/engelske tekst i Bruger tekst og Udskrift tekst
+Klik Gem
+
+Gentag ovenstående for de øvrige lønarter.

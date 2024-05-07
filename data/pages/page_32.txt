@@ -1,0 +1,34 @@
+https://help.vismaenterprise.dk/vismaloen-standard/lonkorsel/35-natlig-lonkorsel-fa-mere-tid-i-lobet-af-dagen
+
+# Natlig lønkørsel - få mere tid i løbet af dagen
+
+### Vidste du, at du nemt kan køre din løn om natten?
+
+Du kender måske til funktionen at køre løn om natten, men du har måske ikke prøvet at sætte en kørsel i gang, inden du får sagt 'tak for i dag' og er kørt hjem til en hyggelig aften med din familie. Hvis ikke, så er det på tide at prøve det.
+
+Du vil opleve, at du får meget mere tid til andre opgaver. Prøv selv, det er nemt!
+
+## Natlig lønkørsel påbegyndes ved at følge denne fremgangsmåde
+
+Gå til Lønadministration →Lønkørsel
+Vælg enten Natlig lønkørsel eller Natlig lønkørsel med annullering i højremenuen.
+Angiv &#39;kørselsordre&#39;
+Klik på OK
+
+Det er nu muligt at gennemgå lønsedler og rapporter, inden lønkørslen godkendes. Vælger du at afvikle lønkørslen uden rapporter, er det stadig muligt at se resultatet af udvalgte rapporter via menupunktet Rapporter og Rapporter på den aktuelle lønkørsel, hvis du får behov for det. 
+Når du bestiller Natlig lønkørsel vil lønkørslen køre igennem om natten og ligge klar til godkendelse, når du møder ind næste morgen.
+
+## Natlig lønkørsel med annullering
+Når du bestiller ’Natlig lønkørsel med annullering vil lønkørslen køre igennem om natten og annulleres med det samme. Rapporterne vil dog blive gemt, og dem kan du se under menupunktet Rapporter/Vis job. Anvender I Visma HR vil denne kørsel ikke spærre for registreringer i Visma HR, mens I afventer at lønkørslen annulleres eller godkendes.
+## Mens natlig lønkørsel afventer
+Du kan stadig:
+* Registrere ekstra løn og fravær, som medtages i lønkørslen, når den køres om natten.
+* Bestille fremtidige lønsedler
+
+Du kan ikke:
+* Køre efterregulering
+
+## Fortryd bestilling af natlig lønkørsel
+Har du bestilt en natlig lønkørsel med eller uden annullering, kan du fortryde bestillingen.
+Ved bestillingen oprettes et jobnummer med status Bestilt
+Fortryd bestilling,  gøres under menupunktet Rapporter / Vis job. Når du har fortrudt bestillingen, vil jobbet ændre status til Annulleret.

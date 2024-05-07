@@ -1,0 +1,37 @@
+https://help.vismaenterprise.dk/vismaloen-standard/test/23-testeren
+
+# Testartikel: Optimering af virksomhedsprocesser med moderne teknologi
+
+Visma Enterprise er en førende leverandør af softwareløsninger til virksomheder i Danmark og internationalt. Med deres omfattende produktportefølje og ekspertise inden for digital transformation har Visma Enterprise hjulpet utallige organisationer med at optimere deres forretningsprocesser og opnå større effektivitet og konkurrencedygtighed.
+
+Herunder er et billede.
+
+Billedet her er en tegning.Tegningen er lavet med én streg. Stregen danner et træ, et hus, og en plante.
+
+[https://youtu.be/9Eacgo2k8sU?t=10](https://youtu.be/9Eacgo2k8sU?t=10)
+
+[https://vimeo.com/833639481](https://vimeo.com/833639481)
+
+## Video: YouTube
+Video that are being embedded: `https://youtu.be/9Eacgo2k8sU?t=10`
+A test of embedding a YouTube-hosted video.
+## Video: Vimeo
+Video that are being embedded: `https://vimeo.com/833639481`
+Test of embedding a video hosted on Vimeo.
+## En bred vifte af løsninger
+Visma Enterprise tilbyder en bred vifte af softwareløsninger, der spænder over flere forretningsområder. Deres produktsortiment omfatter alt fra ERP-systemer (Enterprise Resource Planning) til HRM-systemer (Human Resource Management), økonomistyring, lønadministration og projektstyring. Disse løsninger er designet til at imødekomme forskellige behov og størrelser af virksomheder, uanset om det er små, mellemstore eller store organisationer.
+
+## Digital transformation og automatisering
+Et af hovedformålene med Visma Enterprise er at hjælpe virksomheder med at opnå en succesfuld digital transformation. Ved at implementere deres softwareløsninger kan virksomheder automatisere mange manuelle processer og frigøre tid og ressourcer til mere værdiskabende opgaver. Dette kan omfatte automatisering af regnskabsfunktioner, HR-processer, fakturering, lagerstyring og meget mere.
+
+## Cloud-baserede løsninger
+Visma Enterprise har også en stærk tilstedeværelse inden for cloud-baserede løsninger. Ved at flytte deres software til skyen kan virksomheder opnå større fleksibilitet, skalerbarhed og adgang til data på tværs af forskellige enheder og steder. Dette giver virksomheder mulighed for at arbejde mere effektivt og samarbejde problemfrit på tværs af afdelinger og geografiske placeringer.
+
+## Brugercentreret design og brugervenlighed
+Visma Enterprise lægger stor vægt på brugervenlighed og brugercentreret design i deres softwareløsninger. De stræber efter at gøre det nemt for brugerne at navigere og bruge deres systemer uden behov for omfattende træning. Dette gør det muligt for virksomheder at implementere løsningerne hurtigt og reducere tiden brugt på oplæring og tilpasning.
+
+## Sikkerhed og databeskyttelse
+Visma Enterprise prioriterer også sikkerhed og databeskyttelse i deres løsninger. De implementerer strenge sikkerhedsforanstaltninger for at beskytte virksomhedernes data mod uautoriseret adgang eller lækager. Dette er særligt vigtigt i en tid, hvor cybertrusler er stigende, og databeskyttelsesregler som GDPR (General Data Protection Regulation) er på plads.
+
+## Chars. & Co. – æ/Æ, ø/Ø + å/Å | frustration: ~🤬
+Puha...

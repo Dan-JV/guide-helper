@@ -1,0 +1,128 @@
+https://help.vismaenterprise.dk/vismaloen-standard/medarbejdertilgode/65-sogne-og-helligdage
+
+# Søgne- og Helligdage (SH) 
+
+## Søgne- og helligdage (SH)
+Timelønnede medarbejdere, som ikke oppebærer løn på Søn- og helligdage, er der i overenskomsterne etableret en opsparingsordning, så der løbende beregnes et beløb, som hensættes til udbetaling på Søgne- og helligdage.
+Opsparingen følger kalenderåret. Procenten kan variere for den enkelte virksomhed, og skal angives i 
+* Resultattabel 4500, Lønart 4500 SH %
+
+Procenten angives pr. aflønningsform og løngruppe.
+Beskatning af SH sker i forbindelse med udbetaling eller ved overførsel til næste kalenderår, da skattelovgivningen foreskriver, at beskatning af SH-opsparing sker i optjeningsåret.
+## Opsparing
+Ved hver lønkørsel beregner systemet en procent af medarbejderens ferieberettigede løn. Procenten beregnes med den værdi, der er angivet i resultattabel 4500.  
+For de grupper af medarbejdere, der er omfattet af SH, skal der på den pågældende stillingskategori tilknyttes en
+
+Stillingskategorilønart 4500Beregning af SH-opsparing af ferieberettigede løn
+Stillingskategorilønart 4505Beregning af SH-opsparing af ferieberettigede løn, undtagen lønart 3975, 3977-3980 og 13980 (sygeferiepenge), de indgår ikke i beregningsgrundlaget
+
+
+Gå til Opsætning → Stillingskategori
+Angiv ‘Stillingskategori’
+Klik på Find
+Vælg Lønoplysninger i højremenuen
+Klik på Ny
+Angiv 4500 og startdato
+Klik på OK
+
+## Udbetaling
+Udbetaling sker i forbindelse med lønperioder, hvor der er en eller flere søn-/helligdage. Den anvendte sats pr. dag hentes i en
+*  Resultattabel 4510, SH dagsats 4510/4520/4521
+
+Satsen angives pr. aflønningsform og løngruppe.
+SH-udbetaling er skattepligtig, men ikke feriepengeberettiget. 
+
+Gå til Opsætning og Resultattabel 
+Angiv resultattabel 45101. $1
+
+
+Klik på Ny periode
+Udfyld feltet ’Gyldig’ 
+Klik på OK
+Vælg Resultattrin I højremenuen
+Dobbeltklik på løngruppen og angiv procentsats for aflønningsformen 
+Klik på OK
+
+Udbetalingen nedskriver saldoen Restsaldo SH og opskriver Udbetalt SH. 
+Følgende variable lønarter kan anvendes til udbetaling af SH:
+
+Lønart 4510 - SH-godtgørelse uden saldotjek (saldoen kan blive negativ)
+Lønart 4520 - SH-godtgørelse med saldotjek (saldo kan minimum være 0)
+Lønart 4522 – ½ SH-dag med godtgørelsen og saldotjek. Satsen oprettes på resultattabel 4522.
+Lønart 4540 - SH-restsaldo udbetaling (Hvis saldoen er negativ trækkes beløbet)
+Lønart 4541 - SH-restsaldo udbetaling med saldotjek (trækker ikke i løn)
+Lønart 4545 - SH-beløb udbetaling (beløb i input)
+Lønart 4560 - Netto SH fra sidste år (udbetaler den overførte beskattede rest SH-saldo)
+Lønart 4570 - SH-beløb overføres til AM-pension.
+Lønart 45404 - SH-timer. Opret time satsen på resultattabel 45404 for de respektive løngrupper og ellers vil lønarten udbetale timesatsen som tilhører medarbejderen. Samtidig vil lønarten trække medarbejderen i løn for det antal timer som medarbejderen får udbetalt SH for med medarbejderens timesats. Udbetalingen bliver vist med lønart 4546 – skal konteres på lønart 13876. Træk i løn bliver vist med lønart 4544 – skal konteres på lønart 45404.
+Lønart 45405 – SH-timer udbetaling. Opret timesatsen på resultattabel 45404 på de respektive løngrupper og ellers vil lønarten udbetale timesatsen som tilhører medarbejderen. Udbetalingen bliver udskrevet med lønart 4550 – skal konteres på lønart 45405.
+
+Følgende stillingskategorilønart kan anvendes til automatisk udbetaling af SH ved fratrædelse:
+
+Stillingskategorilønart 4542 - Automatisk udbetaling af SH-restsaldo med saldotjek, ved fratrædelse.
+
+## Afregning af SH i forbindelse med årskørslen
+Ved årets afslutning vil der typisk være en restsaldo. Saldoen kan enten udbetales eller overføres til FerieKonto, Feriekort eller til næste kalenderår. Nedenstående lønarter anvendes i den sidste lønkørsel i kalenderåret.
+
+Lønart 4530 - Beskat SH-portioner (saldoen beskattes og overføres til næste år med antal SH-portioner). En eventuel rest herefter skal behandles med en af de øvrige lønarter)
+
+Anvender du ikke en af ovennævnte lønarter, bliver saldoen ikke behandlet eller overført. Og saldoen skal korrigeres manuelt, hvis saldoen skal kunne anvendes i det kommende kalenderår.
+## Manuel korrektion af SH
+For manuel korrektion skal du anvende:
+
+Lønart 450 - SH-beløb reg./overfør. I felterne* SH-opsparing: Beløb
+* SH-forskud: Beløb
+* SH-saldo: Beløb
+* SH-afregnet: Beløb.
+
+
+
+er det muligt at angive et beløb, positivt eller negativt, som SH skal reguleres med. I feltet ’SH-saldoen overføres’ indrapporteres ’0’ for nej, da det er de korrigerede saldi, der skal overføres. 
+Bemærk, at alle felter skal udfyldes. Hvis der ikke skal overføres saldi, skal der indrapporteres ’0’ i feltet.
+Du kan også foretage korrektion eller indlæsning af saldi via en decentral registrering på følgende lønarter
+
+Lønart 14450 - SH-beløb regulering* SH-opsparing: Beløb
+
+
+Lønart 14452 - SH-beløb regulering* SH-saldo: Beløb
+
+
+
+## Overførsel af SH-saldo til nyt kalenderår
+Følgende lønart kan bruges, hvis saldoen skal overføres fra sidste år:  
+
+Lønart 450 - Søgne-/Helligdage (SH)
+
+ 
+Ovenstående lønart skal i felter ’SH-Saldo overføres ja=1/nej=0 udfyldes med 1’, hvis saldoen ønskes overført, og med 0 hvis en saldo ikke skal overføres. 
+Har du beskattet SH portioner indeværende år, som skal overføres til nyt kalenderår, skal det ske med lønart 4530. Husk at du udbetaler portionerne i den første lønkørsel i det nye år. 
+Udbetalingen sker med variabel lønart
+
+Lønart 4560 - Netto SH fra sidste år
+
+## Udbetaling af Netto SH med et beløb
+På medarbejderen skal der i årets sidste lønkørsel, hvis SH-saldoen skal beskattes i indkomståret og netto SH overføres til nyt indkomstår, hvor udbetalings skal ske, oprettes:
+
+Variabel lønart 4555 - Beskat årets SH ops.
+
+ 
+I stedet for den variable lønart kan du på stillingskategorien, oprettes
+
+ Stillingskategorilønart 4556 - Beskat årets SH ops.
+
+ 
+Som gør det samme som lønart 4555, men nu vil det være på alle medarbejdere i den pågældende stillingskategori.
+Ønskes udbetaling fra netto SH-saldoen, gøres dette ved at oprette et beløb på den variable
+
+ Lønart 4565 - Netto SH fra sidste år.
+
+ 
+Der tjekkes på at Netto SH-saldoen ikke kan blive negativ.
+Ovenstående gør det muligt at gemme netto SH-saldo år efter år. Og udbetale når det kræves iflg. overenskomsten.
+Netto SH-saldoen kan ses under medarbejder saldi.
+Husk at opsætte konteringen på lønarten.
+## Udbetaling af SH via en fraværsregistrering
+Muligheder for at udbetale SH som et fravær.
+
+Fraværskode 75 - SH-timer, tilknyttes fraværslønart 45407 SH-timer. Fraværskoden oprettes med det antal timer som medarbejderen skal have udbetalt for afholdelse af SH. Fraværskoden er tilknyttet resultattabel 45404, hvor der oprettes satser på de respektive løngrupper og ellers vil fraværskoden benytte sig af medarbejderens timesats ved udbetaling.Udbetalingen bliver vist med lønart 4547 – skal konteres på lønart 13876.  
+Fraværskode 75 - SH-timer, tilknyttes fraværslønart 45406 SH timer.På fraværskode 75 oprettes med det antal timer som medarbejderen skal have udbetalt for afholdelse af SH. Fraværskode er tilknyttet resultattabel 45404, hvor der oprettes satser for de respektive løngrupper og ellers vil fraværskoden benytte sig af medarbejderens timesats ved udbetaling. Samtidig vil fraværskoden trække medarbejderen i løn for det antal timer som medarbejderen får udbetalt SH for med medarbejderens timesats.Udbetalingen bliver udskrevet med lønart 4546 – skal konteres på lønart 13876.Træk i løn bliver udskrevet med lønart 4560 – skal konteres på lønart 45406

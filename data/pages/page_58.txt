@@ -1,0 +1,160 @@
+https://help.vismaenterprise.dk/vismaloen-standard/ferie/67-ferie-ved-fratraedelse
+
+# Ferie ved fratrædelse
+
+## Ferieår
+Visma Løn arbejder med følgende år:
+* Ferieoptjeningsår: 01.09.XXXX til 31.08.XXXX (start 01.09.2020)
+* Ferieafholdelsesperiode: 01.09.XXXX til 31.12.XXXX (start 01.09.2020 - 31.12.2021)
+* Overført ferie (første gang ferie kan overføres efter ferieloven pr. 01.01.2022)
+
+
+## FerieKonto regler for indberetning og indbetaling
+Perioden for indberetning og indbetaling til FerieKonto, sker automatisk ud fra Lønperioden, afregnet efter nedenstående regler:
+
+Ferie med løn fratrædelse* Den sidste dag i fratrædelses måneden indberettes og indbetales
+
+
+Feriegodtgørelse - lønsystemet kigger her på om Lønseddelsperioden er udfyldt og så er det slutdatoen på perioden der afgør hvornår afregningen sker. Er Lønseddelsperioden ikke udfyldt på kørselsordren vil det være Lønperioden der afgør afregningstidspunktet:* Slutter lønperioden mellem den 1. og den 15. i en måned, indberettes og indbetales med udgangen af samme måned
+* Slutter lønperioden mellem den 16. og indtil udgangen af måneden, indberettes og indbetales den 15. i den efterfølgende måned
+
+
+
+Det vil fremgå af rapporterne Ny ferielov Ferieafregningsliste og Ny Overførselsliste, hvad der er indberettet og indbetalt til FerieKonto.
+Feriepenge kan efterreguleres i en vis periode (indtil medarbejder har fået feriepengene). Hvis der er udbetalt for meget til FerieKonto, kan det rettes i en supplementskørsel senest den 15. i måneden efter der blev udbetalt for meget løn - i det øjeblik feriepengene er afregnet til FerieKonto, kan de potentielt være udbetalt. Og kan ikke længere tilbageføres.
+
+## Afregning af feriepenge
+Feriedage og Feriepenge kan afregnes og indberettes til eIndkomst, for grupper af medarbejdere til følgende ordninger:* FerieKonto* Feriekort&nbsp;* Feriekasse – manuelt afregning&nbsp;
+
+### Opsætning af feriepengeafregning
+Resultattabel FEAFR Ferieafregning styrer afregning af feriepenge til FerieKonto, Feriekort og Feriekasse for både løbende beregning af feriepenge og afregning af feriepenge ved fratrædelse af funktionærer, som har ferie med løn.
+Resultattabel FEAFR opsættes for alle relevante stillingskategorier el. løngrupper.
+ResultattabelFeriepenge afregnes tilVærdiFEAFRFerieKonto0 eller blankFEAFRFeriekort2FEAFRFeriekasse1
+
+
+Gå til Opsætning → Resultattabel
+Vælg resultattabel ’FEAFR’
+Klik Find
+Klik Ny periode
+Udfyld feltet ‘Gyldig’
+Klik OK
+Vælg Resultattrin i højremenuen
+Klik Ny
+Vælg stillingskategori
+Angiv værdi (0, 1 el. 2) i den gældende aflønningsform
+Klik Gem
+
+Feriepenge til Feriekasse
+Der indberettes feriepengeoplysninger til eIndkomst for alle de feriekasser som Skat accepterer, dog indberettes der ikke feriedage og feriepenge i forbindelse med fratrædelse af en medarbejder der har ferie med løn. Her kan kan nævnes nogle af de feriekasser der findes:
+Feriekasse (3F Feriekasse, Bager- og Konditormestre i Danmark, Danske Slagtermestre,  HORESTA eller MFD Feriekasse).
+Feriepengene afregnes manuelt, uden om Visma Løn.
+
+### Beregning af feriepenge ved ferie med løn
+Ved afregning af ferie ved fratrædelse beregnes en værdi pr. dag:(12,5% af den ferieberettigede løn i hele ferieåret) ÷ (optjente feriedage/timer i ferieåret) × (antal restdage/timer)Opgørelsen sker som et gennemsnit for hele ferieåret.
+## Fratrædelse af en medarbejder
+Når en medarbejder fratræder, skal der afregnes restferiepenge med tilhørende dage for alle ferieår.
+Afregningen sker ved at oprette en fratrædelseskode samt fratrædelsesdato, hvorefter lønsystemet automatisk udløser feriepenge for henholdsvis indeværende, sidste og forrige ferieår samt udbetaler overført ferie kontant på lønsedlen. Det betyder, at alle dage/timer samt feriepenge afregnes uden yderligere administration.
+Hvis ferien administreres i timer, omregnes disse til dage.
+
+### Fratrædelseskoder
+Nedenstående fratrædelseskoder bruges i forbindelse med fratrædelse, hvor der skal tages højde for, hvad der skal ske med feriepengene.
+FratrædelseskodeFunktion1Feriepenge kontant på lønseddel2Feriepenge på feriekort funktionær3Feriepenge til FerieKonto/feriekasse funktionær4Feriepenge løbende beregning, timeløn FerieKonto/Feriekort/Feriekasse8Medarbejder uden ferie9Fratrådt i tidligere system
+
+
+Gå til Medarbejder → Ansættelsesforhold
+Udfyld feltet fratrådt med en fratrædelseskode og en fratrædelsesdato
+Klik Gem
+
+
+### Fratrædelse af medarbejdere med ferie i timer
+Ved fratrædelse sker der en automatisk omregning til feriedage (timer × arbejdstidsprocent ÷ 7.4) 
+👩‍🏫 Eksempel: Hvis en medarbejder fratræder, så beregnes 185 ferietimer × 100% ÷ 7.4 = 25 feriedage til afregning.
+
+### Fratrædelse af medarbejdere med reduceret optjening af feriedage
+⚠️ OBS: Omregnes medarbejders optjening af feriedage på lønart 9980 ‘Omregning feriedage v. deltid’, er det ved fratrædelse nødvendigt at opskrive dagene til korrekte enheder for en fuldtidsansat inden afregning af feriedage.
+Se afsnit om Korrektion af feriepenge ved fratrædelse.
+### Fratrædelse af medarbejdere som skylder forskudsferie
+Har du medarbejdere der fratræder og skylder ferie på forskud, skal du køre en fremtidig lønseddel og aflæse på lønsedlen, hvad medarbejderen skylder i feriepengene og feriedagene. De skyldige feriedage og feriepengene oprettes på en af nedenstående variable lønarter og vil dermed blive modregnet i lønnen, som fri egen regning før skat:
+
+Lønart 4796 - Tilbageførsel af forskudsferie i dage (Ferie med løn og løbende beregning af feriepenge til Feriekort, FerieKonto eller Feriekasse) 
+Lønart 4797 - Tilbageførsel af forskudsferie i timer (Ferie med løn)
+
+Du skal oprette ovenstående lønarter i din kontoplanen:
+
+Lønart 4796* Debet i resultatopgørelse (konto vedr. forskudsferie)
+* Kredit i balancen (konto vedr. forskudsferie)
+* Kredit i resultatopgørelse (konto som fri egen regning)
+
+
+Lønart 4797* Debet i resultatopgørelse (konto vedr. forskudsferie)
+* Kredit i balancen (konto vedr. forskudsferie)
+* Kredit i resultatopgørelse (konto som fri egen regning)
+
+
+
+
+### Korrektion af feriepenge ved fratrædelse
+Ønsker du at angive nogle andre feriedage, ferietimer eller feriepenge end det Visma Løn har beregnet kan du anvende nedenstående lønarter, hvor du angiver de feriedage og/eller feriepenge der skal afregnes:
+
+Lønart 40120 - Korrektion fratr. Feriedage/feriepenge indv. år
+Lønart 40130 - Korrektion fratr. Feriedage/feriepenge sidste år
+
+Lønarterne nulstiller feriesaldo og afregner det antal feriedage og feriepenge, der angives på lønarterne.
+Lønarterne skal oprettes i debet i kontoplanen.
+
+### Fratrædelse efter årsskiftet - overført ferie ny ferielov
+Hvis en medarbejder der har ferie med løn fratræder i det nye kalenderår, vil overført ferie automatisk udbetales kontant jf. ferieloven.Det betyder, at ferie sidste år kun afregnes til Feriekonto/Feriekort eller Feriekasse i perioden 01/09–31/12, derefter udbetales ferie fra sidste år kontant.Ved udbetaling af overført ferie ved fratrædelse beregnes en værdi pr. dag:&nbsp;(12,5% af den ferieberettigede løn i hele ferieåret) ÷ (optjente feriedage el. -timer i ferieåret) × (antal restdage el. timer).Opgørelsen sker som et gennemsnit for hele ferieåret.BogføringFølgende lønarter skal oprettes i kontoplan:Ferie i dage:Lønart 4922 oprettes i debet, udbetalt overført ferieFerie i timer:Lønart 4905 oprettes i debet, udbetalt overført ferie
+
+## Udbetaling af ferietillæg ved fratrædelse
+Ferietillæg skal udbetales, enten samtidig med at ferien afholdes, eller også udbetales ferietillægget for perioden 1. september til 31. maj sammen med lønnen for maj måned. Dette kan du læse i ferielovens §18.
+Har en medarbejder afholdt ferie efter ny ferielov ved sin fratræden, men endnu ikke fået udbetalt ferietillægget, der svarer til de afholdte feriedage. Her vil arbejdsgiveren i forbindelse med lønmodtagerens fratræden skulle afregne ferietillægget svarende til de feriedage, som lønmodtageren har afholdt. Dette ferietillæg skal udbetales direkte til lønmodtageren.
+For den ferie, som lønmodtageren ikke har holdt, skal arbejdsgiveren afregne feriegodtgørelse med 12,5% til FerieKonto. Dette står i ferielovens §16, stk. 4. Der skal ikke udbetales ferietillæg for den ferie, som lønmodtageren ikke har holdt endnu. Der er i beregningen af 12,5% i feriegodtgørelse taget højde for ferietillægget på 1%. 
+⚠️OBS: Medarbejdere der fratræder med maj og august lønnen, vil IKKE få udbetalt det optjente ferietillæg. Kun det ferietillæg de mangler at få for afholdte feriedage.
+👩‍🏫 Eksempel: Fratrædelse pr. 31. marts
+* Optjent i ferieåret 14,56 feriedage
+* Afholdt ferie i alt ultimo fratrædelsesmåned 10 feriedage
+* Restferie til Feriekonto (14,56 - 10 dage) 4,56 feriedage
+* Ferietillæg udbetales ifm. fratrædelse (14,56 - 4,56) 10 feriedage
+* Kør en lønkørsel frem, før du sætter fratrædelsesdatoen på og fra rapporten Ny ferielov ferieregnskab, tager du de optjente dage (kolonne R) og dividere det op i Ferietillæg (kolonne AH) og ganger med de 10 feriedage og udbetaler det på en af nedenstående lønarter.
+
+👩‍🏫 Eksempel: Fratrædelse pr. 31. august
+* Optjent i ferieåret 25 feriedage
+* Afholdt ferie i alt ultimo fratrædelsesmåned 20 feriedage
+* Restferie til Feriekonto (25 - 20 dage) = 5 feriedage
+* Ferietillæg udbetales ifm. fratrædelse (20 - 18,72 dage) = 1,28 feriedage. Da medarbejderen i maj måned har fået udbetalt ferietillæg for perioden 1.9. til 31.5 = 18,72 feriedage, skal der kun udbetales ferietillæg på forskellen op til afholdte feriedage. Har medarbejderen afholdt mindre end 18.72 feriedage ved fratrædelse, skal der ikke udbetales noget og for meget udbetalt må ikke modregnes.
+* Kør en lønkørsel frem, før du sætter fratrædelsesdatoen på og fra rapporten Ny ferielov ferieregnskab, tager du de optjente dage (kolonne R) og dividere det op i Ferietillæg (kolonne AH) og ganger med de 1,28 feriedage og udbetaler det på en af nedenstående lønarter.
+
+Til udbetaling af ferietillæg (optjent i ferieåret), i forbindelse med fratrædelse, kan bruges en af følgende variable lønarter:
+
+Lønart 4788 - Udbetaling Ferietillæg lovgrundlag – beløbAnvendes til manuel udbetaling af ferietillæg opsparet af lovgrundlag.(Optjent via stillingskategorilønart 4900)
+Lønart 4789 - Udbetaling Ferietillæg OK-grundlag – beløbAnvendes til manuel udbetaling af ferietillæg opsparet af OK-grundlag.(Optjent via stillingskategorilønart 4901)
+
+Husk opsætning på din kontoplan af ovenstående lønarter, så de bliver konteret i dit bogføringsbilag.
+
+## Ekstra ferietillæg i forbindelse med fratrædelse
+I nogle overenskomster skal det ekstra ferietillæg håndteres særskilt i forbindelse med en fratrædelse. 
+Automatisk udbetaling af ekstra ferietillæg - Ferieår
+Opret en af følgende stillingskategori lønarter for få afregnet ekstra ferietillæg ifb. med fratrædelse:
+
+Stillingskategorilønart 4626 - Ekstra ferietillæg OK-grundlag udb fratrædelse
+Stillingskategorilønart 4627 - Ekstra ferietillæg lovgrundlag udb fratrædelse
+
+Automatisk udbetaling af ekstra ferietillæg - Kalenderår
+Opret en af følgende stillingskategori lønarter for få afregnet ekstra ferietillæg ifb. med fratrædelse:
+
+Stillingskategorilønart 4628 - Ekstra ferietillæg OK-grundlag udb. fratrædelse
+Stillingskategorilønart 4629 - Ekstra ferietillæg lovgrundlag udb. fratrædelse
+
+
+Gå til Opsætning → Stillingskategori
+Angiv f.eks. ’1001’
+Klik Find
+Vælg Lønoplysninger i højremenuen
+Klik Ny
+Angiv enten stillingskategori lønart 4628 eller 4629
+Angiv en dato
+Klik Gem
+
+
+## Udbetaling af feriepenge med Feriekort på fratrådte medarbejdere
+For at udbetale feriepenge til fratrådte medarbejdere oprettes variable lønart:Lønart 4790 - ‘Anmodet Feriekort udbetaling’ med det antal feriedage og feriepenge der står i Virk.dk.Beløbet bliver nu beskattet i lønkørslen og nettoferiepengene udbetales til medarbejderen.⚠️ OBS: Når du skal udbetale feriepenge til en fratrådt medarbejder, kan det være en god ide, at foretage en ‘Genrekvirering af eSkattekort’ så medarbejderen bruger sit bikort ved udbetalingen af feriepenge, da standard trækpct. er 55%, og der ikke automatisk opdateres skattekort på fratrådte medarbejdere.

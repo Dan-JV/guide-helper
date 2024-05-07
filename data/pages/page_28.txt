@@ -1,0 +1,127 @@
+https://help.vismaenterprise.dk/vismaloen-standard/medarbejder/71-oprettelse-aendringer-og-fratraedelse-af-medarbejder
+
+# Oprettelse, ændringer og fratrædelse af medarbejder
+
+## Når du ansætter en ny medarbejder
+I Visma Løn opretter du alle de medarbejdere, der skal have løn udbetalt. Du skal bruge følgende information om medarbejderen:
+* Navn
+* Adresse, Postnummer, By
+* CPR-nummer
+* Registrerings- &amp; kontonummer
+* Ansættelsesoplysninger
+* Evt. den personlige løn
+
+Når du opretter en medarbejder i Visma Løn, skal du selv vælge et lønnummer/medarbejdernummer, som ikke må have været anvendt før.
+## Hvordan opretter du en ny medarbejder?
+
+Vælg Medarbejder → Medarbejder stamoplysninger
+Klik på Ny
+Følg nedenstående
+
+### Medarbejderens stamoplysninger 
+Udfyld alle felterne herunder Stamoplysninger, Anciennitet og Skattekort.
+Klik på OK, for at gemme. 
+Se evt skærmbilleder under bilagene til denne vejledning.
+### Registrerings- og kontonummer
+Efter du har udfyldt ovenstående felter, vil systemet automatisk sende dig videre og her udfylder du felterne omkring registrerings- og kontonummer.
+Klik på OK, for at gemme.
+Se evt skærmbilleder under bilagene til denne vejledning.
+### Ansættelsesforhold
+Efter du har udfyldt ovenstående felter, vil systemet automatisk sende dig videre og her udfylder du felterne omkring Ansættelsesforhold.
+Klik på OK, for at gemme.
+Se evt skærmbilleder under bilagene til denne vejledning.
+### Personlige satser
+Herefter kommer du til det sidste skærmbillede i guiden ’Oprettelse af medarbejder’, hvor du udfylder felterne.
+Klik på OK, for at gemme. 
+Klik OK igen, for at forlade oprettelsen.
+Medarbejderen er nu oprettet, og du kan begynde at behandle medarbejderens løn.
+Se evt skærmbilleder under bilagene til denne vejledning.
+### Supplerende oplysninger
+I menuen **Medarbejder** **→** **Medarbejder stamoplysninger** kan du vælge mellem følgende felter:
+
+*   **E-mail** - her kan du skrive medarbejderens e-mail
+*   **Initialer** - her kan du skrive medarbejderens initialer 
+*   **Mit.dk** – alt efter virksomhedens opsætning kan du vælge Ja til mit.dk eller Nej. Hvis der står nej betyder det Ja til mitBasic – se ’Vejledning til mit.dk’
+*   **Lønanciennitet** - feltet angives med en dato, som bruges i forbindelse med anciennitetsberegning på sygdom og barn syg på timelønnede medarbejdere
+
+I højremenuen kan du vælge mellem følgende menupunkter: 
+
+*   **Telefon** - her kan du skrive medarbejdernes telefonnummer 
+*   **Notat** - her kan du skrive flere oplysninger om din medarbejder
+*   **Fremtidig lønseddel** - bruger du til at danne en prøveberegning på en lønseddel
+*   **Genrekvirer eSkattekort** – her kan du genrekvirere et nyt eSkattekort, eksempelvis hvis du genansætter en medarbejder
+
+I menuen **Medarbejder** **→** **Ansættelsesforhold** kan du udfylde følgende felter:
+
+*   **Ansættelsesbetegnelse** – her skriver du en stillingsbetegnelse
+*   **Afdeling** – her vælger du hvilken afdeling medarbejderen er tilknyttet. Du kan for eksempel bruge feltet til bogføring 
+*   **Udbetalingssted** – her vælger du et udbetalingssted. Du kan for eksempel bruge feltet til bogføring 
+*   **Afv. Pnr.** –  Virksomheder med flere adresser har flere P-numre (arbejdsstedskoder). Du skal angive et P-nummer på de medarbejdere, som arbejder på en anden adresse end hovedfirmaet. Herefter vil det blive indberettet til eIndkomst
+*   **Afv. kontoplan** – du vælger en anden kontoplan, hvis medarbejderens kontering skal afvige fra arbejdsgiverens standard kontoplan.
+*   **Afv. foreningskode** – Foreningskoden anvendes statistikoplysninger, hvis det er oplyst fra Statistik. 
+*   **Valgfri1, Valgfri2, Valgfri3, Valgfri4, Valgfri5, Valgfri6** – kan du bruge til bogføring. Navnet på disse felter kan ændres i menuen _**Opsætning**_, _**Kontoplan**_ og _**Kontoplanfelt**_
+
+I højremenuen finder du desuden følgende punkter: 
+
+*   **Ansættelsesoplysninger** - bruger du til indberetning af statistikoplysninger
+*   **Erindring** - bruger du til mærkedage på en medarbejder
+*   **Fremtidig lønseddel** - bruger du til at lave en prøve på en fremtidig lønseddel
+*   **Felter (eIndkomst**) - bruger du til at give supplerende oplysninger til eIndkomst. I vejledningen ’[eIndkomst](https://www.mitbluegarden.dk/default.aspx?func=textfile.textfileview&id=691414%20) og eSkattekort’ kan du læse mere.
+*   **Fordeling af lønudgifter** - bruger du til at fordele udvalgte lønudgifter til alternative omkostningssteder
+## TIN nummer
+Fra 1. januar 2024 blev det lovpligtigt at indberette skatteregistreringsnummeret TIN (Tax Identification Number) til eIndkomst.TIN er udelukkende relevant for medarbejdere, der aflønnes i Danmark men har bopæl uden for Danmark. TIN bliver administreret af bopælslandet og tildelt medarbejderen. Derefter skal medarbejderen videregive nummeret til arbejdsgiveren, som skal indberette til eIndkomst.&nbsp;Feltet til oprettelse af TIN nummer bliver aktiveret, &nbsp;når en medarbejder oprettes med en udenlandsk landekode.Formatet på TIN kan du finde på SKAT.DK på dette link her
+## Hvordan ændrer du landekoden på en medarbejder? 
+For medarbejdere, der bor i udlandet, skal den nøjagtige udenlandske adresse og landekode indberettes til Skat.
+
+Vælg Medarbejder → Medarbejder stamoplysninger
+Klik på Opslagsknappen ud for feltet Landekode
+Her kan du søge efter en skattelandekode, hvis du ikke kender den for det pågældende land.
+Du registrerer den udenlandske adresse og postnr.
+Klik på Gem
+
+## Hvor finder jeg information om lønramme/løntrin? 
+For at kunne anvende Lønramme/Løntrin, skal du kontakte Visma Enterprise, som skal tilføje modulet. 
+For virksomheder der bruger lønramme/løntrin, vil der i menuen Medarbejder → Ansættelsesforhold være følgende felter, som du kan udfylde:
+
+Lønramme/løntrin. 
+Rykningstabel samt sidste- og næste rykningsdato.
+
+Du kan læse mere i vejledningen ’Lønramme/Løntrin’.
+## Hvordan fratræder du en medarbejder? 
+Når en medarbejder fratræder, skal du vælge den kode, som fortæller hvordan evt. feriepenge skal afregnes.
+Du skal angive en fratrædelsesdato, som er den sidste ansættelsesdato. Efter denne dato bliver der ikke beregnet fast løn. 
+For funktionærer, der fratræder på en dato, der ikke er den sidste dag i måneden, vil lønsystemet beregne en forholdsmæssig løn, alt efter hvilke ’Arb.dage’ der er valgt på stillingskategorien.. Systemet anvender standard denne formel, hvis ’Arb.dage’ på stillingskategorien står til Kalenderdage: 
+* (Antal ansatte kalenderdage / kalender dage i måned) x månedsløn.
+
+Der vil kun blive opsparet feriedage/timer for ansættelsesperioden i fratrædelsesmåneden. 
+
+Vælg Medarbejder → Ansættelsesforhold
+Vælg en fratrædelseskode
+Angiv Sidste ansættelsesdato
+Klik på Gem
+
+Se evt skærmbilleder under bilagene til denne vejledning.
+## Hvordan genansætter du en medarbejder? 
+Genansætter du en medarbejder, der tidligere har været ansat på samme ferievilkår, kan du åbne det gamle ansættelsesforhold ved at kopiere det og tilrette det med eventuelle ændringer i forhold til den tidligere ansættelse. 
+Det er ikke muligt at vælge en ny periode på et afsluttet ansættelsesforhold.
+Når du kopierer ansættelsesforholdet, skal du huske at fjerne fratrædelseskoden. Det gør du ved at skrive &#39;0&#39; i feltet ’Tiltrådt/fratrådt’ og herefter gemmer du.
+Alternativt kan du oprette medarbejderen på et nyt lønnummer ved at følge proceduren for oprettelse af en medarbejder (se afsnit 2).
+Når en medarbejder genansættes på et tidligere benyttet lønnummer, skal du altid genrekvirere et eSkattekort, tjekke at adressen og bank oplysningerne er de samme, medmindre at du anvender NemKonto.
+⚠️ OBS: Samme medarbejdernummer kan kun anvendes ved gensansættelse, hvis ferieforholdet er det samme. Almindeligvis funktionærer til funktionærer og timelønnede til timelønnede.
+## Hvordan kopierer du et ansættelsesforhold?
+
+Vælg Medarbejder → Ansættelsesforhold 
+Find medarbejderen
+Klik på Kopiere
+Tilret ansættelsesforholdet med de nye oplysninger
+Klik på Gem
+
+## Hvordan ændrer du et ansættelsesforhold? 
+Når du ændrer et ansættelsesforhold, skal du vælge en ny dato, hvor ændringen skal gælde fra. 
+Det gør du ved at oprette en ny periode på ansættelsesforholdet. 
+
+Vælg Medarbejder → Ansættelsesforhold 
+Find medarbejder
+Klik på Ny periode 
+Vælg den nye periode, hvor ansættelsesforholdet starter, og sørg for at ændre de forhold, som skal ændres
+Klik på OK

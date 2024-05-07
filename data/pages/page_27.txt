@@ -1,0 +1,34 @@
+https://help.vismaenterprise.dk/vismaloen-standard/lonkorsel/38-tjek-af-overforselsservice-leverancekvitteringer
+
+# Tjek af Overførselsservice leverancekvitteringer
+
+## Hvad er en leverancekvittering?
+En leverancekvittering er en kvittering fra Overførselsservice, der viser hvilke overførsler der er foretaget, samt information om eventuelle fejl og afviste overførsler.
+### Hvornår skal jeg tjekke mine leverancekvitteringer?
+Når din lønkørsel og afregning er godkendt, skal du tjekke dine leverancekvitteringer. Ved overførsel til Nemkonto kan kvitteringerne tidligst tjekkes fire dage før dispositionsdato.
+Efter hver lønkørsel sker der afregning af diverse overførsler. Der findes to typer afregninger:
+* ‘Fast afregning’
+* ‘Ny afregning’
+
+Når de er kørt i Visma Løn, skal du også tjekke status på dine leverancekvitteringer.
+Du kan under ‘Rapporter’ og ‘Vis job’ se om ovenstående jobs er kørt. Du skal kontrollere kvitteringerne i forbindelse med afregning til Banken, SKAT, ATP, Feriekonto og evt. pensionsselskaber.
+Der kommer dannes to typer af kvitteringer:
+
+T (Transmission) kommer først
+V (Validation) kommer efterfølgendeDisse kvitteringer kommer få minutter efter, du har godkendt lønkørslen i Visma Løn, eller en ‘Fast afregning’ eller ‘Ny afregning’ er kørt i Visma Løn.
+
+
+### Eksempler på leverancekvitteringer og hvor finder jeg dem?
+Du skal tjekke to typer af leverancekvitteringer, som er beskrevet nedenfor:
+
+TransmissionskvitteringBetyder besked fra MasterCard til dig som er Dataleverandør, om at MasterCard har modtaget data fra Visma på vegne af jer.
+Valideringskvittering/LeverancekvitteringBetyder besked fra Mastercard til dig som er Dataleverandør, om at Mastercard kan validere data.Hvis kontonummer er forkert eller datoen er for langt ud i fremtiden, vil dette stå i denne kvittering.
+
+
+## Hvor skal jeg logge på for at tjekke kvitteringer?
+Du skal logge ind i jeres TSI-postkasse hos Mastercard på&nbsp;[https://ft.pbs.dk](https://ft.pbs.dk/)&nbsp;for at hente kvitteringer.Kan du ikke huske jeres Brugernavn og adgangskode, kan du få hjælp hertil ved at skrive til MasterCard Payment Service på følgende mail:[it-servicedesk@mastercardpaymentservices.com](mailto:it-servicedesk@mastercardpaymentservices.com)Bemærk at det kun er Dataleverandører, der kan se leverancekvitteringerne.Når du er logget på med din bruger og password, skal du gøre følgende:Klik på&nbsp;Hent for at hente kvitteringerI næste billede kan du i Oprettelsesdato begrænse dato og klokkeslæt eller du kan lade det stå blanktKlik derefter på&nbsp;Dine filer for at hente kvitteringerDu får vist alle T (Transmission) og V (Validation) kvitteringer inden for oprettelsesdato: Klik på de enkelte kvitteringer der starter med T eller V for at kontrollere dem.&nbsp;Husk at printe eller gemme filen, for når filen lukkes slettes den automatisk.&nbsp;Mastercard arbejder i øjeblikket på at udskifte TSI-postkassen, hvor du tjekker dine leverancekvitteringer. Udskiftningen af postkassen sker løbende hos deres kunder, og du vil derfor opleve, at modtage information fra Mastercard herom.&nbsp;Mastercards vejledning til at hente leverancekvittering, som er gælde fra marts 2024, findes&nbsp;her
+
+## Hvad skal jeg gøre, hvis der er en fejl i leverancekvittering?
+Oplever du fejl på din leverancekvittering, skal du kontakte MasterCard Payment Service:
+Mail: [it-servicedesk@mastercardpaymentservices.com](mailto:it-servicedesk@mastercardpaymentservices.com) eller på Telefon: +45 80 81 06 65
+Mandag-fredag kl. 9:00 - 16:00

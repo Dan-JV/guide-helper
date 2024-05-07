@@ -1,0 +1,87 @@
+https://help.vismaenterprise.dk/vismaloen-standard/medarbejdertilgode/1-aftalefri
+
+# Aftalefri
+
+I Visma Løn administreres afholdt aftalefridage-/timer gennem fraværssystemet. Tildeling, udbetaling og opsparing af beløb sker via lønarter.
+Optjening og afholdelse af aftalefridage/-timer følger kalenderåret i systemet. Hvis I bruger ferieåret til optjening og afholdelse, skal alle saldi overføres manuelt til et nyt kalenderår ved årsskiftet.
+
+## Aftalefridage
+- **Lønart 3400** – Aftalefridage saldo i dage
+- **Fraværskode 44** - Aftalefridage 
+TildelingDu kan tildele aftalefridage i forhold til saldoen i lønsystemet via&nbsp;Lønart&nbsp;3400 – Aftalefridage, variable lønoplysningerAfholdelseNår medarbejderen holder aftalefridage, bruger duFraværskode&nbsp;44 – fraværslønart 3405, nedskriver i saldoenVisning af saldoAftalefridage saldoen vises&nbsp;automatisk nederst på lønsedlen.
+
+## Aftalefritimer
+- **Lønart 3401** - Aftalefridage saldo i timer
+- **Fraværskode 45** - Aftalefri i timer
+TildelingDu kan tildele aftalefritimer i forhold til saldoen i lønsystemet via&nbsp;Lønart 3401 – Aftalefritimer, variable lønoplysningerAfholdelseNår medarbejderen holder aftalefritimer, bruger duFraværskode 45 – fraværslønart 3406, nedskriver i saldoen
+
+## Udbetaling af aftalefridage/-timer, som en variabel lønoplysning
+Du kan udbetale aftalefri som en variabel lønoplysning, hvor der ikke sker en registrering i fraværssystemet.
+Du kan bruge følgende variable lønarter til udbetaling af aftalefri:
+
+Lønart 3410 - Udbetaling af aftalefridageTømmer saldoen og udbetaler aftalefridagene i timer ud fra formlen 4% af månedslønnen divideret med 7,4 gange antal timer
+Lønart 3411 - Udbetaling af aftalefridage i timerTømmer saldoen og udbetaler dagene * med 7,4 time, som ganges med månedsløn divideret med normtid overenskomst gange med normtid medarbejder pr. Time.
+Lønart 3412 – Udbetaling af aftalefritimerOprettes med antal timer der ønskes udbetalt og så hentes satsen automatisk fra medarbejderens personlige satser eller fra resultattabel 1100
+Lønart 3415 - Udbetaling af aftalefritimerDu angiver timerne og satsen, som ganges med hinanden og udbetales
+Lønart 3416 – Udbetaling af aftalefritimerOprettes med et antal og en sats. Lønarten tæller med i ATP timerne og nedskriver saldoen på aftalefritimer
+Lønart 3417 – Udbetaling af aftalefridage i timerOprettes med antal aftalefritimer og lønarten bruger månedslønnen divideret med normtiden som timeløn og saldoen på aftalefritimer nedskrives med antal timer
+Lønart 3418 – Udbetaling af aftalefritimerOprettes med antal timer som skal udbetales og ganges med satsen fra resultattabel 3418.
+
+
+## Overførsel af saldo ved årsskiftet
+- **Lønart 316** – Overførsel af aftalefridage
+- **Lønart 317** – Overførsel af aftalefritimer
+Skal saldi på dine medarbejdere overføres til nyt kalenderår ved årsskiftet. Skal du i forbindelse med første lønkørsel i det nye år, oprette en af følgende variable lønarter på medarbejderen:
+Guide
+Dette kan gøres via en fælles registrering, som overfør på aktive medarbejdere
+
+Gå til Medarbejder →  Fællesregistrering →  Variable lønoplysninger
+Angiv evt. ‘Aflønningsform’, ‘Løngruppe’ eller ‘Stillingskategori’
+Angiv ‘Dato’ den sidste dag i lønperiode i det nye år
+Angiv ’Lønart’
+Klik på OK1. $1
+
+
+Klik på OK
+
+
+## Visning af aftalefritime saldo på lønsedlen
+- **Stillingskategorilønart 3421** – Visning af aftalefritime saldo
+For at aftalefritime saldoen vises på lønsedlen, skal der oprettes en af følgende stillingskategori lønarter.
+⚠️ OBS: Stillingskategorilønart 3421 – Visning af Aftalefritime saldo vises imellem lønarterne og IKKE nederst på lønsedlen
+Guide
+
+Gå til Opsætning → Stillingskategori
+Vælg en stillingskategori
+Klik på Find
+Vælg Lønoplysninger i højremenuen
+Klik på Ny
+Udfyld lønart, startdato og slutdato 
+Klik på OK
+
+
+## Hensættelse af aftalefri i bogføringen
+Ønsker du at hensætte aftalefridage eller aftalefritimer i din bogføring, skal du sætte Visma Løn op til det. Aftalefridage kan hensættes til enten timelønnen eller til timelønnen gange en procentsats.
+
+Resultattabel FRIHEN – HensættelseOprettes med værdien ’1’ for de løngrupper hvor hensættelsen skal nedskrives ved afholdelse af aftalefri.
+Resultattabel AFTHEN - Aftalefri hensættelseOprettes med ’1’ for de respektive løngrupper og så hensættes til timelønnen, eller
+Resultattabel AFTHEN – Aftalefri hensættelseI resultattabel AFTHEN oprettes en sats for de respektive løngrupper. Hvis f.eks. timelønnen hensættes med timeløn gange 25%, skal resultattabel AFTHEN oprettes med 1,25 på de respektive løngrupper.
+
+For ovenstående punkter gælder at:
+Når du opretter aftalefridage på lønart 3400, ganges aftalefridagene med den sats som er angivet for timer pr. dag (personligsats lønart 9918 eller resultattabel TRTIM eller 7,4) med timelønnen (månedsløn/normtid for månedslønnede).
+Når du opretter aftalefritimer på lønart 3401, ganges timerne med timelønnen (månedsløn/normtid for månedslønnede).
+
+### Opsætning aftalefri i kontoplan
+- **Lønart 13880** - Aftalefri hensættelse dage - lønart 3400
+- **Lønart 13881** - Aftalefri nedskrivning timer - lønart 3401
+- **Lønart 13885** - Aftalefri nedskrivning dage - fraværslønart 3405
+- **Lønart 13886** - Aftalefri nedskrivning dage - lønart 3410
+- **Lønart 13887** - Aftalefri nedskrivning timer - fraværslønart 3406, lønart 3415, 3416 og 3418
+Hensættelsen bogføres via nedenstående bogføringslønarter. Lønarterne skal oprettes på din kontoplan i Visma Løn i både debet og kredit.
+Guide
+
+Gå til Opsætning → Kontoplan → Kontoplan
+Angiv kontoplan
+Vælg Kontoplanlinie i højremenuen
+Dobbeltklik på den lønart, du ønsker at ændre kontonummeret på
+Klik på Gem

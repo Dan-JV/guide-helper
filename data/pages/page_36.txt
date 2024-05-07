@@ -1,0 +1,45 @@
+https://help.vismaenterprise.dk/vismaloen-standard/tillaeg/74-vaerdibestemt-timelon
+
+# Værdibestemt timeløn
+
+Til udbetaling af løn bestemt af en ’værdi’ i input, f.eks. nummeret på et projekt hvor medarbejderen er tilknyttet, eller et varenummer hvor medarbejderen er beskæftiget og som skal udløse et tillæg.
+I følgende skærmbilleder findes feltet ’Inputværdi’ hvor værdien/nummeret skal anføres:
+* Variable lønoplysninger
+* Faste lønoplysninger
+* Fællesregistrering af variable lønoplysninger
+* Fællesregistrering af faste lønoplysninger
+
+Feltet kan kun benyttes i forbindelse med nedenstående lønarter.
+
+## Lønarter til brug for en bestemt ’værdi’
+
+Lønart 1106 - Timeløn / inputSom lønart 1100 Timeløn der starter lønart 1104 Personligt tillæg. Lønarten er variabel
+Lønart 1107 - Timeløn / inputSom lønart 1100 Timeløn, men uden start af andre lønarter. Lønarten er variabel.
+Lønart 1250 - Timeløntillæg / inputLønarten har sats i tabel. Lønarten er variabel.
+Lønart 1251 - Timeløn / inputLønarten har sats i tabel. Lønarten er fast
+
+I tilknytning til lønarterne er der oprettet nedenstående opslagstabeller.
+Nye opslagstabeller
+I opslagstabellerne oprettes de numre/opslagsværdier der skal udløse et givent tillæg, f.eks. ’1234’ som medfører at der udløses et tillæg på 5 kroner pr. time for alle de timer der indrapporteres med det nummer. Opslagsværdierne kan maksimalt være på 10 karakterer. Samtidigt oprettes den resultattabel hvor værdien findes (i eksemplet 5 kroner).
+
+Til lønart 1106 er tilknyttet opslagstabel OPSINP02
+Til lønart 1107 er tilknyttet opslagstabel OPSINP02
+Til lønart 1250 er tilknyttet opslagstabel OPSINP01
+Til lønart 1251 er tilknyttet opslagstabel OPSINP01
+
+## Resultattabeller
+Følgende resultattabeller kan benyttes:
+* INP01, INP02, INP03, INP04, INP05, INP06, INP07, INP08, INP09 og INP10.
+
+Eksempel
+Opslagstabel OPSINP01 oprettes:
+* Opslagsværdi ‘1234’, Resultattabel INP01 og
+* Opslagsværdi ‘AA12’, Resultattabel INP02
+
+Resultattabel INP01 oprettes:
+* 5,00 (kroner) for de pågældende løngrupper og
+
+Resultattabel INP02 oprettes
+* 10,00 (kroner) for de pågældende løngrupper
+
+I ovennævnte eksempel vil alle timer indrapporteret på lønart 1250 blive udbetalt med 5 kroner pr. time, hvis der skrives ’1234’ i feltet inputværdi og 10 kroner hvis der anføres ’AA12’.

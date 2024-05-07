@@ -1,0 +1,105 @@
+https://help.vismaenterprise.dk/vismaloen-standard/statistik/17-statistikindberetning
+
+# Statistik til DA, DS & FA
+
+Du kan som virksomhed blive udtaget til at indberette struktur- og konjukturstatistik.
+Du indberetter til følgende institutioner: 
+* Danmarks Statistik (DS)
+* Dansk Arbejdsgiverforening (DA)
+* Finanssektorens Arbejdsgiverforening (FA)
+
+Skal du som virksomhed indberette statistik til både DS og DA, skal du kun foretage én indberetning til DA, som efterfølgende sender oplysningerne videre til DS.
+
+## Hvornår indberettes de forskellige statistiker?
+
+Strukturstatistik* Overføres én gang om året i januar måned.
+
+
+Konjukturstatistik* Overføres én gang i kvartalet i den lønkørsel hvor ugerne 7, 20, 33 og 46 indgår i
+
+ 
+
+Fraværsstatistik* Overføres én gang om året i februar måned.
+
+
+
+
+## Automatisk indberetning af statistik
+På arbejdsgiver skal du tilmelde til statistik og hvem som skal modtage statistikken. For at sende oplysninger om struktur- og konjukturstatistik skal du oprette en af følgende serviceydelser:
+* 10 – Indberetning til Danmarks Statistik
+* 16 – Indberetning til Dansk Arbejdsgiverforening
+* 26 – Indberetning til Finanssektorens Arbejdsgiverforening
+
+Sådan tilmelder Arbejdsgiver til statistik:
+
+Klik på Arbejdsgiver → Arbejdsgiver stamoplysninger
+Vælg Tilmelding i højremenuen
+Klik på Ny
+Vælg ’Serviceydelse’
+Angiv ’Startdato’ 
+Klik på OK
+
+
+## Oprettelse af IP-typer
+Danmarks Statistik og Dansk Arbejdsgiverforening har defineret en række IP-typer, som du kan bruge til indberetning af personlige oplysninger. Her kan du se, hvilke IP-typer der skal oplyses:
+* 100 – Ansættelse i virksomheden
+* 200 – Ansættelsesvilkår
+* 350 – Arbejdsfunktion
+* 400 – Jobstatus
+* 600 – Antal normal timer pr. uge fastløn
+* 610 – Antal feriedage pr. år fastløn
+* 620 – Særlig feriegodtgørelse i procent af fastløn
+* 700 – Aflønningsperiode
+* 800 – Aflønningsform
+
+Sådan opretter du IP-typer på en enkelt medarbejder:
+
+Klik på Medarbejder → Ansættelsesforhold
+Vælg Ansættelsesoplysninger i højremenuen
+Klik på Ny 
+Opret IP-type, IP-kode, værdi og Startdato
+Klik OK
+
+Sådan opretter du IP-typer til en gruppe af medarbejdere:
+
+Klik på Opsætning → Stillingskategori
+Vælge Stillingskategorioplysninger i højremenuen
+Tilpas IP -typerne, så de passer i 9 ud af 10 tilfælde  
+Klik Gem
+
+
+## Indberetning af statistik oplysninger
+Konjukturstatistikkerne indberettes én gang i kvartalet, mens strukturstatistikkerne indberettes én gang årligt. Dette sker automatisk.
+Når der dannes en indberetning, vil oplysningerne blive hentet i følgende rækkefølge:
+
+Medarbejderens ansættelsesoplysninger1. $1
+
+
+Stillingskategorier1. $1
+
+
+
+Det er den første værdi der er forskellige fra 0 der indberettes’
+
+### Sådan indberetter du statistik manuelt
+Du har mulighed for at genindberette statistikoplysninger til alle statistikmodtagere. 
+Har du ikke tidligere været tilmeldt statistik indberetning på arbejdsgiveren, så kan du manuelt indberette for den manglende periode.
+⚠️ OBS: Hvis du laver en manuel genindberetning, tidligere indberetning vil blive overskrevet.
+Du laver en manuel indberetning på følgende måde:
+
+Klik på Lønadministration → Overførsel → Manuel indberetning af statistik
+Herefter udfylder du felterne Modtager, arbejdsgiver, aflønningsform, kvartals- eller årsstatestik og startdato 
+og vælger ja i felterne dan indberetning, dan rapport
+Klik OK
+
+
+## Fraværsstatistik
+Du kan som virksomhed blive udtaget til at indberette fraværsstatistik.Oplysningerne til fraværsstatistik henter Visma Løn i de registreringer der er foretaget under&nbsp;Fraværsregistreringer.På arbejdsgiver skal du tilmelde til fraværsstatistik og hvem som skal modtage statistikken. Opret en af følgende serviceydelser:* 55 – Auto indberetning fraværsstatistik Danmarks Statistik* 56 – Auto indberetning fraværsstatistik Dansk Arbejdsgiverforening* 57 – Auto indberetning fraværsstatistik Finanssektorens ArbejdsgiverforeningSådan tilmelder Arbejdsgiver til statistik:Klik på&nbsp;Arbejdsgiver →&nbsp;Arbejdsgiver stamoplysningerVælg&nbsp;Tilmelding i højremenuenKlik på&nbsp;NyVælg&nbsp;’Serviceydelse’Angiv ’Startdato’&nbsp;Klik på&nbsp;OK
+
+### Sådan indberetter du statistik manuelt
+Du laver en manuel indberetning på følgende måde:
+
+Klik på Lønadministration, Overførsel → Fraværsstatistik
+Herefter udfylder du felterne modtager og arbejdsgiver
+og vælger ja i felterne dan indberetning og dan rapport
+Klik OK

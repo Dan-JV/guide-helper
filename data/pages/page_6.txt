@@ -1,0 +1,437 @@
+https://help.vismaenterprise.dk/vismaloen-standard/opsaetning-og-kom-igang/4-fritvalgskonto
+
+# Fritvalgskonto
+
+I Visma Løn har du mulighed for at håndtere opsparing og afregning af &#39;Fritvalgs Lønkonto&#39;.
+Ordningen er som udgangspunkt aftalt parterne imellem via en overenskomst. Det betyder, at &#39;Fritvalgs Lønkontoen&#39; i visse overenskomster erstatter den eksisterende søgnehelligdagsbetaling.
+Procentsatsen der opspares, kan derfor variere for den enkelte virksomhed.
+
+## Oprettelse af Fritvalgs Lønkonto
+### Gruppe af medarbejdere
+- **Stillingskategorilønart 4400** - Fritvalgskonto opsparing
+Er det en gruppe af medarbejdere, der er omfattet af ’Fritvalgs Lønkonto’, skal der på aktuelle stillingskategorier oprettes:
+Guide
+
+Gå til Opsætning → Stillingskategori
+Vælg Lønoplysning i højremenuen
+Opret stillingskategorilønart 4400
+Klik på Gem
+
+
+### Enkelte medarbejdere
+- **Fast lønart 4405** - Fritvalgskonto opsparing 
+Skal ’Fritvalgs Lønkonto’ gælde for udvalgte medarbejdere, oprettes på medarbejderen:
+Guide
+
+Gå til Medarbejder → Faste lønoplysninger
+Klik på Ny
+Udfyld Dato, Medarbejdernummer og lønart
+Klik på OK
+
+
+## Fritvalgs Lønkonto – Oprettelse af satser
+Ved hver lønkørsel beregner systemet en procentdel af medarbejderens ferieberettigede løn. Procenten beregnes med de værdier, der er angivet i følgende resultattabeller:
+
+Resultattabel: 4401 – Fritvalgskonto firma pct.Anvendes til firmaandel jvf. overenskomst    
+Resultattabel: 4402 – Fritvalgskonto pct. (SH)Anvendes til afløsning af SH-procent    
+Resultattabel: 4403 – Fritvalgskonto feriefridage %Anvendes til procentsats på fravalgte feriefridage. Antal dage angives på ”personlig sats” 9910.  Har du mere end to cifre i procenten f.eks. 0,375%, skal du oprettes resultattabel 4413 med 10, og så skal den procent du angiver på resultattabel 4403 i dette eksempel være 3,75%. Så vil resultattabel 4403 blive divideret med den værdi der står på resultattabel 4413, altså 3,75/10 = 0,375.    
+Resultattabel: 4404 – Fritvalgskonto Sats pr. timeAnvendes til opsparing af 20 øre pr. præsteret arbejdstime eller anden sats.
+
+Opsætningen af resultattabel kan ses herunder.   
+ 
+
+Personlig sats: 9911 – Egen pct. FritvalgskontoEkstra egen fritvalgsprocent som tillægges Fritvalgs Lønkonto opsparingen.
+
+Oprettelse af personlige satser kan ses herunder.
+
+### Opsætning af resultattabel
+
+Gå til Opsætning → Resultattabel
+Angiv resultattabellen
+Klik på Find
+Klik på Ny periode
+Udfyld feltet ’Gyldighed’
+Klik på OK
+Vælg Resultattrin i højremenuen
+Dobbeltklik på løngruppen
+Indtast procentsats for aflønningsformen
+Klik på OK
+
+
+### Oprettelse af personlige satser
+
+Gå til Medarbejder →Ansættelsesforhold
+Vælg Personlig satser i højremenuen
+Klik på Ny
+Opret 9910 i feltet ’Lønart 
+Angiv ’Antal dage/feriefri’ og ’Periode’ dato  
+Klik på OK
+
+
+## Fritvalgs Lønkonto – Opsparing tillægges pensionsgrundlag
+Opsparingen til Fritvalgs Lønkontoen skal i nogle overenskomster tillægges pensionsgrundlaget. Det gøres ved at oprette følgende:
+
+Resultattabel 4490 – Fritvalgskonto pct. PensionAnvendes til at angive, hvilket pensionsgrundlag opsparingen fra resultattabel 4401 skal tillægges. Værdi for pensionsgrundlag er:Pensionsgrundlag 1 = 1,00 Pensionsgrundlag 2 = 2,00Pensionsgrundlag 3 = 3,00Pensionsgrundlag 4 = 4,00Pensionsgrundlag 5 = 5,00Pensionsgrundlag 6 = 6,00  
+Resultattabel 4491 – Fritvalgskonto (SH) pct. PensionAnvendes til at angive, hvilket pensionsgrundlag opsparingen fra resultattabel 4402 skal tillægges. Værdi for pensionsgrundlag er:Pensionsgrundlag 1 = 1,00 Pensionsgrundlag 2 = 2,00Pensionsgrundlag 3 = 3,00Pensionsgrundlag 4 = 4,00Pensionsgrundlag 5 = 5,00Pensionsgrundlag 6 = 6,00  
+Resultattabel 4492 – Fritvalgskonto (SH) pct. PensionAnvendes til at angive, hvilket pensionsgrundlag opsparingen fra resultattabel 4403 skal tillægges. Værdi for pensionsgrundlag er:Pensionsgrundlag 1 = 1,00 Pensionsgrundlag 2 = 2,00Pensionsgrundlag 3 = 3,00Pensionsgrundlag 4 = 4,00Pensionsgrundlag 5 = 5,00Pensionsgrundlag 6 = 6,00
+
+Opsætningen af resultattabel kan ses herunder
+👩‍🏫 EksempelMedarbejderen har lønart 6000 som pensions lønart. I henhold til lønartskatalog er pensionsgrundlaget B, hvilket betyder, at værdien i resultattabel 4490 skal være 2,00.
+
+### Fritvalgskonto Sats pr. time Pension
+Skal opsparingen af f.eks. 20 øre pr. præsteret arbejdstime eller anden sats, være pensionsgivende, skal du tage kontakte til en konsulent hos Visma Enterprise, som kan hjælpe med opsætningen.
+### Opsætning af resultattabel
+
+Gå til Opsætning → Resultattabel
+Angiv resultattabellen
+Klik på Find
+Klik på Ny periode
+Udfyld feltet ’Gyldighed’
+Klik på OK
+Vælg Resultattrin i højremenuen
+Dobbeltklik på løngruppen
+Indtast procentsats for aflønningsformen
+Klik på OK
+
+## Fritvalgs Lønkonto – Opsparing overføres til AM-pension
+Har medarbejderen mulighed for hvert år at vælge at bruge en del af sin Fritvalgs Lønkonto til Arbejdsmarkedspension (såfremt medarbejderen i forvejen er omfattet af arbejdsmarkedspension). Kan dette ske som et fast eller variabelt beløb, eller som en fast procent.
+
+Fast lønart 5990 – Fritvalgskonto-AM-pension beløbAnvendes til at angive et fast beløb, der skal tillægges medarbejderens pensionsopsparing.  
+Fast lønart 6009 – Fritvalgskonto-AM-pension %Anvendes til at angive en fast procentsats, til beregning af pension, udover medarbejderens obligatoriske procentdel.
+
+Oprettelse af faste lønarter kan ses herunder.
+
+Variable lønart 5991 – Fritvalgskonto-AM-pension beløb Anvendes til at angive et variabelt beløb, der skal lægges til medarbejderens pensionsopsparing.
+
+Oprettelse af variable lønarter kan ses herunder.
+Overførsel af beløb og ekstra AM-pensionsberegning (lønart 5990, 5991 og 6009) nedskriver medarbejderens saldo på Fritvalgs Lønkonto.
+### Oprettelse af faste lønoplysninger
+
+Gå til Medarbejder → Faste lønoplysninger
+Klik på Ny
+Angiv ’Lønart’
+Angiv ’Periode’ dato
+Klik på OK
+
+### Oprettelse af variable lønoplysninger
+
+Gå til Medarbejder → Variable lønoplysninger
+Klik på Ny
+Angiv ’Periode’ dato
+Angiv ’Medarbejder’
+Angiv ’Lønart’
+Klik på OK
+
+## Fritvalgs Lønkonto – Opsparing overføres til pension/pension PI
+Har medarbejderen mulighed for hvert år vælge at bruge en del af sin Fritvalgs Lønkonto til pension. Kan dette foretages som en fast procent.  
+ 
+Faste lønarter
+
+Fast lønart 6470 – Fritvalgskonto-ordinær pensionAnvendes til at angive en fast procentsats, til beregning af pension, ud over medarbejderens obligatoriske procentdel.
+Fast lønart 6475 – Fritvalgskonto – pension PIAnvendes til at angive en fast procentsats, til beregning af pension, ud over medarbejderens obligatoriske procentdel.
+
+⚠️ OBS: Overførsel af beløb og ekstra pensionsberegning (lønart 6470 og 6475) nedskriver medarbejderens saldo på Fritvalgs Lønkonto.
+Oprettelse af faste lønoplysninger kan ses herunder  
+ 
+Variable lønarter
+
+Variable lønart 6471 – Fritvalgskonto-ordinær pensionLønarten er variabel og tømmer saldoen inklusive periodens opsparing og overfører til en ordinær pensionsordning, som angives på lønarten. 
+Variable lønart 6476 – Fritvalgskonto-pension PILønarten er variabel og tømmer saldoen incl. periodens opsparing og overfører til den pensionsordning som angives på lønarten.
+
+Oprettelse af variable lønoplysninger kan ses herunder
+### Oprettelse af faste lønoplysninger
+
+Gå til Medarbejder → Faste lønoplysninger
+Klik på Ny
+Angiv ’Lønart’
+Angiv ’Periode’ dato
+Klik på OK
+
+### Oprettelse af variable lønoplysninger
+
+Gå til Medarbejder → Variable lønoplysninger
+Klik på Ny
+Angiv ’Periode’ dato
+Angiv ’Medarbejder’
+Angiv ’Lønart’
+Klik på OK
+
+## Fritvalgs Lønkonto – Valgfrit grundlag
+Der er mulighed for, i samarbejde med en konsulent fra Visma Enterprise, at få opsat et grundlag til fritvalgskontoen, som IKKE er den ferieberettigede løn, der er standardberegningen i Visma Løn. 
+
+Resultattabel FRITGR – FritvalgsgrundlagOprettes med 1 for de løngrupper, hvor beregningen skal være af det Valgfrie grundlag. Er værdien = 0 eller blank vil det være den ferieberettigede løn der bruges som grundlag.
+
+Opsætningen af resultattabel kan ses herunder
+
+Lønartstype 3103 – FritvalgsgrundlagViser de lønarter som indgår i det kunde specificeret fritvalgsgrundlag. F.eks. alle lønarter fra lønartstype 1103 skal kopieres over i denne lønartstype. Og så skal resultattabel FRITGR oprettes med 1 for de løngrupper, som skal anvende dette grundlag, som er forskellige fra den ferieberettigede løn. Lønartstype tilpasses med de lønarter som skal danne dette grundlag. F.eks. skal der fritvalgsgrundlaget IKKE nedskrives med afholdt ferie skal lønart 4912/4915 ikke oprettes på lønartstypen.
+Lønartstype 3104 - Fritvalgsgrundlag timerBeskriver hvilke time lønarter der IKKE skal indgå i Fritvalgsgrundlaget. Grundlaget er medarbejderens normtid, f.eks. ved alt fravær. Som udgangspunkt skal alle fraværslønarter have sekvens 1, dog skal fraværslønart 3950 Ferie fravær og 3951 afholdt ferie have sekvens 2
+
+### Opsætning af resultattabel
+
+Gå til Opsætning → Resultattabel
+Angiv resultattabellen
+Klik på Find
+Klik på Ny periode
+Udfyld feltet ’Gyldighed’
+Klik på OK
+Vælg Resultattrin i højremenuen
+Dobbeltklik på løngruppen
+Indtast procentsats for aflønningsformen
+Klik på OK
+
+## Fritvalgs Lønkonto – AM-pension over 12%
+- **Lønart 4420** – Pension % til fritvalgskonto
+Medarbejderen kan også vælge at hensætte eventuel arbejdsmarkedspension over 12 % til opsparing. Opret en fast lønart:
+👩‍🏫 EksempelMedarbejder har 14 % i arbejdsmarkedspension og ønsker at hensætte alt over 12 % til sin Fritvalgs Lønkonto. På pensionslønarten angives 12 % og de resterende 2 % oprettes på lønart 4420.
+
+### Oprettelse af faste lønoplysninger
+
+Gå til Medarbejder → Faste lønoplysninger
+Klik på Ny
+Angiv ’Lønart’
+Angiv ’Periode’ dato
+Klik på OK
+
+## Fritvalgs Lønkonto – Opsparing, i stedet for pension
+- **Lønart 4416** – Fritvalgskonto opsparing firma andel
+- **Lønart 4418** – Fritvalgskonto opsparing egen andel
+Når en medarbejder når over en vis alder, så mister de rettigheden til deres forsikringer i pensionen, og derfor kan de vælge at overføre både firma og medarbejder-andel til en fritvalgskonto i stedet for:
+GuideStop pensions lønarten under Faste lønoplysningOpret lønart 4416 med firma procent og det pensionsgrundlag, som har været anvendt på pensionen. Pensionsgrundlag 1-6.Opret lønart 4418 med egen procent og det pensionsgrundlag, som har været anvendt på pensionen. Pensionsgrundlag 1-6. Denne lønart vil trække medarbejderen i løn.👩‍🏫 EksempelLønart 4416 oprettes med pensionsprocent (f.eks. 12 %) og pensionsgrundlag (f.eks. gr. 2, hvis tidligere anvendt LA 6000).Udbetaling af opsparingen på variable lønart 4416, sker på følgende lønart, som tømmer saldoen:Lønart 4426 – Fritvalgskonto udbetaling
+
+## Fritvalgs Lønkonto – Udbetaling
+Ved fratrædelse af medarbejderen skal evt. restsaldo udbetales. Medarbejderen kan vælge at få beløbet udbetalt via lønnen, eller til ferieafregning via Feriekort/FerieKonto.
+Stillingskategori lønart 4438 – Fritvalgskonto udbetaling ved fratrædelse (automatisk)Beskatter og udbetaler automatisk restsaldo via lønnen, når medarbejderen fratræder. Beløbet er IKKE feriepengeberettiget eller pensionsberettiget, , kan gøres pensionsberettiget, ved at kontakte Visma Enterprise.&nbsp;Skal udbetalingen være ferieberettiget oprettes resultattabel FRITVF med en af følgende værdier på resultattabel FRITVF for relevante løngrupper:* 1 - Feriepengene beskattes til FerieKonto* 2 - Bruttoferiepengene til FeriekortStillingskategori lønart 4437 – Fritvalgskonto udbetaling ved fratrædelse (automatisk)Beskatter og udbetaler automatisk restsaldo via lønnen, når medarbejderen fratræder. Beløbet er IKKE feriepengeberettiget, kan gøres pensionsberettiget, ved at kontakte Visma Enterprise.&nbsp;Skal udbetalingen være ferieberettiget oprettes resultattabel FRITVF med en af følgende værdier på resultattabel FRITVF for relevante løngrupper:1 - Feriepengene beskattes til FerieKonto2 - Bruttoferiepengene til Feriekort&nbsp;Oprettelse af stillingskategorilønarter kan ses herunder &nbsp;Variabel lønart 4488 – Fritvalgskonto udbetaling ved fratrædelseBeskatter og udbetaler restsaldo via lønnen. Beløbet er feriepengeberettiget.Fast lønart 4489 – Fritvalgskonto udbetaling (løbende udbetaling – ej fratrædelse)Beskatter og udbetaler restsaldo via lønnen. Beløbet er feriepengeberettiget.Variabel lønart 4440 – Fritvalgskonto udbetaling&nbsp;Beskatter og udbetaler restsaldo via lønnen.Variabel lønart 4441 – Fritvalgskonto - ferieafregning&nbsp;Beskatter og udbetaler restsaldo via Feriekort/FerieKonto. Bruges til medarbejdere med løn under ferie (stillingskategorilønart 4017/4019).Faste lønart 4443 – Udbetaling af Fritvalgskonto på bestemt tidspunkt af årLønarten oprettes på medarbejderen med en dato hvornår Fritvalgskontoen skal tømmes og dermed udbetales til medarbejderen.Skal udbetalingen være ferieberettiget oprettes resultattabel FRITVF med en af følgende værdier på resultattabel FRITVF for relevante løngrupper:1 - Feriepengene beskattes til FerieKonto2 - Bruttoferiepengene til Feriekort⚠️OBS: Husk at oprette lønart 14008 i din kontoplan i debet.Variabel lønart 4442&nbsp;– Fritvalgskonto- ferieafregningBeskatter og udbetaler restsaldo via FerieKonto. Bruges til medarbejdere med løbende beskatning af feriepenge (stillingskategorilønart 4009).Der er, ved brug af ovennævnte lønarter, saldokontrol. Såfremt der fra Fritvalgs lønkontoens saldo overføres til pension, vil udbetalingen på ovennævnte lønarter kun gennemføres, såfremt der er dækning for beløbet. Er der ikke dækning for beløbet, vil det for meget udbetalte beløb tilbageføres.Oprettelse af faste- og variable lønoplysninger kan ses herunder
+
+### Ved søgnehelligdage eller overenskomstmæssige fridage
+Ved søgnehelligdage eller overenskomstmæssige fridage kan medarbejderen vælge at få en del af sin Fritvalgs Lønkonto udbetalt. Udbetaling foretages på en af nedenstående lønarter:
+Variabel lønart 4483 – Fritvalgskonto udbetaling med beløb, med saldokontrol.&nbsp;Skal udbetalingen være ferieberettiget oprettes resultattabel FRITVF med en af følgende værdier på resultattabel FRITVF for relevante løngrupper:1 - Feriepengene beskattes til FerieKonto2 - Bruttoferiepengene til Feriekort⚠️OBS: Husk at oprette lønart 14008 i din kontoplan i debet.Variabel lønart 4484 – Fritvalgskonto udbetaling med beløb, uden saldokontrolVariabel lønart 4485 – Fritvalgskonto udbetaling med beløb, med saldokontrolVariabel lønart 6510 – Fritvalgskonto udbetaling med sats i resultattabelBeskatter og udbetaler antal timer x sats fra resultattabel.Variabel lønart 6511 – Fritvalgskonto udbetaling med sats i resultattabelBeskatter og udbetaler antal timer x sats fra resultattabel.Variabel lønart 6515 – Fritvalgskonto udbetaling med sats fra timelønLønarten giver mulighed for at udbetale et antal timer til en timeløn fra timelønssatserne:1090 - 1099,1100,1101,1105,1106,1107,1110,1114 - 1119, 1121, 1210,1215⚠️ OBS: Diverse tillæg IKKE medgår i timesatsen/beregningen.⚠️ OBS: Timelønnen hentes fra aktuel lønkørsel ved at finde gennemsnit af ovennævnte lønarter.&nbsp;Oprettelse af variable lønoplysninger kan ses herunderFast Lønart 6540 – Fritvalgskonto udbetalingLønarten er fast, beskatter og udbetaler løbende opsparing fra Fritvalgs Lønkontoen.Fast Lønart 4470 – fritvalgskonto udbetaling %Lønarten er fast, beskatter og udbetaler løbende en fast procent fra Fritvalgs Lønkontoen.Her bør vi vise 2Oprettelse af faste lønoplysninger kan ses herunder
+
+### Oprettelse af stillingskategorilønarter
+
+Gå til Opsætning → Stillingskategori
+Angiv Stillingskategori
+Klik på Find
+Vælg Lønoplysninger i højremenuen
+Klik på Ny
+Angiv ’Lønart’
+Angiv ’Periode’ dato
+Klik på OK
+
+### Oprettelse af faste lønoplysninger
+
+Gå til Medarbejder → Faste lønoplysninger
+Klik på Ny
+Angiv ’Lønart’
+Angiv ’Periode’ dato
+Klik på OK
+
+### Oprettelse af variable lønoplysninger
+
+Gå til Medarbejder → Variable lønoplysninger
+Klik på Ny
+Angiv ’Periode’ dato
+Angiv ’Medarbejder’
+Angiv ’Lønart’
+Klik på OK
+
+## Udbetaling af Fritvalgskonto - Ferieberettigede løn året før 
+Følgende lønarter kan med fordel benyttes til medarbejdere som har ferie med løn og skal have Fritvalgs Lønkontoen udbetalt en gang årligt.
+Såfremt alle medarbejdere i en stillingskategori skal have udbetalt Fritvalgs Lønkonto i et beløb beregnet på baggrund af den ferieberettigede løn for kalenderåret før kan følgende anvendes
+
+Stillingskategorilønart 4111 – Fritvalg - kontantLønarten aktiveres ved ikrafttrædelseskode T på kørselsselektionen og beregner beløbet til udbetaling af den ferieberettigede løn for kalenderåret før. Satsen hentes fra resultattabel 4401
+
+Oprettelse af stillingskategorilønarter kan ses herunder  
+ 
+Såfremt udvalgte medarbejdere skal have udbetalt fritvalgs lønkonto i et beløb beregnet på baggrund af den ferieberettigede løn for kalenderåret før kan følgende variable lønart anvendes
+
+Variabel Lønart 4112 – Fritvalg - kontantLønarten er variabel og beregner beløbet til udbetaling af den ferieberettigede løn for kalenderåret før. Satsen hentes fra resultattabel 4401
+Variabel Lønart 4113 – Fritvalg - kontantLønarten er variabel og har beløb i input.
+
+Oprettelse af variable lønoplysninger kan ses herunder
+### Oprettelse af stillingskategorilønarter
+
+Gå til Opsætning → Stillingskategori
+Angiv Stillingskategori
+Klik på Find
+Vælg Lønoplysninger i højremenuen
+Klik på Ny
+Angiv ’Lønart’
+Angiv ’Periode’ dato
+Klik på OK
+
+### Oprettelse af variable lønoplysninger
+
+Gå til Medarbejder → Variable lønoplysninger
+Klik på Ny
+Angiv ’Periode’ dato
+Angiv ’Medarbejder’
+Angiv ’Lønart’
+Klik på OK
+
+## Fritvalgs Lønkonto – Regulering af saldi
+Mangler der at blive tillagt saldo på en medarbejder, findes der forskellige variable lønarter til dette formål. De beregnede beløb tillægges direkte Fritvalgs Lønkontoen.Variabel 4410&nbsp;– Feriefri til fritvalgskontoTil timelønnede medarbejdere: bruges med timer i input, som så ganges med den sats, lønart 1100 anvender. Det er muligt at nedskrive den saldo, der eventuelt er på feriefri, ved i feltet:* Feriefridage nedskriv – at angive antal dage* Feriefritimer nedskriv – at angive antal timer* Feriefrisaldo beløb nedskriv – at angive beløb.👩‍🏫&nbsp;Eksempel:Medarbejder har 9 måneders anciennitet i virksomheden og skal have opskrevet sin Fritvalgs Lønkonto. Der angives 10 timer, hvor timelønnen er 100 kr. I nævnte tilfælde vil opsparingen blive opskrevet med 10 x 100 kr. = kr. 1.000,-.Hvis de 10 timer og kr. 1.000,- samtidig skal nedskrive den eksisterende Feriefrisaldo, angives '10' i feltet 'Feriefritimer nedskriv' og '1.000,-' i feltet 'Feriefrisaldo beløb nedskriv'.Variabel 4412&nbsp;– Feriefri til fritvalgskontoTil timelønnede medarbejdere: bruges med input i timer x sats.Det er samtidig muligt at nedskrive den saldo, der evt. er på feriefri, ved at angive:* Feriefridage nedskriv – at angive antal dage* Feriefritimer nedskriv – at angive antal timer* Feriefrisaldo beløb nedskriv – at angive beløb.👩‍🏫&nbsp;EksempelMedarbejder har 9 måneders anciennitet i virksomheden og skal have opskrevet sin Fritvalgs Lønkonto med 5 timer á 200 kr. i timen. I nævnte tilfælde vil opsparingen blive opskrevet med 5 x 200 kr. = kr. 1.000,-.Hvis de 5 timer og kr. 1.000,- samtidig skal nedskrive den eksisterende Feriefrisaldo, angives '10' i feltet 'Feriefritimer nedskriv' og '1000' i feltet 'Feriefrisaldo beløb nedskriv'.&nbsp;Mangler der at blive tillagt saldo på en medarbejder, findes der forskellige variable lønarter til dette formål. De beregnede beløb tillægges direkte Fritvalgs Lønkontoen.Variabel 4415&nbsp;– Fritvalgskonto opsparingBruges med beløb i input. Opsparingen opskrives med det beløb der angives på lønarten.Variabel 4425&nbsp;– SH-saldo til fritvalgskontoBruges til at flytte saldo fra tidligere SH-opsparing til Fritvalgs Lønkonto.Husk at der på stillingskategorien skal sættes slutdato på lønart 4500 – SH opsparing.Variabel 4390&nbsp;– Fritvalgskonto ændringerLønarten er negativ og brugers til at reducere Fritvalgs Lønkonto med timer * sats, ved f.eks. ferie, orlov, sygdom eller lign.
+### Oprettelse af variable lønoplysninger
+
+Gå til Medarbejder → Variable lønoplysninger
+Klik på Ny
+Angiv ’Periode’ dato
+Angiv ’Medarbejder’
+Angiv ’Lønart’
+Klik på OK
+
+## Visning af saldi på rapport
+Opsparingen pr. medarbejder vises på rapporten Medarbejder til gode (år til dato), samt i bunden af lønsedlen.
+Saldo på Fritvalgs Lønkonto kan ikke blive negativ på medarbejder, ved udbetaling af beløb. Dog er der den undtagelse, at hvis medarbejder har valgt at benytte sig af AM-pensionsberegning (lønart 5990, 5991 og 6009), så kan saldo blive negativ eller ved udbetaling på lønart 4484.  
+ 
+👩‍🏫Eksempel 1Medarbejder har kr. 1.000,- i saldo, og får udbetalt kr. 5.000,- via lønart 4485. På lønseddel vil der blive udbetalt kr. 5.000,-, men trukket kr. 4.000,- tilbage, således at kr. 1.000,- vil blive udbetalt. Saldo vil herefter være kr. 0,-.  
+ 
+👩‍🏫 Eksempel 2Medarbejder har kr. 1.000,- i saldo, og får udbetalt kr. 1.000,- via lønart 4485. Derudover har medarbejder AM-pensionslønart 5991 med kr. 200,-. På lønseddel vil der blive udbetalt kr. 1.000,-og samtidig beregnet kr. 200,- i AM-pension. Saldo vil herefter være negativ med kr. 200,-.
+## Fritvalg lokal
+For virksomheder der har en procentsats, som er højere end den generelle sats, håndteres opsparing, løbende beskatning og afregning af &#39;Fritvalg lokal&#39; i en separat opsparing, som kører sideløbende med den almindelige Fritvalgs Lønkonto. 
+Saldi ses i saldofelt i bunden af lønseddel (dvs. findes ikke på en rapport) og vises kun på lønseddeltype 12.
+## Oprettelse af Fritvalg lokal
+For de grupper af medarbejdere, der er omfattet af Fritvalg lokal, hvor opsparingen skal beskattes og hensættes løbende, skal der på den pågældende stillingskategori tilknyttes 
+
+Stillingskategorilønart 4582 – Fritvalg lokal opsparing
+
+Oprettelse af stillingskategorilønarter kan ses herunder  
+ 
+Skal Fritvalg lokal gælde for udvalgte medarbejdere, og ikke hele stillingskategorien, anvendes på de pågældende medarbejdere  
+
+Fast Lønart 4581 – Fritvalg lokal opsparing
+
+Oprettelse af faste lønoplysninger kan ses herunder
+### Oprettelse af stillingskategorilønarter
+
+Gå til Opsætning → Stillingskategori
+Angiv Stillingskategori
+Klik på Find
+Vælg Lønoplysninger i højremenuen
+Klik på Ny
+Angiv ’Lønart’
+Angiv ’Periode’ dato
+Klik på OK
+
+### Oprettelse af faste lønoplysninger
+
+Gå til Medarbejder → Faste lønoplysninger
+Klik på Ny
+Angiv ’Lønart’
+Angiv ’Periode’ dato
+Klik på OK
+
+## Fritvalg lokal – Oprettelse af satser
+Ved hver lønkørsel beregner systemet en procentdel af medarbejderens ferieberettigede løn. Procenten beregnes med de værdier, der er angivet i følgende resultattabeller:
+
+Resultattabel: 4406 – Fritvalg lokalaft. firma pct.Bruges til ekstra firmaandel
+
+### Opsætning af resultattabel
+
+Gå til Opsætning → Resultattabel
+Angiv resultattabellen
+Klik på Find
+Klik på Ny periode
+Udfyld feltet ’Gyldighed’
+Klik på OK
+Vælg Resultattrin i højremenuen
+Dobbeltklik på løngruppen
+Indtast procentsats for aflønningsformen
+Klik på OK
+
+## Fritvalg lokal – Opsparing tillægges pensionsgrundlag
+Opsparingen til Fritvalg lokal kan tillægges pensionsgrundlaget. Det gøres ved at oprette følgende resultattabel, som er den samme, som bruges til Fritvalgs Lønkonto:Resultattabel 4490&nbsp;– Fritvalgskonto pct. PensionBruges til at angive, hvilket pensionsgrundlag opsparingen fra resultattabel 4401 skal tillægges. Værdi for pensionsgrundlag er:Pensionsgrundlag 1 = 1,00&nbsp;Pensionsgrundlag 2 = 2,00Pensionsgrundlag 3 = 3,00Pensionsgrundlag 4 = 4,00Pensionsgrundlag 5 = 5,00Pensionsgrundlag 6 = 6,00👩‍🏫&nbsp;EksempelMedarbejder har lønart 6000 som pensionslønart. I henhold til lønartskatalog er pensionsgrundlaget B, hvilket betyder, at værdien i resultattabel '4490' skal være 2,00.
+### Opsætning af resultattabel
+
+Gå til Opsætning → Resultattabel
+Angiv resultattabellen
+Klik på Find
+Klik på Ny periode
+Udfyld feltet ’Gyldighed’
+Klik på OK
+Vælg Resultattrin i højremenuen
+Dobbeltklik på løngruppen
+Indtast procentsats for aflønningsformen
+Klik på OK
+
+## Fritvalg lokal – Opsparing overføres til AM-pension
+Medarbejderen kan vælge at bruge en del af sin Fritvalg lokal opsparing til Arbejdsmarkeds-pension (såfremt medarbejderen i forvejen er omfattet af arbejdsmarkedspension). Det kan ske som en fast procent
+
+Fast lønart 6029 – Fritvalg lokal-AM-pension %Bruges til at angive en fast procentsats, til beregning af pension, udover medarbejderens obligatoriske procentdel.
+
+### Oprettelse af faste lønoplysninger
+
+Gå til Medarbejder → Faste lønoplysninger
+Klik på Ny
+Angiv ’Lønart’
+Angiv ’Periode’ dato
+Klik på OK
+
+## Fritvalg lokal – Udbetaling
+Medarbejderen kan vælge at få beløbet udbetalt via lønnen.
+Nedenstående kan bruges, hvis man f.eks. skal have udbetalt saldo et par gange om året:
+
+Variabel lønart 4585 – Fritvalg lokal udbetalingBeskatter og udbetaler det beløb, som angives i input
+Fast lønart 4587 - Fritvalg lokal udbetalingTømmer saldoen
+Stillingskategori lønart 4588 - Fritvalg lokal udbetalingTømmer saldoenPå kørselsselektionen for den pågældende kørsel, skal ’Ikrafttrædelseskode’ ’L’ være oprettet.
+
+Oprettelse af stillingskategorilønarter samt faste- og variable lønoplysninger kan ses herunder
+Nedenstående kan bruges, hvis man skal have tømt saldoen i hver lønkørsel
+
+Stillingskategori lønart 4589 - Fritvalg lokal udbetalingTømmer saldoen
+
+Oprettelse af stillingskategorilønarter kan ses herunder  
+ 
+Medarbejderen, med opsparing der beskattes og hensættes løbende, kan vælge at få nettobeløbet udbetalt via lønnen.
+Nedenstående kan bruges, hvis man f.eks. skal have udbetalt saldo et par gange om året
+
+Variabel lønart 9185 - Fritvalg lokal udbetaling NET.Udbetaler det nettobeløb, som angives i input
+Fast lønart 9187 - Fritvalg lokal udbetaling NET.Tømmer nettosaldoen
+Stillingskategori lønart 9188 - Fritvalg lokal udbetaling NET.Tømmer nettosaldoenPå kørselsselektionen for den pågældende kørsel, skal ’Ikrafttrædelseskode’ ’L’ være oprettet.
+
+Oprettelse af stillingskategorilønarter samt faste- og variable lønoplysninger kan ses herunder
+Nedenstående kan bruges, hvis man skal have tømt nettosaldoen i hver lønkørsel
+
+Stillingskategori lønart 9189 - Fritvalg lokal udbetaling NET.Tømmer saldoen
+
+Oprettelse af stillingskategorilønarter kan ses herunder
+### Oprettelse af variable lønoplysninger
+
+Gå til Medarbejder → Variable lønoplysninger
+Klik på Ny
+Angiv ’Periode’ dato
+Angiv ’Medarbejder’
+Angiv ’Lønart’
+Klik på OK
+
+### Oprettelse af faste lønoplysninger
+
+Gå til Medarbejder → Faste lønoplysninger
+Klik på Ny
+Angiv ’Lønart’
+Angiv ’Periode’ dato
+Klik på OK
+
+### Oprettelse af stillingskategorilønarter
+
+Gå til Opsætning → Stillingskategori
+Angiv Stillingskategori
+Klik på Find
+Vælg Lønoplysninger i højremenuen
+Klik på Ny
+Angiv ’Lønart’
+Angiv ’Periode’ dato
+Klik på OK
+
+## Fritvalg lokal – Regulering af saldi
+Mangler der at blive tillagt saldoen på en medarbejder, kan beløbet lægges ind på følgende lønart.
+
+Variabel lønart 4580 – Fritvalg lokal +/-Bruges med beløb i input. Opsparingen opskrives med det beløb der angives på lønarten.
+
+### Oprettelse af variable lønoplysninger
+
+Gå til Medarbejder → Variable lønoplysninger
+Klik på Ny
+Angiv ’Periode’ dato
+Angiv ’Medarbejder’
+Angiv ’Lønart’
+Klik på OK

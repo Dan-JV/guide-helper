@@ -1,0 +1,200 @@
+https://help.vismaenterprise.dk/vismaloen-standard/ferie/70-ferietillaeg-kalenderar
+
+# Ferietillæg kalenderår
+
+## Ferieår
+Feriesystemet arbejder med følgende år:
+* Ferieoptjeningsår: 01.09.XXXX til 31.08.XXXX (start 01.09.2020)
+* Ferieafholdelsesperiode: 01.09.XXXX til 31.12.XXXX (start 01.09.2020 - 31.12.2021)
+* Overført ferie (første gang ferie kan overføres efter ferieloven pr. 01.01.2022)
+
+
+## Ferietillæg – Kalenderår
+Der er overenskomster som har vedtaget, at opsparing af ferietillæg sker i kalenderåret (01.01 til 31.12) og udbetales typisk i april måned – kørselsordre 12X04.
+Er procenten for ferietillægget en anden end 1%, kan det ændres generelt for en løngruppe på en resultattabel eller det kan ændres personligt på en medarbejder:
+
+Resultattabel 4003 - Ferietillæg lovpligtig
+
+
+Gå til Opsætning → Resultattabel
+Vælg resultattabel 4003
+Klik Find
+Klik Ny periode
+Udfyld feltet ‘Gyldig’
+Klik OK
+Vælg Resultattrin i højremenuen
+Klik Ny
+Vælg løngruppe og skriv procentsats for aflønningsformen
+Klik Gem
+
+Ønsker du at ændre ferietillægsprocenten for den enkelte medarbejder, kan du gøre det på:
+
+Personlig sats-lønart 9908 – Personlig sats ferietillæg
+
+
+Gå til Medarbejder → Ansættelsesforhold
+Vælg Personlige satser i højremenuen 
+Klik Ny
+Udfyld periode og lønart
+Klik OK
+
+For at ændre optjening af ferietillægget til kalenderår, kræver det en ændring på stillingskategorien. Her skal oprettes en af følgende to stillingskategori lønarter, som håndterer optjening i kalenderår. 
+Der er to forskellige grundlag, alt efter om den ferieberettigede løn skal nedskrives når ferie afholdes, eller ikke nedskrives ved afholdelse:
+
+Stillingskategorilønart 4902 - Ferietillæg lov – kalenderårDet opsparede ferietillæg beregnes af lovgrundlaget for ferieberettiget løn, dvs. der sker nedskrivning af beregningsgrundlaget når der afholdes ferie, og når medarbejderen har fri egen regning.
+Stillingskategorilønart 4904 - Ferietillæg OK-grundlag - kalenderårDet opsparede ferietillæg beregnes af OK-grundlaget for ferieberettiget løn, dvs. at beregningsgrundlaget ikke nedskrives når der afholdes ferie. Grundlaget nedskrives når medarbejderen holder fri egen regning.
+
+
+Gå til Opsætning → Stillingskategori
+Angiv f.eks. ’1001’
+Klik Find
+Vælg Lønoplysninger i højremenuen
+Klik Ny
+Angiv enten stillingskategori lønart 4902 eller 4904
+Angiv datoen 01-09-2020
+Klik Gem
+
+Udbetaling af ferietillægget kalenderår
+Udbetaling af ferietillægget sker når der på kørselsordre 12X04 er oprettet ikrafttrædelseskode ‘U’. 
+Skal udbetaling ske i en anden lønperiode skal ikrafttrædelseskode ’U’ slettes på 12X04 og oprettes på den ønsket kørselsordre.
+⚠️ OBS: Der kan være flere kørselsselektioner det skal oprettes på f.eks. 1 - Bagud, 2 - Forud eller 3 - Timeløn.
+
+Gå til Lønadministration → Kørselsselektion
+Angiv kørselsordre f.eks. ’12X04’
+Klik Find
+Klik Ny
+Angiv ’U’
+Klik Gem hvis udbetalingen skal oprettes eller
+Dobbeltklik på Ikrafttrædelseskode ’U’
+Klik Slet, hvis udbetalingen ikke skal ske på denne kørselsordre
+Vælg Ikrafttrædelseskode i højremenuen
+
+Gentag ovenstående hvis du både har forudlønnede (selektion = 2), bagudlønnede (selektion = 1) eller timelønnede (selektion = 3).
+
+### Udbetaling af ferietillæg - kalenderår variabelt
+Skal du udbetale ferietillæg for enkelte medarbejdere i andre lønperioder, kan du anvende en variabel lønart som tømmer opsparet ferietillæg, som endnu ikke er udbetalt, men opsparet i foregående kalenderår. 
+
+Variabel lønart 4770 ‘Udbetaling Ferietillæg lov- og OK-grundlag’
+
+Skal der udbetales en del af det optjente ferietillæg, kan en af nedenstående lønarter anvendes alt efter grundlaget, hvor der angives det ønskede beløb både for indeværende kalenderår og sidste kalenderår. 
+
+Variabel lønart 4773 Udbetaling Ferietillæg lov * Bruges til udbetaling af ferietillæg 1% som optjenes via lovgrundlag
+* Bogføres på lønart 4652
+
+
+Variabel lønart 4774 Udbetaling af Ferietillæg OK* Bruges til udbetaling af ferietillæg 1% som optjenes via OK - grundlag
+* Bogføres på lønart 4650
+
+
+
+
+## Ekstra ferietillæg – kalenderår
+Der er overenskomster hvor opsparing af ekstra ferietillæg sker i kalenderåret og udbetales typisk i april måned.
+Det ekstra ferietillæg optjenes fra 1. januar til 31. december og udbetales i april måneds lønkørsel til alle - kørselsordre 12X04.
+Procenten for ekstra ferietillæg, oprettes enten generelt for en løngruppe på en resultattabel, eller personligt på en medarbejder:
+
+Resultattabel 4007 - Ekstra ferietillæg - kalenderår
+
+
+Gå til Opsætning → Resultattabel
+Vælg resultattabel 4007
+Klik Find
+Klik Ny periode
+Udfyld feltet ‘Gyldig’
+Klik OK
+Vælg Resultattrin i højremenuen 
+Klik Ny
+Vælg løngruppe og skriv procentsats for aflønningsformen
+Klik Gem
+
+Ønsker du at ændre ferietillægsprocenten for den enkelte medarbejdere, kan du gøre det på:
+
+Personlig sats 9912 - Ekstra ferietillæg - kalenderår
+
+
+Gå til Medarbejder → Ansættelsesforhold
+Vælg Personlige satser i højremenuen 
+Klik Ny
+Udfyld periode og lønart
+Klik OK
+
+Optjening af ekstra ferietillæg i kalenderår, kræver at du opretter en af følgende to stillingskategori lønarter. Der er to forskellige grundlag, alt efter om den ferieberettigede løn skal nedskrives når ferie afholdes eller ikke nedskrives ved afholdelse:
+
+Stillingskategorilønart 4622 - Ekstra ferietillæg OK-grundlag – kalenderårDet opsparede ferietillæg beregnes af OK-grundlaget for ferieberettiget løn. Dvs. at beregningsgrundlaget ikke nedskrives, når der afholdes ferie. Grundlaget nedskrives når medarbejderen holder fri egen regning.
+Stillingskategorilønart 4624 - Ekstra ferietillæg lov – kalenderårDet opsparede ekstra ferietillæg beregnes af lovgrundlaget for ferieberettiget løn. Dvs. der sker nedskrivning af beregningsgrundlaget, når der afholdes ferie og når medarbejderen har fri egen regning.
+
+
+Gå til Opsætning → Stillingskategori
+Angiv f.eks. ’1001’
+Klik Find
+Vælg Lønoplysninger i højremenuen
+Klik Ny
+Angiv enten stillingskategori lønart 4622 eller 4624
+Angiv en dato
+Klik Gem
+
+Udbetaling af ekstra ferietillæg
+Udbetalingen sker når der på kørselsordre 12X04 er oprettet ikrafttrædelseskode ‘U’. 
+Skal udbetalingen ske i en anden lønperiode skal ikrafttrædelseskode ’U’ slettes på 12X04 og oprettes på den ønskede kørselsordre.
+⚠️ OBS: Der kan være flere kørselsselektioner det skal oprettes på f.eks. 1 - Bagud, 2 - Forud eller 3 - Timeløn.
+
+Gå til Lønadministration → Kørselsselektion
+Angiv kørselsordre f.eks. ’12X04’
+Klik Find
+Klik Ny
+Angiv ’U’
+Klik Gem hvis udbetalingen skal oprettes eller
+Dobbeltklik på Ikrafttrædelseskode ’U’
+Klik Slet, hvis udbetalingen ikke skal ske på denne kørselsordre
+Vælg Ikrafttrædelseskode i højremenuen
+
+Gentag ovenstående hvis du både har forudlønnede (selektion = 2), bagudlønnede (selektion = 1) eller timelønnede (selektion = 3).
+
+### Udbetaling af ekstra ferietillæg - kalenderår variabelt
+Skal du udbetale ekstra ferietillæg for enkelte medarbejdere i andre lønperioder, kan du anvende en variabel lønart som tømmer opsparet ekstra ferietillæg, som endnu ikke er udbetalt, men opsparet i foregående kalenderår. 
+
+Variabel lønart 4775 ‘Udbetaling ekstra Ferietillæg lov + OK-grundlag’
+
+Skal der udbetales en del af det optjente ekstra ferietillæg, kan en af nedenstående lønarter anvendes alt efter grundlaget, hvor der angives det ønskede beløb både for indeværende kalenderår og sidste kalenderår. 
+
+Variabel lønart 4778 Udbetaling Ekstra Ferietillæg lov
+Bruges til udbetaling af ekstra ferietillæg som optjenes via lovgrundlag
+Bogføres på lønart 4653
+
+
+Variabel lønart 4779 Udbetaling af Ekstra Ferietillæg OK 
+Bruges til udbetaling af ekstra ferietillæg som optjenes via OK - grundlag
+
+
+
+
+## Automatisk udbetaling af ekstra ferietillæg - kalenderår
+Opret en af følgende stillingskategorilønarter for få afregnet ekstra ferietillæg ifb. med fratrædelse:
+
+Stillingskategorilønart 4628 - Ekstra ferietillæg OK-grundlag udb. fratrædelse
+Stillingskategorilønart 4629 - Ekstra ferietillæg lovgrundlag udb. fratrædelse
+
+
+Vælg Opsætning → Stillingskategori
+Angiv f.eks. ’1001’
+Klik Find
+Vælg Lønoplysninger i højremenuen
+Klik Ny
+Angiv enten stillingskategori lønart 4628 eller 4629
+Angiv en dato
+Klik Gem
+
+
+## Udbetaling af ferietillæg saldi ved ændring af ansættelsesvilkår
+Udbetaling af saldo på både lovpligtig ferietillæg og ekstra ferietillæg uanset om de er optjent efter kalenderår eller ferieår, kan ske i forbindelse med at medarbejdere har skiftet arbejdsgiver eller ansættelsesvilkår, og alle typer optjente ferietillæg ønskes udbetalt.
+
+Variabel lønart 47 - Afregning af alle ferietillæg, ekskl.  lønperioden
+Variabel lønart 44770 - Afregning af alle ferietillæg, inkl.  lønperioden
+
+Begge lønarter er af typen ‘Variabel efterregulering’, hvilket betyder at de kan efterreguleres på baggrund af den dato de registreres med.
+👩‍🏫 Eksempel: Oprettes lønart 47 på en medarbejder den 1. juli og der køres løn for juli måned, vil lønarten udbetale saldo på ferietillæg og ekstra ferietillæg optjent til og med 30. juni.
+👩‍🏫 Eksempel: Oprettes lønart 44770 på en medarbejder den 1. juli og der køres løn for juli måned, vil lønarten udbetale saldo på ferietillæg og ekstra ferietillæg optjent til og med 31. juli, dvs. inklusiv lønperiodens optjening af ferietillæg.Følgende lønarter skal oprettes i kontoplan til bogføring:4786, 4787, 4781, 4782, 4771, 4772, 44771, 44772, 4776, 4777, 4636, 4641
+
+## Ferieberettigede grundlag – kundespecifikt
+Standard er defineret hvilke lønarter som er ferieberettiget og hvilke lønarter, som ikke er ferieberettiget. Med konsulentassistance kan du få defineret hvilke lønarter du ønsker skal være ferieberettigede eller ej – faktureres efter tidsforbrug.
+Grundlaget specificeres under lønartstype 1109. Denne lønartstype er som udgangspunkt tom. Lønartstypen oprettes med de lønarter som f.eks. ikke skal tælles med i den ferieberettiget løn med et minus og med et plus for de lønarter som skal tælles med i grundlaget for ferieberettiget løn.

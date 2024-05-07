@@ -1,0 +1,32 @@
+https://help.vismaenterprise.dk/vismaloen-standard/medarbejder/30-opdater-adresser-via-cpr-registret
+
+# Opdater adresser via CPR-registret
+
+## Navn og adresseoplysninger hentes fra CPR-registret
+Når du opretter en ny medarbejder henter Visma Løn automatisk navn og adresse fra CPR-registret, men hvis medarbejderen efterfølgende skifter adresse bliver det ikke opdateret. 
+Adresseoplysninger kan opdateres ved at skrive medarbejderens CPR-nummer oveni det eksisterende nummer, eller ved at indlæse en decentral fil i Visma Løn, så der opdateres fra CPR-registret.
+Dette værktøj er en hjælp til at opdatere medarbejdernes adresser på en nem måde ved at indlæse og opdatere alle medarbejderes adresseoplysninger på én gang.
+
+## Sådan bruger du værktøjet
+
+Download filen HentNavnAdresseHosCPR i bunden under bilag
+Hent rapporten Medarbejderstamkort fra Visma Løn
+Gem rapporten i samme mappe som den downloadede fil
+Åben filen HentNavnAdresseHosCPR
+Klik på Indlæs Medarbejder Stamkort
+Klik på Dan indlæsningsfil
+
+
+## Sådan indlæses filen i Visma Løn
+
+Klik på Lønadministration → Overførsel → Decentral registrering
+Indlæs filen, klik på Indlæs
+Find filen, klik på OK
+Herefter startes et job, som vises under Vis job. Når jobbet er sluttet, klik på Hent aktuel
+Klik herefter på Åbn
+Dobbeltklik på filen, der vises og herefter klik på Åbn
+På skærmen vises Kvittering for decentral registrering. Rapporten viser, hvor mange linjer, der er henholdsvis Modtaget, Indlæst og Afvist.
+
+Hvis navn og adresse ikke kan hentes fra CPR-registret f.eks. pga. beskyttet adresse, vil der vises en advis på kvitteringslisten.
+Medarbejdere der er fratrådt vil ikke blive opdateret, men medarbejdere med en fremtidig fratrædelsesdato vil blive opdateret ligesom de øvrige ansatte.
+Indlæsning af filen vil ikke aktivere efterregulering på medarbejderne.

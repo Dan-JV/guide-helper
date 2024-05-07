@@ -1,0 +1,6 @@
+https://help.vismaenterprise.dk/vismaloen-standard/ferie/29-feriepengedifferenceberegning
+
+# Feriepengedifferenceberegning
+
+Vedhæftet et regneark som kan hjælpe med at beregne Feriepengedifferenceberegning i Ny Ferielov.   
+Se excel fil i bunden under bilag

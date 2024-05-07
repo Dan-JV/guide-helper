@@ -1,0 +1,173 @@
+https://help.vismaenterprise.dk/vismaloen-standard/webinars/100-webinar-bibliotek
+
+# Webinar bibliotek
+
+Bemærk: Hvis der er en præsentation tilgængelig fra webinaret, kan du finde den i beskrivelsesboksen på YouTube.
+Det nyeste webinar er det første herefter:
+
+## Customer Portal: Introduktion til ny kundeportal - 8. marts 2024
+## Tips og trick i Visma Løn - 1. kvartal 2024
+[Hent Præsentation](https://design.visma.com/share/XbqQFiNejVqKQ84cwQyc)
+## Webinar om tidsregistrering - Bliv klar til de nye lovkrav
+## Introduktion til ny beregning af feriepenge
+[Hent Præsentaiton](https://design.visma.com/share/YG6Txz4qZikjHUzzHzRh)
+## Tips og tricks til Visma Løn - 4. kvartal 2023
+Savner du tips og tricks til at lette dine arbejdsgange i Visma Løn? Så er dette webinar lige noget for dig.&nbsp;Hvert kvartal vil vores erfarne lønspecialister komme med en masse inspiration til hvordan du kan optimere jeres lønadministration i Visma Løn.&nbsp;Dette kvartals emner er følgende:Lås felter på variable og faste løndele, samt fraværsregistreringer&nbsp;Genopfrisk adresser fra CPR-nummer via decentral registrering&nbsp;Pensionslønarter&nbsp;hvor og hvordan med grundlag og kontonummer til PI&nbsp;Periodisering af resultattabeller, og hvor du finder dem du har&nbsp;Oprydning i udskrifter fra lønkørsel&nbsp;DiverseHent Præsentation
+## Afslutning af ferieafholdelsesperioden
+På dette webinar gennemgår vi, hvad du skal forholde dig til, når ferieafholdelsesperioden udløber den 31. december. Hvad sker der i Visma Løn og hvad skal du selv være opmærksom på at gøre. 
+Vi kommer bl.a. ind på: 
+* Hvilke regler gælder for ferie ud over 4 uger 
+* Hvordan bruges rapporten Ferieafholdelsesoversigt 
+* Overførsel af restferie - Udbetaling af 5. ferieuge 
+* Nulstilling af ubrugt ferie
+
+[Hent præsentation](https://design.visma.com/share/pAbzfs1osaKb5CtjNQwp)
+## Løntillæg for store bededag i Visma Løn 
+Folketinget vedtog i år, at store bededag skal afskaffes som helligdag. Loven træder i kraft den 1. januar 2024, og fra og med 2024 anses store bededag som en almindelig arbejdsdag. 
+De månedslønnede medarbejdere vil få kompensation for den øgede arbejdstid med et løntillæg. 
+På dette webinar får du en introduktion til, hvordan du kan håndtere udbetaling af tillæg for store bededag.
+[Hent præsentation](https://design.visma.com/share/5sLte7DkhnC5QJK6JWpk)
+##  Løntillæg for store bededag i Visma Løn
+Folketinget vedtog i år, at store bededag skal afskaffes som helligdag. Loven træder i kraft den 1. januar 2024, og fra og med 2024 anses store bededag som en almindelig arbejdsdag.
+De månedslønnede medarbejdere vil få kompensation for den øgede arbejdstid med et løntillæg.
+På dette webinar får du en introduktion til, hvordan du kan håndtere udbetaling af tillæg for store bededag. 
+[Hent præsentation](https://design.visma.com/share/qdBkCrPFK3sf2sF73yX4)
+## Tips og tricks til Visma Løn - 3. kvartal 2023
+Savner du tips og tricks til at lette dine arbejdsgange i Visma Løn? Så er dette webinar lige noget for dig.
+
+Hvert kvartal vil vores erfarne lønspecialister komme med en masse inspiration til hvordan du kan optimere jeres lønadministration i Visma Løn.
+
+Dette kvartals emner er følgende:  
+\- Oprettelse, ændring og sletning af brugere i Visma Løn  
+\- Fremtidig lønseddel ved efterregulering  
+\- Rapporter i My Visma
+
+[Hent præsentation](https://design.visma.com/share/EdFZEdowkoyEsorayFbg)
+## Tips og tricks til Visma Løn - 2. kvartal 2023
+Savner du tips og tricks til at lette dine arbejdsgange i Visma Løn? Så er dette webinar lige noget for dig. Hvert kvartal vil vores erfarne lønspecialister komme med en masse inspiration til hvordan du kan optimere jeres lønadministration i Visma Løn.
+
+*   Dette kvartals emner er følgende:
+*   Udskydelse af A-skat og AM-bidrag
+*   Tilpasning af pensionsgrundlag
+*   Forskudt lønperiode på timelønnede
+*   Månedsløn i brudte måneder
+*   Opsætning af automatisk udbetaling af ferietillæg ved fratrædelse
+
+[Hent præsentation](https://design.visma.com/share/KzZ2gzB1)
+## Udbetaling af lovpligtig ferietillæg ved fratrædelse
+På dette webinar vil du lære, hvordan du selv kan sætte Visma Løn op til automatisk at udbetale det lovpligtige ferietillæg, når en medarbejder fratræder. På webinaret vil vi gennemgå:
+* Hvad siger Ferieloven
+* Hvordan beregnes og udbetales ferietillægget
+* Opsætning af automatisk udbetaling
+* Undtagelser for udbetaling
+* Opsætning i kontoplan og bogføring
+
+[Hent præsentation](https://design.visma.com/share/SQYcCLJB)
+## Tips og tricks til Visma Løn - 1. kvartal 2023
+Savner du tips og tricks til at lette dine arbejdsgange i Visma Løn? Så er dette webinar lige noget for dig.
+
+Hvert kvartal vil vores erfarne lønspecialister komme med en masse inspiration til hvordan du kan optimere jeres lønadministration i Visma Løn.
+
+I det første kvartal for 2023, vil du bl.a. blive præsenteret for:
+
+Oprettelse af ny arbejdsgiver
+
+Oprettelse af en selvstændig kørselsordre til ny arbejdsgiver
+
+Tjek af levereancekvittering efter godkendt lønkørsel og godkendt afregning
+
+Opsætning af automatisk udbetaling af ferietillæg ved fratrædelse
+## Bliv klar til lukkedage i Visma Løn
+Hør, hvordan du bliver klar til den første lukkeperiode i Visma Løn i forbindelse med Visma Enterprises skift til ny hosting-leverandør. Webinaret er for dig, der selv varetager lønopgaven i Visma Løn.
+Se videoen &quot;[Webinar: Bliv klar til lukkedage i Visma Løn - Visma Løn Finans 09.03.2023](https://vimeo.com/806352781/540cdd6106)&quot;
+## Ferieafholdelsesperioden udløber 31. december
+På dette webinar gennemgår vi, hvad du skal forholde dig til når ferieafholdelsesperioden udløber den 31. december. Hvad sker der i Visma Løn og hvad skal du selv være opmærksom på at gøre. Vi kommer bl.a. ind på overførsel af restferie, udbetaling af 5. ferieuge og nulstilling af ubrugt ferie
+## Spørg om: ny hosting af Visma Løn
+I denne spørgesession deler Mille Lohmann, Commercial Director, samt Nikolaj Weber, Data Protection Manager &amp; Information Security Officer, vores overvejelser i valget af ny hostingleverandør. Sessionen er målrettet de it-sikkerhedsansvarlige som fx Data Protection Officers eller lignende roller.
+## Visma Løn - Gennemsnitsberegning af feriepenge
+På webinaret vil vi introducere dig til den kommende ændring af beregning af feriepenge ifm. fratrædelser. Hvad er baggrunden for at det ændres og hvad bliver ændret i Visma Løn. Vi vil fortælle om:
+* Hvad bliver ændret og hvorfor
+* Gennemsnitsberegning af feriepenge ifm. fratrædelser
+* Hvornår træder det i kraft
+* Fratrædelser i overgangsperiode
+* Efterbetalinger og korrektioner
+* Tildelt forskudsferie ifm. fratrædelse
+* Bogføring af hensættelser på feriepenge
+* Rapporten Ny ferielov Ferieregnskab
+
+## mit.dk - mitBasic og nyt siden sidst
+Vi byder dig velkommen til endnu et webinar inden selve overgangen til mit.dk. Denne gang sætter vi bl.a. fokus på nyt siden sidste webinar samt mitBasic:
+
+*   Hvad kan I bruge mitBasic til?
+*   Hvad skal du være opmærksom på?
+*   Hvordan fungerer mitBasic i praksis?
+*   Hvordan kommer medarbejderne på?
+*   Hvad er deadline for overgangen fra print til mitBasic?
+## Udbetaling af ferietillæg i Visma Løn
+På dette webinar viser vi hvordan ferietillæg og ekstra ferietillæg optjenes og udbetales i Visma Løn.
+## Information om mit.dk
+Fra den 5. juni 2022 vil jeres medarbejdere modtage deres lønseddel i mit.dk. Webinaret er for dig, der gerne vil informeres om de nye muligheder, og det du skal være opmærksom på i denne sammenhæng.
+## Sådan indlæser du data i Visma Løn
+Skal du oprette nye lønreguleringer eller opdatere satser i lønsystemet, kan du indlæse og opdatere lønoplysninger via funktionen Decentral registrering. Forskellige slags oplysninger kan opdateres i Visma Løn og Visma HR, f.eks. stamdata, løn og HR oplysninger eller en ny kontoplan. På dette webinar vil vi vise eksempler på, hvordan du i praksis kan anvende funktionen til indlæsning af filer.
+## Supplerende lønkørsel og egne kørselsordre
+På dette webinar gennemgår vi emnerne: supplerende lønkørsel og egne kørselsordrer.
+Har du fået informationer efter din lønkørsel, som du gerne vil udbetale inden din næste almindelige lønkørsel, kan du oprette en supplerende lønkørsel. Har du brug for at køre lønnen for en specifik arbejdsgiver, eller flere udvalgte arbejdsgivere uden at køre løn for samtlige arbejdsgivere på en gang, kan du oprette egne kørselsordrer, og evt. tilpasse standard kørselsordren.
+## Gennemgang af Excel-værktøjet ‘Afstemning af eIndkomst år-til-dato’
+På dette webinar får du en gennemgang af Excel-værktøjet ‘Afstemning af eIndkomst år-til-dato’, som er en 3-benet afstemning af data mellem Visma Løn, eIndkomst og jeres egne finanskonti.
+## Ferieafholdelsesperioden udløber 31. december
+På dette webinar viser vi hvordan du skal forholde dig til at ferieafholdelsesperioden udløber den 31. december. Vi kommer bl.a. ind på:  Restferiedage skal udbetales og evt. overførsel af restferiedage
+## Overholder I EU lovgivningen? Få styr på arbejdstidsreglerne
+Som arbejdsgiver er det vigtigt at kende til EU’s arbejdstidsdirektiv, for bøder og erstatningskrav kan blive konsekvensen, hvis arbejdstidsreglerne ikke bliver overholdt.
+Det er vigtigere end nogensinde før som arbejdsgiver at kunne dokumentere medarbejdernes arbejdstid, nu hvor mange virksomheder har åbnet op for hjemmearbejde. For her kan det være ekstra svært at holde styr på den reelle arbejdstid.
+Skulle man være så uheldig, at der opstår uoverensstemmelser mellem arbejdsgiver og medarbejder ift. tidsregistreringen, er det jer som arbejdsgiver, der har bevisbyrden. Det er derfor vigtigt, at I har styr på arbejdstidsreglerne og kan dokumentere jeres medarbejderes arbejdstid.
+## Quick guide til den nye ferielov - så meget ferie kan du afholde
+Synes du også at det kan være svært at få et overblik over, hvor meget ferie du kan afholde? Så er du ikke alene. Den nye ferielov har ændret på måden vi opsparer og afholder ferie. Deltag på webinaret og lad os hjælpe dig med at forstå, hvordan du opsparer feriedage med den nye ferielov og hvordan du nemt kan se, hvor meget ferie du kan afholde.
+## Ferie på elever - særlige dage
+Optjening af ferie på elever/lærlinge, som har ferie med løn. Elever der er ansat den 2. september eller senere skal have tildelt 25 feriedage og samtidig optjene samtidighedsferie. På dette webinar vil du se hvordan du kan sætte Visma Løn op til at kunne håndtere både tildelte feriedage og samtidighedsferie.
+## The new normal - arbejdspolitik anno 2021
+Er hjemmearbejde blevet en fast rutine og et ønsket gode for jeres medarbejdere? Hvad stiller det af krav til virksomheden og dig som HR-ansvarlig? Bliv klogere på hjemmearbejdspolitikker og jura anno 2021, når HR-direktør, Anders Andersen, og Legal Advisor, Louise Müller, fortæller, hvordan Visma Enterprise har forholdt sig og hvilke faldgruber, du skal være opmærksom på.
+## Tidsregistrering gjort nemt - få det hele i én platform
+Tidsregistrering skal være nemt - både for medarbejdere og administrationen. Er det ikke nemt for medarbejderne at registrere ferie, tilføje timer osv., risikerer du, at registreringerne bliver mangelfulde. Det koster på administrationen og medarbejdertilfredsheden. På dette webinar får du en introduktion til My Visma App&#39;en samt indsigt i hvordan du kommer i gang.
+## Visma Refusion - et abonnement, der tjener penge for din virksomhed
+Hvert år udbetales 22 mia. kr. til danske virksomheder i refusion grundet sygdom og barsel. Får I jeres bid af kagen? Hør hvordan vi kan hjælpe dig med at indhente de tabte refusionskroner - uden du skal løfte en finger.
+## Lønkørsel i Visma Løn
+På dette webinar viser vi hvordan du kører en lønkørsel i Visma Løn samt hvordan du opretter en ekstra lønkørsel (supplerende lønkørsel).
+## Nedskrivning af feriepenge ved afholdelse af ferie med løn
+På dette webinar gennemgår vi hvordan feriepengene nedskrives når en feriedag eller ferie i timer afholdes efter ny ferielov.
+## Et praktisk eksempel på håndtering af feriehensættelser i HR- og Økonomifunktionen
+Du kan på dette webinar høre, hvordan Visma Enterprise har valgt at håndtere hensættelsen af medarbejdernes feriesaldi med udgangspunkt i Visma Løn og Visma HR. Få inspiration til jeres egen proces og få konkrete tips til, hvilke overvejelser og valg, du kan træffe, når jeres proces skal struktureres.
+## Ny arbejdsgiver i Visma Løn
+På dette webinar viser vi hvordan en ny Arbejdsgiver oprettes samt OS aftale udarbejdes til Nets.
+## Genansættelse og fratrædelse af medarbejder
+På dette webinar viser vi hvordan du genansætter en tidligere ansat medarbejder, samt hvordan du fratræder en medarbejder i Visma Løn.
+## Særlige/dage timer i Visma Løn
+På dette webinar viser vi hvordan Særlige dage/timer kan anvendes i Visma Løn. Vi kommer bl.a. ind på optjening, afholdelse, udbetaling, korrektion og visning af Særlige dage/timer.
+## Efterregulering i Visma Løn
+Du kan med dette webinar blive klogere på efterreguleringer i Visma Løn. Med efterregulering kan du regulere løn, tillæg, satser og fravær tilbage i tid. Det er muligt at efterregulere for indeværende år. I januar dog for foregående år.
+##  Undgå anmærkninger i revisionserklæringen 
+Sådan forholder du dig til bogføring jf. ny ferielov. Spar tid og undgå at få anmærkninger af revisoren. For mange virksomheder står revisionen for døren. På dette webinar vil Visma Enterprise og e-conomic tage dig igennem god bogføringsskik og komme med eksempler på, hvordan du kan håndtere hensættelse af feriepenge.
+##  Lad Visma Løn hjælpe dig med dine feriepenge hensættelser
+Den nye ferielov har medført mange ændringer. Det gælder også den måde, I skal håndtere hensættelser af feriepenge på. Deltag på dette webinar og bliv klogere på, hvordan du får styr på hensættelsen af feriepenge efter introduceringen af den nye ferielov, og hvordan du løser det rent praktisk i lønsystemet.
+## Få styr på differenceberegning af feriepenge i Visma Løn
+På dette webinar kan du blive klædt på til at kunne klare feriepenge differenceberegning i Visma Løn. Det er den gamle 20%-regel, der bliver erstattet i den nye ferielov af en 0%-regel. Vi ser på hvad der sker, når du registrerer ferie på en funktionær, som har ferie med løn, og som har skiftet arbejdstid fra ferie blev optjent til ferie bliver afholdt.
+## Bliv klar til den nye ferielov
+Selvom Visma Enterprise klarer alt i lønsystemet for dig, er der stadig er nogle personaleadministrative forhold, du bør forholde dig til, når den nye ferielov træder i kraft. Du skal f.eks. være klar til at besvare dine kollegers spørgsmål og ikke mindst også sørge for at give de rette informationer videre til jeres finansafdeling, så I får hensat det rigtige beløb. Vi inviterer dig derfor til et gratis webinar, hvor vi fortæller om de ting, som du skal forholde dig til. Derudover præsenterer vi dig for dine muligheder, bl.a. når I skal håndtere feriekort under den nye ferielov, eller hvis I får behov for en supplerende lønkørsel.
+## Værdien af en feriedag for timelønnede i Visma Løn
+Med den nye ferielov og samtidighedsferie har medarbejderen brug for feriepengene tidligere end ved den gamle ferielov, da vi kan afholde ferie samtidig med, at vi optjener den. Dette gør det komplekst at finde frem til værdien af en feriedag – særligt for timelønnede. På dette webinar gennemgår vi, hvordan Visma Løn beregner værdien af en feriedag for timelønnede medarbejdere. 
+Se eksempel på en beregning [her](https://www.visma.dk/globalassets/hrm/community/beregninger-ny-ferielov-timelonnede-med-feriegodtgorelse-feriekort.pdf).
+## Få styr på forskudsferie i Visma Løn
+Som følge af den nye ferielov kan arbejdsgivere fra den 1. september 2020 lovligt indgå en aftale med deres medarbejdere om, at de kan låne ferie (forskudsferie) som kan afholdes før at medarbejderen har optjent den. På dette webinar bliver du præsenteret for, hvordan Visma Løn håndterer registrering af ferie på forskud, og hvad du konkret selv skal gøre i systemet.
+## Tilpasning af kontoplan og lønartskatalog
+Har du svært ved at overskue lønartskataloget, og smutter det, så du ikke får sat kontering på en ny lønart, du er begyndt at anvende? Så se med på dette webinar hvor vi finder en ny lønart i lønartskataloget som tilpasses/oprettes i kontoplanen, så der er styr på finansbogholderiet.
+## Automatisk tildeling af Feriefridage
+Feriefridage kan opsættes i lønsystemet så tildelingen sker automatisk. På dette webinar gennemgår vi hvordan du opsætter resultattabellerne, så både tildeling af antal dage eller timer sker i valgfri måned, og så det fremadrettet sker automatisk.
+## Bogføring af feriepenge til Fonden
+På dette webinar gennemgår vi, hvordan du i din bogføring kan hensætte feriepenge til Fonden, samt hvordan feriepenge i forbindelse med timelønnede og fratrådte funktionærer skal bogføres.
+## Afstemningsark og rapporten Udvidet Afvigelsesliste
+På dette webinar får du en gennemgang af Excel-værktøjet ‘Afstemning af eIndkomst år-til-dato’, som er en 3-benet afstemning af data mellem Visma Løn, eIndkomst og jeres egne finanskonti.
+## Kom godt i gang med Firmabil til Visma Løn
+Velkommen til et spændende webinar om Visma&#39;s nye firmabil-modul i Visma Løn. Med firmabil-modulet slipper du blandt andet for at holde styr på gældende lovgivning og manuel udregning af beskatningsgrundlaget.
+## Særligt om indberetning af ATP og eIndkomst timer
+Visma er blevet opmærksom på at der har været lidt usikkerhed om hvornår og hvad der skal indberettes som ATP og eIndkomst timer. På dette webinar vil vi gennemgå hvordan du sikre hvilke løndele og fraværskoder der indberettes til eIndkomst og danner grundlag for ATP timer. Vi vil vise hvordan du tilpasser fraværskoder med de korrekte fraværslønarter samt gennemgå nogle af overtids-lønarterne for at sikre at dit Visma Løn er korrekt opsat.
+## Sådan håndterer du overenskomst ændringer
+Lønsystemet bliver ikke automatisk opdateret med nye satser ifm. vedtagelse af nye overenskomster. Se med når vi ændrer resultattabeller for fritvalgsopsparing og ændrer intervaller for sygeløn og barn syg i forhold til anciennitet. Vi tager højde for datoerne for ikrafttrædelse af satserne, samt efterregulerer hvis overenskomsterne er vedtaget med tilbagevirkende kraft.

@@ -1,0 +1,53 @@
+https://help.vismaenterprise.dk/vismaloen-standard/medarbejder/36-a-endring-af-dispositionsdato
+
+# Ændring af dispositionsdato
+
+## Ændring af dispositionsdato
+I Visma Løn er dispositionsdatoen opsat for grupper af medarbejdere på stillingskategorien. Der kan vælges imellem:
+### Månedslønnede
+* Disp datotype 1, den sidste hverdag i måneden
+* Disp datotype 2, den 25. i måneden.
+
+### 14 dages lønnede
+* Disp datotype 3, torsdag i lige uger 
+* Disp datotype 4, torsdag i ulige uger.
+
+## Ændring af dispositionsdatoen
+Dispositionsdatoen kan ændres på følgende måde:
+
+Gå til Opsætning → Kundeforhold → Disp.datotype
+Angiv &#39;Disp.datotype&#39;
+Klik på Find
+Vælg Disp.datoer I højremenuen 
+Find den lønperiode, som du ønsker at ændre
+Dobbeltklik på perioden
+Tilret dispositionsdato, tilhørskvartal og tilhørsmåned
+Klik på OK
+
+Ønsker du at ændre en dispositionsdato til at ligge uden for det normale tilhørskvartal, skal du også rette tilhørskvartal og tilhørsmåned, så din afregning og indberetning til eIndkomst bliver korrekt. 
+Dispositionsdato, tilhørskvartal og tilhørsmåned ændres på følgende måde:
+
+Gå til Opsætning → Kundeforhold → Disp.datotype
+Angiv &#39;Disp.datotype&#39;
+Klik på OK
+Vælg Disp.datoer I højremenuen 
+Find den lønperiode, som du ønsker at ændre
+Dobbeltklik på perioden
+Tilret dispositionsdato, tilhørskvartal og tilhørsmåned
+Klik på OK
+
+Ændrer du en dispositionsdato til en dato, som ligger uden for tilhørsmåneden, men stadig inden for tilhørskvartalet på kørselsselektionen, vil systemet automatisk indberette lønnen til den måned, som svarer til dispositionsdatoen.
+En dispositionsdato skal altid udfyldes på en supplerende lønkørsel for at sikre korrekt afregning og indberetning af eIndkomst.
+## Ændring af dispositionsdato i kørselsselektionen
+Det er muligt at ændre dispositionsdatoen i kørselsselektionen, hvis den skal overstyre den dispositionsdato der er sat op på stillingskategorien.
+Dette gøres på følgende måde:
+
+Gå til Lønadministration → Kørselsselektion
+Angiv &#39;kørselsordre&#39;
+Klik på &#39;Find&#39;
+Find den kørselsselektion, det vedrører
+Angiv dispositionsdato i feltet ’Disp.dato’ 
+Klik på Gem
+
+HUSK at ændre for alle aflønningsformer (selektionsnummer)
+⚠️ OBS:  Du må ikke selv oprette eller slette disp.dato typer. Du må kun ændre datoerne på de eksisterende disp.dato typer.

@@ -1,0 +1,62 @@
+https://help.vismaenterprise.dk/vismaloen-standard/medarbejdertilgode/16-seniorordning
+
+# Seniorordning
+
+I nogle overenskomster er der mulighed for at konvertere en procent fra fritvalgskonto, SH-godtgørelsen eller pensionsordning til seniorordning.
+
+## Optjening af seniorordningen via Fritvalgskonto
+Under faste lønoplysninger oprettes lønart 24400 Fritvalgskonto hensat Senior med procenten som er aftalt med medarbejderen, der skal tages fra fritvalgsopsparingen over til seniorordningen.
+Er der aftalt en højre procent end hvad der opspares standard til fritvalg. Oprettes medarbejderen med sin egen fritvalgsopsparingsprocent. Opret under personlige satser, lønart 9911 Egen pct. fritvalgskonto og det vil så være den procent der er oprettet på den faste lønart 24400 som bliver overført til seniorordningen.
+
+## Optjening af seniorordningen via Pensionsordningen
+- **Lønart 24401** - Pension hensat Senior
+Medarbejderen kan skulle indbetale en procentdel til pensionsselskab til administrationsomkostninger, derfor skal medarbejderen oprettes under faste lønoplysninger med en pensionslønart som skal indbetales til pensionsselskabet.
+Har medarbejderen i forvejen en indbetaling til pension, skal procenterne til pensionsselskabet korrigeres med de procenter som skal gå til seniorordningen.
+Lønart 24401 Pension hensat Senior, oprettes under faste lønoplysninger med den procent for arbejdsgiverdelen og den procent for medarbejderandelen som er aftalt med medarbejderen, som de ønsker der skal tages fra deres pensionsprocent til seniorordningen.
+I kontoplanen skal oprettes lønart 24401 i både debet og kredit samt lønart 24402 i kredit.
+
+## Optjening af seniorordningen via SH-godtgørelsen
+I nogle overenskomster er der mulighed for at konvertere en procent fra SH konto til seniorordning. 
+Opret også lønart 24500 SH konto hensat Senior, under Medarbejder/Faste lønoplysninger med den procent som er aftalt med medarbejderen.
+Optjener medarbejderen ikke SH eller skal der optjenes en højre procent end de øvrige medarbejdere kan der oprettes en ekstra SH procent på medarbejderen. Opret under Medarbejder/Personlig satser lønart 9921 - Egen pct. SH.
+
+## Afholdelse af seniorordning
+- **Lønart 3732** - Senior dage afregning
+- **Resultattabel SENDAG** - Sats pr. dag for de respektive løngrupper
+- **Resultattabel SENIOR** - Medarbejderen trækkes i løn for afholdelse af seniorordning
+- **Lønart 3733** - Senior timer afregning
+- **Resultattabel SENTIM** - Satsen der skal udbetales pr. time
+- **Fraværskode 53** -  skal oprettes med fraværslønart 3735 Senior timer afregning eller oprettes med fraværslønart 3734 Senior dage afregning
+### Afholdelse af seniorordningsdage som variabel lønoplysning med sats i resultattabel
+Under variable lønoplysninger oprettes lønart 3732 Senior dage afregning med dage.
+Satsen som bliver udbetalt tages fra Resultattabel SENDAG. Resultattabel SENDAG oprettes med en sats pr. dag for de respektive løngrupper.
+
+### Afholdelse af seniorordningsdage som fravær med sats i resultattabel
+Under fravær oprettes fraværskode 53 med antal dage.
+Satsen som bliver udbetalt tages fra Resultattabel SENDAG.
+Resultattabel SENDAG oprettes med sats pr. dag for de respektive løngrupper.
+Fraværskode 53 skal oprettes med fraværslønart 3734 Senior dage afregning, på de anvendte stillingskategorier.
+
+### Afholdelse af seniorordningstimer som variabel lønoplysning med sats i resultattabel
+Under variable lønoplysninger oprettes lønart 3733 Senior timer afregning med timer.
+Satsen der skal udbetales pr. time oprettes i Resultattabel SENTIM, for de respektive løngrupper. Hvis resultattabellen SENTIM ikke oprettes, anvendes medarbejderens timesats til udbetaling.
+
+### Afholdelse af seniorordningsdage som fravær med sats i resultattabel
+Under fravær oprettes fraværskode 53 med timer.
+Satsen der skal udbetales pr. time oprettes på Resultattabel SENTIM for de respektive løngrupper. Hvis Resultattabellen SENTIM ikke oprettes, anvendes medarbejderens timesats til udbetaling.
+Fraværskode 53 skal oprettes med fraværslønart 3735 Senior timer afregning, på de anvendte stillingskategorier.
+
+### Træk i løn for afholdelse af dage/timer for seniorordningen
+Skal medarbejderen trækkes i løn for afholdelse af seniorordning. Oprettes resultattabel SENIOR med 1 for respektive løngrupper. Hvis dage afholdes, vil disse blive omregnet til timer.
+I kontoplanen skal i kredit oprettes en af følgende lønarter 
+* Lønart 3738 løntræk for seniordage
+* Lønart 3739 løntræk for seniortimer
+
+## Udbetaling af beløb fra seniorordningen
+Lønart 3737 Senior beløb afregning, oprettes under variable lønoplysninger med beløb.
+## Seniorordning saldo
+Lønart 3730 Senior saldo korrektion, oprettes under variable lønoplysninger med beløb. Lønarten kan bruges ved oprettelse af start saldo eller som korrektion til saldoen.  
+Lønart 3731 Senior saldo egen korrektion, oprettes under variable lønoplysninger med beløb og beløbet vil medarbejderen blive trukket i løn og samtidig indbetalt til seniorordningen.
+## Overførsel af saldo ved årsskiftet
+Afholdelse af seniorordning følger kalenderåret, skal det resterende beløb for seniorordning overføres til nyt kalenderår, kan det gøres ved at bruge variable lønoplysninger eller fællesregistrering.
+Lønart 373 – seniorordning overfører saldi fra sidste år

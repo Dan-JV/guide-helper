@@ -1,0 +1,34 @@
+https://help.vismaenterprise.dk/vismaloen-standard/ferie/133-ferie-vejledning
+
+# Ferie vejledning Visma Løn
+
+Feriesystemet
+I Visma Løn er det muligt at administrere
+* Optjent ferie i dage eller timer
+* Afholdt ferie i dage eller timer
+* Ferie med løn, udbetaling af ferietillæg/ekstra ferietillæg og overført ferie
+* Løbende afregning af feriepenge til FerieKonto/Feriekasse
+* Løbende beregning af feriepenge til feriekort
+* Ferie på forskud
+* Ingen Ferie
+
+Vi har opdelt vores ferievejledning i følgende emner
+... klik på linket og læs mere:
+* Opsætning af [ferie dage/-penge](https://help.vismaenterprise.dk/standard/vismaloen/ferie/opsaetning-af-feriedage-og-feriepenge)
+* Opsætning af [ferie timer/-penge](https://help.vismaenterprise.dk/standard/vismaloen/ferie/opsaetning-af-ferietimer-og-feriepenge)
+* [Afholdelse af ferie](https://help.vismaenterprise.dk/standard/vismaloen/ferie/afholdelse-af-ferie)
+* [Udbetaling af ferie](https://help.vismaenterprise.dk/standard/vismaloen/ferie/udbetaling-af-ferie)
+* [Ferie ved fratrædelse](https://help.vismaenterprise.dk/standard/vismaloen/ferei/ferie-ved-fratraedelse)
+* [Ferie på forskud](https://help.vismaenterprise.dk/standard/vismaloen/ferie/ferie-pa-forskud)
+
+Nye medarbejdere
+* [Ferie fra tidligere arbejdsgiver](https://help.vismaenterprise.dk/standard/vismaloen/ferie/ferie-fra-tidligere-arbejdsgiver)
+* [Feriesaldi nye medarbejdere](https://help.vismaenterprise.dk/standard/vismaloen/ferie/feriesaldi-nye-medarbejdere)
+
+Tillæg:
+* [Ferietillæg ferieår](https://help.vismaenterprise.dk/standard/vismaloen/ferie/ferietillaeg-feriear)
+* [Ferietillæg kalenderår](https://help.vismaenterprise.dk/standard/vismaloen/ferie/ferietillaeg-kalenderar)
+
+Korrektion:
+* [Korrektion af ferie](https://help.vismaenterprise.dk/standard/vismaloen/ferie/korrektion-af-ferie)
+* [Korrektion af ferietillæg og ekstra ferietillæg](https://help.vismaenterprise.dk/standard/vismaloen/ferie/korrektion-af-ferietillaeg-og-ekstra-ferietillaeg)

@@ -1,0 +1,324 @@
+https://help.vismaenterprise.dk/vismaloen-standard/decantral-registrering/86-decentral-registrering
+
+# Decentral registrering
+
+## Beskrivelse
+Type
+K – Key, nøglefelter der altid skal udfyldes
+N – Numerisk
+X – Alfanumerisk, karakterer
+% – Feltet kan slettes/blankes ud
+D – Datofelt, DDMMÅÅÅÅ
+M – Obligatorisk, SKAL udfyldes ved oprettelse
+Å – Årstal år 2000 og større
+Filnavn
+Der er ingen &#39;kontrol&#39; af filens navn, og det vil sige, at du selv bestemmer, hvad filen skal hedde. Dog kan samme filnavn kun indlæses én gang i lønsystemet. Må højst være på 20 karakterer, bestående af både tal og bogstaver.
+Filformat
+I Visma Løn er det muligt at indlæse en fil fra et eksternt system. Filen skal være i csv-format (Windows code page 1252 ANSI eller UTF-8 with BOM) og skal have et forud bestemt layout. Data i en csv-fil må ikke indeholde følgende tegn ’;’ (semikolon) ” (anførselstegn), da disse bliver brugt som adskillelsestegn. 
+Separatortegn i Visma Løn er enten ’,’(komma) eller ’;’ (semikolon). 
+Decimal separator er enten ’.’ (punktum) eller ’,’(komma).
+Sortering
+Record rækkefølgen har ingen betydning. Ved indlæsning sørger lønsystemet selv for sorteringen.
+Kontrol af data
+Kontrol af data sker efter samme regler som ved manuel indtastning.
+Den første kontrol er &quot;format-kontrol&quot;.Her tjekkes blandt andet:
+
+At filen ikke har samme navn eller længde som en tidligere indlæst fil
+At filens indhold ikke er 100% identisk med indholdet i en tidligere indlæst fil
+Indeholder filen det korrekte antal felter i forhold til filtypen
+Har felterne i filen de korrekte formater - f.eks. at der ikke er tekst i et numerisk felt, eller at der ikke er bindestreg i CPR numre, eller at det er det korrekte antal karakterer i felterne osv.
+
+Hvis ikke filen kan gå igennem format-kontrollen vil den blive afvist uden indlæsning.
+Den anden kontrol er &quot;indholds-kontrol&quot;.Her tjekkes om indholdet i de enkelte filer passer med det der er muligt i lønsystemet. Det kunne eksempelvis være:
+* Findes medarbejder nummer 
+* Er CPR nummer korrekt
+* Findes den anvendt stillingskategori eller løngruppe
+* Findes den valgte lønart eller fraværskode
+
+I de tilfælde hvor noget fejler i &quot;indholds-kontrollen&quot; vil filen blive afvist, med de linjer der har fejl og de øvrige linjer vil blive indlæst. De medarbejdere/linjer der bliver afvist, bliver der udskrevet en tekst med årsagen i kvitteringslisten, så der er mulighed for at følge op på det der er fejlet.
+Anvender du automatisk indlæsning af fil til Visma Løn fra 3. parts system, vil der kommen en kvitteringsmail, hvor fejlen er beskrevet.
+## Indlæsning af fil til Visma Løn 
+Arbejdsgiver skal være tilmeldt ’Serviceydelse 7’ for at kunne foretage indlæsning af filer.
+Sådan indlæses filen i Visma Løn:
+
+Gå til Lønadministration → Overførsel → Decentral registrering
+Indlæs filen, klik på Indlæs
+Find filen, klik på OK
+Herefter startes et job, som vises under Vis job. Når jobbet er sluttet, klik på Hent aktuel
+Klik herefter på Åbn
+Dobbeltklik på filen, der vises og herefter klik på Åbn
+På skærmen vises Kvittering for decentral registrering. Rapporten viser, hvor mange linjer, der er henholdsvis Modtaget, Indlæst og Afvist. De linjer, der er modtaget og indlæst, findes under de respektive skærmbilleder i lønsystemet.De linjer, der er afvist, vil blive vist på rapporten Kvittering for decentral registrering, hvoraf medarbejdernr., og fejl/årsagen for de afviste linjer vil fremgå.
+
+👩‍🏫 Eksempel:
+Her ses opbygningen af en csv-fil med alle formater og adskillelsestegn er ’;’ (semikolon):  
+18;1;MLE-05-AFDE;300;HR
+18;1;MLE-10-UDBE;Kbh;København
+18;;MLE-15-REST;1100;01082008;;;T3;;;120;60
+18;;MLE-15-REST;1100;01082008;;;F3;165
+18;;MLE-15-REST;1100;01082008;;;F4;;175
+18;1;MLE-25-MEDA;3;3001609992;;Jensen;Gurli;Skogen 12;SE-45678 Malmø;0;;01082008;[gj@hotmail.dk](mailto:gj@hotmail.dk);SE;000100;H;01082008
+18;1;MLE-25-MEDA;4;2602639991;;Olsen;Thomas;Sorte vænget 22;;2750;;15082008;;;000015;B;15082008
+18;1;MLE-27-HRME;3;3001609992;;Jensen;Gurli;Skogen 12;;SE-45678; Malmø;01082008;[gj@hotmail.dk](mailto:gj@hotmail.dk);SE;000100;H;01082008
+18;1;MLE-27-HRME;4;2602639991;;Olsen;Thomas;Sorte vænget 22;;2750;;15082008;;;000015;B;15082008
+18;1;MLE-30-ANSF;3;01082008;;;;1001;HR konsulent;130.00;;F1;300;;;1010244230
+18;1;MLE-30-ANSF;4;15082008;;;;3001;Lager;0;;T1;100;Kbh;;1010244230
+18;1;MLE-30-ANSF;10086;01082008;;3;31082008
+18;1;MLE-32-HRAN;3;01082008;;;;1001;HR konsulent;130.00;;F1;300;;;1010244230
+18;1;MLE-32-HRAN;4;15082008;;;;3001;Lager;0;;T1;100;Kbh;;1010244230
+18;1;MLE-32-HRAN;10086;01082008;;3;31082008
+18;1;MLE-35-REGK;3;01082009;;1234;9481247
+18;1;MLE-35-REGK;4;15082008;;1222;3185784375
+18;1;MLE-40-LONA;3;01082008;;9900;;;;20000
+18;1;MLE-40-LONA;3;01082008;;6200;;;;;5;;;10;;;;;;;2003
+18;1;MLE-40-LONA;3;01082008;;9011;;120
+18;1;MLE-40-LONA;3;01082008;;1303;;5;120
+18;1;MLE-40-LONA;3;01082008;;3000;;;;6500
+18;1;MLE-40-LONA;3;01082008;31122008;3010
+18;1;MLE-40-LONA;4;15082008;;6003;;;;;3.7;;;7.4;2;;;;;;2115;;;;1
+18;1;MLE-40-LONA;4;15082008;;6410;;;;500;;;;;;;;;2345;6544533
+18;1;MLE-40-LONA;4;15082008;;1100;;165
+18;1;MLE-40-LONA;4;15082008;;9905;;;;170
+18;1;MLE-40-LONA;4;15082008;;9906;;;;15
+18;1;MLE-45-ERIN;3;01082008;1;Jubilæum 2018
+18;1;MLE-50-ANSO;3;300;412110;;01082008
+18;1;MLE-50-ANSO;3;800;4;;01082008
+18;1;MLE-50-ANSO;3;600;99999;30.00;01082008
+18;1;MLE-55-FRAV;10078;12082008;13082008;40;Ferie i august;2
+18;1;MLE-55-FRAV;987;14082008;14082008;18;Dagpenge;7.5;125
+18;1;MLE-55-FRAV;992;02012008;02012008;40;;;;9
+18;1;MLE-60-EIND;3;11;0;01082008
+18;1;MLE-60-EIND;4;66;0;15082008;;5000
+18;1;MLE-65-GREK;1;01082008;H
+18;1;MLE-80-TLF;1;12345678;;Mobiltelefon
+## MLE-05-AFDE (Afdeling)
+Afdelinger kan oprettes og ændres via Decentral registrering.
+Følgende felter SKAL altid angives:
+KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION og AFDELING
+Følgende felter kan ændres via Decentral registrering:
+BESKRIVELSE
+👩‍🏫 Eksempel:
+18;1;MLE-05-AFDE;300;HR
+Recordformat:
+Felt Nr.ExcelKol.NavnAntaltegnTypeVærdiBeskrivelse1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BArbejdsgiver6N K&nbsp;ARBEJDSGIVERNUMMER3CIdentifikation11X KMLE-05-AFDE&nbsp;4DAfdeling6X K&nbsp;AFDELINGSNR5EBeskrivelse30X&nbsp;AFDELING TEKSTFor sletning af ’beskrivelse’ anvendes ’%’ i feltet.
+## MLE-10-UDBE (Udbetalingssted)
+Udbetalingssteder kan oprettes og ændres via Decentral registrering.
+Følgende felter SKAL altid angives:
+KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION og UDBETALINGSSTED
+Følgende felter kan ændres via Decentral registrering:
+SE BESKRIVELSE
+👩‍🏫 Eksempel:
+18;1;MLE-10-UDBE;Kbh;København
+Recordformat:
+Felt Nr.ExcelKol.NavnAntaltegnTypeVærdiBeskrivelse1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BArbejdsgiver6N K&nbsp;ARBEJDSGIVERNNUMMER3CIdentifikation11X KMLE-10-UDBE&nbsp;4DUdbetalingssted6X K&nbsp;UDBETALINGSSTEDNR5EBeskrivelse30X&nbsp;UDBETALINGSSTED TEKSTFor sletning af ’beskrivelse’ anvendes ’%’ i feltet.
+## MLE-15-REST (Resultattrin)
+Resultattrin kan oprettes og ændres via Decentral registrering. Resultattabellen kan/skal periodiseres via Decentral registrering.
+Følgende felter SKAL altid angives:
+KUNDEFORHOLD, IDENTIFIKATION, RESULTATTABEL, FRADATO, og LØNGRUPPE (RYKNØGLE1)
+Følgende felter kan ændres via Decentral registrering:
+SATS BAGUD, SATS FORUD, SATS TIMELØN og SATS 14 DAGS LØN 
+Følgende felter kan ændres via Decentral registrering ved tilmelding til Ramme/Trin:
+RYKTYPE1, RYKTYPE2, RYKTYPE3, RYKNØGLE1, RYKNØGLE2, RYKNØGLE3  
+ 
+NB! Hvis et resultattrin for en løngruppe skal slettes, anvender du ’%’ i alle satsfelterne (felterne 14-17).
+ 
+👩‍🏫 Eksempel:
+18;;MLE-15-REST;1100;01082008;;;T3;;;120;60
+18;;MLE-15-REST;1100;01082008;;;F3;165
+18;;MLE-15-REST;1100;01082008;;;F4;;175
+Recordformat:
+Felt Nr.Excel Kol.NavnAntaltegnTypeVærdiBeskrivelse1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BTomt felt0Xblank&nbsp;3CIdentifikation11X KMLE-15-REST&nbsp;4DResultattabel6X K&nbsp;Nummeret på resultattabel f.eks. ’1100’5EFradato8D K&nbsp;RESULTATTABEL STARTDATO.&nbsp;Format: DDMMÅÅÅÅ6FTildato8D&nbsp;RESULTATTABEL SLUTDATO.&nbsp;Format: DDMMÅÅÅÅ7GBetegnelse30X&nbsp;For sletning af ’betegnelse’ anvendes ’%’ i feltet.8HRyktype16XBlankLØNRAMLØNTRNLØNGRPST.KATAFDELIUDBSTDFeltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin, skal feltet udfyldes med Ryktype1 ved oprettelse/ændring.&nbsp;9IRyktype26XBlankLØNRAMLØNTRNLØNGRPST.KATAFDELIUDBSTDFeltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin, skal feltet udfyldes med Ryktype2 ved oprettelse/ændring.&nbsp;10JRyktype36XBlankLØNRAMLØNTRNLØNGRPST.KATAFDELIUDBSTDFeltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin, skal feltet udfyldes med Ryktype3 ved oprettelse/ændring.11KLøngruppe(Ryknøgle1)6X M&nbsp;Udfyldes med løngruppe f.eks. TT eller F1. Ved aftale om ramme/trin knytter feltet sig til Ryktype1 og kan udfyldes med værdier for den valgte ryktype f.eks. stillingskategori 1001.12LRyknøgle26X&nbsp;Feltet skal normalt ikke udfyldes. Ved aftale om Ramme/trin knytter feltet sig til Ryktype2 og skal udfyldes med værdier for den valgte ryktype f.eks. stillingskategori 1001, hvis den aktuelle resultattabel har en Ryktype2.13MRyknøgle36X&nbsp;Feltet skal normalt ikke udfyldes. Ved aftale om Ramme/trin knytter feltet sig til Ryktype3 og skal udfyldes med værdier for den valgte ryktype f.eks. stillingskategori 1001, hvis den aktuelle resultattabel har en Ryktype3.14NSats bagud10N&nbsp;Format: -9999999.99 – 9999999.99.For sletning af ’sats bagud’ anvendes ’%’ i feltet.15OSats forud10N&nbsp;Format: -9999999.99 – 9999999.99.For sletning af ’sats forud’ anvendes ’%’ i feltet.16PSats timeløn10N&nbsp;Format: -9999999.99 – 9999999.99.For sletning af ’sats timeløn’ anvendes ’%’ i feltet.17QSats 14 dags løn10N&nbsp;Format: -9999999.99 – 9999999.99.For sletning af ’sats 14 dags løn’ anvendes ’%’ i feltet.
+## MLE-17-KOPL (Kontoplanoplysninger)
+Kontoplan med tilhørende linjer kan oprettes og ændres via Decentral registrering. Selve kontoplanen kan Periodiseres via Decentral registrering, men kan ikke slettes. Kun de enkelte konto-linjer i kontoplanen kan slettes.
+Følgende felter SKAL altid angives:
+KUNDEFORHOLD, IDENTIFIKATION, KONTOPLAN, STARTDATO, LØNART, LØBENR. 
+Følgende felter kan ændres via Decentral registrering:
+Kontoplannavn, Startdato, Slutdato, Deb/Kre, Kontonr, Kontonavn, Afdkode, Udbkode, Inputkode, Valgfri1, Valgfri2, Valgfri3, Valgfri4, Valgfri5, Valgfri6 , Medkode, Gruppe, og  Gruppe værdi, Afregnes via og  Modulus.  
+⚠️ OBS: Hvis en kontoplanlinje skal slettes, anvender du ’9’ i slet markering (felt 29).  
+👩‍🏫 Eksempel:
+18;;MLE-17-KOPL;M1;Test af kontoplan dec;1032010;;405;1;d;12345678910;Navn på konto;;;;;;;n
+18;;MLE-17-KOPL;M1;;1032010;;406;1;d;356783;a;;;;;;;n
+18;;MLE-17-KOPL;M1;;1032010;;408;1;d;43573737;b;;;;;;;n
+18;;MLE-17-KOPL;M1;;1032010;;420;1;d;36736;c;;;;;;;n
+18;;MLE-17-KOPL;M1;;1032010;;425;1;d;847867;d;;;;;;;n;;;;;;;;;9
+Recordformat:
+Felt Nr.&nbsp;Excel Kol.&nbsp;Navn&nbsp;Antal tegn&nbsp;Type&nbsp;&nbsp;VærdiBeskrivelse&nbsp;1&nbsp;A&nbsp;Kundeforhold&nbsp;6&nbsp;N K&nbsp;KUNDEFORHOLDSNUMMER&nbsp;2&nbsp;B&nbsp;Tomt felt&nbsp;0&nbsp;X&nbsp;Blank&nbsp;3&nbsp;C&nbsp;Identifikation&nbsp;11&nbsp;X K&nbsp;MLE-17-KOPL&nbsp;&nbsp;4&nbsp;D&nbsp;Kontoplan&nbsp;2&nbsp;X K&nbsp;Kontoplankode f.eks. ’A1’&nbsp;5&nbsp;E&nbsp;Startdato&nbsp;8&nbsp;D K&nbsp;KONTOPLAN STARTDATO.&nbsp;Format: DDMMÅÅÅÅ&nbsp;&nbsp;6&nbsp;F&nbsp;Slutdato&nbsp;8&nbsp;D&nbsp;&nbsp;KONTOPLAN SLUTDATO.&nbsp;Format: DDMMÅÅÅÅ&nbsp;7&nbsp;G&nbsp;Kontoplannavn&nbsp;30&nbsp;X M&nbsp;&nbsp;8&nbsp;H&nbsp;Lønart&nbsp;6&nbsp;N K&nbsp;Nummeret på lønarten f.eks. 1100 eller * fra højre9&nbsp;I&nbsp;Løbenr&nbsp;2&nbsp;N K&nbsp;Løbende nummerering af linier på samme lønart f.eks. 1, 2, 310&nbsp;J&nbsp;Deb/Kre&nbsp;1&nbsp;X M KD=Debet K=Kredit&nbsp;&nbsp;11&nbsp;K&nbsp;Kontonr&nbsp;20&nbsp;X M K&nbsp;&nbsp;12&nbsp;L&nbsp;Kontonavn&nbsp;30&nbsp;X&nbsp;&nbsp;For sletning af ’Kontonavn’ anvendes ’%’ i feltet.&nbsp;13&nbsp;M&nbsp;Afd.kode&nbsp;6X&nbsp;&nbsp;For sletning af ’Afd.kode’ anvendes ’%’ i feltet.&nbsp;14NUdb.kode6X&nbsp;For sletning af ’Udb.kode’ anvendes ’%’ i feltet.&nbsp;15OInputkode10X&nbsp;For sletning af ’Input kode’ anvendes ’%’ i feltet.&nbsp;16PValgfri110X&nbsp;For sletning af ’Valgfri1’ anvendes ’%’ i feltet.&nbsp;17QValgfri210X&nbsp;For sletning af ’Valgfri2’ anvendes ’%’ i feltet.&nbsp;18RValgfri310X&nbsp;For sletning af ’Valgfri3’ anvendes ’%’ i feltet.&nbsp;19SValgfri410X&nbsp;For sletning af ’Valgfri4’ anvendes ’%’ i feltet.&nbsp;20TValgfri510X&nbsp;For sletning af ’Valgfri5’ anvendes ’%’ i feltet.&nbsp;21UValgfri610X&nbsp;For sletning af ’Valgfri6’ anvendes ’%’ i feltet.&nbsp;22VMedkode1XJ = JaN = NejEr feltet ikke udfyldt ved oprettelse anvendes default N23WGruppe20X&nbsp;Felt der benyttes til gruppekontering. Anvendes Gruppe skal alle lønarter indeholde den valgte Gruppe for kontoplanen24XGruppe værdi10X&nbsp;Værdi i gruppekontering. Kan udfyldes med aktuel værdi for gruppe eller *25YAfregnes via2XBlankBCSkal normalt ikke udfyldesAnvendes ved aftale om finansfunktionalitet26ZModulus2NBlank1Skal normalt ikke udfyldes1= Bankdata modulus&nbsp;27AAAnvendkode1N0, 1, 2 eller 3Skal altid udfyldes&nbsp;Anvendes ved aftale om finansfunktionalitet0 = Bilag/Central1 = Bilag2 = Central3 = Excel28ABDatokode4XBlankDISPPOST&nbsp;Anvendes ved aftale om finansfunktionalitet.&nbsp;For sletning af ’Datokode’ anvendes ’%’ i feltet.29ACSletmarkering1NBlank eller 9 = slet linjeEr feltet udfyldt med 9 slettes aktuel record30ADAlternativ kontering1XJ = JaN = NejEr feltet ikke udfyldt ved oprettelse anvendes default N31AEAfvigende kontering1XJ = JaN = NejEr feltet ikke udfyldt ved oprettelse anvendes default J
+## MLE-18-LRAM (Lønramme)
+Lønramme kan oprettes eller ændres via decentral registrering, hvis der lavet aftale med Visma om anvendelse af funktionaliteten Ramme/trin.
+Følgende felter SKAL altid angives:
+KUNDEFORHOLD, IDENTIFIKATION, LØNRAMME
+Følgende felter kan ændres via Decentral registrering:
+BESKRIVELSE
+👩‍🏫 Eksempel:
+18;;MLE-18-LRAM;010;FA standardoverenskomst 10
+18;;MLE-18-LRAM;011;FA standardoverenskomst 11
+18;;MLE-18-LRAM;012;FA standardoverenskomst 12
+18;;MLE-18-LRAM;013;FA standardoverenskomst 13
+18;;MLE-18-LRAM;014;FA standardoverenskomst 14
+Recordformat:
+Felt Nr.&nbsp;Excel Kol.&nbsp;Navn&nbsp;Antal tegn&nbsp;Type&nbsp;&nbsp;VærdiBeskrivelse&nbsp;1&nbsp;A&nbsp;Kundeforhold&nbsp;6&nbsp;N K&nbsp;KUNDEFORHOLDSNUMMER&nbsp;2&nbsp;B&nbsp;Tomt felt&nbsp;0&nbsp;X&nbsp;Blank&nbsp;3&nbsp;C&nbsp;Identifikation11X KMLE-18-LRAMRekordtype4&nbsp;D&nbsp;Lønramme6X K&nbsp;Betegnelse5&nbsp;E&nbsp;Beskrivelse30X&nbsp;Navn på lønrammeFor sletning af beskrivelse anvendes ’%’ i feltet.
+## MLE-19-TRIN (Løntrin)
+Løntrin kan oprettes eller ændres via decentral registrering, hvis der lavet aftale med Visma om anvendelse af funktionaliteten Ramme/trin.
+Følgende felter SKAL altid angives:
+KUNDEFORHOLD, IDENTIFIKATION, LØNTRIN.
+Følgende felter kan ændres via Decentral registrering:
+BESKRIVELSE
+👩‍🏫 Eksempel:
+18;;MLE-19-TRIN;10;FA Standard trin 10
+18;;MLE-19-TRIN;11;FA Standard trin 10
+18;;MLE-19-TRIN;12;FA Standard trin 10
+18;;MLE-19-TRIN;13;FA Standard trin 10
+18;;MLE-19-TRIN;14;FA Standard trin 10
+Recordformat:
+Felt Nr.&nbsp;Excel Kol.&nbsp;Navn&nbsp;Antal tegn&nbsp;Type&nbsp;&nbsp;VærdiBeskrivelse&nbsp;1&nbsp;A&nbsp;Kundeforhold&nbsp;6&nbsp;N K&nbsp;KUNDEFORHOLDSNUMMER&nbsp;2&nbsp;B&nbsp;Tomt felt&nbsp;0&nbsp;X&nbsp;Blank&nbsp;3&nbsp;C&nbsp;Identifikation11X KMLE-19-TRINRekordtype4&nbsp;D&nbsp;Løntrin6X K&nbsp;Betegnelse5&nbsp;E&nbsp;Beskrivelse30X&nbsp;Navn på løntrinFor sletning af beskrivelse anvendes ’%’ i feltet.
+## MLE-20-RYKN (Rykningstabel)
+Rykningstabel kan oprettes eller ændres via decentral registrering, hvis der lavet aftale med Visma om anvendelse af funktionaliteten ramme/trin.
+Følgende felter SKAL altid angives:
+KUNDEFORHOLD, IDENTIFIKATION, RYKKODE; FRAFELT1, TILFELT1, ANTALMDR
+Følgende felter kan ændres via Decentral registrering:
+BESKRIVELSE
+👩‍🏫 Eksempel:
+18;;MLE-20-RYKN;FA Std;FA Standard løn;LØNRAM;LØNTRN;;10;10;;10;11;;12
+Recordformat:
+Felt Nr.&nbsp;Excel Kol.&nbsp;Navn&nbsp;Antal tegn&nbsp;Type&nbsp;&nbsp;VærdiBeskrivelse&nbsp;1&nbsp;A&nbsp;Kundeforhold&nbsp;6&nbsp;N K&nbsp;KUNDEFORHOLDSNUMMER&nbsp;2&nbsp;B&nbsp;Tomt felt&nbsp;0&nbsp;X&nbsp;Blank&nbsp;3&nbsp;C&nbsp;Identifikation11X KMLE-20-RYKNRekordtype4&nbsp;D&nbsp;Rykkode6X K&nbsp;Kort navn til rykningstabel&nbsp;5&nbsp;E&nbsp;Navn30XM&nbsp;Beskrivelse&nbsp;6FRyktype16XMLØNRAM, LØNTRN, ST.KAT, LØNGRPSkal altid udfyldes ved oprettelse.7GRyktype26XBlank LØNRAM, LØNTRN, ST.KAT, LØNGRPSkal udfyldes ved oprettelse, hvis Ryktype 2 skal anvendes&nbsp;8HRyktype36XBlank LØNRAM, LØNTRN, ST.KAT, LØNGRPSkal udfyldes ved oprettelse, hvis Ryktype 3 skal anvendes9IFrafelt16XK&nbsp;&nbsp;Værdi som Ryktype1 skal rykke fra.&nbsp;10JFrafelt26X&nbsp;&nbsp;Kan kun anvendes, hvis Ryktype 2 er defineret på tabellen.Værdi som Ryktype2 skal rykke fra.&nbsp;11KFrafelt36X&nbsp;&nbsp;Kan kun anvendes, hvis Ryktype 2 er defineret på tabellen.Værdi som Ryktype3 skal rykke fra.&nbsp;12LTilfelt16X&nbsp;&nbsp;Værdi som Ryktype1 skal rykke til.&nbsp;13MTilfelt26X&nbsp;&nbsp;Værdi som Ryktype2 skal rykke til.14NTilfelt36X&nbsp;&nbsp;Værdi som Ryktype3 skal rykke til.15OAntalmdr3NM&nbsp;Antal mdr. til næste rykning
+## MLE-25-MEDA (Medarbejder)
+Medarbejdere kan oprettes og ændres via Decentral registrering.Følgende felter skal altid angives:KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION og MEDARBEJDERFølgende felter kan ændres via Decentral registrering:CPRNR, CVRNR, FORNAVN, EFTERNAVN, ADRESSE1, ADRESSE2, POSTNR, FØRSTANSAT, E-MAIL, SKATTELANDEKODE, ANCIENNITET, SKATTELANDEKODE, EBOKS, INITIALER og TIN NUMMER.⚠️ OBS: &nbsp;Vær opmærksom på at der ikke bruges eksisterende medarbejderenumre ved oprettelse af nye medarbejdere, da data så vil blive overskrevet.👩‍🏫 Eksempel:18;1;MLE-25-MEDA;3;3001609992;;Jensen;Gurli;Skogen 12;;SE-45678; Malmø;01082008;[gj@hotmail.dk](mailto:gj@hotmail.dk);SE;000100;H;0108200818;1;MLE-25-MEDA;4;2602639991;;Olsen;Thomas;Sorte vænget22;;2750;;15082008;;;000015;B;15082008Recordformat:Felt Nr.Excel Kol.NavnAntal tegnTypeVærdiBeskrivelse1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BArbejdsgiver6N K&nbsp;ARBEJDSGIVERNUMMER3CIdentifikation11X KMLE-25-MEDA&nbsp;4DMedarbejder15N K&nbsp;MEDARBEJDERNUMMER5ECPR-nr.10&nbsp;N M&nbsp;Der foretages Modulus 11 kontrol på feltet.&nbsp;Fiktive CPR-nr. xxxxxx9991 eller xxxxxx9992 er valide og skal ved indlæsning have felt 19 og 21 udfyldt med ’Nej’.(Værdi x skal indeholde en valid dato).&nbsp;Feltet udfyldes kun, hvis CVR-nummer ikke er udfyldt, men er tomt (”null”).Format: XXXXXXXX6FCVR-nr.8N (M)&nbsp;Der foretages Modulus 11 kontrol på feltet. Feltet skal være tomt (”null”), hvis CPR-nummer er udfyldt.Format: XXXXXXXX7GEfternavn30X M&nbsp;&nbsp;8HFornavn30X M&nbsp;&nbsp;9IAdresse 130&nbsp;X M&nbsp;&nbsp;10JAdresse 230X&nbsp;&nbsp;For sletning af ’Adresse 2’ anvendes ’%’ i feltet.11KPostnummer dansk eller udl.9X M&nbsp;&nbsp;Validering på danske postnumre, hvis landekode ikke er udfyldt, eller er udfyldt med ’DK’. Ellers ingen kontrol.12LUdl. postdistrikt30X(M)BlankSkal udfyldes, hvis medarbejder har adresse i udlandet.Slettes automatisk, hvis landekode ændres til ’DK’.13MFørst ansat8D M&nbsp;Format DDMMÅÅÅÅ14NE-mail50X(M – hvis mit.dk = Nej)&nbsp;For sletning af ’e-mail’ anvendes ’%’ i feltet.15OLandekode2X M&nbsp;Har medarbejder adresse i udlandet, skal feltet altid udfyldes.16PAnciennitet6N&nbsp;Format ÅÅMMDD, antal år, måneder og dage medarbejderen har i anciennitet.For sletning af ’anciennitet’ anvendes ’%’ i feltet.17QRekvirer skattekorttype1XVærdi:H = Hovedkort, B = Bikort&nbsp; Blank = intet kortDer kan kun rekvireres skattekort i forbindelse med oprettelse af en ny medarbejder.Oprettes en eksisterende medarbejder med nyt lønnr. I lønsystemet, skal feltet være ’Blank’, og så skal der foretages en ’Genrekvirering af skattekort’.18RRekvireringsdato8D&nbsp;Datoen for hvornår eSkattekort skal gælde fra.Format: DDMMÅÅÅÅ&nbsp;19Smit.dk3XJA, NEJ eller BlankFeltet skal angives med JA/NEJ til mit.dk.&nbsp;Ja = mit.dk og Nej = mitBasic og der skal yderligere oprettes en mail adresse i kolonne N Er feltet ”tomt” betyder det Ja20TInitialer10X&nbsp;Initialer på medarbejder.21UNemkonto3XJA, NEJ eller BlankFeltet skal angives med JA eller NEJ til Nemkonto, hvis der på Arbejdsgiver stamoplysninger er valgt NemKonto (Blank = JA), ellers skal det være blankt22VLønanciennitet8X&nbsp;Datoen for hvornår anciennitet skal beregnes fraFormat DDMMÅÅÅÅ23WTIN-nummer27XTIN kan både indeholde bogstaver, tal og tegnHvis medarbejderen er bosiddende i udlandet (inkl. Grøndland og Færøerne) skal der oplyses om TIN. TIN bliver administreret af bopælslandet og tildelt medarbejderen.&nbsp;For sletning af ’TIN’ anvendes ’%’ i feltet.
+## MLE-27-HRME (Medarbejder med HR felter)
+For virksomheder, der har Visma HRMedarbejdere kan oprettes og ændres via Decentral registrering.Følgende felter skal altid angives:KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION og MEDARBEJDERFølgende felter kan ændres via Decentral registrering:CPRNR, CVRNR, FORNAVN, EFTERNAVN, ADRESSE1, ADRESSE2, POSTNR, FØRSTANSAT, E-MAIL, SKATTELANDEKODE, ANCIENNITET, SKATTELANDEKODE, EBOKS, INITIALER og TIN.Følgende HR felter kan ændres via Decentral registrering:EMAIL2, FOEDSELSDAG, KOEN, STATSLANDEKODE, FOEDELANDEKODE, DEFAULTKALENDERKODE, KOMMENTAR KALDENAVN og CPRNRUDLAND👩‍🏫 Eksempel:18;1;MLE-27-HRME;3;3001609992;;Jensen;Gurli;Skogen 12;;SE-45678; Malmø;01082008;[gj@hotmail.dk](mailto:gj@hotmail.dk);SE;000100;H;0108200818;1;MLE-27-HRME;4;2602639991;;Olsen;Thomas;Sorte vænget22;;2750;;15082008;;;000015;B;15082008Recordformat:Felt Nr.Excel Kol.NavnAntal tegnTypeVærdiBeskrivelse1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BArbejdsgiver6N K&nbsp;ARBEJDSGIVERNUMMER3CIdentifikation11X KMLE-27-HRME&nbsp;4DMedarbejder15N K&nbsp;MEDARBEJDERNUMMER5ECPR-nr.10&nbsp;N M&nbsp;Der foretages Modulus 11 kontrol på feltet.&nbsp;Fiktive CPR-nr. xxxxxx9991 eller xxxxxx9992 er valide og skal ved indlæsning have felt 19 og 21 udfyldt med Nej. (Værdi x skal indeholde en valid dato).&nbsp;Feltet udfyldes kun, hvis CVR-nummer ikke er udfyldt, men er tomt (”null”).6FCVR-nr.8N (M)&nbsp;Der foretages Modulus 11 kontrol på feltet. Feltet skal være tomt (”null”), hvis CPR-nummer er udfyldt.Format: XXXXXXXX7GEfternavn30X M&nbsp;&nbsp;8HFornavn30X M&nbsp;&nbsp;9IAdresse 130&nbsp;X M&nbsp;&nbsp;10JAdresse 230X&nbsp;&nbsp;For sletning af ’Adresse 2’ anvendes ’%’ i feltet.11KPostnummer dansk eller udl.9X M&nbsp;&nbsp;Validering på danske postnumre, hvis landekode ikke er udfyldt, eller er udfyldt med ’DK’. Ellers ingen kontrol.12LUdl. postdistrikt30X(M)BlankSkal udfyldes, hvis medarbejder har adresse i udlandet.Slettes automatisk, hvis landekode ændres til ’DK’.13MFørst ansat8D M&nbsp;Format DDMMÅÅÅÅ14NE-mail50X(M)&nbsp;For sletning af ’e-mail’ anvendes ’%’ i feltet.(M – hvis mit.dk = Nej)15OLandekode2X M&nbsp;Har medarbejder adresse i udlandet, skal feltet altid udfyldes.16PAnciennitet6N&nbsp;Format ÅÅMMDD, antal år, måneder og dage medarbejderen har i anciennitet.For sletning af ’anciennitet’ anvendes ’%’ i feltet.17QRekvirer skattekorttype1XVærdi:H = Hovedkort, B = Bikort&nbsp;&nbsp;Blank = intet kortDer kan kun rekvireres skattekort i forbindelse med oprettelse af en ny medarbejder.Oprettes en eksisterende medarbejder med nyt lønnr. I lønsystemet, skal feltet være ’Blank’, og så skal der foretages en ’Genrekvirering af skattekort’.18RRekvireringsdato8D&nbsp;Datoen for hvornår eSkattekort skal gælde fra.Format: DDMMÅÅÅÅ&nbsp;19Smit.dk3XJA, NEJ eller BlankFeltet skal angives med JA/NEJ til mit.dk.&nbsp;JA = mit.dk og NEJ = mitBasic og der skal yderligere oprettes en mail adresse i kolonne N og evt. V. Er feltet ”tomt” betyder det Ja20TInitialer10X&nbsp;Initialer på medarbejder.21UNemkonto3XJA, NEJ eller BlankFeltet skal angives med JA eller NEJ til Nemkonto, hvis der på Arbejdsgiver stamoplysninger er valgt NemKonto (Blank = JA), ellers skal det være blankt22VE-mail (privat)50&nbsp;X(M – hvis mit.dk = Nej)50 tegnMEDARBEJDER.EMAIL2For sletning anvendes ’%’ i feltet.23WFødselsdag8DValidering for valid datoMEDARBEJDER.FOEDSELSDAGValidering for valid dato24XKøn1X0=Kvinde1=mand&nbsp;Ikke andre tegnMEDARBEJDER.KOEN25YStatsborgerskab2X&nbsp;Samme valgmuligheder som skattelandekodeSTATSLANDEKODEFor sletning anvendes ’%’ i feltet.26ZFødeland2X&nbsp;Overholde feltets definitionFOEDELANDEKODEFor sletning anvendes ’%’ i feltet.27AAStandard-fraværskalender6NOverholde feltets definitionDEFAULTKALENDERKODEFor sletning anvendes ’%’ i feltet.28ABKommentar60X&nbsp;Overholde feltets definitionKOMMENTARFor sletning af ’e-mail’ anvendes ’%’ i feltet.29ACKaldenavn50XOverholde feltets definitionKALDENAVNFor sletning anvendes ’%’ i feltet.30ADUdl. Cpr.nr.20XOverholde feltets definitionCPRNRUDLANDFor sletning anvendes ’%’ i feltet.31AELønanciennitet8X&nbsp;Datoen for hvornår anciennitet skal beregnes fraFormat DDMMÅÅÅÅ32AFTIN27XTin kan både indeholde bogstaver, tal og tegn&nbsp;Hvis medarbejderen er bosiddende i udlandet (inkl. Grøndland og Færøerne) skal der oplyses om TIN. TIN bliver administreret af bopælslandet og tildelt medarbejderen.&nbsp;For sletning af ’TIN’ anvendes ’%’ i feltet.
+## MLE-30-ANSF (Ansættelsesforhold)
+Ansættelsesforhold kan oprettes, ændres og periodiseres via Decentral registrering.
+Følgende felter skal altid angives:
+KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION, MEDARBEJDER og FRADATO
+Følgende felter kan ændres via Decentral registrering:
+FRADATO, FRATRÆDELSESDATO, FRATRÆDELSESKODE, AFDELINGSNR, UDBETALINGSSTEDNR, LØNGRUPPENR, STILLINGSKATEGORI, ANSÆTTELSESBETEGNELSE, NORMTID, AFV.FORENINGSKODE og AFV.PNR, VALGFRI1, VALGFRI2, VALGFRI3, VALGFRI4, VALGFRI5, VALGFRI6, LØNRAMME, LØNTRIN, RYKKODE1, RYKKODE2, RYKKODE3, NÆSTERYKDATO1, NÆSTERYKDATO2, NÆSTERYKDATO3. AUTORYK1, AUTORYK2, AUTORYK3, ARBEDSDAGE PR.UGE
+👩‍🏫 Eksempel:
+18;1;MLE-30-ANSF;3;01082008;;;;1001;HR konsulent;130.00;;F1;300;;;1010244230
+18;1;MLE-30-ANSF;4;15082008;;;;3001;Lager;0;;T1;100;Kbh;;1010244230
+18;1;MLE-30-ANSF;10086;01082008;;3;31082008
+Recordformat:
+Felt Nr.Excel Kol.NavnAntal tegnTypeVærdiBeskrivelse1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BArbejdsgiver6N K&nbsp;ARBEJDSGIVERNUMMER3CIdentifikation11X KMLE-30-ANSF&nbsp;4DMedarbejder15N K&nbsp;MEDARBEJDERNUMMER5EFradato8D K&nbsp;Format: DDMMÅÅÅÅ.Fradato skal IKKE udfyldes når der kun kommer en Fratrædelseskode og Fratrædelsesdato.6FTiltrædelsesdato8D&nbsp;Anvendes ikke.7GFratrædelseskode2N&nbsp;Obligatorisk ved fratrædelse.Ved genansættelses udfyldes feltet med %.For sletning af ’fratrædelseskode’ anvendes ’%’ i feltet.8HFratrædelsesdato8D&nbsp;Obligatorisk ved fratrædelse.Format: DDMMÅÅÅÅ9IStillingskategori4N M&nbsp;&nbsp;10JAnsættelsesbetegnelse30X&nbsp;For sletning af ’ansættelsesbetegnelse’ anvendes ’%’ i feltet.11KNormtid medarbejder6N&nbsp;Format: 999.99.For sletning af ’normtid medarbejder’ anvendes ’%’ i feltet.12LNormtid overenskomst6N&nbsp;Udfyldes ved oprettelse, hvis forskellig fra 160.33. Format 999.9913MLøngruppe6X M&nbsp;Bogstavet skal være med stort f.eks. ’T1’ eller ’F2’.14NAfdeling6X&nbsp;Der er forskel på store og små bogstaver.For sletning af ’afdeling’ anvendes ’%’ i feltet.15OUdbetalingssted6X&nbsp;Der er forskel på store og små bogstaver.For sletning af ’udbetalingssted’ anvendes ’%’ i feltet.16PAfv. foreningskode5N&nbsp;For sletning af ’afv. foreningskode&apos; anvendes ’%’ i feltet.17&nbsp;QAfv. Pnr.10X&nbsp;Moduluskontrol på indholdet af feltet.For sletning af ’afv. pnr.’ anvendes ’%’ i feltet.18RAfv. kontoplan2X&nbsp;Kontrol af at indlæst kontoplan eksisterer.For sletning af ’afv. kontoplan.’ anvendes ’%’ i feltet.19SValgfri110X&nbsp;For sletning af ’Valgfri1 anvendes ’%’ i feltet.20TValgfri210X&nbsp;For sletning af ’Valgfri2 anvendes ’%’ i feltet.21UValgfri310X&nbsp;For sletning af ’Valgfri3 anvendes ’%’ i feltet.22VValgfri410X&nbsp;For sletning af ’Valgfri4 anvendes ’%’ i feltet.23WValgfri510X&nbsp;For sletning af ’Valgfri5 anvendes ’%’ i feltet.24XValgfri610X&nbsp;For sletning af ’Valgfri6 anvendes ’%’ i feltet.25YLønramme6X&nbsp;Feltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin, skal feltet udfyldes med lønramme.&nbsp;26ZLøntrin6X&nbsp;Feltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin, skal feltet udfyldes med løntrin..27AARykkode16X&nbsp;Feltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin, angives Rykkode1.28ABRykkode26X&nbsp;Feltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin angives Rykkode2.29ACRykkode36X&nbsp;Feltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin angives Rykkode330ADNæsterykdato18DBlankDDMMÅÅÅÅFeltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin udfyldes feltet med dato for første rykning efter tabellen i Rykkode1.31AENæsterykdato28DBlankDDMMÅÅÅÅFeltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin udfyldes feltet med dato for første rykning efter tabellen i Rykkode232AFNæsterykdato38DBlankDDMMÅÅÅÅFeltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin udfyldes feltet med dato for første rykning efter tabellen i Rykkode333AGAutoryk11XBlankJ eller NFeltet skal normalt ikke udfyldes.Ved tilmelding til Ramme/trin kan udfyldes med:J=Ja, N=nej,34AHAutoryk21XBlankJ eller NFeltet skal normalt ikke udfyldes.Ved tilmelding til Ramme/trin kan udfyldes medJ=Ja, N=nej,&nbsp;35AIAutoryk31XBlankJ eller NFeltet skal normalt ikke udfyldes.Ved tilmelding til Ramme/trin kan udfyldes medJ=Ja, N=nej,&nbsp;36AJArbejdsdage pr. uge1N&nbsp;Antallet af arbejdsdage pr. uge.&nbsp;Feltet kan maks. have 8 dage pr. uge&nbsp;Anvendes ved aftale om finansfunktionalitet
+## MLE-32- HRAN (Ansættelsesforhold med HR felter)
+For virksomheder der også har Visma HR
+Ansættelsesforhold kan oprettes, ændres og periodiseres via Decentral registrering.
+Følgende felter skal altid angives:
+KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION, MEDARBEJDER og FRADATO
+Følgende felter kan ændres via Decentral registrering:
+FRADATO, FRATRÆDELSESDATO, FRATRÆDELSESKODE, AFDELINGSNR, UDBETALINGSSTEDNR, LØNGRUPPENR, STILLINGSKATEGORI, ANSÆTTELSESBETEGNELSE, NORMTID, AFV.FORENINGSKODE og AFV.PNR, VALGFRI1, VALGFRI2, VALGFRI3, VALGFRI4, VALGFRI5, VALGFRI6, LØNRAMME, LØNTRIN, RYKKODE1, RYKKODE2, RYKKODE3, NÆSTERYKDATO1, NÆSTERYKDATO2, NÆSTERYKDATO3. AUTORYK1, AUTORYK2, AUTORYK3, ARBEJDSDAGE PR.UGE
+Følgende felter kan ændres via Decentral registrering:
+STILLING INTERNSTILLINGSKODE STILLINGSTYPEKODE AENDRINGSAARSAGSKODE INTERNTITELKODE ARBEJDSORDNINGKODE UDDANNELSESKRAVKODE EKSTRAOPSIGPERSONMAANED EKSTRAOPSIGFIRMAMAANED ANCIENNITET2 JUBILAEUM2 FRATRAEDAARSAGSKODE DEPARTMENTID ANSATTYPEKODE
+👩‍🏫 Eksempel:
+18;1;MLE-32-HRAN;3;01082008;;;;1001;HR konsulent;130.00;;F1;300;;;1010244230
+18;1;MLE-32-HRAN;4;15082008;;;;3001;Lager;0;;T1;100;Kbh;;1010244230
+18;1;MLE-32-HRAN;10086;01082008;;3;31082008
+Recordformat:
+Felt Nr.Excel Kol.NavnAntal tegnTypeVærdiBeskrivelse1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BArbejdsgiver6N K&nbsp;ARBEJDSGIVERNUMMER3CIdentifikation11X KMLE-32- HRAN&nbsp;4DMedarbejder15N K&nbsp;MEDARBEJDERNUMMER5EFradato8D K&nbsp;Format: DDMMÅÅÅÅFradato skal IKKE udfyldes når der kun kommer en Fratrædelseskode og Fratrædelsesdato.6FTiltrædelsesdato8D&nbsp;Anvendes ikke.7GFratrædelseskode2N&nbsp;Obligatorisk ved fratrædelse.Ved genansættelses udfyldes feltet med %.For sletning af ’fratrædelseskode’ anvendes ’%’ i feltet.8HFratrædelsesdato8D&nbsp;Obligatorisk ved fratrædelse.Format: DDMMÅÅÅÅ9IStillingskategori4N M&nbsp;&nbsp;10JAnsættelsesbetegnelse30X&nbsp;For sletning af ’ansættelsesbetegnelse’ anvendes ’%’ i feltet.11KNormtid medarbejder6N&nbsp;Format: 999.99.For sletning af ’normtid medarbejder’ anvendes ’%’ i feltet.12LNormtid overenskomst6N&nbsp;Udfyldes ved oprettelse, hvis forskellig fra 160.33. Format 999.9913MLøngruppe6X M&nbsp;Bogstavet skal være med stort f.eks. ’T1’ eller ’F2’.14NAfdeling6X&nbsp;Der er forskel på store og små bogstaver.For sletning af ’afdeling’ anvendes ’%’ i feltet.15OUdbetalingssted6X&nbsp;Der er forskel på store og små bogstaver.For sletning af ’udbetalingssted’ anvendes ’%’ i feltet.16PAfv. foreningskode5N&nbsp;For sletning af ’afv. foreningskode&apos; anvendes ’%’ i feltet.17&nbsp;QAfv. Pnr.10X&nbsp;Moduluskontrol på indholdet af feltet.For sletning af ’afv. pnr.’ anvendes ’%’ i feltet.18RAfv. kontoplan2X&nbsp;Kontrol af at indlæst kontoplan eksisterer.For sletning af ’afv. kontoplan.’ anvendes ’%’ i feltet.19SValgfri110X&nbsp;For sletning af ’Valgfri1 anvendes ’%’ i feltet.20TValgfri210X&nbsp;For sletning af ’Valgfri2 anvendes ’%’ i feltet.21UValgfri310X&nbsp;For sletning af ’Valgfri3 anvendes ’%’ i feltet.22VValgfri410X&nbsp;For sletning af ’Valgfri4 anvendes ’%’ i feltet.23WValgfri510X&nbsp;For sletning af ’Valgfri5 anvendes ’%’ i feltet.24XValgfri610X&nbsp;For sletning af ’Valgfri6 anvendes ’%’ i feltet.25YLønramme6X&nbsp;Feltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin, skal feltet udfyldes med lønramme.&nbsp;26ZLøntrin6X&nbsp;Feltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin, skal feltet udfyldes med løntrin.27AARykkode16X&nbsp;Feltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin, angives Rykkode1.28ABRykkode26X&nbsp;Feltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin angives Rykkode2.29ACRykkode36X&nbsp;Feltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin angives Rykkode330ADNæsterykdato18DBlankDDMMÅÅÅÅFeltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin udfyldes feltet med dato for første rykning efter tabellen i Rykkode1.31AENæsterykdato28DBlankDDMMÅÅÅÅFeltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin udfyldes feltet med dato for første rykning efter tabellen i Rykkode232AFNæsterykdato38DBlank&nbsp;Feltet skal normalt ikke udfyldes.Ved aftale om Ramme/trin udfyldes feltet med dato for første rykning efter tabellen i Rykkode333AGAutoryk11XBlankJ eller NFeltet skal normalt ikke udfyldes.Ved tilmelding til Ramme/trin kan udfyldes med:J=Ja, N=nej,34AHAutoryk21XBlankJ eller NFeltet skal normalt ikke udfyldes.Ved tilmelding til Ramme/trin kan udfyldes medJ=Ja, N=nej,&nbsp;35AIAutoryk31XBlankJ eller NFeltet skal normalt ikke udfyldes.Ved tilmelding til Ramme/trin kan udfyldes medJ=Ja, N=nej,&nbsp;36AJArbejdsdage pr. uge1N&nbsp;Antallet af arbejdsdage pr. uge.&nbsp;Anvendes ved aftale om finansfunktionalitet37AKAflønningsafvigelse&nbsp;&nbsp;12XBlankUdfyldes på medarbejdere der skal have anden aflønning end det som ligger på stillingskategorienKan udfyldes med:&nbsp;BagudlønForudlønTimeløn (kan pt. ikke bruge)14 dagesløn (kan pt. ikke bruge)38ALArbejdsfunktionsnr.6NM&nbsp;Udfyldes med nummeret for arbejdsfunktione39AMFerieafvigelse&nbsp;&nbsp;2X&nbsp;Udfyldes på medarbejdere der skal have anden ferieberegning end den som ligger på stillingskategorienJ = Ja til ferieafvigelseN = Nej til ferieafvigelseDer kan ikke anvendes % for at slette, skal medarbejderen ikke have ferieafvigelse, så skal der skrives N40ANAfvigende stedkode&nbsp;&nbsp;1N&nbsp;Udfyldes på medarbejdere der skal have anden stedkode end den som ligger på stillingskategorienKan udfyldes med:HOSTADPROVIN2 (Stedtillægskode2)3 (Stedtillægskode3)4 (Stedtillægskode4)5 (Stedtillægskode5)6 (Stedtillægskode6)41AOStilling50XOverholde feltets definitionSTILLING Anvendes kun ifm. Visma HR42APIntern stilling5XOverholde feltets definitionINTERNSTILLINGSKODE Anvendes kun ifm. Visma HR43AQStillingstypekode5XOverholde feltets definitionSTILLINGSTYPEKODE Anvendes kun ifm. Visma HR44ARÆndringsårsagskode5XOverholde feltets definitionAENDRINGSAARSAGSKODE Anvendes kun ifm. Visma HR45ASIntern titel5XOverholde feltets definitionINTERNTITELKODE Anvendes kun ifm. Visma HR46ATArbejdsordning5XOverholde feltets definitionARBEJDSORDNINGKODE Anvendes kun ifm. Visma HR47AUUddannelseskrav6NOverholde feltets definitionUDDANNELSESKRAVKODE Anvendes kun ifm. Visma HR48AVEkstra opsigelse Personlig2NHeltalEKSTRAOPSIGPERSONMAANED Anvendes kun ifm. Visma HR49AWEkstra opsigelse Firma2NHeltalEKSTRAOPSIGFIRMAMAANEDAnvendes kun ifm. Visma HR50AXAnc. Ved opsigelse8DValid datoDDMMÅÅÅÅANCIENNITET2Anvendes kun ifm. Visma HR51&nbsp;AYAnc. ved jubilæum8DValid datoDDMMÅÅÅÅJUBILAEUM2Anvendes kun ifm. Visma HR52AZFratrædelsesårsag10XOverholde feltets definitionFRATRAEDAARSAGSKODEAnvendes kun ifm. Visma HR53BAAfdeling9NOverholde feltets definitionDEPARTMENTIDAnvendes kun ifm. Visma HR54BBAnsattype5XOverholde feltets definitionANSATTYPEKODEAnvendes kun ifm. Visma HR
+## MLE-35-REGK (Registrering- og kontonr.)
+Registreringsnummer og kontonummer kan oprettes og periodiseres via Decentral registrering.
+Følgende felter skal altid angives:
+KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION, MEDARBEJDER og STARTDATO
+Følgende felter kan ændres via Decentral registrering:
+KONTONUMMER, REGISTRERINGSNUMMER, STARTDATO og SLUTDATO
+👩‍🏫 Eksempel:
+18;1;MLE-35-REGK;3;01082009;;1234;9481247
+18;1;MLE-35-REGK;4;15082008;;1222;3185784375
+Recordformat:
+Felt Nr.ExcelKol.NavnAntal tegnTypeVærdiBeskrivelse1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BArbejdsgiver6N K&nbsp;ARBEJDSGIVERNUMMER3CIdentifikation11X KMLE-35-REGK&nbsp;4DMedarbejder15N K&nbsp;MEDARBEJDERNUMMER5EStartdato8D K&nbsp;Format: DDMMÅÅÅÅ6FSlutdato8D&nbsp;&nbsp;Format: DDMMÅÅÅÅ7GRegistreringsnummer4N M&nbsp;&nbsp;8HKontonummer10X M&nbsp;&nbsp;9IKontonummertype13XLønudbetalingBogføringEr feltet ikke udfyldt ved oprettelse/ændring anvendes default Lønudbetaling
+## MLE-40-LONA (Personlige satser, faste lønarter og variable lønarter)
+Variable lønarter kan oprettes via Decentral registrering.
+Faste lønarter kan oprettes, ændres og periodiseres via Decentral registrering.
+Personlige satser kan oprettes, ændres og periodiseres via Decentral registrering.
+Følgende felter skal altid angives:
+KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION, MEDARBEJDER, LØNARTNR og STARTDATO
+Følgende felter kan ændres via Decentral registrering:
+TILDATO (Slutdato), BETEGNELSE, ENHEDER, SATS; BELØB, PCT., REDUCER EJ, PENS.FIRMABELØB, PENS:FIRMA %, PENSIONSGRUNDLAG, KONTONUMMER, REGISTRERINGSNUMMER, MODTAGERSAFDELING, MODTAGERSAFTALENR, AFSENDERKUNDENR, AFREGNINGSTYPE, OVERENSKOMSTKODE, KONTOPLANFELTER
+AFREGNES VIA, FREKVENS, NÆSTE GANG
+I dokumentet ’Lønarter decentralt’ kan du se hvilke felter, der skal udfyldes i forbindelse med den enkelte lønart.
+⚠️ OBS: Følgende lønarter skal ved indlæsning decentralt erstattes af nye lønarter: (se skema længere nede) 400, 401, 600, 605, 606, 865, 4280, 4410 og 4412.
+⚠️ OBS: Følgende lønarter kan IKKE indlæses decentralt:
+450, 7802, 8392, 8725 og 8755.
+👩‍🏫 Eksempel:
+18;1;MLE-40-LONA;3;01082008;;9900;;;;20000
+18;1;MLE-40-LONA;3;01082008;;6200;;;;;5;;;10;;;;;;;2003
+18;1;MLE-40-LONA;3;01082008;;9011;;120
+18;1;MLE-40-LONA;3;01082008;;1303;;5;120
+18;1;MLE-40-LONA;3;01082008;;3000;;;;6500
+18;1;MLE-40-LONA;3;01082008;31122008;3010
+18;1;MLE-40-LONA;4;15082008;;6003;;;;;3.7;;;7.4;2;;;;;;2115;;;;1
+18;1;MLE-40-LONA;4;15082008;;6410;;;;500;;;;;;;;;2345;6544533
+18;1;MLE-40-LONA;4;15082008;;1100;;165
+18;1;MLE-40-LONA;4;15082008;;9905;;;;170
+18;1;MLE-40-LONA;4;15082008;;9906;;;;15
+Recordformat:
+Felt Nr.ExcelKol.NavnAntal tegnTypeVærdiBeskrivelse1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BArbejdsgiver6N K&nbsp;ARBEJDSGIVERNUMMER3CIdentifikation11X KMLE-40-LONA&nbsp;4DMedarbejder15N K&nbsp;MEDARBEJDERNUMMER5EFradato8D K&nbsp;Format: DDMMÅÅÅÅ6FTildato8D&nbsp;Format: DDMMÅÅÅÅ7GLønart6N K&nbsp;&nbsp;8HBetegnelse30X&nbsp;&nbsp;9IEnheder11N&nbsp;Typer af enheder: Timer, dage, km. mm.Format: -9999999.99 – 9999999.9910JSats&nbsp;11N&nbsp;Format: -9999999.99 – 9999999.9911KBeløb11N&nbsp;Format: -9999999.99 – 9999999.9912LPct.11N&nbsp;%Format: -9999999.99 – 9999999.9913MReducer ej1NKan indeholde værdien 1 eller 2Står standard på lønarten til 0 = Ja. Feltet må IKKE indeholde værdien 0.14NPens. firmabeløb11N&nbsp;Format: -9999999.99 – 9999999.9915OPens. firma %11N&nbsp;Format: -9999999.99 – 9999999.9916PPensionsgrundlag1N1/2/3/4/5/6/10/11Se beskrivelse i lønartskatalogetGrundlag 10 og 11 er kun for Visma Løn Finans.17QSaldo11N&nbsp;Format: -9999999.99 – 9999999.9918RÅrstal4Å&nbsp;Format: ÅÅÅÅ19SInputværdi10X&nbsp;Værdien skal være lig med Opslagstrin. Se Guide til Værdibestemt løn.20TReg.nr.4N&nbsp;Anvendes ved pensioner21UKontonummer10X&nbsp;Anvendes ved pensioner22VAfregningstype6N&nbsp;Anvendes ved pensioner23WModtagersafdeling5X&nbsp;Anvendes ved pensioner24XModtagersaftalenr8X&nbsp;Anvendes ved pensioner25YAfsenderkundenr15X&nbsp;Anvendes ved pensioner26ZOverenskomstkode5X&nbsp;Anvendes ved pensioner27AAKontoplanfelt&nbsp;20X*se bemærkningAnvendes til input kontering28ABKontoplanfelt&nbsp;20X*se bemærkningAnvendes til input kontering29ACKontoplanfelt&nbsp;20X*se bemærkningAnvendes til input kontering30ADKontoplanfelt&nbsp;20X*se bemærkningAnvendes til input kontering31AEKontoplanfelt&nbsp;20X*se bemærkningAnvendes til input kontering32AFKontoplanfelt&nbsp;&nbsp;20X*se bemærkningAnvendes til input kontering33AGAfregnes via2XDefault Blank eller værdien BCSkal normalt ikke udfyldes&nbsp;Anvendes ved aftale om finansfunktionalitet, hvis lønarten skal afregnes via en bogføringscentral.&nbsp;For sletning af ’Afregnes via’ anvendes ’%’ i feltet.34AHFrekvens2N&nbsp;Skal normalt ikke udfyldes&nbsp;Anvendes ved aftale om finansfunktionalitet&nbsp;Feltet skal kun udfyldes på faste lønarterFor sletning af ’Frekvens’ anvendes ’%’ i feltet.35AINæste gang8D&nbsp;Format: DDMMÅÅÅÅSkal normalt ikke udfyldes&nbsp;Anvendes ved aftale om finansfunktionalitet&nbsp;Feltet skal kun udfyldes på faste lønarterFor sletning af ’Næste gang’ anvendes ’%’ i feltet36AJSletmarkering1N9 = Slet fast lønartStartdato skal være = lønartens startdato
+*Inputkontering kan benyttes til følgende kontoplanfelter:* Afdeling Antal tegn = 6&nbsp;* Udbetalingssted Antal tegn = 6* Kontonummer Antal tegn = 20* Valgfri1 Antal tegn = 10* Valgfri2 Antal tegn = 10* Valgfri3 Antal tegn = 10.* Valgfri4 Antal tegn = 10* Valgfri5 Antal tegn = 10* Valgfri6 Antal tegn = 10Sorteringskoden kan have flere kontoplanfelter end ovennævnte, men ikke alle vil være med i rækkefølgen når det gælder decentral registrering.Indeholder din sorteringskode følgende kontoplanfelter:1. $12. $13. $1Vil der i decentral registrering skulle benyttes:Kolonne 27 / AA: Afdeling - er det første kontoplanfelt med mulighed for inputkonteringKolonne 28 / AB: Kontonr. - er det andet kontoplanfelt med mulighed for inputkonteringKontoplanfelt ’Aflønning’ kan ikke anvendes, der ikke kan være inputkontering på dette felt.⚠️ OBS:&nbsp;Følgende lønarter kan ikke indlæses decentralt, men skal erstattes af andre lønarter.Dog skal lønart 4410 og 4412 både have lønart 4410 og 4412 plus lønarterne 3800, 3801 eller 3804. Øvrige lønarter bliver erstattet helt af andre lønarter. Se yderligere beskrivelse i ’Lønarter, decentral registrering’.Nuværende lønartLønartstekstLønart til decentral registrering310Overfører feriefri år-1 dage&nbsp;311Overfører feriefri år-1 timer&nbsp;312Overfører feriefri år-1 beløb&nbsp;313Overfører afspadsering år-1 timer&nbsp;314Overfører omsorgdage år-1&nbsp;315Overfører omsorgtimer år-1&nbsp;316Overfører aftalefridage år-1&nbsp;317Overfører aftalefritimer år-1&nbsp;4410Feriefri til Fritvalgskonto – henter Per9905/Res1004410 – Antal timer4410Korrektion af feriefridage38004410Korrektion af feriefritimer38014410Korrektion af feriefribeløb38044412Feriefri til Fritvalgskonto – timer * sats4412 – Antal timer og sats4412Saldokorrektion af feriefridage38004412Saldokorrektion af feriefritimer38014412Saldokorrektion af feriefribeløb3804
+
+## MLE-45-ERIN (Erindring)
+Erindring kan oprettes og ændres via Decentral registrering.
+Følgende felter skal altid angives:
+KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION, MEDARBEJDER og DATO 
+Følgende felter kan ændres via Decentral registrering:
+ERINDRINGSTEKST 
+👩‍🏫 Eksempel
+18;1;MLE-45-ERIN;3;01082008;1;Jubilæum 2018  
+Recordformat:
+Felt Nr.ExcelKol.NavnAntal tegnTypeVærdiBeskrivelse1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BArbejdsgiver6N K&nbsp;ARBEJDSGIVERNUMMER3CIdentifikation11X KMLE-45-ERIN&nbsp;4DMedarbejder15N K&nbsp;MEDARBEJDERNUMMER5EDato8D K&nbsp;Format: DDMMÅÅÅÅ6FModtager1N K0=Kundeforhold, 1=ArbejdsgiverAnvend kun 1= Arbejdsgiver7GErindringstekst30X&nbsp;For sletning af ’erindringstekst’ anvendes ’%’ i feltet.
+## MLE-50-ANSO (Ansættelsesoplysninger)
+Ansættelsesoplysninger kan oprettes, ændres og periodiseres via Decentral registrering.
+Følgende felter skal altid angives:
+KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION, MEDARBEJDER, STARTDATO, IPTYPE og IPKODE
+Følgende felter kan ændres via Decentral registrering:
+IP-TYPE, IP-KODE, SLUTDATO, VÆRDI 
+👩‍🏫 Eksempel
+18;1;MLE-50-ANSO;3;300;412110;;01082008
+18;1;MLE-50-ANSO;3;800;4;;01082008
+18;1;MLE-50-ANSO;3;600;99999;30.00;01082008
+Recordformat:
+Felt Nr.ExcelKol.NavnAntal tegnTypeVærdiBeskrivelse1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BArbejdsgiver6N K&nbsp;ARBEJDSGIVERNUMMER3CIdentifikation11X KMLE-50-ANSO&nbsp;4DMedarbejder15N K&nbsp;MEDARBEJDERNUMMER5EIP-type6N K&nbsp;&nbsp;6FIP-kode6N K&nbsp;Udfyldes med 99999 ved IP-type 600, 610 og 620.7GVærdi9N&nbsp;Blank, 0 eller positivt&nbsp;Udfyldes kun ved IP-type 610,&nbsp; 620.&nbsp;Format: 999999.998HStartdato8D K&nbsp;Format: DDMMÅÅÅÅ9ISlutdato8D&nbsp;&nbsp;Format: DDMMÅÅÅÅ
+## MLE-55-FRAV (Fraværsregistrering)
+Fraværsregistrering kan oprettes, ændres og slettes via Decentral registrering.
+Følgende felter skal altid angives:
+KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION, MEDARBEJDER, STARTDATO, SLUTDATO, FRAVÆRSKODE og VARIGHED
+Følgende felter kan ændres via Decentral registrering:
+SLUTDATO, BETEGNELSE og SATS
+Følgende felter skal altid angives ved sletning:
+KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION, MEDARBEJDER, STARTDATO, SLUTDATO og FRAVÆRSKODE
+👩‍🏫 Eksempel
+18;1;MLE-55-FRAV;10078;12082008;13082008;40;Ferie i august;2
+18;1;MLE-55-FRAV;987;14082008;14082008;18;Dagpenge;7.5;125
+18;1;MLE-55-FRAV;992;02012008;02012008;40;;;;9
+Recordformat:
+Felt Nr.ExcelKol.NavnAntal tegnTypeVærdiBeskrivelse1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BArbejdsgiver6N K&nbsp;ARBEJDSGIVERNUMMER3CIdentifikation11X KMLE-55-FRAV&nbsp;4DMedarbejder15N K&nbsp;MEDARBEJDERNUMMER5EStartdato8D K&nbsp;Format: DDMMÅÅÅÅ6FSlutdato8D M&nbsp;Format: DDMMÅÅÅÅ7GFraværskode4N K&nbsp;&nbsp;8HBetegnelse30X&nbsp;&nbsp;9IVarighed10N&nbsp;Blank, 0 eller positivtFormat: 0-9999999.9910JSats10NBlank, 0 eller positivtFormat: 0-9999999.9911KSletmarkering1NBlank eller 9 = Slet fravær&nbsp;12LGruppeID&nbsp;&nbsp;&nbsp;&nbsp;
+## MLE-60-EIND (Felter eIndkomst)
+Felter eIndkomst kan oprettes, ændres og periodiseres via Decentral registrering.
+Følgende felter skal altid angives:
+KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION, MEDARBEJDER, RUBRIK, KODE og STARTDATO
+👩‍🏫 Eksempel
+18;1;MLE-60-EIND;3;10;0;01082008
+18;1;MLE-60-EIND;3;11;0;01082008
+18;1;MLE-60-EIND;4;66;0;15082008;;5000
+Recordformat:
+Felt Nr.ExcelKol.NavnAntal tegnTypeVærdiBeskrivelse1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BArbejdsgiver6N K&nbsp;ARBEJDSGIVERNUMMER3CIdentifikation11X KMLE-60-EIND&nbsp;4DMedarbejder15N K&nbsp;MEDARBEJDERNUMMER5ERubrik4N K&nbsp;&nbsp;6FKode6N K&nbsp;&nbsp;7GStartdato8D K&nbsp;Format: DDMMÅÅÅÅ8HSlutdato8D&nbsp;Format: DDMMÅÅÅÅ9IVærdi11N&nbsp;Blank, 0 eller positivtFormat: 0-9999999.9910JTekst58X&nbsp;&nbsp;
+## MLE-65-GREK (Genrekvirering eSkattekort)
+Genrekvirering af eSkattekort kan oprettes via Decentral registrering.
+Følgende felter skal altid angives:
+KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION, MEDARBEJDER, STARTDATO og SKATTEKORTTYPE
+👩‍🏫 Eksempel
+18;1;MLE-65-GREK;1;01082008;H
+18;1;MLE-65-GREK;2;15082008;H
+Recordformat:
+Felt Nr.ExcelKol.NavnAntal tegnTypeVærdiBeskrivelse&nbsp;1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BArbejdsgiver6N K&nbsp;ARBEJDSGIVERNUMMER3CIdentifikation11X KMLE-65-GREK&nbsp;4DMedarbejder15N K&nbsp;MEDARBEJDERNUMMER5EStartdato8D K&nbsp;Format: DDMMÅÅÅÅ6FSkattekorttype1X KH = Hovedkort,&nbsp;B = Bikort&nbsp;H for Hovedkort (SKAT sender automatisk Frikort eller Bruttokort)&nbsp;B for Bikort
+## MLE-70-SKAT (Opret skattekort manuelt)
+Registrering af skatteoplysninger via Decentral registrering uden at der hentes abonnement hos SKAT. 
+Følgende felter skal altid angives:
+KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION, MEDARBEJDER, SKATTEKORTTYPE, TRAEKPROCENT, STARTDATO OG SLUTDATO
+👩‍🏫 Eksempel
+18;1;MLE-70-SKAT;1;H;4753;;40;01082017;31122017;3
+Recordformat:
+Felt Nr.Excel KolonneNavnAntal tegnTypeVærdiBeskrivelse1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BArbejdsgiver6N K&nbsp;ARBEJDSGIVERNUMMER3CIdentifikation11X KMLE-70-SKAT&nbsp;4DMedarbejder15N K&nbsp;MEDARBEJDERNUMMER5ESkattekorttype1X KH, K, F eller B&nbsp;H for Hovedkort&nbsp;K for BruttokortF for FrikortB for Bikort6FFradragmåned9N&nbsp;&nbsp;FRADRAGMÅNED (beløb)7GFrikort9N&nbsp;&nbsp;FRIKORTBELØB8HTraekprocent3N K&nbsp;TRAEKPROCENT9IStartdato8D K&nbsp;Format: DDMMÅÅÅÅ10JSlutdato8D K&nbsp;Format: DDMMÅÅÅÅ11KEkstratraek2N&nbsp;&nbsp;EKSTRATRAEK
+## MLE-80-Telefon
+Registrering af telefonnr. på medarbejderen. 
+Følgende felter skal altid angives:
+KUNDEFORHOLD, ARBEJDSGIVER, IDENTIFIKATION, MEDARBEJDER, TELEFONNR., LOKALNR., TEKST
+👩‍🏫 Eksempel
+18;1;MLE-80-TLF;1;12345678;;Mobiltelefon
+Recordformat:
+Felt Nr.Excel KolonneNavnAntal tegnTypeVærdiBeskrivelse1AKundeforhold6N K&nbsp;KUNDEFORHOLDSNUMMER2BArbejdsgiver6N K&nbsp;ARBEJDSGIVERNUMMER3CIdentifikation11X KMLE-80-TLF&nbsp;4DMedarbejder15N K&nbsp;MEDARBEJDERNUMMER5ETelefonnr20X&nbsp;&nbsp;&nbsp;6FLokalnr4X&nbsp;&nbsp;7GTekst10X&nbsp;&nbsp;&nbsp;

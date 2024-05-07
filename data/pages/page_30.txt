@@ -1,0 +1,37 @@
+https://help.vismaenterprise.dk/vismaloen-standard/tillaeg/64-pensionsgrundlag
+
+# Pensionsgrundlag
+
+Generelt om alle pensions lønarter gælder, at de beregnes af et grundlag.
+I oversigten nedenfor angives, hvilket grundlag den enkelte lønart beregner ud fra.
+
+## Pensionsgrundlag 1 (A)
+Månedsløn + pensionsgivende tillæg – fradrag for ferie og – fri egen regning.
+Varianter:Ønskes tillæg, overtid og afspadsering fra følgende lønarter 1010,1300,1307,1330,1331,1370,1371,1410,1430,1700 tillagt pensionsgrundlaget, skal lønart 4303 tilknyttes pågældende stillingskategori.
+Ønskes tillæg fra følgende lønarter 1471,1472,1475,1480,1481,1482,1485 tillagt pensionsgrundlaget, skal lønart 4310 tilknyttes pågældende stillingskategori.
+Ønskes opsparingen til Fritvalgs Lønkontoen tillagt pensionsgrundlaget, så henvises til vejledningen til Fritvalg.
+## Pensionsgrundlag 2 (B)
+Periodens A-indkomst + periodens opsparing af feriepenge og evt. SH – udbetaling af ledighedsdage, -personalegoder og – evt. bidrag til privat kapitalpension.
+Varianter:Ønskes ikke fradrag for ferie oprettes stillingskategori lønart 4304.
+Ønskes der ikke beregnet pension af følgende overtidslønarter: 1300,1301,1302,1303,1304,1305,1306,1307,1320,1321,1322,1380,1381,1385,1386,1390,1391,1392,1393,1394,13951396,1397 oprettes stillingskategorilønart 4305.
+Ønskes opsparingen til Fritvalgs Lønkontoen tillagt pensionsgrundlaget, så henvises til vejledning til Fritvalg.
+## Pensionsgrundlag 3(C)
+Periodens ferieberettigede løn uden reduktion for afholdt ferie.
+Varianter:Ønskes afholdt ferie nedskrevet i grundlaget, oprettes stillingskategori lønart 4300.
+Ønskes beregnet pension af ferietillæg oprettes stillingskategorilønart 4307.
+Ønskes feriepenge ved fratrædelse, den løbende optjente fritvalgskonto, samt fritvalgskonto, som bliver overført til pension, medtaget i grundlaget, oprettes stillingskategori 4308.
+Ønskes opsparingen til Fritvalgs Lønkontoen tillagt pensionsgrundlaget, så henvises vejledning til fritvalg.
+## Pensionsgrundlag 4 (D)
+Periodens månedsløn – fri egen regning eller timeløn (1100, 1101, 1110)
+Variant:Ønskes tillæg fra følgende lønarter 1471,1472,1475,1480,1481,1482,1485 tillagt pensionsgrundlaget, skal lønart 4313 tilknyttes pågældende stillingskategori.
+Ønskes opsparingen til Fritvalgs Lønkontoen tillagt pensionsgrundlaget, så henvises til vejledning til fritvalg.
+## Pensionsgrundlag 5 (E)
+Månedsløn + pensionsgivende tillæg + overtidsbetaling + udbetaling af ferietillæg + feriepenge – fradrag for ferie og – fri egen regning.
+Varianter:Ønskes der ikke beregning af pension af feriepenge ved fratrædelse skal lønart 4302 tilknyttes pågældende stillingskategori
+Ønskes der ikke beregning af pension af ferietillæg skal lønart 4306 tilknyttes pågældende stillingskategori
+Ønskes tillæg fra følgende lønarter 1471,1472,1475,1480,1481,1482,1485 tillagt pensionsgrundlaget, skal lønart 4314 tilknyttes pågældende stillingskategori.
+Ønskes opsparingen til Fritvalgs Lønkontoen tillagt pensionsgrundlaget, så henvises vejledning til fritvalg.
+## Pensionsgrundlag 6 (F)
+A-skattepligtig indkomst.
+Ønskes tillæg fra lønarterne 1185 og 1186 tillagt pensionsgrundlaget, skal lønart 4315 tilknyttes pågældende stillingskategori.
+Ønskes opsparingen til Fritvalgs Lønkontoen tillagt pensionsgrundlaget, så henvises til vejledning til fritvalg.

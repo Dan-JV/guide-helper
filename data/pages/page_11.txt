@@ -1,0 +1,173 @@
+https://help.vismaenterprise.dk/vismaloen-standard/rapporter/59-rapportoversigt-til-visma-lon
+
+# Rapportoversigt til Visma Løn 
+
+Sådan danner du rapporter
+Rapporterne udskrives fra Visma Løn ved at:
+* Åbne Visma Løn
+* Vælge rapporter
+* Vælge fra drop down-menuen
+
+
+## Afregning pr. betalingsdato
+Formål Rapporten anvendes som datoafregningsoversigt for afregning af feriepenge. 
+Format Excel/csv 
+Indtastning før dannelseEventuelt Arbejdsgivernummer &amp; Startdato
+## Afregning pr. dispositionsdato
+FormålRapporten anvendes som datoafregningsoversigt med totaler pr. bestillingsdato, samt subtotaler pr. betalingsmodtager (Løn, Pension, SKAT, Barsel, ATP). 
+FormatHtml 
+Indtastning før dannelseEventuelt Arbejdsgivernummer &amp; Startdato
+## Afstemningsliste (eIndkomst)
+FormålRapporten anvendes til afstemning af valgte periodes lønkørsel med eIndkomst. 
+FormatExcel/csv 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer
+## Afstemningsliste eIndkomst (år til dato)
+FormålRapporten anvendes til at afstemme årets lønkørsler med eIndkomst. 
+FormatExcel/csv 
+Indtastning før dannelseEventuelt Arbejdsgivernummer &amp; Periode
+## Afstemningsliste (lønperioden)
+FormålRapporten anvendes til at afstemme saldototaler for den valgte lønkørsel. 
+FormatExcel/csv + html 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer &amp; Datafil output: JA/NEJ
+## Afstemningsliste (år til dato)
+Formål Rapporten anvendes som oversigt af saldototaler fordelt på arbejdsgivernummer samt stillingskategorier. 
+Format Html 
+Indtastning før dannelsePeriode + eventuelt Arbejdsgivernummer
+## Afvigelsesliste udvidet
+Kræver abonnement og opsætning for at blive vist
+## Anciennitetskort
+FormålRapporten anvendes som oversigt over den pågældende lønkørsels fratrædende medarbejdere og dertilhørende information om ansættelse, fratrædelse og ferieoptjening. 
+FormatHtml 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer
+## Anmærkningsliste
+FormålRapporten anvendes som oversigt over eventuelle anmærkninger ifm. lønkørslen.
+FormatHtml 
+Indtastning før dannelseEventuelt Arbejdsgivernummer
+## Arbejdsgiverstamkort
+FormålRapporten anvendes som oversigt over virksomhedens aktive services samt aktive, automatiske rapportbestillinger fordelt pr. arbejdsgiverforhold. 
+FormatHtml 
+Indtastning før dannelseEventuelt Arbejdsgivernummer og Kun ændrede kort: JA/NEJ
+## Bogføringsbilag
+FormålRapporten anvendes til at afstemme lønkørselens debet/kredit saldi. Indeholder ligeledes finanskontonumre over periodens lønposteringer. 
+FormatExcel/csv + html 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer &amp; Datafil output: JA/NEJ
+## Bogføringsbilag med spec.
+FormålRapporten anvendes til at afstemme lønkørselens debet/kredit saldi, ydermere indeholder rapporten specificerede detaljer på medarbejderniveau over periodens lønposteringer. 
+FormatExcel/csv + html 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer
+## Bogføringsbilag med spec. (år til dato)
+FormålRapporten anvendes til at afstemme lønkørslens debet/kredit saldi år til dato, ydermere indeholder rapporten specificerede detaljer på medarbejderniveau over periodens lønposteringer. 
+FormatExcel/csv 
+Indtastning før dannelseEventuelt Arbejdsgivernummer + periode
+## Ferieafregningsliste
+Formål Rapporten anvendes som oversigt over ferieafregning efter den gamle ferielov. 
+Format Excel/csv 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer &amp; Datafil output: JA/NEJ
+## NYF Ferieafregningsliste
+Formål Rapporten anvendes som oversigt over ferieafregning efter den nye ferielov. 
+Format Excel/csv 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer
+## Ferienulstilling
+FormålRapporten anvendes som oversigt over nulstillede ferie- og feriefridage. 
+FormatExcel/csv 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer &amp; Datafil output: JA/NEJ
+## Ferieregnskab
+FormålRapporten anvendes som oversigt over restferie fra den gamle ferielovsperiode. 
+FormatExcel/csv + html 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer, Sortering: Aflønningsform/Afdeling &amp; Datafil output: JA/NEJ
+## NY Ferielov FerieRegnskab
+FormålRapporten anvendes som saldooversigt på medarbejderens opsparede og afholdte ferie samt ferietillæg. 
+FormatExcel/csv 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer, Sortering: Aflønningsform/Afdeling &amp; Datafil output: JA/NEJ
+## Fradragsliste
+FormålRapporten anvendes som saldooversigt for fradragssaldi i den pågældende lønkørsel. 
+FormatExcel/csv + html 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer &amp; Datafil output: JA/NEJ
+## Fradragsliste med overførsler
+FormålRapporten anvendes som oversigt over fradrag med overførsler. 
+FormatHtml 
+Indtastning før dannelseKørselsordre &amp; eventuelt Arbejdsgivernummer
+## Kvitt. På indlæste (modtaget) eSkattekort
+FormålRapporten anvendes som oversigt over rekvirerede eSkattekort på medarbejdere. 
+FormatHtml 
+Indtastning før dannelseEventuelt Arbejdsgivernummer &amp; Periode: Fra/Til
+## Lønsedler
+FormålRapporten anvendes som udskrift af den valgte periodes lønsedler. 
+FormatHtml 
+Indtastning før dannelseKørselsordre + eventuelt Selektionsnr., Arbejdsgivernr., Medarbejdernr. &amp; Slet arb.tekst til lønseddel: JA/NEJ
+## Medarbejdere til gode (år til dato)
+FormålRapporten anvendes som oversigt over medarbejderes saldi på månedlige, løbende optjeninger (Afspadsering, Fritvalgskonto, Feriefri, Omsorgsdage og Aftalefri). 
+FormatExcel/csv 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer Datafil output: JA/NEJ
+## Medarbejdere uden eSkattekort
+FormålRapporten anvendes som oversigt over medarbejdere, som ikke har et skattekort. 
+FormatExcel/csv + html 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer Datafil output: JA/NEJ
+## Medarbejderoversigt
+FormålRapporten anvendes som oversigt over medarbejderen personlige månedsløn eller personlige timeløn. 
+FormatExcel/csv 
+Indtastning før dannelseEventuelt Arbejdsgivernummer, afdelingsnummer, Udbetalingsstednr. &amp; Gyldig pr.
+## Medarbejderstamkort
+FormålRapporten anvendes som oversigt over medarbejdere inkl. oplysninger om adresse CPR, ansættelsesoplysninger/-dato, skattekorts-info samt bankkonto. 
+FormatExcel/csv + html 
+Indtastning før dannelseEventuelt Arbejdsgivernummer, medarbejdernummer, Kun ændrede kort: JA/NEJ &amp; Datafil output: JA/NEJ
+## Overførselsliste
+FormålRapporten anvendes som oversigt over totalsummerne af løn, pension, ATP, AMBI, A-SKAT og Barsel fra den pågældende periodes lønkørsel. 
+FormatHtml 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer
+## Ny Overførselsliste
+FormålRapporten anvendes som oversigt over totalsummerne af ferieafregning fra den pågældende periodes lønkørsel. 
+FormatHtml 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer
+## Overførselstotal
+FormålRapporten anvendes som oversigt over totalsummerne af samtlige afregninger fra den pågældende periodes lønkørsel. 
+FormatHtml 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer
+## Overtid pr. afdeling
+FormålRapporten anvendes som oversigt over overtidstimer på samtlige medarbejdere fra den pågældende periodes lønkørsel. 
+FormatExcel/csv + html 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer &amp; Datafil output: JA/NEJ
+## Personalegode – ej udbetalte
+FormålRapporten anvendes som oversigt over saldi af månedens personalegoder samt totalsaldo år til dato. 
+FormatExcel/csv 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer &amp; Datafil output: JA/NEJ
+## Personlige satser
+FormålRapporten anvendes som oversigt over medarbejderens samtlige personlige satser (timeløn, tillæg mv.). 
+FormatExcel/csv 
+Indtastning før dannelseEventuelt Arbejdsgivernummer, medarbejdernummer &amp; Gyldig pr.
+## Reg. Fraværsoplysninger
+Formål Rapporten anvendes som oversigt over medarbejdernes fravær. 
+FormatExcel/csv 
+Indtastning før dannelseEventuelt Arbejdsgivernummer, Medarbejdernummer, Fraværskode &amp; Inkludér anvendt fravær: JA/NEJ
+## Reg. Lønoplysninger
+FormålRapporten anvendes som oversigt over medarbejderens faste, variable og personlige lønsatser. Du kan få et overblik på enkelte lønarter, udvalgte medarbejdere eller arbejdsgivere. 
+FormatExcel/csv 
+Indtastning før dannelseEventuelt Arbejdsgivernummer, Medarbejdernummer, Lønart &amp; Gyldig pr.
+## Revisionsrapport
+FormålRapporten anvendes som ”sladrehank” til visning af indlæst og manuelt indtastet løndata. 
+Format Excel/csv 
+Indtastning før dannelseDato fra/til + eventuelt Arbejdsgivernummer &amp; Datafil output: JA/NEJ
+## SH-opsparingsliste
+FormålRapporten anvendes som oversigt over Søgnehelligdage saldi. 
+FormatExcel/csv 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer &amp; Datafil output: JA/NEJ
+## Syge-/fraværsliste
+FormålRapporten anvendes som oversigt over medarbejdernes samlede, registrerede fravær. 
+FormatExcel/csv + html 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer
+## Tilmeldte medarbejdere til eBoks
+FormålRapporten anvendes som oversigt over medarbejdere som er tilmeldt e-Boks. 
+FormatExcel/csv + html 
+Indtastning før dannelseEventuelt Arbejdsgivernummer, Gyldig pr., Incl. Fratrådte &amp; Datafil output: JA/NEJ
+## Udbetaling befordringsgodtgørelse
+FormålRapporten anvendes som oversigt over udbetalt befordring. 
+FormatExcel/csv + html 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer &amp; Datafil output: JA/NEJ
+## Ændringsliste
+FormålRapporten anvendes som oversigt over ændringer i tabeller med nye værdier eller datoer. 
+FormatHtml 
+Indtastning før dannelseEventuelt Arbejdsgivernummer
+## Omkørsel af bogføring
+FormålRapporten anvendes som oversigt over bevægelser ifm. en omkørsel af en lønkørsel. Ved kørsel af denne rapport foretages en omkørsel af bogføring. Dertil viser den også resultatet af omkørslen. 
+FormatHtml 
+Indtastning før dannelseKørselsordre + eventuelt Arbejdsgivernummer

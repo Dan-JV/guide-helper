@@ -1,0 +1,244 @@
+https://help.vismaenterprise.dk/vismaloen-standard/ferie/76-afholdelse-af-ferie
+
+# Afholdelse af ferie
+
+## Ferieår
+Feriesystemet arbejder med følgende år:
+* Ferieoptjeningsår: 01.09.XXXX til 31.08.XXXX (start 01.09.2020)
+* Ferieafholdelsesperiode: 01.09.XXXX til 31.12.XXXX (start 01.09.2020 - 31.12.2021)
+* Overført ferie (første gang ferie kan overføres efter ferieloven pr. 01.01.2022)
+
+
+### Afholdelse af ferie fra sidste år / tidligere år
+Ældst ferie afholdes først og Visma Løn behandler ferie iht. den fraværsrækkefølge, der er sat op i lønsystemet.
+
+## Fraværskoder som behandler ferie
+Kombination af fraværskode og lønart:
+FraværskodeLønart til fraværBeskrivelse403950Ferie med løn i dag&nbsp;414004Ferie uden løn, timelønnede, kun dage – indgår i ATP beregningen421587, 1597 (res 4011), 4880Fri egen regning431579, 11589Fri egen regning, dage * sats473814, 3872Ferie med feriekort493950Ferie med løn i timer503950, 3951Ferie med løn, kan være dage eller timer
+
+
+Gå til Opsætning → Stillingskategori
+Vælg Tilladte fraværskoder i højremenuen
+Klik Ny
+Udfyld fraværskode, lønart, enhed og datoer
+Klik OK
+
+
+## Fraværsrækkefølge
+Visma Løn er oprettet med en fraværsrækkefølge, der sikre at det ældste ferie afholdes først og derefter ny ferie samt ferie på forskud. Når alt ferie og ferie på forskud er afholdt trækkes medarbejderen i løn for antal feriedage/timer. Fraværsrækkefølgen er som standard:&nbsp;1. Optjent ferie, det ældste ferie blive afholdt først&nbsp;2. Ferie på forskud, hvis det er tildelt medarbejderen&nbsp;3. Træk i løn&nbsp;I nogle overenskomster samt lokalaftaler, er der ”regler” for hvilken slags ferie der skal afholdes først. Det er muligt at få tilpasset standard fraværsrækkefølgen med f.eks. feriefri.&nbsp;**👩‍🏫 Eksempel:**&nbsp;1. Afholdelse af feriefridage&nbsp;&nbsp;2. Afholdelse af optjent ferie&nbsp;&nbsp;3. Afholdt ferie på forskud&nbsp;4. Træk i løn&nbsp;Fraværsrækkefølgen oprettes med hjælp fra en konsulent eller kan bestilles via vores&nbsp;[webshop](https://shop.visma.com/dk?filters=38). Fraværet registreres på fraværskode 40/50 til ferie med løn.
+
+## Reduktion af den ferieberettigede løn
+Når der afholdes ferie med løn, optjenes der ikke feriepenge. Den ferieberettigede løn reduceres  standard med 4,8 procent af månedslønnen pr. feriedag.
+Følgende lønarter tages med i beregningen:1000, 1060, 1065-1069, 1101, 1103, 1108, 1150, 1152, 1154, 1156, 1158, 1214, 1215, 1251, 1340, 1342, 1344, 1346, 1348, 1480-1482, 1500, 1502, 1510-1519, 1536, 1538, 1540, 1542, 1544, 1595, 1596, 1660, 1662, 1664, 1666, 1668, 1740, 1741, 2999, 3000, 3002, 3004, 3020, 3022, 3024, 3029, 3030, 3032, 3040, 3042, 3044, 3048, 3050-3055, 3059-3067, 3090, 3100, 3999, 33000, 33002, 33004, 33022, 33042, 33044, 43066-43069.
+Reduktionen af den ferieberettigede løn kan ændres på Resultattabel ’FEREDU’.
+Der findes fire muligheder for nedskrivning af ferieberettigede løn. Opret resultattabellen med en af følgende værdier:
+
+Blank eller 0 (nul) - nedskriver den ferieberettigede løn med 4,8% pr. afholdt feriedag jf. ferieloven (standard)
+1 – Løntræk sker med timelønnen ganget med 7,4 timer pr. feriedag, medmindre værdien af en dag er ændret på resultattabel TRTIM eller personlig lønart 9918.
+2 – Løntrækket sker med 1/260 pr.  afholdt feriedag.
+3 – Nedskriver ikke den ferieberettigede løn
+
+Er resultattabel ’FEREDU’ oprettet med 0 (nul) eller blank og ønsker du den ferieberettigede løn reduceret med en anden procent, opretter du procenten på: 
+
+Resultattabel 4004 - Feriesats pr. dag (4,8%)
+
+
+Gå til Opsætning → Resultattabel
+Vælg resultattabel 4004
+Klik Find
+Klik Ny periode
+Udfyld feltet ‘Gyldig’
+Klik OK
+Vælg Resultattrin i højremenuen
+Klik Ny
+Vælg løngruppe og skriv procentsats for aflønningsformen
+Klik Gem
+
+Ønskes den ferieberettigede løn reduceret med en anden procentsats for enkelte medarbejdere (resultattabel FEREDU skal have værdien Blank eller 0(nul)), oprettes
+
+Lønart 9909 – Personlig dagssats ferie pct.
+
+
+Gå til Medarbejder → Ansættelsesforhold
+Vælg Personlige satser i højremenuen
+Klik Ny
+Udfyld periode og lønart
+Klik OK
+
+
+### Timelønnede medarbejdere, ferie med løn (lærlinge/elever)
+Disse medarbejdere optjener ferie med løn i dage. Når disse medarbejdere afholder ferie bliver den ferieberettigede løn nedskrevet med 4,8% af deres timeløn. 
+
+Resultattabel FEREDU skal være 0/blank for denne løngruppe
+
+For at dette grundlag kan være timelønnen, skal lønartstype 4750 oprettes med f.eks. lønart 1100 og sekvens = 0, hvis der er flere lønarter der skal danne grundlaget oprettes disse tilsvarende på denne lønartstype. Kontakt en konsulent hos Visma, for at få hjælp til opsætningen.
+
+### Timelønnede ferie med løn, reduceres i den ferieberettiget løn
+Timelønnede der er ansat med ret til ferie med løn, skal reduceres i den ferieberettigede løn, når de afholder ferie. Dette kræver at fraværsrækkefølge benyttes (fraværslønart 3950 skal oprettes på fraværskoden), samt at resultattabel:
+
+DAGTIM er udfyldt med 1 på relevante løngrupper
+
+
+## Ferieregistreringer
+Afholdelse af ferie registreres via &#39;Fraværsregistrering&#39;, hvor der angives en ’Startdato’, ’Slutdato’ og ’Varighed’ på medarbejderen.
+### Registrering af ferie på månedslønnede
+Registrering af ferie på medarbejdere der er ansat med ret til afholdelse af ferie med løn, skal registreres på
+
+Fraværskode 40/50 – Afholdt feriedage
+Fraværskode 49 – Afholdt ferietimer
+
+Feriesaldoen nedskrives ved afholdelse af ferie. Såfremt medarbejderen ikke har en feriesaldo, vil der ske et træk i lønnen. 
+På lønsedlen vises afholdt ferie med følgende lønarter, når der nedskrives i feriesaldoen:
+
+Fraværskode 40/50 – Afholdt feriedage, lønart 4911
+Fraværskode 49 – Afholdt ferietimer, lønart 4914
+
+Ønskes standard teksten på lønarten ændret skal følgende lønarter oprettes med den ønsket tekst under Opsætning/Lønartsopsætning:
+
+Lønart 44911 for Afholdte feriedage, visningslønart 4911
+Lønart 44914 for Afholdte ferietimer, visningslønart 4914
+
+
+### Registrering af ferie ved skift af ferieår
+Ved registrering af ferie tager systemet udgangspunkt i den registrerede ’Startdato’ ved nedskrivning af ferie. 
+Derfor skal registrering af ferie hen over skift af ferieår (eksempelvis 29/8 – 1/9) altid deles i 2 registreringer: 29/8 – 31/8 samt 1/9 – 1/9.
+
+### Registrering af ferie for timelønnede medarbejdere med feriekort
+Fraværskode 47 kan bruges på timelønnede medarbejdere, med feriegodtgørelse til Feriekort.  Du kan holde øje med hvor mange feriedage en medarbejder dermed har afholdt. 
+⚠️ OBS: Fraværskoden er kun til registrering, der sker ingen beregning eller nedskrivning ved brug af denne fraværskode.
+Fraværskode 47 kan bruges med følgende fraværslønarter:
+
+Lønart 3814 – fraværet vises ikke på lønsedlen
+Lønart 3872 – fraværet vises på lønsedlen
+
+
+### Registrering af ferie på ”faste” timelønnede
+Der skal beregnes ATP, når medarbejdere afholder ferie optjent i virksomheden, og har månedlige lønudbetalinger. Dette gælder for timelønnede medarbejdere med feriegodtgørelse (dog ikke løsarbejdere og lærlinge/elever). 
+Du bruger følgende fraværkode for beregning af ATP, hvor det ikke er løntimer:
+
+Fraværskode 41 med tilhørende fraværslønart 4004
+
+
+Gå til Opsætning → Stillingskategori
+Vælg Tilladte fraværskoder i højremenuen
+Klik Ny
+Udfyld fraværskode, lønart, enhed og datoer
+Klik OK
+
+
+## Udbetaling af feriepenge med feriekort
+For at udbetale feriepenge til medarbejderen, hvor arbejdsgiver administrerer feriepengene, oprettes variable lønartLønart 4790 - ‘Anmodet Feriekort udbetaling’ med det antal feriedage og feriepenge der står i Virk.dk.&nbsp;Beløbet bliver beskattet i lønkørslen og nettoferiepengene udbetales til medarbejderen.⚠️ OBS: Når du skal udbetale feriepenge til en fratrådt medarbejder, kan det være en god ide, at foretage en ‘Genrekvirering af eSkattekort’ så det er medarbejderens bikort der anvendes ved udbetalingen, da trækprocenten standard er 55% og Visma Løn ikke modtager skattekort på fratrådte medarbejdere.&nbsp;
+
+## Feriepengedifference beregning
+I ferieloven findes en 0% regel.  Det betyder for medarbejdere som optjener ferie med løn og afholder ferie på forskellig normtid, skal der foretages arbejdstidsdifferenceberegning mellem optjeningstidspunktet og afholdelsestidspunktet for ferie. Dette sker automatisk i lønsystemet, når ferie registreres i dage.
+⚠️ OBS: Ved afholdelse af ferie i timer optjenes ferietimer allerede i forhold til normtiden, så der anvendes ikke feriepengedifference beregning.Der foretages ikke feriepengedifference beregning på 14-dagslønnede medarbejdere. 
+Formlen lønsystemet bruger:
+
+Nuværende arbejdstidsprocent = medarbejder normtid fra Ansættelsesforhold ÷ overenskomst normtid fra Ansættelsesforhold × 100
+Timer pr. dag = medarbejder normtid fra Ansættelsesforhold × 12 ÷ 52 ÷ 5, afrundet til 2 decimaler
+Nuværende = -Timer pr. dag × Dage (fortegnet er minus)
+Optjent = Timer pr. dag × (Optjent arbejdstidsprocent ÷ Nuværende arbejdstidsprocent) × Dage
+
+👩‍🏫 Eksempel:
+* Der afholdes 5 feriedage
+* Arbejdstid på ferieafholdelsestidspunktet – 160,33 = 7,4 timer pr. dag
+* Arbejdstid på optjeningstidspunktet – 130 = 6 timer pr. dag
+* Timesatsen på afholdelsestidspunktet = 150 kr.
+
+-7,4 time × 5 feriedage = -37 timer7,4 time × ((130÷160,33×100=81)÷(160,33÷160,33×100=100)) × 5 feriedage = 30 timerMedarbejderen trækkes i løn: -37 timer + 30 timer × 150 kr. = -1.050 kr.
+[Regneark til brug for kontrol af udregning i Visma Løn](https://help.vismaenterprise.dk/standard/vismaloen/ferie/feriepengedifferenceberegning).
+
+## Fri egen regning
+Ved afholdelse af ferie, hvor du ikke har ferie til gode, vil der ske træk i lønnen for ikke optjent ferie. Løntrækket kan beregnes på tre måder:
+
+4,8% af den ferieberettigede løn pr. feriedage. Det er følgende lønarter der danner grundlaget: Som er følgende faste lønarter:1000, 1060, 1065-1069, 1101, 1103, 1108, 1150, 1152, 1154, 1156, 1158, 1214, 1215, 1251, 1340, 1342, 1344, 1346, 1348, 1480-1482, 1500, 1502, 1510-1519, 1536, 1538, 1540, 1542, 1544, 1595, 1596, 1660, 1662, 1664, 1666, 1668, 1740, 1741, 2999, 3000, 3002, 3004, 3020, 3022, 3024, 3029, 3030, 3032, 3040, 3042, 3044, 3048, 3050-3055, 3059-3067, 3090, 3100, 3999, 33000, 33002, 33004, 33022, 33042, 33044, 43066-43069.
+7,4 time × timesatsen. 
+1/260 pr. afholdt feriedag
+
+Resultattabel ’FEEGEN’ har tre muligheder for at styre beregningen af løntrækket ved afholdelse af ferie. Resultattabel ’FEEGEN’ kan oprettes med en af følgende værdier:
+
+Blank eller 0 (nul) – løntrækket sker med 4,8% af den ferieberettigede løn per. afholdt feriedag
+1 – løntræk sker med timelønnen ganget med 7,4 timer pr. feriedag, medmindre værdien af en dag er ændret på resultattabel TRTIM eller personlig lønart 9918.
+2 – løntrækket sker med 1/260 pr.  afholdt feriedag.
+
+Er resultattabel ’FEREDU’ oprettet med 0 (nul) eller blank og ønsker du den ferieberettigede løn reduceret med en anden procent, opretter du procenten på: 
+
+Resultattabel 4004 - Feriesats pr. dag (4,8 %)
+
+
+Gå til Opsætning → Resultattabel
+Vælg resultattabel 4004
+Klik Find
+Klik Ny periode
+Udfyld feltet ‘Gyldig’
+Klik OK
+Vælg Resultattrin i højremenuen 
+Klik Ny
+Vælg løngruppe og skriv procentsats for aflønningsformen
+Klik Gem
+
+Ønskes den ferieberettigede løn reduceret med en anden procentsats for enkelte medarbejdere (resultattabel FEEGEN skal have værdien Blank eller 0(nul)), oprettes
+
+Lønart 9909 – Personlig dagssats ferie pct.
+
+
+Gå til Medarbejder → Ansættelsesforhold
+Vælg Personlige satser i højremenuen
+Klik Ny
+Udfyld periode og lønart
+Klik OK
+
+
+### Medarbejdere med månedsløn og løbende optjening af feriepenge
+Når disse medarbejdere afholder ferie uden løn og deres løn skal reduceres med 4,8%, anvendes følgende fraværskode:
+
+Fraværskode 42 – Ferie egen regning, med tilhørerende fraværslønart 1587
+
+Du kan også vælge at bruge samme fraværkode som du bruger i forvejen til afholdelse af ferie f.eks. 40, 50 eller 42 og på stillingskategorien oprette med følgende lønart:
+
+Fraværslønart 4880 - Fri egen regning
+
+Med denne fraværslønart betyder det at ferierækkefølgen ikke anvendes og der vil altid trækkes fri egen regning. Lønarten har dage i input.  
+Fraværslønarten bruger opsætningen i resultattabel FEEGEN, for beregning af fri egen regning. Såfremt resultattabellen er blank trækkes 4,8% pr. feriedag. 
+Følgende værdier kan anvendes:
+
+Blank eller 0 - beregnes reduktionen i procent af månedslønnen iht. opsætning på personlig sats 9909, eller resultattabel 4004 eller med generel sats 4,8% pr. feriedag.
+1 - beregnes reduktionen med timelønnen gange timer pr. dag  iht. opsætning på personlig sats 9918, resultattabel TRTIM eller generel sats 7,4 timer pr. dag ganget feriedage.
+
+På kontoplan skal en af følgende lønarter oprettes i kredit:
+
+Lønart 4881 - Fri egen regning 4,8%
+Lønart 4882 - Fri egen regning træk med timesatsen.
+
+Lønarterne går til statistik i IL-type 0026 ”Afholdte feriedage uden løn (fastlønnede)”.
+Sådan opretter du fraværskoden til relevante stillingskategori:
+
+Gå til Opsætning → Stillingskategori
+Vælg Tilladte fraværskoder i højremenuen
+Klik Ny
+Udfyld fraværskode, lønart, enhed og datoer
+Klik OK
+
+
+## Prorata udbetaling af ferietillæg og ekstra ferietillæg - ferieår
+I ferieloven står der at du kan udbetale ferietillæg i forbindelse med at medarbejderen afholder ferie, det vil sige løbende udbetaling. Der er oprettet variable lønarter til manuel udbetaling af opsparet ferietillæg og ekstra ferietillæg fra ferieloven optjent i ferieåret.
+
+Variabel lønart 4788 - Udbetaling Ferietillæg lovgrundlag - beløbAnvendes til manuel udbetaling af ferietillæg opsparet af lovgrundlag.  (Optjent via stillingskategorilønart 4900) 
+Variabel lønart 4789 - Udbetaling Ferietillæg OK-grundlag - beløbAnvendes til manuel udbetaling af ferietillæg opsparet af OK-grundlag.  (Optjent via stillingskategorilønart 4901) 
+Variabel lønart 4783 - Udbetaling Ferietillæg ekstra lovgrundlag - beløbAnvendes til manuel udbetaling af ekstra ferietillæg opsparet af lovgrundlag.  (Optjent via stillingskategorilønart 4610) 
+Variabel lønart 4784 - Udbetaling ekstra Ferietillæg OK-grundlag - beløbAnvendes til manuel udbetaling af ekstra ferietillæg opsparet af OK-grundlag.(Optjent via stillingskategorilønart 4907)
+
+ 
+⚠️ OBS: Husk opsætning på din kontoplan af ovenstående lønarter, så de bliver konteret i dit bogføringsbilag.
+
+## Afslutning af ferieafholdelsesåret
+### Overførsel af ferie
+Beskrivelse af lønsystemets håndtering af overført ferie
+Når ferieafholdelsesåret slutter den 31. december, slutter også afholdelsesperioden for ferie optjent i ferieåret.  Ifølge ferieloven skal restferie op til 5 dage udbetales. Det kan i stedet aftales med medarbejderen, at ferien overføres til afholdelse i næste kalenderår.  
+Ferie som ikke er afholdt ved udgangen af en tilhørende afholdelsesperiode betragtes i Visma Løn som overført ferie. 
+I lønsystemet vil ferien automatisk blive til overført ferie og indgår stadig i puljen af ferie til afholdelse. Der er derfor ingen grænse for hvor meget ferie der kan overføres. Ferie fra forrige og tidligere år betragtes også som overført.
+Da samtidighedsferie bliver afholdt efter FIFO (first in first out) princippet, vil overført ferie blive afholdt før ferie fra indeværende ferieår. Det kræver altså ikke særskilt handling at afholde overført ferie, det sker automatisk.
+Læs evt. mere om [overførsel, udbetaling og nulstilling af restferie (herunder 5. ferieuge)](https://help.vismaenterprise.dk/standard/vismaloen/ferie/overforsel-udbetaling-og-nulstilling-af-restferie).
+
+## Ferieregnskab
+I rapporten Ny Ferielov Ferieregnskab kan medarbejdernes optjente, afholdte og tilgodehavende feriedage samt feriepenge ses pr. medarbejder.Ved afholdelse af ferie beregnes en værdi pr. dag:* (12,5% af den ferieberettigede løn i hele ferieåret) ÷ (optjente feriedage el. -timer i ferieåret) × (antal restdage el. timer).Opgørelsen sker som et gennemsnit for hele ferieåret og værdien af afholdte feriedage kan derfor skifte fra måned til måned.&nbsp;

@@ -1,0 +1,78 @@
+https://help.vismaenterprise.dk/vismaloen-standard/opsaetning-og-kom-igang/22-brugeradministration
+
+# Brugeradministration
+
+Ønsker du at administrere brugeradgangene til Visma Løn, kræver det, at du kontakter os, så vi kan foretage ændringerne for dig i systemet. Ændringerne omfatter:
+* Oprettelse af ny bruger og adgang til Visma Løn
+* Ændringer til eksisterende bruger
+* Slet af eksisterende bruger.
+
+
+## Opret ny bruger og tildel rettigheder
+Ønsker du at oprette en ny bruger og give adgang til Visma Løn, er det nødvendigt, at du selv opretter den nye bruger i Login-modulet først. Derefter kan vi tildele den nye bruger en rolle og dermed give adgang i systemet. 
+Opret brugeradgang til Visma Løn
+Skal din kollega have adgang til Visma Løn kræver det, at der bliver oprettet en bruger til dem. Det er udelukkende administrator i Visma Løn, der kan oprette nye brugere, og det gøres sådan her.
+1. $1
+2. $1
+3. $1
+4. $1
+5. $1
+6. $1
+7. $1
+
+* Bruger-ID
+* Fornavn
+* Efternavn
+* Email
+* Mobiltelefonnummer
+* Rolle
+
+Roller der kan tildeles:
+1. $1
+2. $1
+3. $1
+4. $1
+5. $1
+6. $1
+
+Din mail vil blive behandlet, og du vil modtage svar indenfor 48 arbejdstimer.
+## Tilpas rettigheder for en eksisterende bruger
+Ændring af eksisterende bruger
+Ønsker du at ændre mobiltelefonnr., mailadresse eller rolle på en eksisterende bruger, skal du gøre følgende:
+1. $1
+2. $1
+3. $1
+4. $1
+
+* Bruger-ID
+* Fornavn
+* Efternavn
+* Email
+* Mobiltelefonnummer
+* Nuværende rolle
+* Ny rolle
+
+Roller der kan tildeles:
+1. $1
+2. $1
+3. $1
+4. $1
+5. $1
+6. $1
+
+Din mail vil blive behandlet, og du vil modtage svar indenfor 48 arbejdstimer.
+## Slet eksisterende bruger
+Ønsker du at slette en eksisterende bruger, så de dermed ikke længere har adgang til Visma Løn, skal du gøre følgende:
+1. $1
+2. $1
+3. $1
+
+* Bruger-ID
+* Fornavn
+* Efternavn
+* Email
+* Mobiltelefonnummer
+* Nuværende rolle
+* Ny rolle (notér venligst &#39;slettes&#39;)
+
+Din mail vil blive behandlet, og du vil modtage svar indenfor 48 arbejdstimer.

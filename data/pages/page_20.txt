@@ -1,0 +1,175 @@
+https://help.vismaenterprise.dk/vismaloen-standard/medarbejdertilgode/15-afspadsering
+
+# Afspadsering
+
+## Optjening af afspadseringstimer
+- **Lønart 1400** - Hensat til afspadsering 1 time til 1 time
+- **Lønart 1401** - Hensat til afspadsering 1 time til 1,5 time
+- **Lønart 1402** - Hensat til afspadsering 1 time til 2 timer
+- **Lønart 1408** - Hensat til afspadsering 1 time til 1,75 timer
+- **Resultattabel 1401** – Hensat afspadsering 1 time til anden faktor end 1,5 time
+- **Resultattabel 1402** – Hensat afspadsering 1 time til en anden faktor end 2 timer
+- **Resultattabel 1408** – Hensat afspadsering 1 time til en anden faktor end 1,75 timer
+Afspadsering kan være et alternativ til overarbejdsbetaling eller til betaling for arbejde, der er udført uden for den normale arbejdstid. 
+Afspadsering kan hensættes i hver lønperiode til forskellige værdier, under Variabel lønoplysninger på følgende lønarter
+
+Lønart 1400 - Hensat til afspadsering 1 time til 1 time
+Lønart 1401 - Hensat til afspadsering 1 time til 1,5 time
+Lønart 1402 - Hensat til afspadsering 1 time til 2 timer
+Lønart 1408 - Hensat til afspadsering 1 time til 1,75 timer
+
+Ønsker du at optjene afspadsering af ovenstående lønarter til en anden faktor end standarden, kan du på følgende resultattabeller angive faktoren:
+
+Resultattabel 1401 – Hensat afspadsering 1 time til anden faktor end 1,5 time
+Resultattabel 1402 – Hensat afspadsering 1 time til en anden faktor end 2 timer
+Resultattabel 1408 – Hensat afspadsering 1 time til en anden faktor end 1,75 timer
+
+Findes der ingen værdi på resultattabellerne vil der blive anvendt hhv. værdier 1,5, 1,75 og 2 timer.
+
+## Automatisk hensættelse af overtid til afspadsering
+Har du behov for at overtid bliver hensat til afspadsering automatisk, kan det opsættes i Visma Løn med hjælp fra en konsulent fra Visma.
+De lønarter som automatisk skal hensættes til afspadsering specificeres i lønartstype 140, som kan ses under Opsætning/Lønartstype.
+
+### Timehensættelse
+For at hensættelsen kommer til at ske, skal lønart 1403 - Overtid til afspadsering, oprettes på de relevante stillingskategorier.
+
+### Timehensættelse med træk i løn
+Kommer overtidstimerne fra et tidsregistreringssystem og er indeholdt i lønart 1100 er der mulighed for at få trukket disse timer fra i lønnen. Dette kræver at stillingskategori lønart 1404 - Overtid til afspadsering, oprettes på de relevante stillingskategorier.
+
+## Afholdelse af afspadseringstimer
+Når de hensatte timer skal afholdes kan det enten registreres på en variabel lønart eller på en fraværskode:
+
+Variabel lønart 1405 – Afholdt afspadsering.  
+ 
+Fraværskode 52 – Afholdt afspadsering, med tilhørende fraværslønart 1406, som kun nedskriver i timerne eller fraværslønart 1407, som nedskriver i timerne og udbetaler til timeløn fra den personlige lønart 9900/normtiden eller 9905.
+
+
+## Udbetaling af afspadsering efter procentsats af månedslønnen
+Ønskes afspadseringstimer udbetalt med en procentsats af månedslønnen skal følgende oprettes:
+
+Resultattabel 1412 - Afspadsering pct. af månedsløn, oprettes på de respektive løngrupper med den ønskede procent. Hvis f.eks. den ønskede procent er 1,2 %, så oprettes der 1,2 på løngruppen.  
+ 
+Variabel lønart 1412 - Afspadsering udbetalt.Satsen er månedslønnen ganget med procenten fra resultattabel 1412 - Afspadsering pct. af månedsløn. Lønarten nedskriver det oprettet timeantal i afspadseringssaldoen.
+
+
+## Udbetaling af afspadsering til timelønnen
+
+Variabel lønart 1410 - Afspadsering udbetaling.Lønarten oprettes med timer og de vil blive udbetalt til timeløn fra den personlige lønart 9900/normtiden eller 9905.  
+ 
+Variabel lønart 1415 - Afspadsering udbetaling.Lønarten tømmer den saldo medarbejdere har optjent og vil blive udbetalt til timeløn fra den personlige lønart 9900/normtiden eller 9905.
+
+
+## Udbetaling af afspadsering til fast defineret sats
+
+Variabel lønart 1411 - Afspadsering udbetaling.Lønarten oprettes med timer og de vil blive udbetalt til timeløn fra den personlige lønart 9900/normtiden eller 9905, eller  
+ 
+Resultattabel 1411 - Afspadsering satsen, oprettes på de respektive løngrupper med den ønskede timesats.
+
+
+## Afspadseringssaldo bliver automatisk tømt ved fratrædelse
+Afspadseringssaldoen kan udbetales automatisk ved fratrædelse. Opret på de relevante stillingskategorier en af følgende stillingskategorilønart:
+
+Lønart 1419 - Afspadsering udbetaling ved fratrædelse
+Lønart 1418 - Afspadsering auto. Udb. Fratr. Udbetaler timer og beløb
+
+
+## Opsparing til afspadsering med timer og beløb
+Du kan optjene til afspadsering med timer og timesatsen samt få vist saldoen på lønsedlen med både Afspadseringstimer og Afspadseringsbeløb.
+For at hensætte timer og beløb til afspadseringssaldoen, anvendes:
+
+Variabel lønart 11404 - Hensætte af timer og beløb til afspadsering.Lønarten tager antal timer og ganger med timesatsen  
+Lønart 11404 skal i kontoplanen både krediteres og debiteres.
+
+
+
+## Opsparing af overarbejde til afspadsering med timer og beløb
+- **Stillingskategorilønart 1426** - Hensat afspadsering
+- **Stillingskategori lønart 1404** - Hensat afspadsering
+Du kan sættes Visma Løn op til automatisk at opspare overarbejde på fast defineret overarbejds lønarter så de overføres direkte til afspadsering. Lønarten vil hensætte overarbejdstimer og beløb til afspadsering. Opret på relevante stillingskategorier
+
+Stillingskategorilønart 1426 - Hensat afspadsering. Lønarten tager timer fra Lønartstype 140 (lønart 1311 oprettes med sekvens = 1) ganger med den aktuelle timesats på medarbejderen. Lønarten udbetaler det antal timer der er oprettet på overarbejdslønarten og hensætter det samme antal timer til afspadsering.
+
+Skal der i forbindelse med opsparing af overarbejde til afspadsering, ske et træk i løn, trækker Visma Løn det antal oprettet timer på overarbejdslønarten. Time satsen for træk i løn kommer enten fra lønart 9900 eller lønart 9905, alt efter hvilken typer medarbejder. Opret på relevante stillingskategorier:
+Stillingskategori lønart 1404 - Hensat afspadsering. Lønarten tager timerne fra Lønartstype 140 og gange med aktuelle timesats på medarbejderen. Samtidig vil lønart 1406 - Afspadsering hensættelse/træk, automatisk blive dannet. Så medarbejderen bliver trukket i løn.
+
+## Udbetaling af afspadseringstimer og afspadseringsbeløb
+Skal der udbetales timer fra afspadseringssaldoen oprettes
+
+Variabel lønart 1428 - Afspadsering udbetalt. Lønarten tager afspadseringsbeløbet og dividere med afspadseringssaldoen og udbetaler den sats der fremkommer, ganget med det antal timer som er oprettet på lønarten.   
+Lønart 1428 skal debiteres i balancen på kontoplanen.
+
+
+
+## Afholdelse af afspadseringstimer og nedskrivning af afspadseringstimer samt afspadseringsbeløb
+
+Variabel lønart 1427 - Afspadsering afholdt. Lønarten tager afspadseringsbeløbet og dividere med afspadseringssaldoen og udbetaler satsen der fremkommer, ganget med antal timer som oprettet på lønarten.  
+Du kan også anvende en fraværskode i stedet for en variabel lønart:  
+Fraværskode 52 – Afspadsering afholdt, fraværskoden skal oprettes med fraværslønart 1409.
+
+
+
+## Automatisk udbetaling af afspadseringstimer over max saldo
+- **Stillingskategori lønart 1429** - Afspadsering auto. Udbetaling
+- **Resultattabel 1426** - Max timer afspadsering
+- **Personlig lønart 9975** - Pers. Max timer afspadsering
+- **Resultattabel AFSSAL** - oprettes for de løngrupper
+- **Lønart 11427** - Afspadsering afholdt
+- **Lønart 11428** - Afspadsering udbetalt
+Skal afspadseringstimer ud over et bestemt antal timer på afspadseringssaldoen udbetales, skal du på relevante stillingskategorier oprette:
+
+Stillingskategori lønart 1429 - Afspadsering auto. Udbetaling
+Resultattabel 1426 - Max timer afspadsering, oprettes det antal timer der max må stå på saldoen, for de respektive løngrupper.
+
+ 
+Er der medarbejdere som har særlige aftaler, om hvor mange timer de må have stående på afspadseringskontoen, oprettes
+
+Personlig lønart 9975 - Pers. Max timer afspadsering, med antal timer.
+
+Nogle medarbejdergrupper må have en negativ afspadseringssaldo på et bestemt antal timer – dvs. at medarbejderen ikke kan ikke afholde eller få udbetalt mere end den saldo som er oprettet.  Opret på relevante løngrupper, den saldo afspadsering må gå negativt med (minus foran tallet):
+
+Resultattabel AFSSAL - oprettes for de løngrupper, som har en aftale om at saldoen må være negativ.
+
+ 
+Skal saldi fra afspadseringssaldoen udbetales eller afholdes, oprettes under variable lønoplysninger en af følgende lønarter:
+
+Lønart 11427 - Afspadsering afholdt
+Lønart 11428 - Afspadsering udbetalt
+
+Når medarbejderen overskrider det max antal timer der står på afspadseringssaldoen, vil Visma løn automatisk udbetale de overskydende timer. Timerne bliver udbetalt med time satsen som gælder ved afholdelse/udbetaling. 
+Er timerne opsparet og hensat som beløb, vil beregningen af en udbetalt time være; sum af antal timer / sum af beløb, svarende til satsen for 1 time til udbetaling. Er der ikke opsparet beløb i afspadsering, så sættes den udbetalt time til den aktuel timesats.
+Ved opsparing af afspadsering med max. Validering kan man med fordel anvende lønart 324 til indlæsning af timer og beløb. Fremadrettet skal lønarter der hensætter både timer og beløb anvendes.
+
+## Opstartsaldi af afspadseringstimer samt afspadseringsbeløb
+Skal afspadseringstimer eller afspadseringsbeløb korrigeres/oprettes, oprettes følgende variabel lønart med antal timer og beløb:  
+
+Lønart 324 - Saldokorrektion af afspadsering timer/kr.
+
+
+## Afspadseringstimer og beløb bliver automatisk tømt ved fratrædelse
+Afspadseringstimerne og beløbet kan udbetales automatisk ved fratrædelse. Opret på de relevante stillingskategorier lønart 1418 - Afspadsering udbetaling ved fratrædelse.
+
+## Lønsedler visning af Afspadsering
+For at få vist saldi på Afspadseringsbeløb eller Afspadseringstimer, kan du anvende en af følgende lønsedler: 
+* 0, 1, 5 eller 10
+
+
+## Hensættelse af afspadsering til bogføring med procent sats
+Afspadsering kan hensættes til timeløn ved at oprette resultattabel:
+
+ AFSHEN med ’1’ for de respektive løngrupper.
+
+ 
+Eller du kan hensætte afspadseringen til timeløn + en procentsats ved at oprette resultattabel:
+
+ AFSHEN med en sats for de respektive løngrupper.  
+Eksempel: Timelønnen hensættes med timeløn gange 25%, så skal resultattabel AFSHEN oprettes med 1,25 på de respektive løngrupper.
+
+
+For ovenstående punkter gælder:
+Når du opretter timer på en af nedenstående lønarter, bliver afspadseringstimerne ganget med timelønnen for timelønnede medarbejdere, og for månedslønnede medarbejdere bliver månedslønnen divideret med normtiden. Beløbet bogføres via bogføringslønarterne til højre i skemaet og skal oprettes både i debet og kredit på kontoplanen.   
+ 
+Antal timer indtastetBogføringslønart til hensættelse1400 Hensat til afspadsering 1:1138701401 Hensat til afspadsering 1:1,513871 (timerne ganges med 1,5)1402 Hensat til afspadsering 1:213872 (timerne ganges med 2)1405 Afspadsering afholdt138751406 Afspadsering afholdt138751407 Afspadsering afholdtBogføres på lønart 14071410 Afspadsering udbetaltBogføres på lønart 1410&nbsp;1415 Afspadsering udb. SaldoBogføres på lønart 1415&nbsp;1420 Afspadsering udb. Saldo fratrådtBogføres på lønart 1420
+
+## Fraværslønart til afholdt afspadsering med beløb
+Fraværskode 52 - Afspadsering med beløb, kan anvendes med fraværslønart 21427, fravær med timer i input,  udskrives på lønseddel som 1427. Fraværslønarten nedskriver i afspadseringstime, saldoen og i afspadseringsbeløbet.
+Husk opsætning af lønarten i debet på kontoplanen.

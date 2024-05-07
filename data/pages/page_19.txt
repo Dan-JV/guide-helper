@@ -1,0 +1,69 @@
+https://help.vismaenterprise.dk/vismaloen-standard/arbejdsgiver/53-nem-konto
+
+# NemKonto
+
+## NemKontobaserede lønudbetalinger
+I Visma Løn kan du vælge, at lønudbetaling skal ske til medarbejdernes NemKonto. 
+Udbetalingen via NemKonto sker via Nets. Dog kan udbetalinger via NemKonto kun gennemføres, hvis man har en gyldig aftale om overførselsservice med Nets, der inkluderer overførsler til NemKonto (OSN-aftale). Aftalen kan laves på et CVR-nummer, så benytter I et SE-nummer i stedet i Visma Løn, så kan I ikke benytte NemKonto.
+Er du i tvivl om I anvender CVR- eller SE-nummer kan det tjekkes på [www.cvr.dk](http://www.cvr.dk). Her vises kun CVR-numre.
+Denne aftale kan findes hos Nets under Overførselsservice og er en del af tilmelding til Overførselsservice.
+Læs mere hos Nets [her](https://www.mastercardpaymentservices.com/denmark/overf%C3%B8rselsservice).
+## Afleveringsfrister ved anvendelse af NemKonto
+Lønudbetaling til medarbejdernes NemKonto skal godkendes tidligere end udbetalinger til registrerings- og kontonumre, der vedligeholdes i lønsystemet.
+
+Afregning af løn til overførsel via NemKonto skal godkendes senest kl. 8.00 på bankdagen før, lønnen er til disposition
+
+Overholdes tidsfristen ikke, kan Visma Enterprise ikke garantere, at alle leverancer når igennem til Nets inden kl. 9.00. Tidsfristen er afgørende for, at Nets kan nå at validere, om medarbejderen har en NemKonto, der kan overføres til.
+## Tilmelding til NemKonto i Visma Løn
+For at kunne anvende NemKonto til lønoverførsler via Visma Løn, skal du tilmelde arbejdsgiveren. Vær opmærksom på, at har I flere arbejdsgivere på jeres kundeforhold, så skal hver enkelt arbejdsgiver tilmeldes.
+
+Gå til Arbejdsgiver → Arbejdsgiver stamoplysninger
+I Løn udbetales via, vælger du NemKonto. Standard står der Anden konto, som betyder, at du overfører via det registrerings- og kontonummer, som I har fået oplyst af medarbejderen.
+Klik på OK
+
+Når du har tilmeldt arbejdsgiver, kan du på den enkelte medarbejder fravælge overførsel via NemKonto.
+## Tilmelding af medarbejder
+Når arbejdsgiver tilmeldes NemKonto bliver alle medarbejdere automatisk omfattet af denne tilmelding. Undtagelsen er medarbejdere med fiktivt CPR-nummer:
+* Mænd XXXXXX-9991
+* Kvinder XXXXXX-9992
+
+Medarbejderens NemKonto vises ikke i Visma Løn, da det er Nets og KMD, der er ansvarlige for at fordele udbetalingerne i forhold til CPR-numre. Kontonumre oplyses derfor aldrig, hvilket er en del af den sikkerhed, der ligger bag NemKonto.
+## Nye medarbejdere
+Når Arbejdsgiver er tilmeldt til NemKonto, så vil tilmeldingen udover eksisterende medarbejdere også omfatte medarbejdere, der efterfølgende oprettes. Da medarbejder – bortset fra få undtagelser – har ret til at fravælge lønudbetaling til NemKonto, bør I oplyse det, inden medarbejderen får udbetalt sin første løn.
+## Overblik
+Ønsker du at tilmelde eller framelde flere medarbejdere, kan du via dette skærmbillede nemt få et overblik og tilrette medarbejdere.
+
+Gå til Arbejdsgiver → Arbejdsgiver stamoplysninger
+Vælg Opslagsknappen i feltet Løn udbetales via.
+Du vil nu se et skærmbillede med samtlige medarbejdere, og hvorvidt de i Visma Løn er tilmeldt NemKonto eller ej.
+
+Vil du ændre i oplysningerne om hvorvidt en medarbejder skal have udbetalinger via NemKonto eller ej, kan du dobbeltklikke på medarbejderen og rette til i formularen nederst på siden:
+
+Ønsker du kun at se en liste over medarbejdere, der ikke er tilmeldt NemKonto i lønsystemet, kan du klikke af i denne boks i toppen af billedet:
+Klik nu på Find for at få en liste over medarbejdere uden NemKonto vist.
+## Decentral registrering af NemKonto
+Når du opretter eller ændrer medarbejdere via decentral registrering, kan du også til- eller fravælge NemKonto. Tilvalg forudsætter at arbejdsgiveren er tilmeldt.
+Se nærmere i vejledningen til decentral registrering under formatet ’MLE-25-MEDA’.
+## Medarbejders ret til at sige ’Nej tak’
+Jeres medarbejdere har til enhver tid ret til at fravælge, at I som privat virksomhed udbetaler løn eller andet til dem via NemKonto:
+
+Lov om offentlige betalinger m.v. § 5 a, stk. 3.Betalingsmodtageren kan til enhver tid meddele en privat udbetaler, at udbetalinger ikke ønskes indsat på modtagerens NemKonto.
+
+## Fravigelse ved kollektiv overenskomst
+Nogle kollektive overenskomster medfører, at løn og feriepenge mv. skal udbetales til medarbejderens NemKonto. Hør nærmere hos jeres arbejdsgiverorganisation, hvis I har behov for at vide mere.
+## Mulighed for at begrænse adgang til ændring af NemKonto
+Der er oprettet en brugeradgang, med fuld afgang til resten af Visma Løn. Denne brugeradgang hedder ’Fuld – NK’ og bestilles under ’Bestil hjælp til opgaver’. Brugeradgangen har ikke adgang til at kunne rette på arbejdsgiveroplysninger samt ændre på medarbejdernes reg./kontonummer eller NemKonto.
+## Dokumentation
+### Revisionsrapport
+Når du foretager ændringer på enten Arbejdsgiver eller Medarbejder, der vedrører brugen af NemKonto, så dokumenteres det i revisionsrapporten.
+### Lønseddel
+På lønsedlen vil der i stedet for medarbejderens registrerings- og kontonummer være information om, at der overføres via NemKonto.
+### Overførselsliste
+På overførselslisten vil der udfor Nettoløn stå ’NemKonto’ i stedet for medarbejderens registrerings- og kontonummer.
+## Mere information om NemKonto
+### Hos Mastercard:
+Info om Overførselsservice: [Klik her](https://www.mastercardpaymentservices.com/denmark/overf%C3%B8rselsservice)
+### Hos NemKonto:
+Udbetal via NemKonto: [Klik her](https://www.nemkonto.dk/da/Virksomhed/Udbetal-via-NemKonto)
+### Hos Borger.dk:
+Info om NemKonto: [Klik her](https://www.borger.dk/oekonomi-skat-su/nemkonto)

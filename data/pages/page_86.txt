@@ -1,0 +1,211 @@
+https://help.vismaenterprise.dk/vismaloen-standard/eindkomst/55-e-indkomst
+
+# eIndkomst
+
+Visma Løn indberetter automatisk til eIndkomst natten efter hver lønkørsel.
+Det anbefales derfor, at du afstemmer oplysninger efter hver lønkørsel. Indbetaling af AM-bidrag og A-skat sker jf. SKATs frister.
+Ønsker du at læse mere om eIndkomst, kan du hente informationer på SKATs hjemmeside: [www.skat.dk/eindkomst](http://www.skat.dk/eindkomst).
+Ved indberetning til eIndkomst indberettes for CPR-nummer og CVR-nummer. Som standard indberettes ved hver lønkørsel pr. medarbejdernummer
+* Lønperiode
+* Dispositionsdato på lønnen
+* Forudlønnet eller Bagudlønnet, og evt. særlig indkomsttype (f.eks. kode 99-5: B-indkomst)
+* Evt. landekode og P-nummer
+* Beløb, enheder, krydsmarkeringer og øvrige oplysninger jf. nedenfor
+
+⚠️ OBS: Lønperiode hentes fra kørselsselektionen. Hvis der er angivet en alternativ lønperiode i Lønseddel periode, vil denne periode blive indberettet til eIndkomst.
+
+## Indberetning af efterregulering
+Ved en efterregulering sker der en tilretning af værdier for tidligere perioders lønberegning.
+Der kan ikke efterreguleres tilbage i tidligere indkomstår, kun indeværende indkomstår.
+Rettelser til tidligere perioder skal ske via efterreguleringen. Ved efterregulering af flere måneders lønkørsler sker der en rettelse pr. periode. 
+
+Positiv efterreguleringHer føres beløb og enheder tilbage til tidligere periode, og rettelsen indberettes med aktuel dispositionsdato  
+ 
+Negativ efterreguleringHer føres beløb og enheder tilbage til tidligere periode, incl. A-skat og AM-bidrag, og rettelsen indberettes med tidligere dispositionsdato.
+
+⚠️ OBS: Ved efterreguleringen indberettes ikke indtægtsarter (felt 68) eller krydsmarkeringer fra Felter eIndkomst. Dvs. at afvikles en hel ny indberetning tilbage i tiden skal man evt. manuelt i eIndkomst og korrigere oplysningerne.
+## Hvad oplyses til eIndkomst
+Rapporten &#39;Afstemningsliste (eIndkomst)&#39; viser, hvad der bliver indberettet til eIndkomst pr. medarbejder. Følgende indberettes
+
+Løntimer - Ved løntimer forstås de timer, for hvilke en arbejdsgiver har udbetalt løn eller som dækkes af en udbetalt løn, hvor lønnen er omfattet af oplysningspligten efter skattekontrollovens § 7 stk. 1, nr. 1, 1. Pkt.  
+For timelønnede er det de timer, der bliver udbetalt løn for, f.eks. lønperiodens normale timetal tillagt eventuelle overarbejdstimer, der udbetales i lønperioden.  
+For fastlønnede funktionærer skal der indberettes løntimer i forhold til en månedlig timenorm på 160,33 (svarende til en 37-timers arbejdsuge) plus eventuelle mer- og overarbejdstimer, der udbetales løn for i lønperioden. Der er også tale om løntimer, hvis den ansatte får løn for en periode, hvor den ansatte ikke har udført arbejde. Det kan f.eks. være en periode med afholdelse af optjent ferie, en opsigelsesperiode, hvor den ansatte er fritstillet, eller en periode med barsel, sygdom eller barns første sygedag.  
+I Lønartskataloget er der tilføjet en kolonne, der viser hvilke lønarter, der medgår i Løntimer.  
+ 
+
+Beskattede bruttoferiepenge – viser feriepenge for timelønnede og fratrædende funktionærer og indgår i AM-indkomsten eller A-indkomsten, som ikke samtidig udbetales.
+
+Beskattet SH-brutto - Skal bruges, når søgnehelligdagsbeløbet indgår i AM-indkomsten eller A-indkomsten, men ikke samtidig udbetales. Dvs. i de tilfælde hvor beløbet bliver beskattet, men ikke samtidig udbetales. Ligesom feriepenge til timelønnede.  
+ 
+
+Felt 13 - AM-indkomst, A-indkomst hvoraf der skal betales arbejdsmarkedsbidrag
+
+Felt 14 - A-indkomst, A-indkomst hvoraf der ikke skal betales arbejdsmarkedsbidrag
+
+Felt 15 - Indeholdt A-skat
+
+Felt 16 - Indeholdt arbejdsmarkedsbidrag
+
+Felt 19 - Værdi af fri bil til rådighed
+
+Felt 20 – Værdi af fri telefon
+
+Felt 21 - Værdi af fri kost og logi
+
+Felt 26 – Værdi af arbejdsgiverbetalt sundhedsforsikring og behandling
+
+Felt 36 - B-indkomst, hvoraf der skal betales arbejdsmarkedsbidrag
+
+Felt 38 - B-indkomst, hvoraf der ikke skal betales arbejdsmarkedsbidrag
+
+Felt 40 - Naturalieydelse fra fonde og foreninger
+
+Felt 45 - Sats-type for ATP-bidrag
+
+Felt 46 – Samlet ATP-bidrag (Lønmodtagers og arbejdsgivers bidrag,
+
+Felt 48 - Skattefri rejse- og befordringsgodtgørelse samt skattefri uddannelsesydelse
+
+Felt 50 - Værdi af fri helårsbolig
+
+Felt 51 - Værdi af fri sommerbolig
+
+Felt 52 - Værdi af fri lystbåd
+
+Felt 53 - Værdi af fri medie-/TV-licens
+
+Felt 55 – Personalegoder over bagatelgrænsen
+
+Felt 56 – Personalegoder uden bagatelgrænse
+
+Felt 63 - Frikort offentlig befordring
+
+Felt 66 - Ansattes årlige andel vedrørende pc-ordning
+
+Felt 68 - Yderligere oplysninger til rubrik 68
+
+Felt 69 - Jubilæumsgratiale og fratrædelsesgodtgørelse
+
+Felt 70 - Den del af felt 69, der er indbetalt til pensionsordning
+
+Felt 71 - Den del af felt 69, der er værdi af tingsgaver
+
+Felt 83 - Sødage
+
+Felt 88 - Pension – fritaget for udligningsskat (kun for Finans)
+
+Felt 147 - Lønmodtagers pensionsandel
+
+Felt 148 - Arbejdsgivers pensionsandelSærlig indberetning – Anvendes til medarbejdere med bopæl i udlandet eller fiktivt cpr.nr. vises i rapporten med krydsmarkering, som oplysning om at adresseoplysninger er indsendt særskilt på medarbejderen. Visma Løn indsender automatisk denne oplysning
+
+Nettofp IÅ – Anvendes til indberetning af nettoferiepenge, der skal afregnes til FerieKonto og/eller indberettes til feriepenge.dk for indeværende år.
+
+Feriedage IÅ – Anvendes til feriedage, som skal indberettes til FerieKonto og/eller indberettes til feriepenge.dk for indeværende år.
+
+Nettofp SÅ – Anvendes til indberetning af nettoferiepenge, der skal afregnes til FerieKonto og/eller indberettes til feriepenge.dk for sidste år (funktionærer).
+
+Feriedage SÅ – Anvendes til feriedage, som skal indberettes til FerieKonto og/eller indberettes til feriepenge.dk for sidste år (funktionærer).
+
+Nettofp FÅ – Anvendes til indberetning af nettoferiepenge, der skal afregnes til FerieKonto og/eller indberettes til feriepenge.dk for forrige år (funktionærer).
+
+Feriedage FÅ – Anvendes til feriedage, som skal indberettes til FerieKonto og/eller indberettes til feriepenge.dk for forrige år (funktionærer).
+
+FP udbetaler – CVR.NR. på feriepengeudbetaleren. Nettoferiepenge til FerieKonto indberettes default med FerieKontos CVR.NR. anvendes andre ferieformer opsættes dette på Arbejdsgiver stamoplysninger
+
+
+## Produktionsenhedsnummer (Pnr.)
+Alle virksomheder i Danmark, som har to eller flere produktionsnumre, skal indberette oplysninger om Produktionsenhed til eIndkomst, hvis der udbetales løn eller anden indkomst.
+Produktionsenhedsnummeret er et entydigt identifikationsnummer på 10 karakterer (tal). Nummeret kan ses på CVR&#39;s website [www.cvr.dk](http://www.cvr.dk).
+## Produktionsenhedsnummer (Pnr.) på Arbejdsgiver
+Arbejdsgivere, som har flere adresser, har også flere produktionsenhedsnumre, udover det ene produktionsenhedsnummer, som tilhører hovedfirmaet. Hovedproduktionsenhedsnummeret lægges ind i feltet ’Pnr’ på Arbejdsgiver stamoplysninger i forbindelse med opstarten på Visma Løn.
+## Produktionsenhedsnummer (Pnr.) på Lønmodtagere
+Lønmodtagere, der er ansat på et andet P-nummer, skal have deres eget P-nummer på deres Ansættelsesforhold, det sættes på i feltet ’Afv. pnr’.
+## Afstemning af oplysninger til eIndkomst pr. lønmodtager
+Rapporten &#39;Afstemningsliste (eIndkomst)&#39; er en csv-fil, som viser hvilke oplysninger og for hvilke perioder og hvilke disposition, der er indberettet til SKAT på den enkelte lønmodtager i hver lønkørsel.
+## Felter eIndkomst – indtægtsarter og indtægtstyper
+En lang række udbetalte ydelser og andre forhold omkring medarbejderen skal stadig oplyses til SKAT. Disse oplysninger skal i Visma Løn indeholde en evt. værdi pr. lønperiode, og startdatoen skal altid være lønperiodens startdato. Hvis du vælger en anden dato, kan du risikere, at den samme ydelse bliver indberettet til SKAT i flere lønperioder. Oprettes et eIndkomst felt for en begrænset periode, skal du huske at anføre slutdato på indberetningstypen/beskæftigelseskoden.
+Indtægtsarter/Indkomsttyper kan også indberettes i en supplerende lønkørsel i Visma Løn, dog ikke uden lønbehandling. Vær opmærksom på, at en supplerende lønkørsel vil indeholde ’Felter eIndkomst’ som eventuelt har været med i den ordinære kørsel. Det er vigtigt, at du eventuelt sætter en slutdato på de ’Felter eIndkomst’, der indeholder en værdi, som ikke skal medtages igen i en supplerende kørsel. Slutdatoen skal være den, der gælder for seneste, kørte løn.
+Såfremt en supplerende lønkørsel kun indeholder reguleringer for en medarbejder, vil der ikke blive indberettet tekster eller krydsmarkeringer igen på den pågældende. Det betyder, at:
+* ATP - felt 45 type medtages kun ved en positiv indberetning
+* Rubrik 68 kode 52 med rubrik 40 krydsmarkering og tekst fra felt 40 medtages ikke
+* Rubrik 68 kode 62 med rubrik 40 krydsmarkering og tekst fra felt 40 medtages ikke
+
+Nogle indberetnings-/beskæftigelseskoder kan ikke indberettes samtidig. Her vil der kun ske indberetning til eIndkomst af den ene kode, og hvilken kode det er, vil fremgå af rapporten ’Afstemningsliste (eIndkomst). Det er tale om følgende koder:
+* 68 - 60 + 68 - 61
+* 68 - 27 + 68 - 45 + 68 - 46
+* 68 - 28 + 68 - 44
+* 68 - 70 + 68 - 71
+* 99 - 4 + 99 - 5 + 99 – 8
+
+⚠️ OBS: du ikke kan foretage efterregulering på disse felter. Hvis du har glemt at indberette, skal du manuelt trække tidligere indberetning tilbage og genindberette manuelt til SKAT med de rigtige koder tilknyttet. Der er følgende Indberetningskoder, og der er beskrevet hvad der indberettes:
+* 11 - 0         Anden arbejdsadresse, udgået rubrik
+* 40 - 0         Naturalieydelse fra fonde mm., krydsmarkering og tekst
+* 40 - 1         Naturalieydelse fra fonde mm., krydsmarkering og tekst
+* 40 - 2         Naturalieydelse fra fonde mm., krydsmarkering og tekst
+* 40 - 3         Naturalieydelse fra fonde mm., krydsmarkering og tekst
+* 40 - 4         Naturalieydelse fra fonde mm., krydsmarkering og tekst
+* 40 - 5         Naturalieydelse fra fonde mm., krydsmarkering og tekst
+* 63 - 0         Frikort til offentlige befordringsmidler, krydsmarkering
+* 66 - 0         Ansattes årlige andel vedrørende PC-ordning, indberetter beløb
+* 68 – 1        FK1 - lovligt forsinkede efterreguleringer
+* 68 - 27       DIS indkomst, anden, kodeværdi og dage 
+* 68 - 28       Søindkomst, kodeværdi og dage
+* 68 - 34       Søindkomst, Færøerne, Grønland, kodeværdi og dage
+* 68 - 37       Skattepligtig gruppelivsforsikring, kodeværdi
+* 68 - 44       Pensionslignende ydelser til tidligere ansatte, kodeværdi
+* 68 - 45       Vederlag for afløsning af pensionstilsagn, kodeværdi
+* 68 - 46       Fratrædelsesgodtgørelse beskattes gamle regler, kodeværdi
+* 68 - 49       Skattefri uddannelsesydelse, kodeværdi og beløb
+* 68 - 50       Tegnings- og aktiekøbsret ligningsloven §16, kodeværdi
+* 68 - 51       Tegnings- og aktiekøbsret ligningsloven §28, kodeværdi
+* 68 - 52       Vederlag i aktier lign.loven §7H, kodeværdi og krydsmarkering felt 40
+* 68 - 57       DIS-indkomst, begrænset fart, kodeværdi og dage
+* 68 - 60       Personalegoder direktører, kodeværdi
+* 68 - 61       Personalegoder som udbytte til hovedaktionær, kodeværdi
+* 68 - 62       PC anskaffet reduktion i bruttoløn, kodeværdi
+* 68 - 63       Efterløns- og flexydelsesbidrag, kodeværdi og beløb
+* 68 - 70       Skattepligtig offentligt tilskud, kodeværdi og beløb
+* 68 - 71       Skattefri offentlig tilskud, kodeværdi
+* 68 - 74       Anden pension, kodeværdi
+* 68 - 97       Skattefrie uddelinger fra fonde mv., kodeværdi
+
+## Indkomsttyper
+Man kan indberette følgende indkomsttyper i Visma Løn:
+* 99 - 4        Anden personlig indkomst/ej lønansat
+* 99 - 5         B-indkomstmodtager./ej lønansat
+* 99 - 8         § 48 E - F -forskerordning.
+* 99 - 9               AM-bidragsfri og A-skattefri løn i ans. Forhold.
+
+                        Vær opmærksom på, at løn i under denne indkomsttype både
+                        kan indberettes i felt 13 og felt 14. Ved lønart 8209 går det i felt
+                        13 og ved lønart 8210 går det i felt 14. Kontakt SKAT, hvis du er i
+                        tvivl om, hvordan du skal indberette for lige præcis jeres
+                        medarbejdere.
+Det er kun muligt at indberette én indkomsttype (kode 99) pr. medarbejdernummer i hver lønperiode.
+Sådan oprettes en indberetningskode/indkomsttype til eIndkomst:
+
+Gå til Medarbejder → Ansættelsesforhold
+Vælg Felter eIndkomst i højremenuen
+Klik på Ny
+Angiv rubrik = f.eks. 68, Klik på Opslagsknappen
+Vælg koden, som du ønsker at indberette og HUSK, at hvis der er en værdi, skal værdien være oplyst pr. lønperiode
+Angiv Startdato og en evt. Slutdato 
+Klik på OK
+
+## Fratrædelse af en medarbejder
+Fratrædes en medarbejder i Visma Løn, stoppes der ikke for indberetning af felter til eIndkomst, hvis der udbetales ydelser efter fratrædelsen. Eventuelle krydsmarkeringer eller koder til eIndkomst bør derfor afsluttes med samme dato som medarbejderen fratrædes, hvis der f.eks. udbetales bonus eller andre beløb, efter at medarbejderen er fratrådt
+## Kvittering på eIndkomst fra SKAT
+Visma Løn indberetter automatisk til eIndkomst hver aften kl. 22.30 efter lønkørsel.
+Efter klokken 23.50 kommer en kvitteringsliste retur fra SKAT, som kan ses under ’Rapporter’/’Vis job’. Listen hedder ’eIndkomst kvitteringsliste’ og vil vise, om indberetningen er godkendt helt eller delvist, eller om der er kommentarer til indberetningen fra SKAT.
+Hvis kvitteringen fra SKAT er forsinket , så modtager vi også kvitteringer i weekender og helligdage kl. 7.50.
+Viser ’eIndkomst kvitteringsliste’ fejl i indberetningen, er det vigtigt at kontrollere indberetningen til eIndkomst, på medarbejderen. Det gøres på SKATs hjemmeside via tast selv. Her skal beløb os eIndkomst sammenholdes med rapporten ’Afstemningsliste eIndkomst’ for lønperioden, og der skal ske rettelser svarende hertil.
+Der er to former for fejlmeddelelser:
+* A = Advis. Dette betyder, at der er en anmærkning på indberetningen. Såfremt der ikke står i fejlmeddelelsen, at CPR-nummer er afvist hos SKAT, er der indberettet til eIndkomst
+* F = Fejl. Dette betyder at der er en fejl i indberetning. Her er det vigtigt, at eIndkomst indberetningen kontrolleres på SKAT’s hjemmeside. Der kan eventuelt være tale om flere afviste felter. De afviste felter skal herefter indberettes manuelt.
+
+## Variable lønarter til efterregulering
+I forbindelse med at SKAT har fjernet muligheden for R-markering, er der udviklet variable lønarter til at kunne efterregulere ind i de måneder som rettelsen vedrører. 
+Lønarterne kan oprettes under variable lønoplysninger med dato i tidligere periode og træder i kraft når der køres en efterregulering. Når efterreguleringen er godkendt, vil lønarterne forsvinde fra variable lønoplysninger, og derefter ligge som efterreguleringsposter. 
+På rapporten Afstemningsliste eindkomst R, vil de variable lønarter lægge sig i den periode som datoen vedrører. 
+Der kan efterreguleres på følgende variable lønarter:
+Lønartsnr.TekstUdskriftslønartFerieberettiget12001Korrektion Løn1001Ja12101Korrektion Løn, ej fp.beret1001Nej12010Korrektion timer * sats1110Ja12110Korrektion timer * sats ej fp beret1110Nej12986Korrektion Dagpenge timer * sats3986Nej12386Korrektion Dagpenge beløb3986Nej12905Korrektion ledighedsdage enh * sats2905Nej12370Korrektion genebetaling1341Ja12503Korrektion Bonus1503Ja12513Korrektion Bonus1503Nej12011Korrektion KM godt.9011Nej12020Korrektion Diæter9020Nej12823Korrektion Fri sommerhus8823Nej12605Korrektion B-indkomst felt 361605Nej12607Korrektion B-Indkomst felt 381607Nej&nbsp;

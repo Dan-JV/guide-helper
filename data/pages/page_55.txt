@@ -1,0 +1,115 @@
+https://help.vismaenterprise.dk/vismaloen-standard/tillaeg/160-Loentillaeg_store_bededag
+
+# Løntillæg for store bededag
+
+Folketinget har vedtaget, at store bededag afskaffes som helligdag.
+Loven træder i kraft 1. januar  2024, og fra og med 2024 anses store bededag som en almindelig (ekstra) arbejdsdag med de løn- og ansættelsesvilkår, som i øvrigt gælder på almindelige arbejdsdage.
+
+## Indledning
+#### Løntillægget kan udbetales efter to modeller
+
+- **Løntillægget udbetales to gange årligt med lønnen for maj og august måned**
+- **Løntillægget udbetales løbende hver måned**
+Fastlønnede medarbejdere skal kompenseres for den øgede arbejdstid med et løntillæg i den første lønkørsel der indeholder datoen 1. januar 2024.
+Timelønnede skal ikke have tillæg, men deres præsterede arbejdstimer.
+Løntillægget svarer til værdien af en almindelig arbejdsdag og er fastsat til 0,45 pct. af medarbejderens årsløn. 
+Det er lagt til grund, at et gennemsnitligt standardarbejdsår for fuldtidsansatte er på 222 arbejdsdage, når ferie og søgnehelligdage er fratrukket, ifølge Finansministeriet. Der er taget udgangspunkt i 52 uger med 5 arbejdsdage svarende til 260 årlige arbejdsdage. Herfra fradrages 30 dage svarende til 6 uger med ferie og 8 helligdage i et gennemsnitligt standardarbejdsår. De 8 helligdage afspejler, at der er 9 helligdage, der kan falde på en hverdag. 6 helligdage gør det altid (søgnehelligdage), hvorimod 3 helligdage både kan falde på hverdage og på en søndag.
+Hvis en medarbejder fratræder, skal løntillægget afregnes forholdsmæssigt.
+Medarbejdere, der afholder orlov efter barselslovens regler uden fuld løn, vil have ret til samme løntillæg, som hvis de havde været på arbejde.
+Dagen bliver fremover en bankdag.
+
+## Grundlag og beregning
+Standard grundlag for beregning af tillægget er månedsløn og faste ferieberettigede lønarter, inkl. arbejdsgiver pension, men uden faste personalegoder. Variable lønarter indgår ikke i grundlaget.
+Grundlaget (lønartstype 7550) for beregning af store bededagstillæg kan tilpasses ved henvendelse til Visma.
+Resultattabel 7500 - Store bededags tillægs pct. (standard er 0,45%)
+Oprettes med værdi 0 for løngrupper, der er undtaget fra at skulle modtage tillægget.
+Oprettelse af resultattabel
+
+Gå til Opsætning → Resultattabel
+Angiv resultattabel 7500
+Klik på Find
+Klik på Ny periode
+Angiv dato i Gyldig
+Klik på OK
+Vælg Resultattrin i højremenuen
+Skriv løngruppe eller anden ryktype og angiv procent under aflønningsform
+Klik på OK
+
+## Optjening og udbetaling af store bededagstillæg
+Der skal vælges hvilken metode, der ønskes for udbetaling. Visma Løn understøtter disse to løsninger.Løntillægget udbetales to gange årligt med lønnen for maj og august månedLøntillægget udbetales løbende hver månedResultattabel 7510 - Udbetaling af st. bededagstillægOprettes med værdi 1 for relevante løngrupper, hvis der ønskes udbetaling med lønnen for maj og august måned.Resultattabellen udfyldes&nbsp;ikke, hvis der ønskes løbende udbetaling hver måned.Oprettelse af resultattabelGå til Opsætning → ResultattabelAngiv resultattabel 7510Klik på FindKlik på Ny periodeAngiv dato i GyldigKlik på OKVælg Resultattrin i højremenuenSkriv løngruppe eller anden ryktype og angiv 1 under aflønningsformKlik på OKOpsætning på stillingskategoriLønarten oprettes på alle stillingskategorier, der skal modtage tillæg for store bededag, uanset om det er løbende udbetaling eller to gange årligt. Udbetalingen vil da gælde for alle i stillingskategorien.Stillingskategorilønart 7500 - St. Bededagskomp.Oprettelse af stillingskategorilønartGå til Opsætning → StillingskategoriVælg stillingskategoriKlik på FindVælg Lønoplysninger i højremenuenKlik på NyUdfyld startdato og lønart 7500Klik på OKOpsætning af faste lønarter til udbetalingSkal udbetalingen ikke ske for alle i en stillingskategori, kan man i stedet oprette en fast lønart på den enkelte medarbejder.Lønart 7530 - Løbende udbetaling pr. månedLønart 7535 - Udbetaling med lønnen for maj/august&nbsp;Udbetaling med lønnen for maj og augustUdbetaling af store bededagstillæg to gange om året samtidig med det lovpligtige ferietillæg aktiveres af&nbsp;Ikrafttrædelseskode T - FerietillægIkraftrædelseskode T er i forvejen oprettet på alle standard kørselsordre, der vedrører lønudbetaling for maj og august.&nbsp;Variabel lønart til udbetalingLønart 7525 - Udbetaling ad hoc, lønarten har saldokontrol
+## Udbetaling under barselsorlov
+Medarbejdere, der afholder orlov efter barselslovens regler uden fuld løn, vil have ret til samme løntillæg, som hvis de havde været på arbejde. Udbetalingen kan ske med en fast eller variabel lønart og metoden afhænger af hvilken fraværskode til barselsorlov, der bruges på medarbejderne.På begge lønarter er det beregningsgrundlaget, der oprettes som beløb. Dvs. det grundlag som de 0,45% skal beregnes af.&nbsp;Fast lønart, som kan bruges i kombination med fraværskode 38 - Barselsorlov særlig.&nbsp;Lønart 7550 - Barsel med delvis løn, grundlag for beregning af st. bededagstillægObs: i Visma Løn Finans er det fraværskode 63 - Barselsorlov uden løn med pension.&nbsp;Variabel lønart, som kan bruges i kombination med fraværskode 37 - Barselsorlov uden løn, samt øvrige fraværskoder til Barselsorlov med delvis løn.Lønart 7555 - Barsel uden løn, grundlag for beregning af st. bededagstillæg
+## Udbetaling ved fratrædelse
+Lønarten oprettes på stillingskategorier, hvis man har valgt udbetaling to gange årlig med lønnen for maj og august måned og der skal ske automatisk udbetaling af tilgodehavende tillæg ved fratrædelse af medarbejderne.
+Stillingskategorilønart 7540 - Automatisk udb. v/fratrædelse
+Oprettelse af stillingskategorilønart
+
+Gå til Opsætning → Stillingskategori
+Vælg stillingskategori
+Klik på Find
+Vælg Lønoplysninger i højremenuen
+Klik på Ny
+Udfyld startdato og lønart 7540
+Klik på OK
+
+## Stop optjening af store bededagstillæg
+Er der enkelte medarbejdere, der ikke skal være omfattet af ordningen, kan optjening og udbetaling stoppes ved at oprette en fast lønart på medarbejderen.
+
+Lønart 7565 - Stop af optjening/udbetaling
+
+## Overførsel til pension
+Faste lønarter, der overfører store bededagstillæg til pensionLønart 7560 - AM-Pension (afregningstype skal være 23xx)Lønart 7570 - Ordinær pensionLønart 7575 - PI pension (pengeinstitut)Procent angives med f.eks. 100 = 0,45% (hele tillægget)
+## Pension af store bededagstillæg
+
+
+
+
+Disse faste lønarter beregner pension af store bededagstillægget.Lønarterne vil ligge på en linje for sig på lønsedlen med store bededags tillægget som grundlag.Der indtastes firma pct. og medarbejder pct. samt afregningstype eller reg/konto overførsel. &nbsp;Lønarterne kan efterreguleres.Lønart 7580 - AM pensionLønart 7585 - Ordinær pensionLønart 7590 - PI-pension &nbsp;Lønarterne vises på lønsedlen hver måned ved løbende udbetaling, men hvis der er valgt udbetaling to gange årligt med lønnen for maj og august, vil de kun blive vist i de måneder, hvor der sker udbetaling af store bededagstillæg.
+## Korrektion af store bededagstillæg
+Til korrektion af opsparet saldo kan der registreres +/- beløb på en variabel lønart.
+
+Lønart 7510 - Korrektion af saldo
+
+## Opsætning af statistik indberetning
+### IP type 0630 - Løntillæg for St. Bededag
+
+- **1 = to gange årligt maj/august**
+- **2 = hver lønperiode**
+- **3 = indarbejdet i lønnen** _Medarbejdere, hvor tillægget er indarbejdet som en del af den almindelige løn, efter skriftlig aftale mellem arbejdsgiver og arbejdstager_
+- **4 = medarbejder ikke berettiget til tillæg** _Medarbejdere, hvis arbejdstid ikke er forøget som følge af afskaffelsen af store bededag, og som dermed ikke er berettiget til et løntillæg_
+
+IL kode 0028, Udbetalt tillæg for St. Bededag indberettes automatisk til statistik (DS, DA eller FA)
+Til brug for indberetning af store bededagstillæg til DS, DA eller FA statistik skal følgende IP type oprettes.
+IP type 0630 - Løntillæg for St. Bededag (kun fastlønnede medarbejdere) skal oprettes på alle stillingskategorier, der er omfattet af udbetalingen. Opsætningen vil herefter være standard for alle medarbejdere i den stillingskategori.
+Medarbejdere der afviger fra standard opsætningen på stillingskategorien, skal have individuel opsætning.
+Sådan opretter du IP-typer til en gruppe af medarbejdere (stillingskategori):
+
+Klik på Opsætning → Stillingskategori
+Vælge Stillingskategorioplysninger i højremenuen
+Klik på Ny 
+Opret IP-type, IP-kode, værdi og Startdato
+Klik Gem
+
+Sådan opretter du IP-typer på en enkelt medarbejder:
+
+Klik på Medarbejder → Ansættelsesforhold
+Vælg Ansættelsesoplysninger i højremenuen
+Klik på Ny 
+Opret IP-type, IP-kode, værdi og Startdato
+Klik OK
+
+
+## Bogføring af store bededagstillæg
+Udbetaling månedsvisLønart 7523 - Lb. udbetaling - DLønart 7531 - Fast udb. lønart - DUdbetaling to gange årligtLønart 7524 - Udbetaling - DLønart 7535 - Fast lønart - DLønart 7540 - Udbetaling ved frat. - DLønart 7500 - Hensættelse optjent DLønart 9875 - SkyldigHens. Optj KOverførsel til pensionLønart 7560 - AM pension - DLønart 7570 - Ordinær pension - DLønart 7575 - PI Pension - DObs: Ved brug af Visma Løn Finans krediteres ovenstående lønarter istedet for som skyldig pension.Øvrige lønarterLønart 7525 - Variabel udbetaling - DPensionslønarterLønart 7580 - AM pension arbejdsgiver - DLønart 7581 - AM Pension skyldig - K&nbsp;Lønart 7585 - Pension arbejdsgiver - DLønart 7586 - Pension skyldig - K&nbsp;Lønart 7590 - Pension arbejdsgiver - DLønart 7591 - Pension skyldig - KObs: Ved brug af Visma Løn Finans krediteres alle ovenstående lønarter istedet for som skyldig pension.
+## Eksempel på bogføring ved udbetaling to gange årligt
+I dette eksempel vises hvordan hensættelse af store bededagstillæg ved udbetaling to gange årligt evt. kan sættes op i kontoplanen.Hensættelse (løbende optjening):Lønart 7500 - Hensættelse optjent - D - resultatLønart 9875 - Skyldig Hens. Optjent - K - balanceUdbetalingen maj&nbsp;+ augustLønart 7524 - Udbetaling - D - bogføres i resultatLønart 7524 - Nulstilling af hensættelse i balance - D (kan evt. være samme finanskt. som lønart 9875)Lønart 7524 - Nulstilling af hensættelse i resultat -&nbsp;K (kan evt. være samme finanskt. som lønart 7500)Udbetaling ved fratrædelseLønart 7540 - Udbetaling ved frat. - D resultat (samme finanskt. som Lønart 7524 udbetaling)Lønart 7540 - Nulstilling af hensættelse i balance - D (kan evt. være samme finanskt. som lønart 9875)Lønart 7540 - Nulstilling af hensættelse i resultat -&nbsp;K (kan evt. være samme finanskt. som lønart 7500)Andre lønarter -&nbsp;hvis denne anvendes:Lønart 7535 - Fast lønart udbet.&nbsp;ferietillæg D - resultat (samme finanskt. som Lønart 7524 udbetaling)Lønart 7535 - Nulstilling af hensættelse i balance - D (kan evt. være samme finanskt. som lønart 9875)Lønart 7535 - Nulstilling af hensættelse i resultat -&nbsp;K (kan evt. være samme finanskt. som lønart 7500)
+## Rapporter der viser store bededagstillæg
+* Medarbejder tilgode (csv-filen)
+* Afstemningsliste (lønperiode)
+* Afstemningsliste år-til-dato
+* Standard kontoplan SD
+* Bogføringsbilag
+* Bogføringsbilag m. spec.
+
+## Overførsel af saldo ved årsskiftet
+Ved optjening af store bededagstillæg, der udbetales to gange om året med lønnen for maj og august skal saldoen overføres ved årsskiftet. Det beløb der er hensat til store bededagstillæg i perioden fra september til december skal overføres ved årsskiftet, så det kan udbetales i det nye år.&nbsp;Det gøres ved at oprette:Ikrafttrædelseskode M - Overførsel af saldiIkrafttrædelseskode M skal oprettes i de kørselsselektioner, der vedrører lønudbetaling for januar måned:Bagudlønnede i januar lønkørsel - bagudløn januar - selektion 1 og 3Forudlønnede i december lønkørsel - forudløn januar - selektion 2

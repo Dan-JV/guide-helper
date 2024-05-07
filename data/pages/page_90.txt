@@ -1,0 +1,459 @@
+https://help.vismaenterprise.dk/vismaloen-standard/bogforing/93-bogforing-1
+
+# Bogføring
+
+I Visma Løn findes et standard bogføringsbilag, som indeholder følgende kolonner:
+* Kontotekst, afdeling, kontonummer, debet- og kreditbeløb.
+
+Alle kontonumre er oprettet i en standard kontoplan, kaldet SD. Kontonumrene kan ikke ændres på denne kontoplan, men for at oprette dine egne kontonumre og tekster, skal du kopiere kontoplan SD og give den et nyt navn, f.eks. A1 og en sigende tekst, f.eks. egen kontoplan.
+I lønkørslen dannes bogføringsbilaget hhv. som en HTML-fil og en csv-fil. Filerne hentes i menupunkterne Lønadministration → Udskrifter fra lønkørsel. Det er også muligt at få et bogføringsbilag med specifikationer. Dette kan dannes i menupunkterne Rapporter → Rapporter og i højremenuen vælger du Bogføringsbilag med spec. for den aktuelle kørsel. 
+Du kan også tilmelde rapporten, så den afvikles sammen med lønkørslen og kan hentes i menupunkterne Lønadministration → Udskrifter fra lønkørsel.
+Efter en lønkørsel er godkendt, er det stadig muligt at ændre i opsætningen på et bogføringsbilag. Opsætningen kan derefter kontrolleres ved at danne opsætningsrapporten ’Kontrol af bogføring’. Det er ikke muligt at danne et bogføringsbilag eller bogføringsbilag med specifikationer med ændringerne i menupunkterne Rapporter → Rapporter det vil altid være det indhold der oprindelig blev dannet i lønkørslen.
+Ønsker du mulighed for at kunne danne et bogføringsbilag under menupunkterne Rapporter → Rapporter efter du har tilrettet din kontoplan, kan du foretage en omkørsel af bogføringen i menupunktet Opsætning → Opsætningsrapporter i højremenuen vælger du ’Omkørsel af bogføring’ når det job er færdig, kan du udskrive nye bogføringsbilag under Rapporter → Rapporter.
+Nedenfor er beskrevet, hvorledes du kan ændre kontonumre – og hvordan du opretter nye bogføringsbilag.
+
+## Menupunkter til bogføring
+* Opsætning kontoplan
+* Opsætning kontoplanfelt
+* Opsætning sorteringskode
+* Kontrol af bogføring
+* Arbejdsgiver stamoplysninger – Kontoplan og Sorteringskode
+* Medarbejder ansættelsesforhold – Afv. kontoplan og seks felter.
+* Fordeling af lønudgifter – opsætning af fast omkontering
+
+### Kontoplan
+Her tilknyttes dine egne finanskonti til de enkelte lønarter.
+### Kontoplanfelt
+Kontoplanfeltet viser de kolonner, du har mulighed for at udvælge til dit bogføringsbilag.
+Felterne Aflønning, Stillingskategori, Løngruppe, Afdeling, Udbetalingssted, Valgfri1, Valgfri2, Valgfri3, Valgfri4, Valgfri5, Valgfri6 og medarbejdernummer kan anvendes i bogføringen.
+Alle felterne kan indlæses decentralt.
+Under menupunkterne Opsætning → Kontoplan → Kontoplanfelt er det muligt at omdøbe kontoplanfeltet til egen tekst. På den måde kommer dine egne tekster som kolonneoverskrifter på bogføringsbilaget.
+Du kan omdøbe kontoplanfelterne, så de fremgår af medarbejderens ansættelsesforhold på rapporten medarbejderstamkort, og så vil de fremstå som kolonneoverskrifter på rapporterne vedr. bogføringen
+* Valgfri1
+* Valgfri2
+* Valgfri3
+* Valgfri4
+* Valgfri5
+* Valgfri6
+
+### Sorteringskode
+Her angives hvilke kontoplanfelter du ønsker udskrevet på bogføringsbilaget, og i hvilken rækkefølge de skal vises. Kolonnen ’Kontotekst’ vil altid ligge først i bogføringsbilaget, ligesom debet- og kreditkolonnerne altid vil ligge til sidst i bogføringsbilaget. Disse felter kan du derfor ikke vælge.
+Du kan i skærmbillede Faste lønoplysninger og Variable lønoplysninger kun få vist 6 kontoplan felter og det vil være de 6 første felter fra sorteringskoden der vises.
+For hvert kontoplanfelt – undtagen det sidste – vil der blive lavet en sammentælling på bogføringsbilaget – en subtotal. Der er dog ingen sub-totaler i .csv versionen (Excel)
+### Kontrol af bogføring
+Her kan du køre rapporten ’Kontrol af bogføring’, som indeholder de rettelser du har foretaget siden lønkørslen. Rapporten anvender den sorteringskode og kontoplan, der ligger på arbejdsgiver. Rapporten kan dannes, både som HTML-rapport og som csv-fil.
+### Arbejdsgiver stamoplysninger
+Her angives i feltet ’Kontoplan’, hvilken kontoplan, der ønskes bogført efter. I feltet ’Sorteringskode’ angives, hvilken sorteringskode bogføringsbilaget sorteres efter.
+### Medarbejder ansættelsesforhold
+I feltet ’Afv. kontoplan’ angives en kontoplan, såfremt den aktuelle medarbejder skal bogføres efter en anden kontoplan end den der er angivet på arbejdsgiver stamoplysninger.
+## Opsætning af kontoplan
+Alle lønarter skal som udgangspunkt oprettes med et finanskontonummer, til brug for bogføringen.
+### Oprettelse af kontoplan
+Der skal ved opstart altid oprettes en ny kontoplan, således at bogføringsbilaget kan tilpasses med egne kontonumre og kontotekster. Dette gøres f.eks. ved danne en rapport som csv-fil med kontoplan SD, tilrette filen og derefter indlæse den i lønsystemet igen, eller ved at kopiere standardkontoplanen i skærmbilledet ’Kontoplan’.
+Navnet på din kontoplan kan indeholde 2 karakterer og kan bestå af både tal og bogstaver. Beskrivelsen på en kontoplan kan bestå af 30 karakterer.
+Sådan opretter du en kontoplan som en kopi af standard kontoplanen:
+
+Gå til Opsætning → Kontoplan → Kontoplan
+Angiv SD
+Klik på Find
+Kopier, klik på Kopier
+Angiv en ny betegnelse for kontoplanen, f.eks. A1 samt et sigende kontoplannavn
+Angiv Gyldig
+Klik på OK
+
+Du kan nu oprette din egen kontoplan.
+Sådan oprettes en kontoplan via decentral registrering:
+
+Gå til Opsætning → Opsætningsrapporter
+Vælg Kontoplaner I højremenuen
+Angiv den kontoplan der skal kopieres fra/tilrettes 
+Klik på OK
+Åben filen. 
+Gem filen under et andet navn
+
+ Derefter tilrettes filen med følgende:
+
+Ret betegnelse og navn til det ønskede, f.eks. A1 og Kontoplan. 
+Ret kontonumre så de svarer til din egen finanskontoplan
+Angiv hvilket kontoplanfelt, der skal anvendes til en evt. gruppekontering (se afsnit 3.2) 
+Tilret indhold af de forskellige felter på kontoplanlinjerne (se afsnit 3.3)
+Feltet Anvendkode skal rettes til 0 (nul) hvis der i feltet står Bilag/Central. Står der i feltet Excel, skal det erstattes med 3.
+Indsæt tre kolonner før din kolonne 3 og tilføj følgende oplysninger i de nye felter:1. $1
+2. $1
+3. $1
+
+
+Slet første linje med kolonne overskrifter
+Indlæs filen i MLE som beskrevet i Guide til Decentral registrering.
+
+Før den nye kontoplan kan anvendes, skal Arbejdsgiver tilpasses
+
+Gå til Arbejdsgiver → Arbejdsgiver stamopl.
+I feltet Kontoplan, angives din betegnelse f.eks. A1
+I feltet Sorteringskode, angives din betegnelse
+Klik på Gem
+
+### Gruppekontering
+Du kan bogføre på forskellige finanskonti på samme lønart, ved at anvende gruppekontering. Gruppen kan f.eks. være Afdeling, hvor forskellige afdelinger skal have bogført f.eks. månedslønnen eller timelønnen på forskellige finanskonti. Gruppekontering anvender et kontoplanfelt som en nøgle til den valgte kontering på den enkelte lønart.
+Inden for samme Gruppe og lønart skal samme løbenummer anvendes. 
+Er der f.eks. opsat forskellige konti for to gruppeværdier på en lønart, vil Visma Løn kunne kontere lønarten på to forskellige linjer. 
+Følgende felter kan anvendes til gruppekontering:
+* Afdeling
+* Udbetalingssted
+* Stillingskategori
+* Løngruppe
+* Valgfri 1 til Valgfri 6
+
+I feltet ’Gruppe’ på kontoplanlinien er det muligt at udvælge et interval, der skal gruppekonteres for (se afsnit 3.5).
+### Sådan tilrettes kontonumrene
+Vælg&nbsp;Opsætning →&nbsp;Kontoplan&nbsp;→&nbsp;KontoplanAngiv kontoplanVælg&nbsp;Kontoplanlinie I højremenuenDobbeltklik på den lønart, du ønsker at ændre kontonummeret påKlik på&nbsp;GemTilpasning af kontonr. kan også gøres med decentral registrering.Følgende felter kan tilpasses i kontoplanen:Gruppe - her angives den værdi for en gruppe, som ønskes opsat til kontering eller der kan benyttes wildcard ”*” (se afsnit 3.5), såfremt flere grupper skal bogføres ens.Lønart - her angives den lønart, som ønskes opsat til kontering eller der kan benyttes wildcard ”*” (se afsnit 3.5), såfremt flere lønarter skal konteres ens.Lbnr - løbenummer. Starter med 1. Såfremt du ønsker at bogføre samme lønart flere gange, skal hver kontoplanlinje have et nyt løbenummer. Hvis der anvendes gruppekontering, skal der benyttes samme løbenummer for alle kontoplanlinjer, der er omfattet af gruppekonteringen.D/K – skal lønarten debiteres eller krediteres, angives et ’D’ = Debet eller ’K’ = KreditKontonr. – finanskontonummeret kan max. være 20 karakterer.Tekst – tekst, som skal vises på bogføringsbilaget.Afd.kode – skal værdien hentes fra ansættelsesforholdet, angiver du ’ANS’, eller du kan indsætte en konstant på max 6 karakterer eller værdien ’Blank’.Udb.kode – skal værdien hentes fra ansættelsesforholdet, angiver du ’ANS’, eller du kan indsætte en konstant på max 6 karakterer eller værdien ’Blank’.Inputv.kode – værdien i kontoplanen kan være ’Blank’, den kan hentes fra lønarterne 1106,1107,1250,1251 så angives ’LØNOPL’, eller der kan indsættes en konstant på max 10 karaktererValgfri1 – kan omdøbes i Kontoplanfelt. Skal værdien hentes fra ansættelsesforholdet, angiver du ’ANS’, eller du kan indsætte en konstant på max 10 karakterer eller værdien ’Blank’.Valgfri2 – kan omdøbes i Kontoplanfelt. Skal værdien hentes fra ansættelsesforholdet, angiver du ’ANS’, eller du kan indsætte en konstant på max 10 karakterer eller værdien ’Blank’.Valgfri3 – kan omdøbes i Kontoplanfelt Skal værdien hentes fra ansættelsesforholdet, angiver du ’ANS’, eller du kan indsætte en konstant på max 10 karakterer eller værdien ’Blank’.Valgfri4 – kan omdøbes i Kontoplanfelt. Skal værdien hentes fra ansættelsesforholdet, angiver du ’ANS’, eller du kan indsætte en konstant på max 10 karakterer eller værdien ’Blank’.Valgfri5 – kan omdøbes i Kontoplanfelt. Skal værdien hentes fra ansættelsesforholdet, angiver du ’ANS’, eller du kan indsætte en konstant på max 10 karakterer eller værdien ’Blank’.Valgfri6 – kan omdøbes i Kontoplanfelt. Skal værdien hentes fra ansættelsesforholdet, angiver du ’ANS’, eller du kan indsætte en konstant på max 10 karakterer eller værdien ’Blank’.Medarb.nr. – Såfremt medarbejdernummeret skal med i bogføringen og vises ud for den pågældende lønart, vælges ’Ja’.⚠️ OBS: Husk, at det kun er de kontoplanfelter, der er med i ’Sorteringskoden’, der bliver vist og bogført på bogføringsbilaget. Det enkelte felt vil kun blive vist, hvis det er sat op på både ’Sorteringskode’ og ’Kontoplanlinie’.Anvendkode:Anvendkoden angiver, hvordan lønarten skal vises i output. De enkelte poster vil altid indgå i rapporten ’Bogføring med spec’.Du kan bruge følgende anvendkoder:* 0 = Bilag / central Lønarten vises på rapporterne ’Bogføringsbilag’ og ’Bogføringsbilag med spec.’* 3 = Excel Lønarten vises kun på rapporten ’Bogføringsbilag med&nbsp;spec.
+### Samme lønart kan bogføres flere gange
+En lønart kan bogføres flere gange ved at tildele den forskellige løbenumre. 
+
+Vælg Opsætning → Kontoplan → Kontoplan
+Angiv kontoplankode
+Klik på Find
+Vælg Kontoplanlinie i højremenuen
+Dobbeltklik på lønarten og klik på Kopier
+Tilret feltet Lbnr med værdien 2
+Angiv ny finanskonto etc.
+Klik på Gem
+
+For bogføring af samme lønart flere gange gentages punkt 4-7 med det antal gange, du ønsker lønarten bogført, hvor du i punkt 5 giver et nyt løbenummer for hver linje. 
+Ved bogføring af samme lønart flere gange er det vigtigt, at den både debiteres og krediteres, da det ellers vil give en difference på bogføringsbilaget.
+### Opsætning i intervaller
+Det er muligt at anvende ”*” i felterne Gruppe og Lønart som erstatning for en hvilken som helst værdi i feltet der indsættes. Værdien skal altid angives fra højre, f.eks. 91**. Det muliggør, at en kompleks opsætning kan forenkles på eksempelvis intervallerne af grupper og lønarter.F.eks. hvis en kontoplan er opsat med gruppekontering på Afdeling. En kontoplanlinje, der opsættes med 10** i feltet ’Gruppe’ og 13** i feltet Lønart vil være et udtryk for, at afdelinger i intervallet 1000 til 1099 og lønarterne i intervallet 1300 til 1399 vil blive bogført iht. resten af gruppen. Er der enkelte lønarter eller grupper i intervallet der ikke ønskes bogført på samme måde, kan disse lønarter oprettes i kontoplanen og vil blive bogført forskelligt i forhold til lønarterne i intervallet.⚠️ OBS: Anvendes * skal antallet af * og karakterer samlet stemme overens. Afdeling 311 findes ikke ved opsætningen 3*, her skal skrives 3**.
+## Opdatering af bogføringsbilag fra tidligere lønkørsler
+Det er muligt at foretage en omkørsel af bogføringen i Visma Løn. Hvis lønkørslen er godkendt og der er ændringer til bogføringsbilaget, så ændres/tilføjes et kontonummer på en eller flere lønarter og et nyt opdateret bogføringsbilag kan hentes.
+
+Gå til Opsætning → Opsætningsrapporter
+Vælg Omkørsel af bogføring I højremenuen
+Angiv Kørselsordre og arbejdsgiver
+Klik på OK
+
+Når omkørslen er færdig, kan der køres et nyt bogføringsbilag eller bogføringsbilag med spec. Under Rapporter → Rapporter.
+⚠️ OBS: det bogføringsbilag som ligger under Lønadministration → Udskrifter fra lønkørsel indeholder det bogføringsbilag som var gældende på det tidspunkt hvor lønkørslen blev godkendt.
+## Lønafregning/Lønfordeling
+Lønafregning / Lønfordeling kan fravælges ved at slette de tilknyttede lønarter i kontoplanen. 
+Der kan være ønsker til opsætningen af kontoplanen omkring lønafregning og lønfordeling, hvor lønarterne, som standard, er posteret i grupper, der udligner hinanden. 
+Følgende lønarter indgår i lønfordeling/lønafregning:
+Lønafregning / lønfordeling
+LønartLøbenr.Debet /KreditKontonr.Kontonavn&nbsp;86511D0000000080Skattefri del jub./fratrædelsesg.&nbsp;97961D0000000020A-indkomst uden AM-bidrag&nbsp;98001D0000000010A-indkomst kontant m/AM-bidrag&nbsp;98071D0000000030Pension medarbejder&nbsp;98091D0000000040AM-bidrag medarbejder&nbsp;98101D0000000050SP-bidrag&nbsp;&nbsp;98111D0000000020A-indkomst uden AM-bidrag&nbsp;98121D0000000070ATP medarbejder&nbsp;98131D0000000090AM bidrag særlig indkomst&nbsp;98141D0000000100SP bidrag særlig indkomst&nbsp;98231D0000000120Værdi af fri bil&nbsp;98201K0000000170Lønfordelingmodpost
+
+Personalegoder til beskatning, lønfordeling
+LønartLøbenr.Debet / KreditKontonr.Kontonavn&nbsp;30001D0000000120Værdi af fri bil&nbsp;30011D0000000120Værdi af fri bil&nbsp;30021K0000001330Fri bil egenbetaling&nbsp;30031K0000001330Fri bil egenbetaling&nbsp;30201D0000000140Gruppeliv&nbsp;30211D0000000140Gruppeliv&nbsp;30251D0000000140Gruppeliv&nbsp;30261D0000000140Gruppeliv&nbsp;30301D0000000150Ulykkesforsikring&nbsp;30311D0000000150Ulykkesforsikring&nbsp;30321D0000000150Ulykkesforsikring&nbsp;30331D0000000150Ulykkesforsikring&nbsp;30351D0000000150Ulykkesforsikring&nbsp;30361D0000000150Ulykkesforsikring&nbsp;30401D0000000160Værdi af fri kost&nbsp;30411D0000000160Værdi af fri kost&nbsp;30451D0000000150Værdi af kritisk sygdom&nbsp;30461D0000000150Værdi af kritisk sygdom&nbsp;30501D0000000132Fri telefon&nbsp;30511D0000000132Fri telefon&nbsp;30521D0000000132Fri telefon&nbsp;30531D0000000132Fri telefon&nbsp;30541D0000000132Fri telefon&nbsp;30551D0000000132Fri telefon&nbsp;30561D0000000132Fri telefon&nbsp;30571D0000000132Fri telefon&nbsp;30581D0000000132Fri telefon&nbsp;30601D0000000133Sundhedsforsikring&nbsp;30611D0000000133Sundhedsforsikring&nbsp;30621D0000000133Sundhedsforsikring&nbsp;30631D0000000133Sundhedsforsikring&nbsp;30641D0000000133Sundhedsforsikring&nbsp;30651D0000000133Sundhedsforsikring&nbsp;30951D0000000135Værdi af benzin&nbsp;98211K0000000180Personalegoder, ej KONTANTmodpost
+
+Jubilæumsgratiale-Fratrædelsesgodtgørelse
+LønartLøbenr.Debet / KreditKontonr.Kontonavn55001D0000000470Jubilæumsgratiale55011D0000000475Fratrædelsesgodtgørelse55101D0000000470Jubilæumsgratiale55111D0000000475Fratrædelsesgodtgørelse55201D0000000470Jubilæumsgratiale55211D0000000475Fratrædelsesgodtgørelse55301D0000000470Jubilæumsgratiale55311D0000000475Fratrædelsesgodtgørelse55401D0000000470Jubilæumsgratiale55411D0000000475Fratrædelsesgodtgørelse55501D0000000470Jubilæumsgratiale55511D0000000475Fratrædelsesgodtgørelse55601D0000000470Jubilæumsgratiale55611D0000000470Skattefri Beløb Jubi/Fratr.55621D0000000460Fratrædelsesgodtgørelse55651D0000000475Fratrædelsesgodtgørelse98151K0000001270Pension Skyldig98151D0000000110Pension af Jub/Fratrædelsesg.86191K0000001180Skyldig AM Bidrag&nbsp;86481K0000001160A-skat særlig indkomst86491D0000000095AM Bidrag Særlig indkomst86491K0000000170Lønfordeling98131D0000000090AM Bidrag Særlig Indkomst86511D0000000080Skattefri del jub/fratr.Godtg98201K0000000170Lønfordeling
+### Hensættelse til Feriepulje
+Du kan hver måned opspare en procentdel af et valgfrit grundlag til en feriepujle. Når en medarbejder afholder ferie med løn eller ferie egen regning, bliver feriepuljen nedskrevet med en procentdel.
+
+Lønartstype 9870 oprettes i samarbejde med en konsulent fra Visma Løn.
+Resultattabel 9870 oprettes med en procent, som der skal hensætte til feriepuljen
+Resultattabel 9871 oprettes med en procent, som feriepuljen skal nedskrives med i forbindelse med afholdelse af ferie
+På den pågældende stillingskategorien oprettes stillingskategorilønart 9870
+I bogføringen skal lønart 9870 og 9871 oprettes i både debet og kredit.
+
+### Hensættelse til DI barselsfond
+Du kan hensætte til DI barselsfond på følgende måde. Opret på relevante stillingskategorier:
+
+Stillingskategorilønart 7980 - DI barsel
+
+Lønarten hensætter 0,23 % af lønsummen. 
+Lønsummen er lig med:
+
+Rubrik 13
+Rubrik 14
+Rubrik 46 (kun medarbejderens andel af ATP)
+Rubrik 69
+Rubrik 147
+Bruttolønsordning (lønarter som ligger under lønartstype 3100 - lønart 3110, 3111 osv.)
+
+Ønsker I et andet grundlag for lønsummen, kan I kontakte Visma på tlf. 88 97 97 00, så kan vi hjælpe dig.
+På din kontoplan oprettes:
+
+Lønart 7980 - DI barsel
+
+### Hensættelser til AER/AES/Finanseringsbidrag
+Ønskes der at hensætte bidrag til AER/AES/Finanseringsbidrag i bogføringen kan det opsættes efter nedenstående:
+
+På de relevante stillingskategorier oprettes lønart 9895 Finansieringsbidrag bogføring
+Opsæt satser på resultattabel AES på de respektive løngrupper
+Opsætte kontering på følgende lønarter:
+Samlet beregning - Lønart 9895 i kredit
+AER - Lønart 55930 i debet
+AES - Lønart 55934 i debet
+FB (Finanseringsbidrag) - Lønart 55937 i debet
+
+
+
+### Negativ løn for perioden
+En medarbejder kan i en lønperiode få en negativ løn. Den negativ løn bliver automatisk bogført på lønart 9991 – nettoløn. Ønsker du bogføringen separat kan du oprette lønart 9994 i kontoplanen. 
+
+Lønart 9994 - skal oprettes i debet på den konto du har sat på lønart 9991
+Lønart 9994 - skal også oprettes i kredit på den konto du ønsker til negativ løn
+
+### Bogføring af skyldige poster i et beløb
+Ønsker du at bestemte lønarter, som f.eks. skyldige beløb, bogføres samlet - og ikke under forskellige enheder - skal der enten være blank eller indsat en konstant i det/de felter, omkostningerne fordeles efter. Ved blank i nedennævnte felter vil hver lønart blive bogført som et samlet beløb og vises øverst på bogføringsbilaget.
+* Afd.kode
+* Udbet.kode
+* Input.kode
+* Valgfri1
+* Valgfri2
+* Valgfri3
+* Valgfri4
+* Valgfri5
+* Valgfri6
+
+### Bogføring af skyldige feriepenge for funktionærer
+Bogføringen giver mulighed for at bogføre de løbende opsparede feriepenge på funktionærer, samt feriepenge der udbetales kontant eller afregnes til 3. part.
+Det gøres ved at opsætte kontonummer på følgende lønarter:
+Husk! at når du bogfør hensættelse af feriepenge eller ferietillæg, er det vigtigt at du får modposteret hensættelsen i forbindelse med udbetaling, fratrædelse eller afholdelse af ferie/ferietillæg.
+### Bogføring af skyldig ferietillæg for funktionærer
+Bogføringen giver mulighed for at bogføre det løbende opsparede ferietillæg på funktionærer.
+Det gøres ved at opsætte kontonummer på følgende lønarter:
+Hensættelse af Ferietillæg Ferieår lovgrundlag
+
+Lønart 4900 - Opsparing ferietillæg lovgrundlag, skal oprettes i debet i resultatopgørelse og kredit på balancen
+
+Hensættelse af Ferietillæg Ferieår OK-grundlag
+
+Lønart 4901 - Opsparing ferietillæg OK-grundlag, skal oprettes i debet i resultatopgørelse og kredit på balancen
+
+Hensættelse af Ferietillæg ekstra Ferieår lovgrundlag
+
+Lønart 4610 - Ekstra ferietillæg lovgrundlag, skal oprettes i debet i resultatopgørelse og kredit på balancen
+
+Hensættelse af Ferietillæg ekstra Ferieår OK-grundlag
+
+Lønart 4607 - Ekstra ferietillæg OK-grundlag, skal oprettes i debet i resultatopgørelse og kredit på balancen
+
+Hensættelse af Ferietillæg Kalenderår lovgrundlag
+
+Lønart 4902 - Ferietillæg lovgrundlag kalenderår, skal oprettes i debet på resultatopgørelse og kredit på balancen
+
+Hensættelse af Ferietillæg Kalenderår OK-grundlag
+
+Lønart 4904 - Ferietillæg OK-grundlag kalenderår, skal oprettes i debet på resultatopgørelse og kredit på balancen
+
+Hensættelse af Ferietillæg ekstra Kalenderår lovgrundlag
+
+Lønart 4624 - Ferietillæg lovgrundlag kalenderår, skal oprettes i debet på resultatopgørelse og kredit på balancen
+
+Hensættelse af Ferietillæg ekstra Kalenderår OK-grundlag
+
+Lønart 4622 - Ekstra ferietillæg OK-grundlag kalenderår, skal oprettes i debet på resultatopgørelse og kredit på balancen
+
+### Difference
+Såfremt der benyttes en eller flere lønarter, der ikke er oprettet i kontoplanen, vil bogføringsbilaget udvise en difference. De lønarter som ikke er med i kontoplanen, skal oprettes på en konteringslinje i den aktuelle kontoplan.
+Såfremt en lønkørsel har været godkendt med differencen og du foretager en rettelse af kontoplanen, kan du køre et nyt bogføringsbilag under menupunkterne Opsætning → Kontoplan → Kontoplan → Kontrol af bogføring. Ønsker du et nyt bogføringsbilag er det muligt at bestille en omkørsel af bogføringen hos Visma Løn hotline, hvor der bliver dannet et nyt bogføringsbilag til den nye kontoplan.
+Er der difference på et bogføringsbilag kan du evt. danne Bogføringsbilag med spec og se hvilke medarbejdere der ikke stemmer. Find medarbejdernes lønseddel og kontrollere om de anvendte beløb og lønarter er med i kontoplanen:
+
+Hent bogføringsbilag med spec. fra din lønkørsel
+Sorter filen evt. Arbejdsgiver og dernæst medarbejder
+Klik på fanen Data
+Vælg subtotaler
+I feltet Ved hver ændring, vælg Medarbejder
+I feltet Anvend funktionen, vælg Sum, 
+I feltet Subtotaler, vælg debet og kredit
+Klik OK
+
+
+Klik på 2-tallet i venstre side af Excel arket, for at se en subtotal pr. medarbejder
+Lave en formel på kolonne 2 minus kolonne 1
+Find herefter differencen
+Klik på + ud for den medarbejder, hvor der er en difference
+Hent lønsedlen for pågældende medarbejder i Visma Løn
+Tjek lønarter på lønsedlen om de også er med i bogføringsbilag med spec.
+Tilføj evt. manglende lønarter i kontoplanen
+Kør omkørsel af bogføring - Klik på Opsætning/Opsætningsrapporter i Visma Løn- Vælg Omkørsel af bogføring i Højremenuen- Angiv kørselsordre- Klik på OK
+Når bogføringen er kørt om, kør Rapporten Bogføringsbilag og se om dit bogføringsbilag nu stemmer, ellers start fra punkt 2
+
+## Oprettelse af sorteringskode
+Der ligger en standardsorteringskode kaldet SD. Denne kan ikke ændres, men kan kopieres over i egen sorteringskode, eller der kan oprettes en ny sorteringskode.
+En sorteringskode kan navngives med 2 karakterer, der kan bestå af både tal og bogstaver. Beskrivelsen af en sorteringskode kan bestå af 30 karakterer.
+Der kan sorteres på følgende 11 kontoplanfelter:
+
+Afdeling
+Aflønning
+Input.Kode – Inputværdikode fra lønart 1106,1107,1250,1251
+Kontonr – kontonummer fra kontoplan
+Løngruppe
+Medarb. - Medarbejdernummer
+Still.kat. - Stillingskategori
+Udbetsted – Udbetalingssted
+Valgfri1
+Valgfri2
+Valgfri3
+Valgfri4
+Valgfri5
+Valgfri6
+
+Sådan oprettes en sorteringskode:
+
+Gå til Opsætning → Kontoplan → Sorteringskode
+Klik på Ny
+Angiv en kode og angiv en tekst
+Klik på OK
+Vælg Kontoplan feltopbygning I højremenuen
+Klik på Ny
+Angiv i feltet ’Placering’ ’1’ og find det kontoplanfelt, du ønsker som placering nr. 1, f.eks. Afdeling.
+Klik på Gem
+
+Gentag punkt 5 til 8 for flere kontoplanfelter.
+Såfremt du ønsker, at medarbejdernummer skal fremgå af bogføringen, er det muligt at oprette dette kontoplanfelt som det sidste felt i kontoplan feltopbygning.
+I Sorteringskoden er det muligt at vælge ja eller nej til sideskift for hver gang, der sker en ændring i det første kontoplanfelt. Det er kun relevant ved anvendelse at html filen.
+## Ændring af tekst på kontoplanfelt
+Der kan ændres tekst på følgende kontoplanfelter til bogføringsbilaget:
+
+Afdeling
+Aflønning
+Input.Kode – Inputværdikode fra lønart 1106,1107,1250,1251
+Kontonr – kontonummer fra kontoplan
+Løngruppe
+Medarb. - Medarbejdernummer
+Still.kat. - Stillingskategori
+Udbetsted – Udbetalingssted
+Valgfri1
+Valgfri2
+Valgfri3
+Valgfri4
+Valgfri5
+Valgfri6
+
+Sådan ændres teksten:
+
+Gå til Opsætning → Kontoplan → Kontoplanfelt
+Dobbeltklik på det kontoplanfelt, du ønsker at ændre teksten på
+Angiv en ny beskrivelse
+Klik på OK
+
+Den tekst, du har angivet, vil optræde både på bogføringsbilaget og bogføringsfilens kolonneoverskrifter. 
+For felterne Valgfri1 til Valgfri6 vil den tekst, du har angivet, være den tekst der nu vises på Ansættelsesforhold.
+## Periode på kontoplan
+Det er muligt at vælge, hvornår en kontoplan skal være gyldig fra. Denne funktion bør kun anvendes ved skift i dato for anvendelse. Evt. nye lønarter oprettes med startdato fra kontoplanens oprettelse.
+Dette gøres således:
+
+Gå til Arbejdsgiver → Arbejdsgiver stamoplysninger
+Klik på Ny periode
+Angiv en ny periode startdato
+Angiv en ny kontoplan
+Klik på OK
+
+Visma Løn vil herefter anvende den kontoplan, hvor lønperiodeslut fra disp.datotype har den ældste dato. Dvs. at for lønkørsler, hvor der er forudlønnede og bagudlønnede i samme kørsel, vil den bagudlønnede bestemme kontoplanen.
+👩‍🏫 Eksempel:
+* Lønperioden for bagudlønnede er: 1.10.XX – 31.10.XX
+* Lønperioden for forudlønnede er: 1.11.XX – 30.11.XX.
+
+Kontoplanen er periodiseret til at gælde fra 1.10.XX. Da de bagudlønnede har den laveste dato, vil det være de bagudlønnede, der bestemmer, hvilken kontoplan der skal benyttes.
+## Oprettelse af flere kontoplaner
+Det er muligt at have forskellige kontoplaner på forskellige arbejdsgivere. Du kan også have forskellige kontoplaner på udvalgte medarbejdere.
+I disse tilfælde oprettes så mange kontoplaner, som der er behov for, og kontoplanerne tilknyttes de forskellige arbejdsgivere eller medarbejdere.
+Ved mindre afvigelser på afdeling eller lign. anbefales at anvende gruppe-kontering (se afsnit 3.2)
+## Tildeling af afvigende kontoplan til medarbejder
+Det er muligt at have en afvigende kontoplan for en enkelt medarbejder eller for en gruppe af medarbejdere. Tag en kopi af firmaets normale kontoplan således:
+
+Gå til Opsætning → Kontoplan → Kontoplan
+Angiv kontoplan
+Klik på Find
+Klik på Kopier
+Angiv en ny kontoplankode, f.eks. A2 samt et kontoplannavn
+Angiv en Gyldighed
+Klik på OK
+
+Ret kontoplanlinierne som beskrevet i punkt 3.3 for de lønarter, hvor konteringen skal ændres.
+Indsæt afvigende konteringskode på Medarbejder → Ansættelsesforhold.
+I bogføringen vil konteringen for arbejdsgiver fremkomme samlet, som bestemt i sorteringskoden, mens de medarbejdere, der har afvigende kontering, vil stå på en selvstændig bogføringslinie, hvor de afviger fra resten.
+Det er på denne måde muligt at lave en afvigende kontering for en enkelt konto eller for en hel kontoplan.
+På rapporten ’Bogføringsbilag med specifikationer’ vises hvilken kontoplan der er anvendt på den enkelte medarbejder, så det altid er muligt at få et overblik over, om der er medarbejdere der har tilknyttet en afvigende kontoplan.
+## Fordeling af lønudgifter
+Ønskes udvalgte lønarter fordelt med et fast beløb eller en procentdel, kan dette opsættes på udvalgte medarbejdere.
+
+Gå til Medarbejder → Ansættelsesforhold
+Vælg Fordeling af lønudgifter I højremenuen
+Angiv lønarten der ønskes fordelt
+Angiv fradato
+Angiv tildato (såfremt der ikke angives tildato indsættes 31.12.9999)
+Vælg hvilket kontoplantelt der ønskes fordelt til f.eks. Afdeling
+Angiv værdi for kontoplanfelt f.eks. Afdelingsnummer
+Vælg procent eller beløb og angiv værdi
+Klik på OK
+Gentag ovenstående såfremt du skal fordele på flere lønarter.
+
+Der kan fordeles lønudgifter pr. lønart på følgende kontoplanfelter: 
+* Afdeling
+* Udbetalingssted
+* Valgfri 1
+* Valgfri 2
+* Valgfri 3
+* Valgfri 4
+* Valgfri 5
+* Valgfri 6
+
+For at kontoplanfelterne kan vælges til fordeling af lønudgifter, skal kontoplanfelterne indgå i arbejdsgivers sorteringskode.
+Der kan oprettes lønfordeling på de lønarter der findes i rapporten ’Bogføringsbilag med specifikationer’ når du skal sætte fordelingen op på medarbejderen, Det betyder at lønarterne under Personlig satser ikke kan anvendes til fordeling af lønudgifterne.
+### Omkørsel af fordelte lønudgifter
+Det er muligt at få fordeling af lønudgifter med i en omkørsel af bogføring eller i rapporten ’Kontrol af bogføring’ på tidligere lønkørsler.
+## Inputkontering på udvalgte lønarter
+Såfremt enkelte posteringer ønskes bogført på en anden konto er der mulighed for at indsætte en anden konto ved registrering af lønarten.
+Der er mulighed for at anvende inputkontering på følgende kontoplanfelter
+* Afdeling
+* Udbetalingssted
+* Kontonummer
+* Valgfri1
+* Valgfri2
+* Valgfri3
+* Valgfri4
+* Valgfri5
+* Valgfri6
+
+For at kunne anvende inputkontering skal kontoplanfeltet være med i sorteringskoden. Der vil herefter blive åbnet for felterne ved indtastning i følgende:
+* Variable lønoplysninger
+* Faste lønoplysninger
+* Fællesregistering, variable lønoplysninger
+* Fællesregistering, faste lønoplysninger
+
+Inputkontering overstyrer en evt. fordeling der er sat op på en lønart hos medarbejderen.
+## Kontrol af ny opsætning af kontoplan og sorteringskode
+For at kunne se de ændringer, du har foretaget på dit bogføringsbilag, det kan f.eks. være ændring af kontonummer eller en anden sortering, er der forskellige muligheder. 
+I menupunkterne Opsætning → Kontoplan kan anvendes rapporten:
+* Kontrol af bogføring.
+
+Denne funktion udskriver et bogføringsbilag fra tidligere lønkørsler med den nye opsætning. Dog ikke tidligere end gyldighedsdatoen på kontoplanen. Rapporten anvender den sorteringskode og kontoplan, der står på arbejdsgiver og en evt. afvigende kontoplan på relevante medarbejdere.
+Således udskrives Kontrol af bogføring:
+
+Vælg Opsætning → Kontoplan → Kontrol bogføring
+Angiv Kørselsordre
+Angiv Arbejdsgivernummer, såfremt der kun ønskes bogføringsbilag på en bestemt arbejdsgiver
+Angiv Ja i datafil output, hvis du ønsker en excelfil
+Klik på OK
+
+I menuen Opsætning → Opsætningsrapporter kan anvendes rapporten:
+* Kontoplaner
+
+Denne rapport giver et samlet overblik over kontoplanopsætningen. 
+
+Gå til Opsætning → Opsætningsrapporter
+Vælg Kontoplaner I højremenuen
+Angiv kontoplan eller ønsker du en rapport over alle kontoplaner, skal feltet være blankt.
+Angiv evt. gyldig pr.
+Klik på OK
+
+## Udskrivning af bogføringsbilag
+Sammen med lønkørslen dannes rapporten ’Bogføringsbilag’ som både html og csv fil. Bogføringsbilaget i den enkelte lønkørsel kan findes ved at se i menupunkterne Lønadministration → Udskrifter fra lønkørsel, og vælge den relevante kørsel. 
+Rapporten kan også dannes ad hoc ved at gå ind i menupunkterne Rapporter → Rapporter, i højremenuen vælger du ’Bogføringsbilag’. Resultatet af denne rapport vil vise det bogføringsbilag der blev dannet i lønkørslen med mindre der er afviklet en omkørsel.
+Rapportens udseende vil afhænge af opsætningen på sorteringskoden og kontoplanen samt evt. inputkontering.
+## Bogføringsbilag med specifikationer
+Denne rapport kan afvikles sammen med lønkørslen, men er frivillig, og skal tilmeldes under menupunkterne Arbejdsgiver → Arbejdsgiver stamoplysninger I højremenuen vælger du Rapporterbestilling og angiver en dato for at rapporten skal køre med i fremtidige kørsler. 
+Den kan også afvikles ad hoc ved at gå ind i menupunkterne Rapporter → Rapporter. I højremenuen vælger du Bogføringsbilag med spec. 
+Rapporten har en fast rækkefølge af kolonner. Indholdet af kolonnerne bestemmes af opsætningen på kontoplanen på arbejdsgiver/medarbejder.
+F.eks. findes kolonner med hhv. KTO-afdeling og Afdeling. Den første viser evt. inputkontering/konstant i bogføringen, den anden kolonne viser registreringen på medarbejder.  Indholdet i kolonnerne Valgfri 1 – 6 (eller defineret navn fra Kontoplanfelter) vises kun med resultatet fra konteringen.
+## Kontonummeroversigt fra kontoplan SD
+Standardkontoplanen SD ændrer sig løbende i Visma Løn, når der kommer nye lønarter i Lønartskataloget. For at se en oversigt over kontoplan SD, skal du i menuen vælge: 
+
+Gå til Opsætning → Opsætningsrapporter → Kontoplaner
+Angiv kontoplan
+Angiv ’Gyldig pr.’
+Klik på OK
+
+Der dannes nu en fil, med den aktuelle SD-kontoplan.

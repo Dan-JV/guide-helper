@@ -1,0 +1,28 @@
+https://help.vismaenterprise.dk/vismaloen-standard/ferie/27-ferie-fra-tidligere-arbejdsgiver
+
+# Ferie fra tidligere arbejdsgiver
+
+## Ferie fra tidligere arbejdsgiver
+I lønsystemet er det muligt for medarbejdere at afholde ferie optjent hos deres tidligere arbejdsgiver, før de afholder ferie der bliver optjent hos nuværende arbejdsgiver.
+Det kræver du opretter de feriedage medarbejderen har med fra tidligere arbejdsgiver. Når medarbejderen holder ferie, vil ferien fra tidligere arbejdsgiver ske som et træk i lønnen. Når ferien fra tidligere arbejdsgiver er brugt, vil lønsystemet ud fra fraværsrækkefølgen, anvende de optjente feriedage hos nuværende arbejdsgiver.
+## Tildelt ferie fra tidligere arbejdsgiver
+Variabel lønart 4752 oprettes med antal dage fra tidligere arbejdsgiver. Lønarten er IKKE ferieår bestemt.  
+HUSK, at det blot er en visning af feriedagene. Medarbejderen vil blive trukket i løn som “Fri egen regning”, da medarbejderen har feriepenge der udbetales fra FerieKonto/-kort eller lignende.
+Én af følgende lønarter oprettes i jeres kontoplan:
+
+Lønart 4866 - Ferietræk tidligere arbejdsgiver i dage 
+Lønart 4867 - Ferietræk tidligere arbejdsgiver i timer
+
+Fraværsrækkefølgen skal oprettes med lønart 4865 og pensionsgrundlaget med lønart 4866, 4867 eller 4868, kontakt Visma.
+I kontoplanen oprettes lønart 4866, 4867 eller 4868 i kredit.
+
+## Visning af ferie fra tidligere arbejdsgiver
+Ferie fra tidligere arbejdsgiver vises kun på lønsedlen i den pågældende lønkørsel, hvor den variable lønart 4752 er oprettet.
+Efterfølgende lønkørsler vil medarbejdere ikke kunne se saldoen på sin lønseddel.
+Arbejdsgiver vil altid på rapporten ’Ny Ferielov Ferieregnskab’, kunne se medarbejderens saldo på linjen ’indeværende ferieår’ i feltet ’ Ferie tidligere Arbejdsgiver’. 
+Medarbejderen kan se sin saldo via My Visma app, eller online adgang til My Visma/Visma HR.
+
+## Korrektion Ferietimer/dage fra tidligere arbejdsgiver
+- **Lønart 4753** - Ferie tidl. arbejdsgiver sidste år
+- **Lønart 4754** - Ferie tidl. arbejdsgiver år forrige år
+Til korrektion af ferie fra tidligere arbejdsgiver , som fx. kan være oprettet med forkert saldo, kan nedenstående lønarter anvendes til korrektion af både feriedage eller ferietimer,:

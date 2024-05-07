@@ -1,0 +1,214 @@
+https://help.vismaenterprise.dk/vismaloen-standard/eindkomst/56-e-indkomst-fejlkoder
+
+# eIndkomst - Fejlkoder 
+
+Her kan du læse mere om hvad du skal gøre, hvis du har støder på fejlkoder i forbindelse med eIndkomst.
+På rapporten ’eIndkomst kvitteringsliste’ finder du en fejlkode samt den periode, fejlen i eIndkomst henviser til. Herunder kan du klikke på den aktuelle fejlkode for at få en nærmere forklaring og en løsningsbeskrivelse. 
+Du kan kontakte Visma Enterprise for uddybning af andre tekstbeskrivelser vedr. fejl på ’eIndkomst kvitteringsliste’, som ikke har med fejlkoder til eIndkomst at gøre.
+
+## Fejlkode 223002 - CPR-nummer er ugyldigt
+Årsag:
+Leverancen på det pågældende medarbejdernummer er afvist af SKAT, idet CPR-nummeret er ugyldigt.
+Løsning: 
+I Visma Løn kan du rette fejlen således:
+
+Foretag korrektion ved at fratrække saldi på medarbejderen, hvis der er kørt løn, beskattet feriepenge, foretaget korrektioner. Alle saldi skal på medarbejdernummeret, med det forkerte CPR-nummer være 0 efter endt korrektion
+Når Lønnen er kørt i 0, kan CPR-nummeret ændres.
+Gå til Medarbejder → Medarbejder stamoplysninger
+Herefter overskriver du CPR-nummeret
+Lønnen køres frem igen, og hermed indberettes saldi korrekt til SKAT
+
+Er du sikker på, at din medarbejder oprindelig er oprettet med det korrekte CPR-nummer, skal du rette henvendelse til SKAT på telefonnummer 72 22 18 18.
+
+## Fejlkode 223014 - Der findes en Letløn aftale for hele eller dele af den periode, der indberettes for
+Årsag:
+eIndkomst har accepteret indberetningen, men giver svar om, at der er oprettet aftale i Letløn.
+Løsning:
+Du skal ikke foretage rettelser i Visma Løn, din leverance er indlæst korrekt i eIndkomst.
+Du kan kontakte SKAT på telefon 72 22 18 18 for at få en forklaring på meddelelsen.
+## Fejlkode 223025 - Virksomheden er ikke registreret for indeholdelse af ATP-bidrag for måned xx, år xx.
+Årsag:
+Din virksomhed er ikke registreret korrekt hos Erhvervsstyrelsen, til at kunne indeholde ATP for dine medarbejdere.
+Løsning:
+Du skal kontakte Erhvervsstyrelsen for at få bragt din registrering af virksomheden i orden.
+Du kan ændre oplysninger hos Erhvervsstyrelsen elektronisk eller ved at kontakte dem på telefon 72 20 00 32.
+eIndkomst har accepteret leverancen, og du skal derfor ikke foretage dig noget i eIndkomst eller i Visma Løn.
+## Fejlkode 223030 – P-nummer kan ikke indberettes for indkomsttypen, værdien opdateres ikke
+Årsag:
+eIndkomst modtager ikke P-nummer på medarbejdere med indkomsttype 05 og 09.
+Løsning:
+
+Gå til Medarbejder → Ansættelsesforhold
+Vælg Felter (eIndkomst) i højremenuen
+Klik på Ny 
+Udfyld Anden arbejdsadresse i Rubrik 11-0 og dato
+klik på OK
+
+eIndkomst har modtaget leverancen, så du skal ikke gøre mere.
+## Fejlkode 225001 - Ansættelse mangler
+Årsag:
+eIndkomst oplyser, at der ikke er dannet abonnement på skattekort hos SKAT. Indberetning for den nævnte periode er afvist i eIndkomst på medarbejderen.
+Denne fejl opstår, hvis du:
+* Kopierer lønmodtager oplysninger til et nyt lønmodtagernummer på samme arbejdsgivernummer
+* Kopierer lønmodtager oplysninger til et nyt lønmodtagernummer på et nyt arbejdsgivernummer med samme CVR-nummer.
+* Opretter lønmodtager samme dag, som du sender løn
+
+Løsning:
+For at danne abonnement på skattekort hos SKAT, skal du genrekvirere skattekort via Visma Løn. 
+
+Gå til Medarbejder → Medarbejder stamoplysninger
+Vælg Genrekvirer eSkattekort i højremenuen
+
+Herefter skal du manuelt genindberette de afviste data i eIndkomst via TastSelv hos SKAT. 
+Du skal manuelt sørge for overførsel af eventuel tilbagebetalt A-skat og AM-bidrag til SKAT.
+## Fejlkode 225114 - Ingen supplerende oplysninger fundet
+Årsag:
+Medarbejderen(e) er ikke registreret korrekt hos SKAT med f.eks. adresse, landekode, cpr-nummer osv.
+Indberetning til eIndkomst er afvist.
+Løsning:
+Tilret medarbejderen(e)s oplysninger (adresse, landekode, cpr-nummer mv) i Visma Løn.
+Dette gør du ved at gå til Medarbejder →  Medarbejder stamoplysninger
+Herefter skal du manuelt genindberette de afviste data i eIndkomst via TastSelv hos SKAT.
+Hvis du er sikker på, at medarbejderen(e)s oplysninger er korrekte, skal du kontakte SKAT på telefon 72 22 18 18.
+## Fejlkode 225114 - Gadenavn skal være udfyldt
+Årsag:
+Medarbejderen(e) er ikke registreret korrekt hos SKAT med f.eks. adresse, landekode, cpr-nummer osv.
+Indberetning til eIndkomst er afvist 
+Løsning:
+Tilret medarbejderen(e)s oplysninger (adresse, landekode, cpr-nummer mv) i Visma Løn.
+Dette gør du ved at gå til Medarbejder → Medarbejder stamoplysninger
+Herefter skal du manuelt genindberette de afviste data i eIndkomst via TastSelv hos SKAT.
+Hvis du er sikker på, at medarbejderen(e)s oplysninger er korrekte, skal du kontakte SKAT på telefon 72 22 18 18.
+## Fejlkode 225126 - SE-nummer eksisterer ikke
+Årsag:
+eIndkomst oplyser, at SE-nummeret på din arbejdsgiveraftale ikke eksisterer.
+Al indberetning i eIndkomst på dette SE-nummer er afvist i eIndkomst.
+Løsning:
+Du skal kontakte SKAT eller Erhvervsstyrelsen for at få bragt din registrering af virksomheden i orden.
+Du kan ændre oplysninger hos Erhvervsstyrelsen elektronisk eller ved at kontakte dem på telefon 33 30 77 00.
+Du kan kontakte SKAT på telefon 72 22 18 18.
+Når registrering hos SKAT og/eller Erhvervsstyrelsen er faldet på plads, skal du manuelt genindberette de afviste data i eIndkomst via TastSelv hos SKAT.
+## Fejlkode 225132 – Postnummer og by skal være udfyldt
+Årsag:
+Fejlen opstår når der er tastet adresseoplysninger i de forkerte felter og medarbejderen har en udenlandsk landekode.
+Indberetning til eIndkomst er afvist på medarbejderen(e).
+Løsning:
+Tilret medarbejderen(e)s oplysninger (adresse, landekode, CPR-nummer mv.) i Visma Løn. Du skal både sende postnummer og by for at kunne rette medarbejders stamoplysning.
+Dette gør du ved at gå til Medarbejder →  Medarbejder stamoplysninger
+Herefter skal du manuelt genindberette de afviste data i eIndkomst via TastSelv hos SKAT.
+Hvis du er sikker på, at oplysningerne på de(n) nævnte lønmodtager(e) er korrekte, skal du kontakte SKAT på telefon 72 22 18 18.
+##  Fejlkode 225225 - Indkomsttype uacceptabel
+Årsag:
+Lønbehandlingen er foretaget på en medarbejder med indkomsttype 02 ”Udlændinge som er ansat under reglerne for arbejdsudleje” - den indkomsttype er udgået.
+Indberetning til eIndkomst er afvist på medarbejderen(e).
+Løsning:
+Indkomsttypen kan ikke anvendes pt. 
+Henvendelser om indberetninger ved arbejdsudleje skal rettes til Skattecenter Esbjerg, Adgangsvejen 3, 6700 Esbjerg, Tlf.: 7222 1818.
+
+## Fejlkode 225410 - År- til datosummen for indberetningstypen er negativ
+Årsag:
+Lønbehandling eller korrektion har medført en negativ saldo i eIndkomst i den nævnte rubrik. Skat accepterer ikke negative saldi, og derfor er leverancen er afvist.
+Indberetning til eIndkomst er helt eller delvist afvist på medarbejderen(e).
+Løsning:
+Genindberet manuelt de afviste data i eIndkomst via TastSelv hos SKAT.
+Det er imidlertid vigtigt, at du først foretager genindberetning - og dermed nedskriver saldoen i den respektive rubrik i eIndkomst - når der nok at nedskrive i, så saldoen ikke igen bliver negativ.
+Kan du ikke finde årsagen til afvisningen via linket, anbefaler vi, at du genindberetter de afviste data manuelt i eIndkomst via TastSelv hos SKAT.
+
+År til dato-summen er forkert pga. forkert løn/korrektion i Visma Løn
+
+Hvis den negative saldo, og dermed afvisningen af leverance i eIndkomst er fremkommet, er det fordi løn eller korrektion i Visma Løn er forkert.
+Du skal manuelt genindberette de afviste data i eIndkomst via TastSelv hos SKAT.
+Det er vigtigt, at du først bestiller servicetilbuddet efter, at den rubrik, der er blevet negativ, er opskrevet med et beløb (f.eks. efter lønbehandling), der er så stort, at det kan rumme det beløb, du ønsker at nedskrive.
+
+## Fejlkode 225411 - Værdien må ikke være negativ *
+Årsag:
+Lønbehandling eller korrektion har medført en negativ saldo i en eller flere rubrikker i eIndkomst.
+Indberetning til eIndkomst er helt eller delvist afvist på de(n) nævnte medarbejder(e).
+En rubrik i eIndkomst kan blive negativ, uden at dette fremgår af lønafregningen, idet det på lønafregningen ikke fremgår, hvordan de forskellige rubrikker i eIndkomst påvirkes.
+Løsning:
+Kan du ikke finde årsagen til afvisningen via linket, anbefaler vi, at du genindberetter de afviste data manuelt i eIndkomst via TastSelv hos SKAT.
+Det er imidlertid vigtigt, at du først foretager genindberetning, og dermed nedskriver saldoen i den respektive rubrik i eIndkomst, når der nok at nedskrive i, så saldoen ikke igen bliver negativ.
+
+År til dato-summen er forkert pga. forkert løn/korrektion i Visma Løn
+
+Hvis den negative saldo, og dermed afvisningen af leverance i eIndkomst er fremkommet, er det fordi løn eller korrektion i Visma Løn er forkert.
+Du skal manuelt genindberette de afviste data i eIndkomst via TastSelv hos SKAT.
+
+## Fejlkode 225421 - Skattekort anvendt: fradato ligger før ansættelsesdato
+Årsag:
+Medarbejderen(e) er oprettet i Visma Løn med en tiltrædelsesdato, der ligger senere end fratrædelsesdatoen.
+Indberetning til eIndkomst er afvist på medarbejderen(e).
+Løsning:
+Ret til- og/eller fratrædelsesdato i Visma Løn.
+Dette gør du ved at gå til Medarbejder →  Ansættelsesforhold
+Herefter skal du manuelt genindberette de afviste data i eIndkomst via TastSelv hos SKAT i overensstemmelse med indkomsttypen.
+
+## Fejlkode 225433 - Der kan i forbindelse med arbejdsudleje ikke indberettes rettelser til en tidligere periode
+Årsag:
+eIndkomst kan ikke acceptere indberetningen og giver svar om, at der i forbindelse med arbejdsudleje ikke kan indberettes rettelser til en tidligere periode.
+Indberetning til eIndkomst er afvist på medarbejderen(e).
+Løsning:
+Du skal kontakte SKAT på telefon 72 22 18 18
+
+## Fejlkode 225440 - Der må ikke indberettes A-skat ved indkomsttype (beskæftigelseskode) 09
+Årsag:
+Lønbehandling er ikke foretaget i overensstemmelse med lønmodtagerens stamoplysninger. Lønmodtageren står registreret med en trækprocent, selvom lønmodtageren jf. indkomsttype 09 ikke skal betale A-skat.
+Indberetning til eIndkomst er afvist på medarbejderen(e).
+Løsning:
+Ret enten indkomsttype eller trækprocent i Visma Løn (alt efter, hvad der er forkert på lønmodtageren)
+
+Gå til Medarbejder → Ansættelsesforhold
+Vælg Felter eIndkomst i højremenuen
+I feltet ’Rubrik/kode vælger du kode 99-09 
+Klik på OK
+
+Herefter skal du manuelt genindberette de afviste data i eIndkomst via TastSelv hos SKAT i overensstemmelse med indkomsttypen.
+
+## Fejlkode 225440 - Der må ikke indberettes '36 B-indkomst, hvoraf der skal indbetales AM-bidrag' ved indkomsttype 09
+Årsag:
+Lønbehandling er ikke foretaget i overensstemmelse med medarbejders stamoplysninger. Du har indberettet løn/korrektioner &#39;&#39;B-indkomst AM-bidragspligtig&#39;, selvom medarbejders jf. indkomsttype 09 ikke skal betale AM-bidrag
+Indberetning til eIndkomst er helt eller delvist afvist på de(n) nævnte medarbejder(e).
+Løsning:
+Hvis medarbejderen står med forkert indkomsttype, retter du stamoplysninger i Visma Løn. 
+
+Gå til Medarbejder →  Ansættelsesforhold
+Vælg  Felter (eIndkomst) i højremenuen 
+I feltet ’Rubrik/kode vælger du kode 99-09 
+Klik på OK
+Lønart 8210 ”Am-bidrag STOP” oprettes under Medarbejder → Faste lønoplysninger
+
+Herefter skal du manuelt genindberette de afviste data i eIndkomst via TastSelv hos SKAT i overensstemmelse med indkomsttypen.
+
+## Fejlkode 225441 - Virksomheden er ikke registreret for indeholdelse af A-skat for måned xx, år xx.
+Årsag:
+Din virksomhed er ikke registreret korrekt hos Erhvervsstyrelsen til at kunne indeholde A-skat for dine lønmodtagere.
+eIndkomst har afvist hele leverancen på dit CVR-nummer.
+Løsning:
+Du skal kontakte Erhvervsstyrelsen for at få bragt din registrering af virksomheden i orden.
+Du kan ændre oplysninger hos Erhvervsstyrelsen elektronisk eller ved at kontakte dem på telefon 33 30 77 00.
+Når du har fået bekræftelse på ændringen fra Erhvervsstyrelsen, skal du manuelt genindberette de afviste data i eIndkomst via TastSelv hos SKAT.
+Det er vigtigt, at du først bestiller servicetilbuddet efter, at du har modtaget bekræftelse på ændringerne hos Erhvervsstyrelsen.
+
+## Fejlkode 225442 - Virksomheden er ikke registreret for indberetning af rubrik 38 'B-indkomst, hvoraf der ikke skal betales AM-bidrag for måned xx, år xx'
+Årsag:
+Din virksomhed er ikke registreret korrekt hos Erhvervsstyrelsen til at kunne indeholde A-skat for dine medarbejdere. eIndkomst har afvist hele leverancen på dit CVR-nummer.
+Løsning:
+Du skal kontakte Erhvervsstyrelsen for at få bragt din registrering af virksomheden i orden.
+Du kan ændre oplysninger hos Erhvervsstyrelsen elektronisk via [www.webreg.dk](http://www.webreg.dk) eller ved at kontakte dem på telefon 33 30 77 00.
+Når du har fået bekræftelse på ændringen fra Erhvervsstyrelsen, skal du manuelt genindberette de afviste data i eIndkomst via TastSelv hos SKAT.
+Det er vigtigt, at du først bestiller servicetilbuddet efter, at du har modtaget bekræftelse på ændringerne hos Erhvervsstyrelsen.
+
+## Fejlkode 225443 - Virksomheden er ikke registreret, så der kan nul-indberettes for måned xx, år xx. 
+Årsag:
+Din virksomhed er ikke registreret korrekt hos Erhvervsstyrelsen til at kunne indberette nulangivelse. eIndkomst har afvist hele leverancen på dit CVR-nummer.
+Løsning:
+Hvis du ikke har ansatte, og derfor ikke er tilmeldt Erhvervsstyrelsen til at have ansatte, kan du se bort fra fejllisten.
+Hvis du har ansatte, skal du kontakte Erhvervsstyrelsen for at få bragt din registrering af virksomheden i orden.
+Du kan ændre oplysninger hos Erhvervsstyrelsen elektronisk eller ved at kontakte dem på telefon 33 30 77 00.
+Når du har fået bekræftelse på ændringen fra Erhvervsstyrelsen, skal du manuelt genindberette de afviste data i eIndkomst via TastSelv hos SKAT.
+
+## Fejlkode 225449 - Der kan ikke oprettes ny ansættelse, da personnummer er registreret som inaktiv 
+Årsag:
+Der kan ikke dannes abonnement på skattekort hos Skat, da personnummeret er registreret som inaktivt. Dette sker typisk ved ansættelse af udenlandske medarbejdere.
+Løsning:
+Du skal sikre dig at personnummeret er aktivt, ved at kontakte Skat. Hvis du kører løn før, du har sikret dig at CPR-nummeret er aktivt, vil fremtidige lønindberetninger blive afvist i eIndkomst.

@@ -1,0 +1,134 @@
+https://help.vismaenterprise.dk/vismaloen-standard/lonkorsel/13-efterregulering
+
+# Efterregulering
+
+Generelt
+Med efterreguleringen kan du regulere løn, skat eller øvrige satser tilbage i tid. Det er muligt at efterregulere for indeværende år. 
+Det er også muligt i januar måned at efterregulere tilbage i sidste år, men kun i januar måned.
+Forudsætninger
+* der skal være kørt og godkendt mindst én lønkørsel
+* kun godkendte lønkørsler indgår i efterregulering
+
+eIndkomst
+* efterreguleringer indberettes til eIndkomst sammen med lønkørslen
+
+
+## Sådan bruger du efterregulering
+Foretager du ændringer på et ansættelsesforhold eller i en resultattabel skal du forholde dig til, om der er tale om en opdatering eller en periodisering 
+* Med opdatering vil ændringen få virkning fra startdatoen på det aktuelle ansættelsesforhold eller gyldig startdatoen på den aktuelle resultattabel. 
+* Skal ændringen have virkning fra en bestemt dato, så skal du benytte periodisering.
+
+
+### Efterregulering
+Du finder funktionen Efterregulering under Lønadministration og består af følgende punkter:
+* Medarbejdere med efterregulering
+* Opsætning med efterregulering
+* Start efterregulering
+* Godkend/slet/annuller
+
+Medarbejdere med efterregulering
+I skærmbilledet ’Medarbejdere med efterregulering’ kan du se, hvilke medarbejdere der eventuelt vil blive efterreguleret. Derudover vises hvilken dato efterreguleringen vil være gældende fra. 
+Der er forskel på, hvornår en medarbejder vises i skærmbilledet: 
+* Er der foretaget en rettelse direkte på medarbejderen, f.eks. ændret en personlig sats, vil medarbejderen blive vist med det samme. 
+* Medarbejdere, der er berørt af ændringer i opsætning, f.eks. en resultattabel, vil først blive vist på listen, når der er kørt en efterregulering, og efterreguleringen er annulleret.
+
+Ændring af efterreguleringsdato
+Det er muligt at ændre efterreguleringsdatoen: 
+
+Gå tilGå til Lønadministration → Medarb.m.efterreg.
+Dobbeltklikke på medarbejderen
+Ret datoen i feltet ’Dato’
+Klik Gem
+
+Sletning af efterregulering på en medarbejder
+Det er muligt at slette en efterreguleringsdato, hvis en medarbejder ikke skal indgå i efterreguleringen:
+
+Gå tilGå til Lønadministration → Medarb.m.efterreg.
+Dobbeltklikke på medarbejderen
+Slet datoen i feltet ’Dato’
+Klik Gem
+
+Medarbejderen vil herefter forsvinde fra skærmbilledet og vil ikke blive efterreguleret under forudsætning af, at der ikke findes opsætning med efterregulering. 
+Opsætning med efterregulering
+I skærmbilledet ’Opsætning med efterregulering’ kan du se, hvilke resultattabeller, stillingskategorier eller generelle satser, der er markeret til at blive efterreguleret. Derudover vises hvilken dato efterreguleringen vil ske fra, samt hvem der har opdateret rettelsen.  
+Er der en * markering efter tabellens navn betyder det, at der endnu ikke har været kørt en efterregulering, hvor den pågældende tabel har været med. Er tabellen IKKE markeret med * markering har en efterregulering været annulleret, og evt. berørte medarbejdere er nu også vist i skærmbilledet ’Medarbejder med efterregulering’.  
+Fjern efterregulering på opsætning
+Det er muligt at fjerne en efterreguleringsdato på en opsætningstabel, der er forsynet med * markering efter tabellens navn (- betyder at tabellen ikke har været med i en efterregulering). 
+
+Gå tilGå til Lønadministration → Opsætn.m.efterreg.
+Dobbeltklik på tabellen
+Klik på Fjern
+
+Når der herefter køres en efterregulering, vil der ikke dannes efterregulering på denne tabel.
+⚠️ OBS: Fjerner du en tabel UDEN * markering efter tabellens navn vil de berørte medarbejdere allerede fremgå af skærmbilledet Medarbejdere med efterregulering.  
+Er du i tvivl, så tjek skærmbilledet Medarbejdere med efterregulering. Hvis medarbejdere, der er omfattet af den ændrede tabel, bliver vist i skærmbilledet, vil de indgå i efterreguleringen. 
+Slet udvalgte medarbejdere fra en tabel med efterregulering
+Er en opsætningstabel markeret til efterregulering med en * markering i skærmbilledet ’Opsætning med efterregulering’, så efterreguleres alle medarbejdere, der er berørt.  
+Ønsker du enkelte medarbejdere fravalgt, skal efterregulering afvikles og derefter annulleres.   
+Opsætningstabellen er nu ikke længere markeret med * og fjernes fra oversigten i skærmbilledet Opsætning med efterregulering.   
+Alle de berørte medarbejdere er synlige i skærmbilledet Medarbejdere med efterregulering, og de ønskede medarbejdere kan herefter fjernes. Se afsnit 2.1.1.
+
+## Start efterregulering
+Det er muligt at vælge efterregulering for alle arbejdsgivere, eller for et interval af arbejdsgivere.&nbsp;Gå til&nbsp;Lønadministration →&nbsp;Efterregulering →&nbsp;Start efterreguleringKlik på&nbsp;OKNår Efterreguleringen er sluttet, bliver der automatisk dannet en efterreguleringsspecifikation.&nbsp;Efterreguleringsspecifikationen viser, hvilke medarbejdere der efterreguleres, og hvad der efterreguleres. Der vises tidligere værdi og ny værdi.Kontroller efterreguleringsspecifikationen. Det er vigtigt at forstå, hvad der står på efterreguleringsspecifikationen, da det kan påvirke lønnen på den enkelte lønmodtager i enten en positiv eller en negativ retning.&nbsp; &nbsp;Du kan køre en fremtidig lønseddel for at se hvilken betydning efterreguleringen vil få for den pågældende person. &nbsp;Gå til&nbsp;Medarbejder →&nbsp;AnsættelsesforholdAngiv evt. Arbejdsgiver og MedarbejderKlik på&nbsp;FindVælg Fremtidig lønseddel i højremenuen&nbsp;Angiv kørselsordreKlik på&nbsp;OK
+
+## Godkend/slet/annuller efterregulering
+Efter at du har kontrolleret din efterreguleringsspecifikation har du flere valgmuligheder:
+### Annuller efterreguleringen
+Er din efterreguleringsspecifikation ikke, som du har forventet, har du mulighed for at annullere efterreguleringen. Når du har annulleret efterreguleringen, kan du tilrette i lønsystemet og igen køre en efterregulering.
+Annulleres en efterregulering der indeholder opsætning med efterregulering, vil tabellen ikke længere være markeret med * og alle medarbejdere berørt af efterreguleringen vil nu også blive vist i skærmbilledet ’Medarbejder med efterregulering’.
+
+### Godkend efterreguleringen 
+Kan du acceptere resultatet på efterreguleringsspecifikationen, kan du godkende din efterregulering.
+
+### Slet efterreguleringen 
+Ønsker du ikke at gennemføre en efterregulering, har du mulighed for at slette efterreguleringen.
+Sletningen fjerner efterreguleringsmarkeringen på alle medarbejdere og tabeller. 
+Vær opmærksom på, at når efterregulering slettes på en medarbejder, er det ikke en permanent sletning, men alene en sletning fra den aktuelle efterregulering. 
+Hvis medarbejderen senere markeres til efterregulering af en anden grund, vil den oprindelige efterregulering stadig blive gennemført.
+ViI du fjerne efterreguleringer permanent, skal du tilrette tabeller og medarbejdere, så det svarer til det tidspunkt hvor medarbejdere og tabeller var med i lønkørslen.
+
+## Sådan virker efterregulering i Visma Løn
+Processen omkring efterregulering kan deles op i 4 dele:   
+ 
+* Udvælg medarbejdere, der skal efterreguleres – håndteres af systemet
+* Gennemgang af løntransaktioner i efterreguleringsperioden – håndteres af systemet
+* Sammenlign løntransaktioner for oprindelig lønkørsel med løntransaktioner fra den efterregulerede lønkørsel og dan efterreguleringstransaktioner – håndteres af systemet
+* Godkend/Annuller/Slet – håndteres af bruger
+
+
+## Udvælg medarbejdere
+Ud fra anvendt datoen på sidst kørte lønkørsel opsætter systemet automatisk tidligste startdato for efterregulering: indeværende år. 
+👩‍🏫 Eksempel: Dags dato er den 25. maj 2019 og sidst kørte lønkørsel er den 24. april 2019 – hér vil tidligste efterreguleringsdato være 1. januar 2019. 
+Hvis der er opsætningsændringer, flyttes markeringen fra den ændrede Resultattabel / Stillingskategori til en opsamlingstabel, som efterreguleringen efterregulerer ud fra.   
+ 
+Herefter finder systemet alle medarbejdere, som kunne være berørt af ændringen – dvs. alle medarbejdere med den/de ændrede stillingskategori og/eller alle medarbejdere, som har tilknyttet lønarter, der refererer til den/de ændrede resultattabel(ler). 
+Endvidere opsættes for hver medarbejder hvilke lønkørsler, der skal efterreguleres.
+
+## Gennemgang af løntransaktioner
+For hver lønkørsel, der skal efterreguleres, gennemser systemet lønkørslen for ændrede data, og ændrede data dokumenteres på efterreguleringsspecifikationen.
+
+## Sammenlign løntransaktioner
+For hver lønkørsel, der er efterreguleret, sammenligner systemet alle transaktioner på lønarter, som må efterreguleres: 
+* identiske transaktioner bibeholdes
+* ændrede og nye transaktioner opdateres
+* slettede transaktioner fjernes
+
+Ændringer dokumenteres på Efterreguleringsspecifikationen, der vises i joboversigten. 
+På specifikationen vises alle transaktioner, der er 
+* fjernet (tilbageført)
+* ændret og oprettet (fremført)
+
+Identiske transaktioner vil som udgangspunkt ikke blive vist. I nogen tilfælde vil man se, at den samme lønart bliver tilbageført og fremført med samme beløb, men det skyldes, at et af mellemresultaterne har ændret sig, selvom slutresultatet er det samme. 
+Først ved godkendelse dannes transaktioner, der vises på lønsedlen.
+
+## Variable lønarter til efterregulering
+I forbindelse med at SKAT har fjernet muligheden for R-markering er der udviklet variable lønarter til at kunne efterregulere ind i de måneder som rettelsen vedrører.
+Lønarterne kan oprettes under variable lønoplysninger med dato i tidligere periode og træder i kraft når der køres en efterregulering. Når efterreguleringen er godkendt, vil lønarterne forsvinde fra variable lønoplysninger, og derefter ligge som efterreguleringsposter.
+På rapporten ’Afstemningsliste eindkomst R’, vil de variable lønarter ligge sig i den periode som datoen vedrører.
+Der kan efterreguleres på følgende variable lønarter:
+Lønartsnr.TekstUdskriftslønartFerieberettiget12001Korrektion Løn1001Ja12101Korrektion Løn, ej fp.beret1001Nej12010Korrektion timer * sats1110Ja12110Korrektion timer * sats ej fp beret1110Nej12221Regulering AM-bidrag EFTREG8221Nej12251Regulering A-skat EFTREG8251Nej12986Korrektion Dagpenge timer * sats3986Nej12386Korrektion Dagpenge beløb3986Nej12905Korrektion ledighedsdage enh * sats2905Nej12370Korrektion genebetaling1341Ja12503Korrektion Bonus1503Ja12513Korrektion Bonus1503Nej12011Korrektion KM godt.9011Nej12020Korrektion Diæter9020Nej12823Korrektion Fri sommerhus8823Nej12605Korrektion B-indkomst felt 361605Nej12607Korrektion B-Indkomst felt 381607Nej5501Fratrædelsesgodtgørelse&nbsp;Nej5510Tinggave ved jubilæum&nbsp;Nej5511Tinggave ved Fratrædelse&nbsp;Nej5520Jubilæumsgratiale pension Info&nbsp;Nej5521Fratrædelsesgodtg.pension Info&nbsp;Nej5530Jubilæumsgratiale pension PI&nbsp;Nej5531Fratrædelsesgodtg. pension PI&nbsp;Nej5540Jubilæumsgratiale AM-pension&nbsp;Nej5541Fratrædelsesgodtg. AM-pension&nbsp;Nej5550Jubilæumsgratiale pension PI&nbsp;Nej5551Fratrædelsesgodtg. pension PI&nbsp;Nej5560Jubilæumsgratiale pension INFO&nbsp;Nej5565Fratrædelsesgodtg.pension INFO&nbsp;Nej
+
+## Efterregulering på fravær
+Oprettes fravær tilbage til tidligere lønperioder, vil der ikke blive foretaget en efterregulering, men fraværet vil komme med i næstkommende lønkørsel.
+Såfremt der bliver oprettet fravær tilbage i tidligere perioder og medarbejderen har noget løn eller andet som vil danne en efterregulering, så vil det oprettet fravær også blive efterreguleret. For at få indberettet i korrekte måneder til Skat.
+For at undgå efterreguleringer, vil det være fordelagtigt altid at indberette ændringer og fravær i den måned det hører til.

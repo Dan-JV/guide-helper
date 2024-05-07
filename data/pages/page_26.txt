@@ -1,0 +1,73 @@
+https://help.vismaenterprise.dk/vismaloen-standard/personalegoder/61-barselsfonde
+
+# Barselsfonde
+
+## Hvad er en Barselsfond?
+En Barselsfond refunderer virksomhedens udgifter til løn, når medarbejderen er på orlov.
+Formålet med en barselsfond er at sikre, at en virksomhed ikke har ekstra udgifter til løn, når medarbejderen holder orlov:
+* Graviditetsorlov (4 uger før forventet fødsel)
+* Barselsorlov (14 uger efter fødsel)
+* Fædreorlov (2 uger)
+* Forældreorlov (6 uger til den ene af forældrene).
+
+Fra 01.10.2006 skal alle private arbejdsgivere betale til en barselsudligningsordning.
+### Barsel.dk
+Hvis du ikke er omfattet af denne ordning, skal du betale bidrag til den obligatoriske barselsfond – Barsel.dk. 
+Bidrag hertil beregnes ikke i Visma Løn, men administreres direkte fra ATP.
+### DI barselsfond
+Visma Løn indberetter ikke til DI barselsfond, det skal ske via DI. Vi kan i Visma Løn hensætte til DI barselsfond, men det bliver ikke afregnet eller indberettet. Du kan læse mere om hensættelse i Visma Løn [her](https://community.visma.com/t5/Vejledninger-i-Visma-Lon/Vejledning-til-bogforing/ta-p/241200).
+## DA Barselsfond
+### Serviceydelse
+For at benytte DA Barselsfond skal arbejdsgiveren være tilmeldt:
+* Serviceydelse 17 DA barselsfond.
+
+ 
+med samme startdato som den første lønkørsel, hvori der beregnes DA Barselsfond.
+### Sådan tilmelder du en serviceydelse
+
+Gå til menuen Arbejdsgiver → Arbejdsgiver stamoplysninger
+Vælg Tilmelding i højremenuen
+Klik på Ny
+I feltet ’Serviceydelse’ vælges 17  
+Angiv en start 
+Klik på OK
+
+## Tilmelding pr. stillingskategori / pr. medarbejder
+### Obligatorisk for medarbejdergrupper
+Skal alle medarbejdere i en eller flere medarbejdergrupper være omfattet, skal du tilknytte&nbsp;Lønart 8180 – Barselsfond MDLønart 8181 – Barselsfond 14dg.til de aktuelle stillingskategorier.&nbsp; &nbsp;Lønarterne bliver ikke udskrevet på lønsedlen, da trækket kun påvirker arbejdsgiveren.&nbsp;De to lønarter bliver ikke aktiveret, hvis medarbejderen er under 18 år.
+### Sådan tilknytter du lønarter til en stillingskategori
+
+Gå til Opsætning →  Stillingskategori
+Vælg Lønoplysninger I højremenuen
+Klik på Ny
+Angiv lønarten og en startdato i felterne
+Klik på OK
+
+### Obligatorisk pr. medarbejder
+Er kun udvalgte medarbejdere obligatorisk omfattet, skal du oprette én af nedennævnte faste lønarter: 
+
+Lønart 8182 – Barselsfond MD
+Lønart 8183 – Barselsfond 14dg.
+
+ 
+Lønarterne bliver ikke udskrevet på lønbrevet, da trækket kun påvirker arbejdsgiveren. 
+De to lønarter bliver ikke aktiveret, hvis medarbejderen er under 18 år.
+### Frivillig pr. medarbejder
+Hvis du frivilligt ønsker at tilmelde medarbejdere, der ikke er omfattet af den obligatoriske ordning, skal du oprette én af nedennævnte faste lønarter: 
+
+Lønart 8184 – Barselsfond MD
+Lønart 8185 – Barselsfond 14dg.
+
+ 
+Lønarterne bliver ikke udskrevet på lønbrevet, da trækket kun påvirker arbejdsgiveren. 
+De to lønarter bliver ikke aktiveret, hvis medarbejderen er under 18 år.
+### Satser
+⚠️ OBS: Generelle satser vedligeholdes af Visma Enterprise ud fra de på området gældende satser.
+Bidraget beregnes på baggrund af ATP-timer, og ordningen består i dag alene af et arbejdsgiverbidrag.
+### Max indbetaling
+Har en medarbejder oversteget sin max grænse for indbetaling, sørger Visma Løn automatisk for at modregne differencen i bogføringen.
+### Stop Barselsfond
+Er der udvalgte medarbejdere, som ikke skal være omfattet af DA’s barselsfond, men som ligger i en stillingskategori hvor der bliver afregnet til DA’s barselsfond, kan der oprettes en fast lønart på medarbejderen, som gør at de IKKE er omfattet og dermed bliver der ikke beregnet og indberettet til DA’s barselsfond. Opret en af følgende faste lønarter på medarbejderen ud fra hvilken aflønningsform de har:
+
+Lønart 8078 – STOP DA-barselsfond, aflønnes månedligt
+Lønart 8079 – STOP DA-barselsfond, aflønnes pr. 14. dag.

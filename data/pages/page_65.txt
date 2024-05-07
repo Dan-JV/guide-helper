@@ -1,0 +1,205 @@
+https://help.vismaenterprise.dk/vismaloen-standard/ferie/9-feriefribelob
+
+# Feriefribeløb
+
+I Visma Løn administreres afholdt feriefri gennem fraværssystemet. Tildeling, udbetaling og opsparing af beløb sker via lønarter.
+Optjening og afholdelse af feriefribeløb følger kalenderåret i systemet. Hvis I bruger ferieåret til optjening og afholdelse, skal alle saldi overføres manuelt til et nyt kalenderår ved årsskiftet.
+Der er følgende former for feriefri:
+* Løbende opsparing af feriefritimer
+* Løbende opsparing af feriefridage
+* Feriefridage uden opsparing af beløb
+* Feriefritimer uden opsparing af beløb
+* Feriefribeløb
+* Opsparing af feriefribeløb i procent af ferieberettiget løn, feriefridage
+* Opsparing af feriefribeløb i procent af ferieberettiget løn, feriefritimer
+* Opsparing af forhøjet SH-procent af ferieberettiget løn
+* Udbetaling af feriefri, som en variabel lønoplysning
+* Udbetaling af feriefri, hvor restsaldo tømmes – variabel lønoplysning
+* Tildeling af feriefri saldi i fremtiden
+* Udbetaling af feriefri der skal nedskrive Fritvalgskonto
+* Udbetaling af feriefri der skal nedskrive SH saldo
+
+
+## Feriefribeløb
+- **Lønart 3805** – Feriefribeløb, variable lønoplysninger
+- **Lønart 3804** – Feriefribeløb, faste lønoplysninger
+- **Fraværskode 63** – fraværslønart 3807
+Tildeling
+Du kan tildele beløbet i forhold til saldoen i lønsystemet via
+
+Lønart 3805 – Feriefribeløb, variable lønoplysninger
+
+Eller du kan lægge en saldo ind frem i tiden, når medarbejderen har opsparet ret til et feriefribeløb, via
+
+Lønart 3804 – Feriefribeløb, faste lønoplysninger
+
+
+Udbetaling
+Hvis ferien udbetales med enhed gange sats, skal du bruge
+
+Fraværskode 63 – fraværslønart 3807
+
+Fraværskoden kræver indtastning af enheder og sats, som bliver ganget med hinanden. Beløbet bliver nedskrevet i feriefribeløbet (lønart 3805), men enhederne bliver ikke nedskrevet.
+
+## Opsparing af feriefribeløb i procent af ferieberettiget løn, feriefridage
+- **Stillingskategorilønart 3840** – Hensat feriefribeløb
+- **Lønart 3800** – Feriefridage, variable lønoplysninger
+- **Lønart 3802** – Feriefridage, faste lønoplysninger
+- **Fraværskode 62** – fraværslønart 3809
+Har du feriefridage, hvor der opspares en procent af den ferieberettigede løn, skal du gøre følgende:
+Lønart 3840 skal oprettes på de stillingskategorier, hvor der skal opspares et feriefri beløb. Opsparingen vises på lønsedlen, så der man kan ses hvad der bliver beregnet for indeværende lønperiode.
+* Procenten for det opsparede feriefribeløb oprettes på Resultattabel 3840.
+
+
+### Tildeling af feriefridage
+Du kan tildele feriefridagene i forhold til saldoen i lønsystemet via
+
+Lønart 3800 – Feriefridage, variable lønoplysninger
+
+Eller du kan oprette en saldo frem i tiden, når medarbejderen har optjent ret til feriefridage, via
+
+Lønart 3802 – Feriefridage, faste lønoplysninger
+
+
+### Afholdelse
+Afholdelse af feriefridage og nedskrivning i det opsparede feriefribeløb skal ske via fraværsregistreringen på
+
+Fraværskode 62 – fraværslønart 3809 Fraværskoden skal have antal dage og satsen, som feriefribeløbet nedskrives med. Lønarten ganger antal dage med den angivne sats, og beløbet udbetales. Nedskrivningen sker i både det opsparede feriefribeløb (lønart 3805) og i de tildelte feriefridage (lønart 3800).
+
+
+## Opsparing af feriefribeløb i procent af ferieberettiget løn, feriefritimer
+- **Lønart 3840** - Hensat feriefribeløb
+- **Lønart 3801** – Feriefritimer, variable lønoplysninger
+- **Lønart 3803** – Feriefritimer, faste lønoplysninger
+- **Fraværskode 63** – fraværslønart 3820
+- **Fraværskode 63** – fraværslønart 3824
+- **Fraværskode 61** – fraværslønart 3837
+
+Har du feriefritimer, hvor der opspares en procent af den ferieberettigede løn, som skal bruges i forbindelse med afholdelse af feriefritimer, skal du gøre følgende:
+Lønart 3840 oprettes på de stillingskategorier, hvor feriefribeløb skal opspares. 
+* Procenten for det opsparede feriefribeløb oprettes  på Resultattabel 3840.
+
+
+### Tildeling
+Du kan tildele feriefritimerne i forhold til saldoen i lønsystemet via
+
+Lønart 3801 – Feriefritimer, variable lønoplysninger
+
+Eller du kan oprette en saldo ind frem i tiden, når medarbejderen har optjent ret til feriefritimer, via
+
+Lønart 3803 – Feriefritimer, faste lønoplysninger
+
+
+### Afholdelse
+Feriefribeløb - ikke ferieberettigetAfholdelse af feriefritimer og nedskrivning i det opsparede feriefribeløb skal ske via fraværsregistreringen påFraværskode 63 – fraværslønart 3820Nedskrivningen sker i det opsparede feriefribeløb (lønart 3805) og i de tildelte feriefritimer (lønart 3801).Feriefribeløb - ferieberettigetAfholdelse af feriefritimer og nedskrivning i det opsparede feriefribeløb sker via fraværsregistreringen påFraværskode 63 – fraværslønart 3824Nedskrivningen foregår i det opsparede feriefribeløb (lønart 3805) og i de tildelte feriefritimer (lønart 3801).&nbsp;Fraværskode 61 – fraværslønart 3837De indrapporterede feriefritimer ganges med sygeløn (kvartalsvist gennemsnit). Feriefritimer nedskrives i saldo (lønart 3801), og feriefribeløbet nedskrives i den opsparede saldo (lønart 3805).
+
+## Feriefribeløb saldo på lønseddel er kundeejet
+De udbetalende lønarter og fraværskoder til feriefribeløb, hvor saldoen ikke er opsparet, bliver vist som negativ saldo på lønsedlen. For at undgå dette, kan du med hjælp fra en konsulent fra Visma Enterprise, definere hvilke lønarter som skal påvirke saldofeltet feriefribeløbet. Det vises på lønartstype 3805 Feriefribeløb saldo. Pris for denne ydelse er pt. 2.450 kr.
+
+## Opsparing af forhøjet SH-procent af ferieberettiget løn
+- **Lønart 4500** - Beregning af SH-opsparing
+- **Lønart 3801** – Feriefritimer, variable lønoplysninger
+- **Lønart 3800** – Feriefridage, variable lønoplysninger
+- **Lønart 3803** – Feriefritimer, faste lønoplysninger
+- **Lønart 3804** – Feriefridage, faste lønoplysninger
+- **Lønart 3817** - Afholdte feriefritimer, variable lønoplysninger
+- **Fraværskode 63** – fraværslønart 3816
+- **Fraværskode 63** – fraværslønart 3826
+Har du en overenskomst, hvor feriefri opspares ved forhøjelse af SH-procenten, skal du gøre følgende:
+Lønart 4500 skal oprettes på de stillingskategorier, hvor der skal opspares et forhøjet SH til feriefri og SH.
+Procenten oprettes på resultattabel 4500 med den samlede procent for både SH og feriefri
+
+### Tildeling
+Du kan tildele feriefritimer/feriefridage i forhold til saldoen i lønsystemet via
+
+Lønart 3801 – Feriefritimer, variable lønoplysninger
+Lønart 3800 – Feriefridage, variable lønoplysninger
+
+Eller du kan oprette en saldo frem i tiden, når medarbejderen har optjent ret til feriefritimer, via
+
+Lønart 3803 – Feriefritimer, faste lønoplysninger
+Lønart 3804 – Feriefridage, faste lønoplysninger
+
+
+### Afholdelse
+Skal feriefritimerne nedskrives i saldoen, og feriefribeløbet udbetales som sats, skal du bruge
+
+Fraværskode 63 – fraværslønart 3816På fraværskoden indberetter du de feriefritimer, som nedskriver saldoen (lønart 3801). Beløbet, der udbetales, nedskrives i den saldo, der er optjent ved forhøjelse af SH-procenten. Fraværskoden ganger IKKE timer med satsen.
+
+ 
+Skal feriefridagene nedskrives i saldoen, og feriefribeløbet udbetales som sats, skal du bruge
+
+Fraværskode 63 – fraværslønart 3826På fraværskoden indberetter du de dage, som nedskriver saldoen for feriefridage (lønart 3800), og beløbet nedskrives i SH-saldoen. Fraværskoden ganger dagene med satsen.
+
+
+### Udbetaling
+Hvis du udbetaler et feriefribeløb, hvor timerne ikke bliver registreret, skal du bruge
+
+Variabel lønart 3817Lønarten kræver indtastning af enheder gange sats.
+
+
+## Udbetaling af feriefribeløb, som en variabel lønoplysning
+- **Lønart 3874** - Feriefribeløb udbetalt, med beløb i input
+Du kan udbetale feriefri som en variabel lønoplysning, hvor der ikke sker en registrering i fraværssystemet. 
+Du kan bruge følgende variabel lønart til udbetaling af feriefribeløb:
+
+Lønart 3874 Feriefribeløb udbetalt, med beløb i input. Den udbetaler beløbet du opretter på lønarten og regulerer ikke på feriefritimerne/-dagene.
+
+⚠️ OBS: Beløbet går negativt, hvis der udbetales mere, end der står som optjent under beløb.
+
+## Udbetaling af feriefribeløb, hvor restsaldo tømmes – variabel lønoplysning
+- **Lønart 3841** - Feriefribeløb udbetales 
+- **Lønart 3842** - Feriefribeløb udbetales 
+- **Lønart 3843** - Feriefribeløb udbetales eller trækkes 
+Ønskes hele feriefribeløb saldoen udbetalt, kan du bruge følgende lønarter:
+
+Lønart 3841: Feriefribeløb udbetales – ingen input, da lønarten tømmer saldoen for feriefribeløbet. 
+Lønart 3842: Feriefribeløb udbetales – ingen input, da lønarten tømmer saldoen for feriefribeløbet.
+Lønart 3843: Feriefribeløb udbetales eller trækkes – ingen input, da lønarten tømmer saldoen for feriefribeløbet og modregner, hvis beløbet er negativt.
+
+⚠️ OBS: Lønarter, der udbetaler saldo, kan ikke efterreguleres.
+
+## Visning af feriefribeløb på lønsedlen
+De udbetalende lønarter og fraværskoder til feriefribeløb, hvor saldoen ikke er opsparet, bliver vist som negativ saldo på lønsedlen. For at undgå dette, kan du med hjælp fra en konsulent fra Visma Enterprise, definerer hvilke lønarter som skal påvirke saldofeltet feriefribeløbet. Det ses på lønartstype 3805 Feriefribeløb saldo.
+
+## Overførsel af feriefribeløb
+Afholdelse af feriefri følger kalenderåret, skal det resterende feriefribeløb overføres til nyt kalenderår, kan det gøres ved at bruge variable lønoplysninger eller fællesregistrering.
+
+Lønart 312 - feriefribeløb overfører saldi fra sidste år
+
+
+## Afstemning af feriefrisaldi
+Rapporten ’Medarbejder til gode (år til dato)’ viser ’år til dato’-saldi for
+* Feriefribeløb
+
+
+### Rapporten/filen kan rekvireres på følgende måder
+I lønkørslen
+Hvis rapporten ønskes dannet ved hver lønkørsel, skal du sætte rapporten op på følgende måde.
+
+Gå til Arbejdsgiver → Arbejdsgiver stamoplysninger
+Vælg Rapportbestilling i højremenuen
+Vælg rapporten Medarbejder til gode (år til dato)
+Dobbeltklik på linjen
+Skriv en startdato
+Klik på OK
+
+Rapporten dannes både som liste og som csv-fil i lønkørslen.  
+ 
+Ved bestilling ad hoc
+Du kan danne rapporten på følgende måde:
+
+Gå til Rapporter og Rapporter
+Vælg Medarbejder til gode (år til dato) i højremenuen
+
+Her får du mulighed for at bestille rapporten som liste eller som en csv-fil. Rapporten/filen rekvireres pr. kørselsordre.
+
+## Beskatning af feriefri
+I nogle overenskomster skal det løbende optjente feriefribeløb, beskattes i perioden og netto feriefri beløb skal overføres til en fond.
+Den løbende optjening af feriefri, sker ved oprettelse af:
+
+Stillingskategorilønart 3840 og resultattabel 3840 oprettes med procenten, som der skal beregnes af den ferieberettigede løn, for de respektive løngrupper. Feriefri grundlaget vises på lønsedlen ud for lønart 3840.
+
+For at beskatning foretages, oprettes lønartstype 3815 Grundlag AM feriefribeløb med stillingskategorilønart 3840. Herefter vil feriefribeløbet blive vist på lønsedlen, med Brutto feriefri, AM-bidrag af feriefri, A-skat af feriefri og Netto feriefri.
+Overførsel til den enkelte feriefond, skal foretages manuelt. Netto feriefribeløb vil fremgå af rapporten ’Bogføringsbilag med spec’.
+For at saldoen nedskrives på lønsedlen og i rapporten Medarbejder til gode, skal lønartstype 3805 oprettes med lønart 8284.

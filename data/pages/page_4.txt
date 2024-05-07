@@ -1,0 +1,111 @@
+https://help.vismaenterprise.dk/vismaloen-standard/rapporter/58-rapportmodul
+
+# Rapportmodul
+
+## Introduktion
+Rapportmodul til Visma Løn er et værktøj, du kan bruge til at danne egne rapporter. Du kan hente data fra indeværende og sidste år. Du har adgang til det fra lønsystemet under Rapporter → Rapportmodul.
+Stamoplysninger leveres fra lønsystemet hver nat, og oplysninger fra lønkørsel leveres natten efter, og data kan hentes dagen efter kl. 08:00.
+Når du har dannet en rapport, kan du eksportere den til Excel, og du kan vælge at gemme skabelonen, så den let er bruge næste gang I skal bruge en lignende rapport. 
+Du kan vælge følgende sport, når du danner rapporter i Rapportmodul:
+* Stamdata
+* Fravær
+* Bogføring
+* Lønoplysninger
+* Ansættelsesoplysninger
+* Lønperiodesum
+
+## Kom godt i gang
+Når du skal danne en rapport, så start altid med at vælge, om du vil se rapporten på skærmen eller i Excel og hvilket spor, du ønsker at bruge til din rapport. Vælger du først kriterier og derefter at se rapport i Excel, så forsvinder kriterierne og du skal begynde forfra. Sporet ’Stamdata’ vil gå igen i alle spor, så der er mulighed for at anvende de oplysninger på alle sporene. 
+⚠️ OBS: Det er ikke muligt at kombinere data fra de forskellige spor.
+Under hver sport ligger en række forskellige datafelter, som du kan anvende i rapporten.
+### Stamdata
+I sporet ’Stamdata’ findes oplysninger fra følgende skærmbilleder i lønsystemet:
+* Arbejdsgiver, Arbejdsgiver stamoplysninger
+* Medarbejder, Medarbejder stamoplysninger
+* Medarbejder, Medarbejder stamoplysninger, Reg. Kontonr i højremenuen
+* Medarbejder, Ansættelsesforhold
+
+### Fravær
+Sporet ’Fravær’ kan anvendes til rapporter om hvilke medarbejdere, der har holdt ferie eller haft andet fravær i en given periode. Du finder oplysninger fra følgende skærmbilleder i lønsystemet:
+* Arbejdsgiver, Arbejdsgiver stamoplysninger
+* Medarbejder, Medarbejder stamoplysninger
+* Medarbejder, Medarbejder stamoplysninger, Reg. Kontonr i højremenuen
+* Medarbejder, Fraværsregistrering
+
+### Bogføring
+Sporet ’Bogføring’ kan bruges til at vise, hvilke lønarter, der er bogført på hvilke finans-konti og på hvilke medarbejdere. Man kan også selv definere en eksportfil til eget finanssystem. Du finder oplysninger fra rapporten ’Bogføringsbilag med spec’, som du kan knytte sammen med oplysninger fra følgende skærmbilleder i lønsystemet:
+* Arbejdsgiver, Arbejdsgiver stamoplysninger
+* Medarbejder, Medarbejder stamoplysninger
+* Medarbejder, Medarbejder stamoplysninger, Reg. Kontonr i højremenuen
+* Rapporten, Bogføringsbilag med specifikationer
+
+### Lønoplysninger
+Sporet ’Lønoplysninger’ anvendes til at se, hvilke lønarter, der har været med i en lønkørsel. Her finder du oplysninger om de faste, variable og personlige lønarter, der har været med i lønkørslen. De oplysninger kan du knytte sammen med oplysninger fra følgende skærmbilleder i lønsystemet.
+* Arbejdsgiver, Arbejdsgiver stamoplysninger
+* Medarbejder, Medarbejder stamoplysninger
+* Medarbejder, Medarbejder stamoplysninger, Reg. Kontonr i højremenuen
+
+### Ansættelsesoplysninger
+Sporet ’Ansættelsesoplysninger’ bruges til at se statistikoplysninger. Man kan trække en rapport over, hvilke IP-koder, der er knyttet til den enkelte medarbejder. Du finder oplysninger fra følgende skærmbilleder i lønsystemet:
+* Arbejdsgiver, Arbejdsgiver stamoplysninger
+* Medarbejder, Medarbejder stamoplysninger
+* Medarbejder, Medarbejder stamoplysninger, Reg. Kontonr i højremenuen
+* Medarbejder, Ansættelsesforhold, Ansættelsesoplysninger i højremenuen
+
+### Lønperiodesum
+Sporet ’Lønperiodesum’ anvendes til at se summeringer på lønperioden eller år-til-dato på oplysninger, som man i lønsystemet finder under Medarbejdersaldi og på Excel-rapporten Afstemningsliste (lønperiode). Du finder oplysninger fra følgende skærmbilleder i lønsystemet:
+* Arbejdsgiver, Arbejdsgiver stamoplysninger
+* Medarbejder, Medarbejder stamoplysninger
+* Medarbejder, Medarbejder stamoplysninger, Reg. Kontonr i højremenuen
+* Medarbejder, Medarbejdersaldi
+* Excel-rapporten Afstemningsliste (lønperiode)
+
+## Dan rapport
+Når du har åbnet Rapportmodulet, kommer du ind på startsiden (se billede nedenfor). Her er det vigtigt, at du vælger visning (skærm eller Excel) og spor, før du begynder at udvælge datafelter. Hvis du gør det omvendt, så vil datafelter og grupperinger forsvinde, når du ændrer spor.
+Startside i Rapportmodul (= fanen ’Opsætning’)
+## Forklaring til fanen ’Opsætning’
+Tallene herunder svarer til tallene i bilaget som er vedhæftet i bunden af denne vejledning.
+1. $1
+2. $1
+3. $1
+4. $1
+5. $1
+6. $1
+7. $1
+8. $1
+
+## Forklaring til fanen ’Kriterier’
+Du kan sætte kriterier op, så kun de medarbejdere, der opfylder kriterierne vil blive vist i rapporten. De Generelle kriterier kan anvendes på de felter, du har udvalgt under Stamoplysninger. Derudover er det også muligt at sætte kriterier op, som knytter sig til det spor, du har valgt under ’Opsætning’. De vil være forskellige, alt efter hvilket spor du har valgt.I det efterfølgende vil du først kunne læse om de generelle kriterier og dernæst om de sporspecifikke kriterier. Kriterierne er delt op på forskellige faneblade og kan anvendes uafhængigt af hinanden eller i samspil med de andre faneblade.
+I billedet i bilagene kan du se, der er forskellige faner at vælge imellem. Du vælger den fane, du vil sætte kriterier for.
+
+Medarbejdernr. – Vælg interval af medarbejdere, der skal vises eller enkelte medarbejdere
+Ansættelsesdato – Du kan vælge, du kun vil have vist medarbejdere, der er ansat i bestemte perioder.
+Løngruppe – Vælg interval af løngrupper eller enkelte løngrupper.
+Fratrådte medarbejdere – Som standard viser rapporter på aktive medarbejdere. Her kan du vælge om du også vil have vist fratrådte eller kun fratrådte medarbejdere samt om det er fratrådte i bestemte datointervaller.
+Aflønningsform – Vælg hvilke aflønningsformer du vil have vist i rapporten. Som udgangspunkt er alle aflønningsformer med.
+Stillingskategori – Vælg om du kun vil have bestemte stillingskategorier med
+Udbetalingssted – Hvis du anvender udbetalingssted i lønsystemet, kan du også vælge at få vist dine rapporter pr. udbetalingssted eller i intervaller.
+Arbejdsgiver – Hvis du har mere end 1 arbejdsgiver i dit kundeforhold, kan du vælge på hvilken/hvilke du ønsker rapporten skal vises.
+Afdeling – Hvis du anvender afdeling i lønsystemet, kan du her udvælge kriterier for hvilke afdelinger, du ønsker at have med i rapporten.
+
+## Sporspecifikke kriterier
+Ud over de generelle kriterier, der er nævnt i de foregående afsnit, så er der også kriterier, som er afhængige af det valgte spor.
+### Fravær
+Her kan du ud over de generelle kriterier også vælge at afgrænse på perioder og/eller fraværskoder, så du fx kun ser fravær for første kvartal, eller kun fravær der handler om sygdom. De sporspecifikke kriterier kan sættes på alle fanebladene under de generelle kriterier.
+### Bogføring
+Ud over de generelle kriterier, kan du her afgrænse på periode, lønart og kørselsnr. Bogføringen vil som standard vise data fra sidste måned og indeværende måned, det kan ses under ’Periode’. Du kan angive en anden periode, hvis du ønsker det.
+### Lønoplysninger
+Her kan du afgrænse på periode og på lønart.
+### Ansættelsesoplysninger
+Ud over de generelle kriterier, kan du her afgrænse på IP-typer, så får du kun de medarbejdere med i rapporten, der er omfattet af de valgte IP-typer.
+### Lønperiodesum
+Her kan du vælge periode, lønartstype og kørselsnr. Der vises som standard data fra sidste måned og indeværende måned. Det kan du ændre, så det viser den periode, du ønsker.
+## Gem rapport
+Der er mulighed for at gemme en skabelon af rapporten. Det vil sige, at det du gemmer er den opsætning og de kriterier, du har foretaget på rapporten. Husk at give rapporten et sigende navn, når du gemmer den. For at se de data der opfylder din rapport, skal du køre rapporten ved at klikke på knappen ’Vis rapport’. Hvis du ændrer på opsætningen eller kriterierne i en gemt rapport, og du ønsker at have rapporten gemt med de nye ændringer, skal du gemme rapporten igen.
+Hvis du ønsker at gemme din rapport, så gøres det på fanen ’Åbn/gem rapport’.
+## Åbn eller slet rapport
+I samme skærmbillede som du har gemt rapporten i, kan du åbne den fra. Du klikker blot på ’Åbn’. Du kan også klikke ’Slet’, hvis du ikke længere har brug for denne rapport.
+## Eksporter til Excel, Word eller PDF
+Har du dannet en rapport på skærmen, som du efterfølgende gerne vil have over i Excel eller dannet til en PDF fil, kan du eksportere rapporten fra visningsbillede på skærmen.
+Her kan du klikke på pilen ud for ikonet for ’Disketten’ og her vælge hvordan du vil eksportere rapporten.
+Se billede af skærmbilledet under bilag i denne vejledning.

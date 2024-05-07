@@ -1,0 +1,37 @@
+https://help.vismaenterprise.dk/vismaloen-standard/bogforing/25-hensaettelse-til-kompetence-og-ous-fonde
+
+# Hensættelse til kompetence og OUS fonde
+
+## Hensættelse til kompetence fonde
+På de relevante stillingskategorier tilknyttes nedenstående lønart, for at Visma Løn beregner en hensættelse til kompetence fonde.
+
+For månedslønnede skal stillingskategorilønart 9766 tilknyttes relevante stillingskategorier
+For timelønnede skal stillingskategorilønart 9778 tilknyttes relevante stillingskategorier
+
+
+## Satser til kompentence fonde
+Satserne til kompetence fonde opdateres via resultattabel 9766.
+For bagud og forud angives den månedlige sats. For timelønnede angives sats pr. time
+## Bogføring af hensættelse til kompetence fonde
+Hensættelse af kompetence fonde bogføres for månedslønnede på lønart 9766. Lønarten skal oprettes i kontoplanen med to 2 løbenumre.
+Driftsomkostningen oprettes som løbenummer ’1’ og som en debet post. Den skyldige post oprettes som løbenummer ’2’ og som en kredit post
+Hensættelse af kompetence fonde bogføres for timelønnede på lønart 9778. Lønarten skal oprettes i kontoplanen med to 2 løbenumre.
+Driftsomkostningen oprettes som løbenummer ’1’ og som en debet post. Den skyldige post oprettes som løbenummer ’2’ og som en kredit post
+⚠️ OBS:  Indberetning og afregning af hensætte midler, skal indberettes og afregnes manuelt til de relevante fonde.
+
+## Hensættelse til OUS fonde
+På de relevante stillingskategorier tilknyttes nedenstående lønart, for at Visma Løn beregner en hensættelse til OUS fonde.
+
+For månedslønnede skal stillingskategorilønart 9756 tilknyttes relevante stillingskategorier
+For timelønnede skal stillingskategorilønart 9777 tilknyttes relevante stillingskategorier
+
+
+## Satser til OUS fonde
+Satserne til OUS fonde opdateres via resultattabel 9756.
+For bagud og forud angives den månedlige sats. For timelønnede angives sats pr. time
+## Bogføring af hensættelse til OUS fonde
+ Hensættelse af OUS fonde bogføres for månedslønnede på lønart 9766. Lønarten skal oprettes i kontoplanen med to 2 løbenumre.
+Driftsomkostningen oprettes som løbenummer ’1’ og som en debet post. Den skyldige post oprettes som løbenummer ’2’ og som en kredit post
+Hensættelse af OUS fonde bogføres for timelønnede på lønart 9778. Lønarten skal oprettes i kontoplanen med to 2 løbenumre.
+Driftsomkostningen oprettes som løbenummer ’1’ og som en debet post. Den skyldige post oprettes som løbenummer ’2’ og som en kredit post
+⚠️ OBS: Indberetning og afregning af hensatte midler, skal indberettes og afregnes manuelt til de relevante fonde.

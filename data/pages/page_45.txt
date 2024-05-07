@@ -1,0 +1,46 @@
+https://help.vismaenterprise.dk/vismaloen-standard/tillaeg/88-tillaeg
+
+# Tillæg
+
+## Udbetaling af tillæg, timelønnede medarbejdere
+Timelønnede medarbejdere kan have personlige tillæg eller tillæg til en fælles sats, som skal udbetales pr. præsteret arbejdstime.
+Tillæggene kan oprettes på lønarter, som gør at når præsterede arbejdstimer bliver oprettet under variable lønoplysninger på f.eks. lønart 1100, så vil det samme antal præsterede timer automatisk blive udbetalt på nedenstående tillægslønarter:
+
+Lønart 1270 - Personligt timetillæg 1
+Lønart 1271 - Personligt timetillæg 2
+Lønart 1272 - Personligt timetillæg 3
+Lønart 1273 - Personligt timetillæg 4
+
+Er det et personlig tillæg oprettes satsen på medarbejder under Personlige satser på en af følgende lønarter:
+
+Lønart 9913 - Personligt timetillæg 1
+Lønart 9914 - Personligt timetillæg 2
+Lønart 9915 - Personligt timetillæg 3
+Lønart 9916 - Personligt timetillæg 4
+
+Er det et tillæg med en fælles sats pr. løngrupper, oprettes tillæggene på en af følgende resultattabeler for de respektive løngrupper:
+
+Lønart 1270 - Personligt timetillæg 1
+Lønart 1271 - Personligt timetillæg 2
+Lønart 1272 - Personligt timetillæg 3
+Lønart 1273 - Personligt timetillæg 4
+
+For at tillæggene automatisk udbetales skal der på de pågældende stillingskategorier oprettes følgende stillingskategori lønarter:
+
+Lønart 1270 - Personligt timetillæg 1
+Lønart 1271 - Personligt timetillæg 2
+Lønart 1272 - Personligt timetillæg 3
+Lønart 1273 - Personligt timetillæg 4
+
+
+## Automatisk udbetaling af tillæg
+Når timerne udbetales på en af følgende lønarter vil tillæg fra lønarterne 127X automatisk blive udbetalt. Hvis Resultattabel 890 - Timer fra dagpenge /stop, oprettes med 1 for de respektive løngrupper.:Variabel lønart 1100 TimelønFraværslønart 1575 Barselsorlov med timelønFraværslønart 1598 Orlov uden timelønFraværslønart 3811 Afholdte feriefritimerFraværslønart 3870 Sygeløn timer ift. lønanc.Fraværslønart 3871 Barnsygeløn timer ift. lønanc.Fraværslønart 3964 Dagpenge timeløn anc.Fraværslønart 3990 Sygeløn med timelønFraværslønart 11575 Barselsorlov med timeløn,Findes værdien 1 ikke i resultattabel 890, vil lønarter kun tage timerne fra ovenstående lønarter.Eller Resultattabel 891 - Timer fra dagpenge /stop, oprettes med 1 for de respektive løngrupper.Fraværslønart 3819 Afholdte feriefritimerFraværslønart 3984 Sygeløn timer x sats tabel,Findes værdien 1 ikke i resultattabel 891, vil lønarter kun tage timerne fra ovenstående lønarter.Oprettes resultattabel 890 med værdien 2 for de respektive løngrupper, vil der automatisk udbetales tillæg på alle ovenstående lønarter, samt følgende lønart:Fraværslønart 3989 Barn syg&nbsp;
+
+## Manuel udbetaling af tillæg
+Såfremt du ønsker at udbetale tillægget i forbindelse med andre lønarter kan du under Variable lønoplysninger oprette lønart 895 - Timer fra fravær/feriefri med de timer som tillæggende skal udbetales med.
+
+## Udbetaling af tillæg ud fra timer fra andre lønarter
+Timelønnede medarbejdere kan have tillæg, som skal udbetales ud fra præsteret arbejdstimer. Tillægget kan også skulle udbetales ved f.eks. sygdom med timeløn, barn syg med timeløn, overarbejde 50% eller 100% eller afspadsering.Det kan være meget forskelligt fra kunde til kunde, hvilke lønarter der kræver udbetaling af tillæg. Følgende faste lønarter oprettes med grundlag 1, 2 eller 3 til håndtering af dette:Fast lønart 1275 - Personligt timetillæg 6Fast lønart 1276 - Personligt timetillæg 7Fast lønart 1277 - Personligt timetillæg 8Fast lønart 1278 - Personligt timetillæg 9Fast lønart 1279 - Personligt timetillæg 10Fast lønart 1280 - Personligt timetillæg 11Fast lønart 1281 - Personligt timetillæg 12Fast lønart 41275 - Personligt timetillæg 6aFast lønart 41276 - Personligt timetillæg 6bFast lønart 41277 - Personligt timetillæg 6cFast lønart 41278 - Personligt timetillæg 6dFast lønart 41279 - Personligt timetillæg 6eFast lønart 41280 - Personligt timetillæg 6fFast lønart 41281 - Personligt timetillæg 6gFast lønart 41282 - Personligt timetillæg 1275*Fast lønart 41283 - Personligt timetillæg 1276*Fast lønart 41284 - Personligt timetillæg 1277*Fast lønart 41285 - Personligt timetillæg 1278*Fast lønart 41286 - Personligt timetillæg 1279*Fast lønart 41287 - Personligt timetillæg 1280*Fast lønart 41288 - Personligt timetillæg 1281*Fast lønart 41289 - Personligt timetillæg 1283Fast lønart 41290 - Personligt timetillæg 1284Fast lønart 41291 - Personligt timetillæg 1285Fast lønart 41292 - Personligt timetillæg 1286Fast lønart 41293 - Personligt timetillæg 1287Fast lønart 41294 - Personligt timetillæg 1288Fast lønart 41295 - Personligt timetillæg 1289Fast lønart 41296 - Personligt timetillæg 1290Fast lønart 41297 - Personligt timetillæg 1291Fast lønart 41298 - Personligt timetillæg 1292På følgende resultattabeller oprettes satsen for tillægget for de respektive løngrupper:Resultattabel-lønart 1275 - Personligt timetillæg 6Resultattabel-lønart 1276 - Personligt timetillæg 7Resultattabel-lønart 1277 - Personligt timetillæg 8Resultattabel-lønart 1278 - Personligt timetillæg 9Resultattabel-lønart 1279 - Personligt timetillæg 10Resultattabel-lønart 1280 - Personligt timetillæg 11Resultattabel-lønart 1281 - Personligt timetillæg 12Resultattabel-lønart 41275 - Personligt timetillæg 6aResultattabel-lønart 41276 - Personligt timetillæg 6bResultattabel-lønart 41277 - Personligt timetillæg 6cResultattabel-lønart 41278 - Personligt timetillæg 6dResultattabel-lønart 41279 - Personligt timetillæg 6eResultattabel-lønart 41280 - Personligt timetillæg 6fResultattabel-lønart 41281 - Personligt timetillæg 6gResultattabel-lønart 1275 - Personligt timetillæg 1275Resultattabel-lønart 1276 - Personligt timetillæg 1276Resultattabel-lønart 1277 - Personligt timetillæg 1277Resultattabel-lønart 1278 - Personligt timetillæg 1278Resultattabel-lønart 1279 - Personligt timetillæg 1279Resultattabel-lønart 1280 - Personligt timetillæg 1280Resultattabel-lønart 1281 - Personligt timetillæg 1281Resultattabel-lønart 1283 - Personligt timetillæg 1283Resultattabel-lønart 1284 - Personligt timetillæg 1284Resultattabel-lønart 1285 - Personligt timetillæg 1285Resultattabel-lønart 1286 - Personligt timetillæg 1286Resultattabel-lønart 1287 - Personligt timetillæg 1287Resultattabel-lønart 1288 - Personligt timetillæg 1288Resultattabel-lønart 1289 - Personligt timetillæg 1289Resultattabel-lønart 1290 - Personligt timetillæg 1290Resultattabel-lønart 1291 - Personligt timetillæg 1291Resultattabel-lønart 1292 - Personligt timetillæg 1292Lønarterne med * kan også oprettes med en personlig sats for tillægget på medarbejderen:Lønart 9923 - Personligt timetillæg 1275*Lønart 9924 - Personligt timetillæg 1276*Lønart 9925 - Personligt timetillæg 1277*Lønart 9926 - Personligt timetillæg 1278*Lønart 9927 - Personligt timetillæg 1279*Lønart 9928 - Personligt timetillæg 1280*Lønart 9929 - Personligt timetillæg 1281*Der findes 3 grundlag som oprettes hvilke lønarter der skal anvendes til udbetaling af de forskellige lønarter. Opsætning af de lønartstyper skal ske af en konsulent fra Visma.* Grundlag 1 = Lønartstype 175* Grundlag 2 = Lønartstype 176* Grundlag 3 = Lønartstype 177På de enkelte lønartstyper oprettes de lønarter som skal udbetale tillæggene, det kunne eksempelvis være følgende lønarter:Lønart 890 – Timer fra fravær/feriefri (Se afsnit om automatisk udbetaling af tillæg)Lønart 1100 – TimelønLønart 1301 – Overarbejde 50%Lønart 1302 – Overarbejde 100%Lønart 3990 – Sygdom med timeløn (Denne lønart skal ikke oprettes, hvis lønart 890er oprettet på lønartstypen)Lønart 3989 – Barn syg med timeløn (Denne lønart skal ikke oprettes, hvis lønart 890er oprettet på lønartstypen)Husk opsætning af kontering på ovenstående lønarter.
+
+## Udbetaling af tillæg med timeløn plus fast beløb
+Medarbejdere der skal have udbetalt fx. overarbejde, hvor satsen overarbejdet skal udbetales til, er deres timeløn plus et fast beløb lagt oveni i timelønnen.Kan anvendes til både timelønnede og medarbejdere med fast månedsløn.Der findes 4 variable lønarter med timer i input&nbsp; og 4 resultattabeller.Lønart 1308, beregning timesats + sats res1308,, udskrives som 1308Lønart 1309, beregning timesats + sats res1309 , udskrives som 1309Lønart 11386, beregning timesats + sats res11386, udskrives 1386Lønart 11387, beregning timesats + sats res 11387, udskrives 1387Alle lønarterne indgår i ATP timer og eIndkomst timer.Husk opsætning af kontering på ovenstående lønarter i debet på resultatopgørelsen.Eksempel:Medarbejderen har en timeløn på kr. 155 og skal have 20 kr. lagt oveni i timelønnen ved udbetaling af overarbejde, så han overarbejdstimesats bliver kr. 175. Timesatsen beregnes ud fra hans personlige timesats og på resultattabel 1308 er der på hans løngruppe oprettet satsen med kr. 20.Når du så under Variable lønoplysninger opretter lønart 1308 med fx. 7 timer, så vil Visma Løn udbetale 7 timer til satsen 175 kr.&nbsp;&nbsp;

@@ -1,0 +1,73 @@
+https://help.vismaenterprise.dk/vismaloen-standard/personalegoder/60-da-lo-udviklingsfonden
+
+# DA-LO udviklingsfonden
+
+Du kan som arbejdsgiver beregne og afregne bidrag til DA/LO Udviklingsfonden i Visma Løn.
+
+## DA/LO Udviklingsfonden
+For at afregne til DA/LO Udviklingsfonden skal der på Arbejdsgiver oprettes serviceydelse
+* 24 DA/LO Udviklingsfonden.
+
+Serviceydelsen tilmeldes ved
+
+Gå til Arbejdsgiver → Arbejdsgiver stamoplysninger
+Vælg Tilmelding I højremenuen
+Klik på Ny
+Vælg serviceydelse 24 og startdato 
+Klik på OK
+
+## Månedslønnede medarbejdere
+### Stillingskategori lønarter 
+Lønarterne benyttes til alle månedslønnede medarbejdere i en stillingskategori.
+
+Lønart 9751 - DA/LO udv. fondLønarten benyttes af alle, dog ikke medlemmer af Horesta HK og Horesta RBF
+Lønart 9761 - DA/LO udv. fond Horesta HK Lønarten benyttes til indberetning til Horesta HK
+Lønart 9771 - DA/LO udv. fond Horesta RBF   Lønarten benyttes til indberetning til Horesta RBF.
+
+### Faste lønarter 
+Lønarterne benyttes, såfremt det kun er enkelte medarbejdere på månedsløn, der er omfattet.
+
+Lønart 9753 - DA/LO udv. fond Benyttes af alle, dog ikke medlemmer af Horesta HK og Horesta RBF
+Lønart 9763 - DA/LO udv. fond Horesta HKBenyttes til indberetning til Horesta HK
+Lønart 9773 - DA/LO udv. fond Horesta RBF Benyttes til indberetning til Horesta RBF.
+
+## Timelønnede medarbejdere
+### Stillingskategorilønarter
+Lønarterne benyttes til alle timelønnede medarbejdere i en stillingskategori.
+
+Lønart 9752 - DA/LO udv. fondBenyttes til indberetning til alle, dog ikke medlemmer af Horesta HK og Horesta RBF 
+Lønart 9762 - DA/LO udv. fond Horesta HK Benyttes til indberetning til Horesta HK
+Lønart 9772 - DA/LO udv. fond Horesta RBFBenyttes til indberetning til Horesta RBF.
+
+### Faste lønarter 
+Lønarterne benyttes, såfremt det kun er enkelte timelønnede medarbejdere, der er omfattet.
+
+Lønart 9754 - DA/LO udv. fond Benyttes til indberetning til alle, dog ikke medlemmer af Horesta HK og Horesta RBF
+Lønart 9764 - DA/LO udv. fond Horesta HK Benyttes til indberetning til Horesta HK
+Lønart 9774 - DA/LO udv. fond Horesta RBF Benyttes til indberetning til Horesta RBF.
+
+## DA/LO Udviklingsfonden til RBF-lærlinge
+### Fast lønart 
+Lønarten benyttes til beregning af DA/LO Udviklingsfonden til RBF-lærlinge.
+
+Lønart 9776 - DA/LO udv. fond RBF lærling.
+
+## Variable lønarter
+### Variable lønarter med beløb i input
+Lønarterne er primært til regulering af beregningen for DA/LO Udviklingsfonden.
+
+Lønart 9755 - DA/LO udv. fond Benyttes af alle, dog ikke medlemmer af Horesta HK og Horesta RBF
+Lønart 9765 - DA/LO udv. fond Horesta HK Benyttes til indberetning til Horesta HK
+Lønart 9775 - DA/LO udv. fond Horesta RBF Benyttes til indberetning til Horesta RBF (inkl. elever).
+
+## Stop beregning
+### Fast lønart til Stop for beregning af DA/LO Udviklingsfonden
+Lønarten kan benyttes, såfremt enkelte medarbejdere i en stillingskategori ikke er omfattet.
+
+Lønart 9750 - DA/LO udv. fond stop
+
+ 
+Lønarten benyttes til de medarbejdere, hvor der ikke skal beregnes bidrag til DA/LO Udviklingsfonden.
+### Satser
+De generelle satser vedligeholdes af Visma Enterprise ud fra de på området gældende satser.
+Ordningen består alene af et arbejdsgiverbidrag. Satsen beregnes i forhold til medarbejderens normtid.
