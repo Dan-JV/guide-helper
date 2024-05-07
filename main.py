@@ -46,14 +46,11 @@ def split_page(files):
             # Assuming `chunk` is a Python dictionary that you want to serialize into JSON
             output_file_path = f'data/chunks/chunk_{i}_{j}.json'  # Changed file extension to .json
             with open(output_file_path, 'w', encoding='utf-8') as output_file:
-                json.dump(chunk_dict, output_file)  # Serializes `chunk` to a JSON formatted string and writes it to `output_file`
+                json.dump(chunk_dict, output_file, ensure_ascii=False)  # Serializes `chunk` to a JSON formatted string and writes it to `output_file`
 
             j += 1
         print(f"chunked page {i} sucessfull")
         i += 1
-            
-
-    return chunks
 
 def main(files):
     split_page(files)
