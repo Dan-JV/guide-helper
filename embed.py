@@ -19,6 +19,11 @@ def main():
     sentences = ["What is BGE?", "What is Amazon Bedrock?"]
     embeddings = embed_chunks(sentences, model)
 
+    from llama_index.core import VectorStoreIndex
+
+
+    index = VectorStoreIndex.from_documents(documents)
+
 
 if __name__ == "__main__":
     main()

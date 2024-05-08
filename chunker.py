@@ -1,7 +1,7 @@
-import os
 import json
-from langchain_text_splitters import MarkdownHeaderTextSplitter
+import os
 
+from langchain_text_splitters import MarkdownHeaderTextSplitter
 
 headers_to_split_on = [
         ("#", "Header 1"),
