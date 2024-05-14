@@ -8,6 +8,7 @@ from langchain.vectorstores import Qdrant
 from langchain_core.documents.base import Document
 from llama_index.core import SimpleDirectoryReader
 from qdrant_client import QdrantClient, models
+from langchain_community.embeddings import BedrockEmbeddings
 
 load_dotenv()
 
@@ -25,17 +26,18 @@ bedrock_client = session.client(
     region_name="us-east-1",
 )
 
-collection_name = "test"
+collection_name = "text-titan-embed-text-v1"
 if qdrant_client.collection_exists(collection_name):
     qdrant_client.delete_collection(collection_name)
 qdrant_client.create_collection(
     f"{collection_name}",
-    vectors_config=models.VectorParams(size=1024, distance=models.Distance.COSINE)
+    vectors_config=models.VectorParams(size=1536, distance=models.Distance.COSINE)
 )
 
-embeddings = HuggingFaceEmbeddings(
-    model_name="BAAI/bge-m3"
-)
+# embeddings = HuggingFaceEmbeddings(
+#     model_name="BAAI/bge-m3"
+# )
+embeddings = BedrockEmbeddings(client=bedrock_client, model_id="amazon.titan-embed-text-v1") 
 
 def chunks_helper():
     reader = SimpleDirectoryReader(input_dir="data/chunks", recursive=True)
