@@ -122,14 +122,13 @@ for message in st.session_state.messages:
         st.markdown(message["content"])
 
 if prompt := st.chat_input("What is up?"):
+    retrieved_docs = retrieve_docs(prompt)
+    prompt = f"{retrieved_docs} {prompt}"
     st.session_state.messages.append({"role": "user", "content": prompt})
     with st.chat_message("user"):
         st.markdown(prompt)
 
     with st.chat_message("assistant"):
-        query = st.session_state.messages[-1]["content"]
-        retrieved_docs = retrieve_docs(query)
-        prompt = f"{retrieved_docs} {query}"
         stream = client.chat.completions.create(
             model=st.session_state["openai_model"],
             messages=[
