@@ -2,3 +2,4 @@ data
 .vscode
 .python-version
 .env
+__pycache__

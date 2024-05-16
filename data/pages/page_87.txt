@@ -1,5 +1,0 @@
-https://help.vismaenterprise.dk/vismaloen-standard/rapporter/44-html-rapporter-til-excel
-
-# HTML rapporter til Excel
-
-Har du en rapport i Visma Løn, som kun findes i html format, kan du importerer den til Excel, på følgende måde.Gå til&nbsp;Lønadministration →&nbsp;Udskrifter fra lønkørselFind rapporten i oversigten, f.eks. OverførselslistenMarker rapportenKlik på&nbsp;findKlik på&nbsp;Hent aktuelDobbelt klik på mappen der kommer fremTræk filen over i en mappe på din computerÅben programmet ExcelKlik på fanen&nbsp;DataI området Hent eksterne data/Get External Data, klik på ikonet&nbsp;Fra tekst/From textFind den mappe, hvor du på computeren gemte din fil i punkt 7I filtype skal du lige huske at vælge Alle filer (*.*)Marker filen og klik på&nbsp;Åbn/ImportNu vil der komme en skærmbillede frem Guiden tekstimportVælg&nbsp;Næste/NextKontroller at kolonnerne er rigtige. Hvis man vil have det delt op anderledes, kan man rykke på pilene, eller dobbeltklikke på dem for at sletteVælg&nbsp;Næste/NextKlik på&nbsp;Udfør/Finish. Får du nedenstående vindue, kan du vælge hvilken celle importen skal starte i, klik derefter&nbsp;OK.Nu har du rapporten i Excel.

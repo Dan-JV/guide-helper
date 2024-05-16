@@ -1,9 +1,0 @@
-https://help.vismaenterprise.dk/vismaloen-standard/ferie/140-feriefri-oversigt
-
-# Feriefri oversigt
-
-Vi har opdelt vores vejledning i følgende emner
-... klik på linket og læs mere:
-* [Feriefridage](https://help.vismaenterprise.dk/standard/vismaloen/ferie/feriefridage)
-* [Feriefritimer](https://help.vismaenterprise.dk/standard/vismaloen/ferie/feriefritimer)
-* [Feriefribeløb](https://help.vismaenterprise.dk/standard/vismaloen/ferie/feriefribelob)
