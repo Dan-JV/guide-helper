@@ -1,0 +1,5 @@
+files:
+  data: support_articles_raw.txt
+  metadata: Keywords.xlsx
+paths:
+  data: data
