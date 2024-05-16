@@ -1,48 +1,15 @@
 
 import boto3
-import streamlit as st
-from dotenv import load_dotenv
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_aws import BedrockChat
 from langchain_community.embeddings import BedrockEmbeddings
 from langchain_core.prompts import PromptTemplate
-from utils import initialize_qdrant_client
+
+from src.RAG_pipeline.utils import initialize_qdrant_client
 
 
-def run_streamlit_app(retrieval_chain):
-    st.title("Guide Helper")
-
-    if "messages" not in st.session_state:
-        st.session_state.messages = []
-
-    for message in st.session_state.messages:
-        with st.chat_message(message["role"]):
-            st.markdown(message["content"])
-
-    if prompt := st.chat_input("How can I assist you?"):
-        st.session_state.messages.append({"role": "user", "content": prompt})
-
-        with st.chat_message("user"):
-            st.markdown(prompt)
-
-        with st.chat_message("assistant"):
-            messages_string = "\n".join(
-                [f"{m['role']}: {m['content']}" for m in st.session_state.messages]
-            )
-            messages = retrieval_chain.invoke(
-                {
-                    "input": messages_string,
-                }
-            )
-
-            response = st.write(messages["answer"])
-        st.session_state.messages.append({"role": "assistant", "content": response})
-
-
-if __name__ == "__main__":
-    load_dotenv()
-
+def create_pipeline():
     model_id = "anthropic.claude-instant-v1"
     bedrock_runtime_client = boto3.client(
         service_name="bedrock-runtime",
@@ -76,4 +43,4 @@ if __name__ == "__main__":
     )
     retrieval_chain = create_retrieval_chain(retriever, combine_docs_chain)
 
-    run_streamlit_app(retrieval_chain)
+    return retrieval_chain
