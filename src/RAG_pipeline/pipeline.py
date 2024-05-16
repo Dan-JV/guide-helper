@@ -1,3 +1,4 @@
+import os
 
 import boto3
 from langchain.chains import create_retrieval_chain
@@ -10,10 +11,13 @@ from src.RAG_pipeline.utils import initialize_qdrant_client
 
 
 def create_pipeline():
+
     model_id = "anthropic.claude-instant-v1"
     bedrock_runtime_client = boto3.client(
         service_name="bedrock-runtime",
         region_name="us-east-1",
+        aws_access_key_id=os.getenv("AWS_ACCESS_KEY_ID"),
+        aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY"),
     )
 
     embedding_model_id = "amazon.titan-embed-text-v1"

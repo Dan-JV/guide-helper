@@ -1,3 +1,5 @@
+import os
+
 import streamlit as st
 from dotenv import load_dotenv
 
@@ -5,6 +7,12 @@ from src.RAG_pipeline import pipeline
 
 
 def app():
+
+    os.environ["QDRANT_API_KEY"] = st.secrets["QDRANT_API_KEY"]
+    os.environ["QDRANT_ENDPOINT"] = st.secrets["QDRANT_ENDPOINT"]
+    os.environ["AWS_ACCESS_KEY_ID"] = st.secrets["AWS_ACCESS_KEY_ID"]
+    os.environ["AWS_SECRET_ACCESS_KEY"] = st.secrets["AWS_SECRET_ACCESS_KEY"]
+
 
     retrieval_chain = pipeline.create_pipeline()
 
