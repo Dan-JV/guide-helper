@@ -5,6 +5,7 @@ from typing import Tuple
 import polars as pl
 from langchain_core.documents.base import Document
 from langchain_text_splitters import MarkdownHeaderTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from llama_index.core import SimpleDirectoryReader
 
 
@@ -29,7 +30,8 @@ def split_data(data):
 def preprocess_chunks(chunks, metadata, split_id=0):
     url = chunks[0].page_content
 
-    for chunk_id, chunk in enumerate(chunks):
+    # we start from 1 because the first chunk is the url
+    for chunk_id, chunk in enumerate(chunks[1:]):
         chunk.metadata["url"] = url
         chunk_dict = {"metadata": chunk.metadata, "content": chunk.page_content}
 
@@ -48,15 +50,26 @@ def create_chunks_from_splits(splits, metadata):
     if not os.path.exists('data/chunks'):
         os.makedirs('data/chunks')
 
+    # ---------------------------------#
+    # Chunking config options
     headers_to_split_on = [
         ("#", "Header 1"),
         ("##", "Header 2"),
-        ("###", "Header 3"),
     ]
+    chunk_size = 1024
+    chunk_overlap = 64
+    #----------------------------------#
+
+    # Markdown splitter
     markdown_splitter = MarkdownHeaderTextSplitter(headers_to_split_on=headers_to_split_on, strip_headers=False)
+    # Recursive splitter that splits the large markdown into smaller chunks
+    text_splitter = RecursiveCharacterTextSplitter(chunk_size=chunk_size, chunk_overlap=chunk_overlap)
 
     for split_id, split in enumerate(splits):
-        chunks = markdown_splitter.split_text(split)
+        md_header_splits = markdown_splitter.split_text(split)
+        chunks = text_splitter.split_documents(md_header_splits)
+
+        # add metadata to chunks
         preprocess_chunks(chunks, metadata, split_id)
     
 def create_docs():

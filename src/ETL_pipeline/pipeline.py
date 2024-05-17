@@ -26,6 +26,8 @@ def pipeline(
 
     # load.py -> to vectorstorechunks 
     load(docs)
+
+pipeline()
     
     
 
