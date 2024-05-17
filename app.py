@@ -28,9 +28,8 @@ def app():
     if "selected_context_index" not in st.session_state:
         st.session_state.selected_context_index = None
 
-
-    if "feedback" not in st.session_state:
-        st.session_state.feedback = []
+    if "Q_A" not in st.session_state:
+        st.session_state.Q_A = []
 
     if "thumbs_feedback" not in st.session_state:
         st.session_state.thumbs_feedback = None
@@ -49,7 +48,6 @@ def app():
         with st.chat_message("user"):
             st.markdown(input)
 
-        # TODO: we are curently invoking the chain using all the messages in the messages history?? we should not have this behavior
         with st.chat_message("assistant"):
             
             chain_output = retrieval_chain.invoke(
@@ -61,27 +59,30 @@ def app():
             response = chain_output["answer"]
             st.write(response)
 
+            # Temporary Q&A list to store user input and assistant response which gets posted to Airtable
+            # TODO This should be removed and handled in a better way
+            st.session_state.Q_A = [{"role": "user", "content": input},{"role": "assistant", "content": response}]
+
             # Extract and store context in session state
             st.session_state.contexts = chain_output.get("context", [])
             st.session_state.selected_context_index = 0  # Reset index when new context is added
 
         st.session_state.messages.append({"role": "assistant", "content": response})
 
+    # Thumbs up and thumbs down buttons
+    if st.session_state.contexts:
+        col1, col2 = st.columns(2)
+        with col1:
+            if st.button('👍'):
+                st.session_state.thumbs_feedback = 'good'
+        with col2:
+            if st.button('👎'):
+                st.session_state.thumbs_feedback = 'bad'
     
-    
-
         # Feedback form
         with st.form(key='feedback_form'):
 
-            # Thumbs up and thumbs down buttons
-            if st.session_state.contexts:
-                col1, col2 = st.columns(2)
-                with col1:
-                    if st.button('👍'):
-                        st.session_state.thumbs_feedback = 'good'
-                with col2:
-                    if st.button('👎'):
-                        st.session_state.thumbs_feedback = 'bad'
+            
             name = st.text_input("Name")
             email = st.text_input("Email")
             comment = st.text_area("Leave a comment")
@@ -90,11 +91,12 @@ def app():
             if submitted:
                 # Feedback form dict
                 feedback ={
-                    # 'message_history': st.session_state.messages,
+                    'message_history': st.session_state.Q_A,
                     'feedback': st.session_state.thumbs_feedback,
                     'name' : name, 
                     'email' : email,
                     'comment': comment,
+                    'url' : [chunk.metadata.get("url") for chunk in st.session_state.contexts]
                 }
                 st.session_state.thumbs_feedback = None
 
