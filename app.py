@@ -69,23 +69,27 @@ def app():
 
         st.session_state.messages.append({"role": "assistant", "content": response})
 
-    # Thumbs up and thumbs down buttons
-    if st.session_state.contexts:
-        col1, col2 = st.columns(2)
+    # Check if the is a question and answer object in session state
+    if st.session_state.Q_A:
+
+        # Thumbs up/down feedback button
+        col1, col2 = st.columns([1, 1])
         with col1:
             if st.button('👍'):
                 st.session_state.thumbs_feedback = 'good'
         with col2:
             if st.button('👎'):
                 st.session_state.thumbs_feedback = 'bad'
-    
+
         # Feedback form
         with st.form(key='feedback_form'):
 
-            
+            # Populate the feedback form
             name = st.text_input("Name")
             email = st.text_input("Email")
             comment = st.text_area("Leave a comment")
+
+            # Submit button
             submitted = st.form_submit_button(label='Submit')
 
             if submitted:
