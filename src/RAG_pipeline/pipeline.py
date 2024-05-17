@@ -7,7 +7,7 @@ from langchain_aws import BedrockChat
 from langchain_community.embeddings import BedrockEmbeddings
 from langchain_core.prompts import PromptTemplate
 
-from src.RAG_pipeline.utils import initialize_qdrant_client
+from src.RAG_pipeline.utils import initialize_qdrant_client, load_template
 
 
 def create_pipeline():
@@ -29,9 +29,12 @@ def create_pipeline():
     qdrant_client = initialize_qdrant_client(collection_name, embeddings_model)
 
     retriever = qdrant_client.as_retriever()
-    prompt = PromptTemplate.from_template(
-        "As an expert system designed to assist with inquiries about Visma Enterprise A/S's internal guides, you are to provide answers that are strictly based on the content of these guides.\nUse specific terminology and keywords from the guides to maintain consistency with Visma’s standards.\nMaintain a professional tone throughout your response and ensure that the information is both comprehensive and precise.\nIf applicable, reference specific sections or points within the guides to add clarity and relevance to your answer.\nAll responses must be provided in Danish.\nIf a query is vague or you do not have sufficient information to provide an accurate response, ask for clarification or admit that you do not know the answer.\nAvoid providing speculative information or details outside the scope of the internal guides.\n\n<context>\n{context}\n</context>\n\nUser question:{input}"
+    prompt_template_string = load_template("prompts/guide_helper.jinja") 
+    prompt_template = PromptTemplate.from_template(
+        prompt_template_string, template_format="jinja2"
     )
+    few_shot_examples_template_string = load_template("prompts/fewshot_prompt_questions_answers.jinja")
+    prompt_template = prompt_template.partial(few_shot_examples=few_shot_examples_template_string)
 
     llm = BedrockChat(
                 client=bedrock_runtime_client,
@@ -41,8 +44,9 @@ def create_pipeline():
             )
 
     combine_docs_chain = create_stuff_documents_chain(
-        llm, prompt
+        llm, prompt_template
     )
     retrieval_chain = create_retrieval_chain(retriever, combine_docs_chain)
 
     return retrieval_chain
+
