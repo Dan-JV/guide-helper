@@ -68,18 +68,21 @@ def app():
         st.session_state.messages.append({"role": "assistant", "content": response})
 
     
-    # Thumbs up and thumbs down buttons
-    if st.session_state.contexts:
-        col1, col2 = st.columns(2)
-        with col1:
-            if st.button('👍'):
-                st.session_state.thumbs_feedback = 'good'
-        with col2:
-            if st.button('👎'):
-                st.session_state.thumbs_feedback = 'bad'
+    
 
         # Feedback form
         with st.form(key='feedback_form'):
+
+            # Thumbs up and thumbs down buttons
+            if st.session_state.contexts:
+                col1, col2 = st.columns(2)
+                with col1:
+                    if st.button('👍'):
+                        st.session_state.thumbs_feedback = 'good'
+                with col2:
+                    if st.button('👎'):
+                        st.session_state.thumbs_feedback = 'bad'
+            name = st.text_input("Name")
             email = st.text_input("Email")
             comment = st.text_area("Leave a comment")
             submitted = st.form_submit_button(label='Submit')
@@ -87,8 +90,9 @@ def app():
             if submitted:
                 # Feedback form dict
                 feedback ={
-                    'message_history': st.session_state.messages,
+                    # 'message_history': st.session_state.messages,
                     'feedback': st.session_state.thumbs_feedback,
+                    'name' : name, 
                     'email' : email,
                     'comment': comment,
                 }
