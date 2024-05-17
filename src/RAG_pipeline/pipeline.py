@@ -28,7 +28,10 @@ def create_pipeline():
     collection_name = "text-titan-embed-text-v1"
     qdrant_client = initialize_qdrant_client(collection_name, embeddings_model)
 
-    retriever = qdrant_client.as_retriever()
+    # Retriever 
+    retriever = qdrant_client.as_retriever(search_kwargs={'k': 10})
+
+    # Promt construction
     prompt_template_string = load_template("prompts/guide_helper.jinja") 
     few_shot_examples_template_string = load_template("prompts/fewshot_prompt_questions_answers.jinja")
     prompt_template = PromptTemplate.from_template(
