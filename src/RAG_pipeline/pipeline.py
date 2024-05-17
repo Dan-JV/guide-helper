@@ -30,10 +30,10 @@ def create_pipeline():
 
     retriever = qdrant_client.as_retriever()
     prompt_template_string = load_template("prompts/guide_helper.jinja") 
-    prompt_template = PromptTemplate.from_template(
-        prompt_template_string, template_format="jinja2"
-    )
     few_shot_examples_template_string = load_template("prompts/fewshot_prompt_questions_answers.jinja")
+    prompt_template = PromptTemplate.from_template(
+        prompt_template_string, template_format="jinja2", partial_variables={"few_shot_examples": few_shot_examples_template_string}
+    )
     prompt_template = prompt_template.partial(few_shot_examples=few_shot_examples_template_string)
 
     llm = BedrockChat(
