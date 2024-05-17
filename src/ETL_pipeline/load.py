@@ -24,7 +24,8 @@ def load(docs):
         region_name="us-east-1",
     )
 
-    collection_name = "text-titan-embed-text-v1"
+    collection_name = "markdown_header_level2_1024split_64overlap"
+
     if qdrant_client.collection_exists(collection_name):
         qdrant_client.delete_collection(collection_name)
     qdrant_client.create_collection(

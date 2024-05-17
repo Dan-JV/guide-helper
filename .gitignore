@@ -5,3 +5,4 @@ testing
 .env
 __pycache__
 .streamlit
+outputs

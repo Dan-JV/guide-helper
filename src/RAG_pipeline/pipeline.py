@@ -25,7 +25,7 @@ def create_pipeline():
         client=bedrock_runtime_client, model_id=embedding_model_id
     )
 
-    collection_name = "text-titan-embed-text-v1"
+    collection_name = "markdown_header_level2_1024split_64overlap"
     qdrant_client = initialize_qdrant_client(collection_name, embeddings_model)
 
     # Retriever 
