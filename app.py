@@ -184,6 +184,7 @@ import os
 if __name__ == "__main__":
     config = load_config()
     wandb.login(key=os.getenv("WEAVE_API_KEY"), verify=True)
+    st.write("Yes!!!")
     weave.init(project_name="Guide Helper")
     app(config)
 
