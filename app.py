@@ -8,6 +8,12 @@ import yaml
 
 from src.RAG_pipeline.pipeline import create_pipeline
 
+from streamlit.runtime.scriptrunner.script_run_context import get_script_run_ctx
+
+def _get_session_id():
+    ctx = get_script_run_ctx()
+    
+    return ctx.session_id
 
 @weave.op()
 def weave_logger(input):
@@ -15,7 +21,7 @@ def weave_logger(input):
 
 
 @weave.op() # logs input and output of calls 
-def invoke_chain_helper_fn(chain, input, chat_history):
+def invoke_chain_helper_fn(chain, input, chat_history, session_id):
     
     chain_response =  chain.invoke(
         {
@@ -23,7 +29,7 @@ def invoke_chain_helper_fn(chain, input, chat_history):
             "chat_history": chat_history
         },
         config={
-        "configurable": {"session_id": "abc123"}
+        "configurable": {"session_id": session_id}
         }
     )
     answer = chain_response["answer"]
@@ -51,6 +57,10 @@ def initialize_streamlit_session_states():
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
+    
+    if "session_id" not in st.session_state:
+        st.session_state.session_id = _get_session_id()
+
 
 
 def start_streamlit_app():
@@ -129,7 +139,7 @@ def app(config: dict):
 
         st.chat_message("user").write(input)
 
-        chain_response, answer, chat_history = invoke_chain_helper_fn(retrieval_chain, input, chat_history)
+        chain_response, answer, chat_history = invoke_chain_helper_fn(retrieval_chain, input, chat_history, st.session_state.session_id)
         context = chain_response["context"]
 
         st.chat_message("assistant").write(answer)
