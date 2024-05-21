@@ -172,18 +172,8 @@ def app():
             st.json(body=selected_context.metadata)
             st.markdown(body=selected_context.page_content)
 
-def set_environment_variables():
-    keys = dict(**dotenv_values(".env"))  # Load all the environment variables from a .env file
-    
-    # Automatically load all keys from the .env file into the environment
-    for key in keys:
-        os.environ[key] = st.secrets[key]
-
 
 if __name__ == "__main__":
-    set_environment_variables()
-    
-
     weave.init(project_name="Guide Helper")
     app()
 
