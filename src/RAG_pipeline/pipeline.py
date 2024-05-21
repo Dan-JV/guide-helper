@@ -7,32 +7,28 @@ from langchain_aws import BedrockChat
 from langchain_community.embeddings import BedrockEmbeddings
 from langchain_core.prompts import MessagesPlaceholder
 from langchain_core.prompts.chat import ChatPromptTemplate
-from langchain.memory import ConversationBufferWindowMemory
 
 from langchain.chains import create_history_aware_retriever
 
 from src.RAG_pipeline.utils import initialize_qdrant_client, fill_in_template
 
-def create_pipeline():
+def create_pipeline(model_id: str, region_name: str, embedding_model_id: str, collection_name: str, search_kwargs: dict):
 
-    model_id = "anthropic.claude-3-sonnet-20240229-v1:0"
     bedrock_runtime_client = boto3.client(
         service_name="bedrock-runtime",
-        region_name="us-east-1",
+        region_name=region_name,
         aws_access_key_id=os.getenv("AWS_ACCESS_KEY_ID"),
         aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY"),
     )
 
-    embedding_model_id = "amazon.titan-embed-text-v2:0"
+    embedding_model_id = embedding_model_id
     embeddings_model = BedrockEmbeddings(
         client=bedrock_runtime_client, model_id=embedding_model_id
     )
 
-    collection_name = "markdown_header_level2_1024split_64overlap"
     qdrant_client = initialize_qdrant_client(collection_name, embeddings_model)
 
-    # Retriever 
-    retriever = qdrant_client.as_retriever(search_kwargs={'k': 10})
+    retriever = qdrant_client.as_retriever(search_kwargs=search_kwargs)
 
     # Promt construction
     prompt_path = "prompts/guide_helper.jinja"
@@ -76,6 +72,4 @@ def create_pipeline():
 
     return rag_chain
 
-
-create_pipeline()
 
