@@ -20,7 +20,7 @@ def create_pipeline():
         aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY"),
     )
 
-    embedding_model_id = "amazon.titan-embed-text-v1"
+    embedding_model_id = "amazon.titan-embed-text-v2:0"
     embeddings_model = BedrockEmbeddings(
         client=bedrock_runtime_client, model_id=embedding_model_id
     )

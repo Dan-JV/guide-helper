@@ -30,10 +30,10 @@ def load(docs):
         qdrant_client.delete_collection(collection_name)
     qdrant_client.create_collection(
         f"{collection_name}",
-        vectors_config=models.VectorParams(size=1536, distance=models.Distance.COSINE)
+        vectors_config=models.VectorParams(size=1024, distance=models.Distance.COSINE)
     )
 
-    embeddings = BedrockEmbeddings(client=bedrock_client, model_id="amazon.titan-embed-text-v1") 
+    embeddings = BedrockEmbeddings(client=bedrock_client, model_id="amazon.titan-embed-text-v2:0") 
 
     BATCH_SIZE=16
     for i in range(0, len(docs), BATCH_SIZE):
