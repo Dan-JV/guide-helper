@@ -9,6 +9,11 @@ import yaml
 from src.RAG_pipeline.pipeline import create_pipeline
 
 
+@weave.op()
+def weave_logger(input):
+    return input
+
+
 @weave.op() # logs input and output of calls 
 def invoke_chain_helper_fn(chain, input, chat_history):
     
@@ -16,6 +21,9 @@ def invoke_chain_helper_fn(chain, input, chat_history):
         {
             "input": input,
             "chat_history": chat_history
+        },
+        config={
+        "configurable": {"session_id": "abc123"}
         }
     )
     answer = chain_response["answer"]
@@ -103,7 +111,6 @@ def feedback():
 
 
 
-@weave.op()
 def app(config: dict):
 
     chat_history = []
@@ -125,7 +132,6 @@ def app(config: dict):
         chain_response, answer, chat_history = invoke_chain_helper_fn(retrieval_chain, input, chat_history)
         context = chain_response["context"]
 
-        #st.markdown(answer) # write ai response
         st.chat_message("assistant").write(answer)
 
         # Temporary Q&A list to store user input and assistant response which gets posted to Airtable
@@ -172,10 +178,12 @@ def app(config: dict):
 
 
 
+
 def load_config():
     with open("src/RAG_pipeline/conf/config.yaml", 'r') as file:
         config = yaml.safe_load(file)
     return config
+
 
 
 
