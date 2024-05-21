@@ -7,10 +7,25 @@ from langchain_aws import BedrockChat
 from langchain_community.embeddings import BedrockEmbeddings
 from langchain_core.prompts import MessagesPlaceholder
 from langchain_core.prompts.chat import ChatPromptTemplate
+from langchain_core.chat_history import BaseChatMessageHistory
+from langchain_community.chat_message_histories import ChatMessageHistory
+from langchain_core.runnables.history import RunnableWithMessageHistory
 
 from langchain.chains import create_history_aware_retriever
 
 from src.RAG_pipeline.utils import initialize_qdrant_client, fill_in_template
+
+store = {}
+
+
+def get_session_history(session_id: str) -> BaseChatMessageHistory:
+
+
+    if session_id not in store:
+        store[session_id] = ChatMessageHistory()
+    return store[session_id]
+
+
 
 def create_pipeline(model_id: str, region_name: str, embedding_model_id: str, collection_name: str, search_kwargs: dict):
 
@@ -70,6 +85,12 @@ def create_pipeline(model_id: str, region_name: str, embedding_model_id: str, co
 
     rag_chain = create_retrieval_chain(history_aware_retriever, question_answer_chain)
 
-    return rag_chain
+    conversational_rag_chain = RunnableWithMessageHistory(
+        rag_chain,
+        get_session_history,
+        input_messages_key="input",
+        history_messages_key="chat_history",
+        output_messages_key="answer",
+    )
 
-
+    return conversational_rag_chain
