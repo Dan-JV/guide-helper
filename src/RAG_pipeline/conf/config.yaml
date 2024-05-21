@@ -1,0 +1,6 @@
+model_id: anthropic.claude-3-sonnet-20240229-v1:0
+region_name: us-east-1
+embedding_model_id: amazon.titan-embed-text-v2:0
+collection_name: markdown_header_level2_1024split_64overlap
+search_kwargs:
+  k: 10
