@@ -178,11 +178,12 @@ def load_config():
     return config
 
 
+import os
 
 
 if __name__ == "__main__":
     config = load_config()
-    wandb.login(key=st.secrets["WEAVE_API_KEY"])
+    wandb.login(key=os.environ["WEAVE_API_KEY"])
     weave.init(project_name="Guide Helper")
     app(config)
 
