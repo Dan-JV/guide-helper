@@ -1,13 +1,12 @@
-import os
-
+import wandb
 import requests
 import streamlit as st
 import weave
-from dotenv import dotenv_values
 from langchain_core.messages import AIMessage, HumanMessage
+import yaml
 
 
-from src.RAG_pipeline import pipeline
+from src.RAG_pipeline.pipeline import create_pipeline
 
 
 @weave.op() # logs input and output of calls 
@@ -74,16 +73,13 @@ def feedback():
 
     # Feedback form
     with st.form(key="feedback_form"):
-        # Populate the feedback form
         name = st.text_input("Name")
         email = st.text_input("Email")
         comment = st.text_area("Leave a comment")
 
-        # Submit button
         submitted = st.form_submit_button(label="Submit")
 
         if submitted:
-            # Feedback form dict
             feedback = {
                 "message_history": st.session_state.Q_A,
                 "feedback": st.session_state.thumbs_feedback,
@@ -106,10 +102,12 @@ def feedback():
 
 
 
-def app():
+
+@weave.op()
+def app(config: dict):
 
     chat_history = []
-    retrieval_chain = pipeline.create_pipeline()
+    retrieval_chain = create_pipeline(**config)
 
 
     start_streamlit_app() # title and session state variables
@@ -173,7 +171,18 @@ def app():
             st.markdown(body=selected_context.page_content)
 
 
+
+def load_config():
+    with open("src/RAG_pipeline/conf/config.yaml", 'r') as file:
+        config = yaml.safe_load(file)
+    return config
+
+
+
+
 if __name__ == "__main__":
+    config = load_config()
+    wandb.login(key=st.secrets["WEAVE_API_KEY"])
     weave.init(project_name="Guide Helper")
-    app()
+    app(config)
 
