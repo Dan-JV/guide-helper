@@ -5,10 +5,13 @@ from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 from langchain_aws import BedrockChat
 from langchain_community.embeddings import BedrockEmbeddings
-from langchain_core.prompts import PromptTemplate
+from langchain_core.prompts import MessagesPlaceholder
+from langchain_core.prompts.chat import ChatPromptTemplate
+from langchain.memory import ConversationBufferWindowMemory
 
-from src.RAG_pipeline.utils import initialize_qdrant_client, load_template
+from langchain.chains import create_history_aware_retriever
 
+from src.RAG_pipeline.utils import initialize_qdrant_client, fill_in_template
 
 def create_pipeline():
 
@@ -32,12 +35,11 @@ def create_pipeline():
     retriever = qdrant_client.as_retriever(search_kwargs={'k': 10})
 
     # Promt construction
-    prompt_template_string = load_template("prompts/guide_helper.jinja") 
-    few_shot_examples_template_string = load_template("prompts/fewshot_prompt_questions_answers.jinja")
-    prompt_template = PromptTemplate.from_template(
-        prompt_template_string, template_format="jinja2", partial_variables={"few_shot_examples": few_shot_examples_template_string}
-    )
-    prompt_template = prompt_template.partial(few_shot_examples=few_shot_examples_template_string)
+    prompt_path = "prompts/guide_helper.jinja"
+    system_prompt_path = "prompts/system_instructions.jinja"
+    fewshot_examples_path = "prompts/fewshot_prompt_questions_answers.jinja"
+    prompt_template = fill_in_template(prompt_path, system_prompt_path, fewshot_examples_path)
+
 
     llm = BedrockChat(
                 client=bedrock_runtime_client,
@@ -45,11 +47,35 @@ def create_pipeline():
                 model_id=model_id,
                 streaming=True
             )
-
-    combine_docs_chain = create_stuff_documents_chain(
-        llm, prompt_template
+    qa_prompt = ChatPromptTemplate.from_messages(
+        [
+            ("system", prompt_template),
+            MessagesPlaceholder("chat_history"),
+            ("human", "{input}"),
+        ]
     )
-    retrieval_chain = create_retrieval_chain(retriever, combine_docs_chain)
 
-    return retrieval_chain
+    contextualize_q_system_prompt = """Given a chat history and the latest user question \
+        which might reference context in the chat history, formulate a standalone question \
+        which can be understood without the chat history. Do NOT answer the question, \
+        just reformulate it if needed and otherwise return it as is."""
+    contextualize_q_prompt = ChatPromptTemplate.from_messages(
+        [
+            ("system", contextualize_q_system_prompt),
+            MessagesPlaceholder("chat_history"),
+            ("human", "{input}"),
+        ]
+    )
+    history_aware_retriever = create_history_aware_retriever(
+        llm, retriever, contextualize_q_prompt
+    )
+
+    question_answer_chain = create_stuff_documents_chain(llm, qa_prompt)
+
+    rag_chain = create_retrieval_chain(history_aware_retriever, question_answer_chain)
+
+    return rag_chain
+
+
+create_pipeline()
 
