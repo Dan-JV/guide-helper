@@ -188,11 +188,11 @@ def debugger_sidebar(user_settings: dict) -> None:
                   help="Number of chunks to retrieve from vector store",)
 
 def run_app(config: dict):
+    # Debugger sidebar
+    # debugger_sidebar(config.get("user_settings"))
+
     guide_helper = GuideHelper(config)
     system_prompt = guide_helper.system_prompt
-
-    # Debugger sidebar
-    debugger_sidebar(guide_helper.user_settings)
 
     chat_input = st.chat_input("How can I assist you?")
 
