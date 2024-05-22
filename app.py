@@ -16,17 +16,22 @@ def _get_session_id():
 
     return ctx.session_id
 
-
-
-
-
-
-
-
+# Streamlit config
+st.set_page_config(page_title= "guide buddy",
+                   page_icon=None, 
+                   layout="centered", 
+                   initial_sidebar_state="collapsed", 
+                #    menu_items={
+                #         'Get Help': 'https://www.extremelycoolapp.com/help',
+                #         'Report a bug': "https://www.extremelycoolapp.com/bug",
+                #         'About': "# This is a header. This is an *extremely* cool app!"
+                #     }
+                    )
 
 class GuideHelper:
     def __init__(self, config: dict):
         self.config = config
+        self.user_settings = self.config.get("user_settings")
 
         st.title("Guide Helper")
 
@@ -51,8 +56,19 @@ class GuideHelper:
 
         if "session_id" not in st.session_state:
             st.session_state.session_id = _get_session_id()
+
+
+        # Debugger sidebar states
+        if "model_choice" not in st.session_state:
+            st.session_state.model_choice = config.get("model_id")
+
+        if "response_length" not in st.session_state:
+            st.session_state.response_length = "normal"
+
+        if "top_k" not in st.session_state:
+            st.session_state.top_k = config.get("top_k")
         
-        self.chain: RunnableWithMessageHistory = create_pipeline(**config)
+        self.chain: RunnableWithMessageHistory = create_pipeline(**config["system_settings"])
         self.system_prompts: list = self.chain.get_prompts()
         self.system_prompt: str = self.system_prompts[1].messages[0].prompt.template
     
@@ -148,11 +164,35 @@ def send_feedback(feedback):
     return feedback_endpoint_response       
 
 
-    
+def debugger_sidebar(user_settings: dict) -> None:
+    with st.sidebar:
+        st.title("Guide Helper - Debug menu")
+        
+        # Model choice
+        st.session_state.model_choice = st.selectbox("LLM", 
+                     user_settings.get("models"),
+                     index=0,
+                     help="Select a model to generate responses")
+        
+        # Response length choice
+        st.session_state.top_k = st.selectbox("System response length", 
+                     user_settings.get("response_length"),
+                     index=1,
+                     help="Sets the length of the generated responses by the system")
+        
+        # Top K choice
+        st.slider("top_k", 
+                  min_value=user_settings.get("top_k").get("min"),
+                  max_value=user_settings.get("top_k").get("max"),
+                  value=user_settings.get("top_k").get("default"),
+                  help="Number of chunks to retrieve from vector store",)
 
 def run_app(config: dict):
     guide_helper = GuideHelper(config)
     system_prompt = guide_helper.system_prompt
+
+    # Debugger sidebar
+    debugger_sidebar(guide_helper.user_settings)
 
     chat_input = st.chat_input("How can I assist you?")
 
