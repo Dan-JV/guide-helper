@@ -145,6 +145,7 @@ class GuideHelper:
         output = {
             "answer": answer,
             "context": context,
+            "chat_history": self.chain.get_session_history(st.session_state.session_id)
         }
         if feedback is not None:
             output.update(feedback)
