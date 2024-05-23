@@ -6,6 +6,7 @@ class Files:
     data: str
     metadata: str
 
+
 @dataclass
 class Paths:
     data: str
@@ -15,4 +16,3 @@ class Paths:
 class GuideHelperConfig:
     files: Files
     paths: Paths
-

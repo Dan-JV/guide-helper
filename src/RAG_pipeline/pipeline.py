@@ -19,16 +19,18 @@ store = {}
 
 
 def get_session_history(session_id: str) -> BaseChatMessageHistory:
-
-
     if session_id not in store:
         store[session_id] = ChatMessageHistory()
     return store[session_id]
 
 
-
-def create_pipeline(model_id: str, region_name: str, embedding_model_id: str, collection_name: str, search_kwargs: dict):
-
+def create_pipeline(
+    model_id: str,
+    region_name: str,
+    embedding_model_id: str,
+    collection_name: str,
+    search_kwargs: dict,
+) -> RunnableWithMessageHistory:
     bedrock_runtime_client = boto3.client(
         service_name="bedrock-runtime",
         region_name=region_name,
@@ -36,7 +38,6 @@ def create_pipeline(model_id: str, region_name: str, embedding_model_id: str, co
         aws_secret_access_key=os.getenv("AWS_SECRET_ACCESS_KEY"),
     )
 
-    embedding_model_id = embedding_model_id
     embeddings_model = BedrockEmbeddings(
         client=bedrock_runtime_client, model_id=embedding_model_id
     )
@@ -49,15 +50,16 @@ def create_pipeline(model_id: str, region_name: str, embedding_model_id: str, co
     prompt_path = "prompts/guide_helper.jinja"
     system_prompt_path = "prompts/system_instructions.jinja"
     fewshot_examples_path = "prompts/fewshot_prompt_questions_answers.jinja"
-    prompt_template = fill_in_template(prompt_path, system_prompt_path, fewshot_examples_path)
-
+    prompt_template = fill_in_template(
+        prompt_path, system_prompt_path, fewshot_examples_path
+    )
 
     llm = BedrockChat(
-                client=bedrock_runtime_client,
-                credentials_profile_name="default",
-                model_id=model_id,
-                streaming=True
-            )
+        client=bedrock_runtime_client,
+        credentials_profile_name="default",
+        model_id=model_id,
+        streaming=True,
+    )
     qa_prompt = ChatPromptTemplate.from_messages(
         [
             ("system", prompt_template),

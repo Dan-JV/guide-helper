@@ -4,7 +4,7 @@ import polars as pl
 def load_data(file_path: str) -> str:
     with open(file_path, encoding="utf-8") as f:
         data = f.read()
-    
+
     return data
 
 
