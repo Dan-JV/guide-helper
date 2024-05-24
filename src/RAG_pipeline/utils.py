@@ -8,7 +8,9 @@ from qdrant_client import QdrantClient
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 
-def initialize_qdrant_client(collection_name: str, embeddings_model: BedrockEmbeddings) -> Qdrant:
+def initialize_qdrant_client(
+    collection_name: str, embeddings_model: BedrockEmbeddings
+) -> Qdrant:
     client = QdrantClient(
         os.getenv("QDRANT_ENDPOINT"), api_key=os.getenv("QDRANT_API_KEY")
     )
