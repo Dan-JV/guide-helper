@@ -10,8 +10,8 @@ from qdrant_client import QdrantClient, models
 def load(docs):
     load_dotenv()
 
-    qdrant_endpoint = os.environ["Qdrant_endpoint"]
-    qdrant_api_key = os.environ["Qdrant_API_KEY"]
+    qdrant_endpoint = os.environ["QDRANT_ENDPOINT"]
+    qdrant_api_key = os.environ["QDRANT_API_KEY"]
 
     qdrant_client = QdrantClient(qdrant_endpoint, api_key=qdrant_api_key)
 
